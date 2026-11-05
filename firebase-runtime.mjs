@@ -58,6 +58,7 @@ export function makeFirebaseClient(config, callbacks = {}) {
   }
 
   return {
+    start,
     get ready() { return ready && member; },
     // Appeler sans délai depuis le clic utilisateur pour éviter les bloqueurs de popup.
     signInGoogle() {
