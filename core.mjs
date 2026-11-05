@@ -294,6 +294,13 @@ export function calculateNeeds(state,pilot=[]){
  return sums;
 }
 export function refreshCourses(state,pilot=[]){const out=clone(state);out.shopping.generated=calculateNeeds(out,pilot);return out;}
+// Vide seulement le panier actuel, sans supprimer le planning, les recettes ou les rayons.
+// Une régénération explicite depuis le planning pourra recalculer les articles nécessaires.
+export function clearCourses(state){
+ const out=clone(state);
+ out.shopping={generated:{},purchased:{},manual:[],overrides:{}};
+ return out;
+}
 // Conversions uniquement à l'intérieur d'une même dimension, jamais g ↔ pièce.
 export function convertQuantity(q,from,to){
  const a=qtyKey('_',from),b=qtyKey('_',to);
