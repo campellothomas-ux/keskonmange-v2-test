@@ -1,4 +1,4 @@
-<!doctype html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#49367e"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="KeskonMange V2, prototype de recettes et de courses"><title>KeskonMange V2 — Prototype</title><link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./apple-touch-icon.png"><style>:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#29272d;background:#f8f6f2;font-synthesis:none}
+<!doctype html><html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#506850"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="KeskonMange, carnet de recettes, planning et courses partagés"><title>KeskonMange V2 — Vos recettes</title><link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./apple-touch-icon.png"><style>:root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#29272d;background:#f8f6f2;font-synthesis:none}
 *{box-sizing:border-box}body{margin:0;min-width:320px}button,input,textarea,select{font:inherit}button{cursor:pointer}button:disabled{opacity:.48;cursor:not-allowed}a{color:inherit}.app{width:min(100%,1100px);min-height:100vh;margin:0 auto;background:#fbfaf7;box-shadow:0 4px 60px #2418340a}.topbar{position:sticky;top:0;background:#fbfaf7ef;backdrop-filter:blur(18px);z-index:10;border-bottom:1px solid #e9e4dd;display:flex;justify-content:space-between;gap:12px;align-items:center;padding:17px clamp(17px,4vw,35px)}.brand{font-size:24px;font-weight:850;letter-spacing:-1px;color:#49367e}.brand span{color:#d8865b}.top-actions{display:flex;align-items:center;gap:9px}.status{font-size:11px;letter-spacing:.05em;font-weight:800;text-transform:uppercase;background:#f0eafc;color:#6c56a2;border:1px solid #dfd4f3;padding:6px 9px;border-radius:99px}.button{border:0;padding:12px 15px;border-radius:13px;background:#49367e;color:white;font-weight:750;min-height:44px;box-shadow:0 2px 8px #49367e24}.button:hover{background:#5a4397}.button.ghost{background:#eeeae5;box-shadow:none;color:#463c52}.button.mint{background:#b9e8d8;color:#225b4c}.button.danger{background:#f9e9e7;color:#a03f38;box-shadow:none}.button.small{min-height:34px;padding:7px 10px;font-size:12px;border-radius:10px}.button:focus-visible,.nav-button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #b3a2ed;outline-offset:2px}.stage{padding:clamp(20px,4vw,36px);padding-bottom:125px;min-height:80vh}.eyebrow{font-size:11px;font-weight:820;letter-spacing:.14em;text-transform:uppercase;color:#a1724f}.page-title{font-size:clamp(26px,4vw,39px);letter-spacing:-.055em;line-height:1.12;margin:6px 0 10px}.muted{color:#797580}.intro{max-width:690px;color:#77727d;line-height:1.65;font-size:14px;margin:0 0 24px}.searchbox{display:flex;gap:12px;align-items:center;background:white;border:2px solid #b5a6d9;border-radius:18px;padding:8px 15px;box-shadow:0 8px 28px #49367e0b}.searchbox .searchicon{font-size:21px;color:#715a9d}.searchbox input{width:100%;font-size:16px;border:0;outline:none;min-height:43px;background:transparent;color:#302a38}.searchbox input:focus-visible{outline:none}.suggestions{display:flex;flex-wrap:wrap;gap:8px;margin:13px 0 20px}.chip{background:#eeeae4;border:1px solid #ebe6e0;border-radius:40px;color:#5e5864;padding:8px 12px;min-height:34px;font-size:12px;font-weight:700}.chip:hover{background:#e7dbf5}.chip.tag{background:#eae5f6;border-color:#e2dbef;color:#594582}.row-between{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}.section-title{font-size:18px;margin:27px 0 13px;letter-spacing:-.035em}.counter{font-size:12px;color:#757080;font-weight:750}.catalog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(238px,1fr));gap:13px}.recipe-card{border:1px solid #eee8e1;border-radius:19px;background:white;padding:18px;text-align:left;display:flex;flex-direction:column;gap:13px;box-shadow:0 6px 20px #2a223b08;transition:transform .15s,box-shadow .15s;min-height:172px}.recipe-card:hover{transform:translateY(-2px);box-shadow:0 8px 25px #2a223b13}.recipe-card .r-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}.recipe-card h3{font-size:17px;margin:0;line-height:1.25;letter-spacing:-.04em}.recipe-card .r-symbol{font-size:22px;background:#f3eef9;padding:9px;border-radius:12px}.recipe-card p{margin:0;color:#817b86;font-size:12px}.rec-tags{display:flex;gap:5px;flex-wrap:wrap;margin-top:auto}.mini-tag{font-size:10px;padding:5px 7px;border-radius:7px;background:#f2f0ec;color:#67626b;font-weight:750}.mini-tag.season{background:#dff5e8;color:#2c7950}.mini-tag.off{background:#fff1e2;color:#966438}.mini-tag.close{background:#f7ebdd;color:#98653b}.placeholder{padding:30px;border:1px dashed #dcd2e7;border-radius:15px;text-align:center;color:#777081;background:#faf8fe}.notice{background:#f4eefc;border:1px solid #dfd3ef;border-radius:16px;padding:14px 17px;color:#67538e;font-size:13px;line-height:1.55;margin:12px 0 20px}.notice.amber{background:#fff7eb;border-color:#f0dfc6;color:#95663d}.notice.green{background:#e8f6ee;border-color:#caead7;color:#356d50}.tabs{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(100%,1100px);display:flex;justify-content:space-around;background:#ffffffed;backdrop-filter:blur(20px);border-top:1px solid #e5ddd6;padding:8px 12px max(11px,env(safe-area-inset-bottom));z-index:20}.nav-button{border:0;border-radius:15px;background:transparent;display:flex;flex-direction:column;align-items:center;gap:4px;min-width:74px;padding:9px 10px;color:#8b8492;font-size:11px;font-weight:800}.nav-button .navicon{font-size:21px}.nav-button.active{background:#eee8f7;color:#514087}.list-stack{display:flex;flex-direction:column;gap:10px}.line-card{display:flex;justify-content:space-between;align-items:center;gap:10px;background:white;border:1px solid #eee8e1;border-radius:15px;padding:13px 15px}.line-card .line-title{font-weight:780;font-size:14px}.line-card .line-sub{font-size:12px;color:#918a96;margin-top:4px}.line-actions{display:flex;align-items:center;gap:6px}.stepper{display:flex;align-items:center;gap:7px}.stepper button{border:1px solid #e1d8eb;background:#f6f2fb;color:#5e4a8d;border-radius:10px;min-width:35px;min-height:35px;font-size:18px}.stepper strong{min-width:24px;text-align:center}.form-group{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}.form-group label{font-size:12px;font-weight:750;color:#726b7b}.field{width:100%;border:1px solid #dcd6e1;background:white;border-radius:11px;padding:12px;color:#302d33;min-height:44px}.field.mono{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;line-height:1.5;font-size:12px}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.modal-backdrop{position:fixed;inset:0;background:#27202c99;z-index:40;display:flex;align-items:flex-end;justify-content:center;backdrop-filter:blur(5px)}.modal{background:#fbfaf7;width:min(100%,720px);max-height:min(92vh,950px);overflow:auto;border-radius:25px 25px 0 0;padding:24px clamp(18px,3vw,30px) max(24px,env(safe-area-inset-bottom));box-shadow:0 -10px 50px #0003}.modal-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:16px}.modal-head h2{font-size:24px;letter-spacing:-.045em;margin:3px 0}.close{background:#eee9e5;color:#524955;border:0;border-radius:12px;width:40px;height:40px;font-size:20px}.modal p{line-height:1.55;color:#6c6471}.pill-label{font-size:11px;font-weight:790;letter-spacing:.08em;text-transform:uppercase;color:#967754}.detail-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:15px 0}.stat{background:#efede8;border-radius:13px;padding:13px}.stat strong{display:block;font-size:17px;margin-top:4px}.ingrow{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid #eee8e1;font-size:14px}.ingrow strong{white-space:nowrap}.steps{padding-left:25px}.steps li{line-height:1.6;margin:10px 0;padding-left:6px}.modal-footer{display:flex;gap:8px;flex-wrap:wrap;margin-top:23px}.modal-footer button{flex:1;min-width:145px}.data-table{display:grid;grid-template-columns:1fr;gap:7px}.dup-row{background:#f3efec;border-radius:13px;padding:12px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px}.dup-row select{max-width:190px}.rayon-head{margin:20px 0 10px;display:flex;gap:8px;align-items:center;font-size:13px;text-transform:uppercase;letter-spacing:.075em;color:#817b84}.shopping-check{width:29px;height:29px;border:2px solid #aa9dbd;background:white;border-radius:9px;flex-shrink:0;font-size:17px;color:white}.shopping-check.checked{background:#6ba68d;border-color:#6ba68d}.shopping-content{flex:1;min-width:0}.shopping-row{display:flex;align-items:center;gap:9px;border-radius:12px;background:white;border:1px solid #efede9;padding:10px}.shopping-row.is-bought{opacity:.63}.shopping-row.is-bought .line-title{text-decoration:line-through}.shopping-row .button.small{padding:6px 8px}.add-manual{display:flex;gap:8px;margin:18px 0}.add-manual input{flex:1;min-width:0}.toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.check-label{display:flex;align-items:center;gap:7px;font-weight:700;font-size:13px;color:#736c7d;cursor:pointer}.check-label input{accent-color:#6650a1;width:17px;height:17px}.toast{position:fixed;bottom:95px;left:50%;transform:translateX(-50%) translateY(15px);background:#362949;color:white;border-radius:999px;padding:11px 17px;box-shadow:0 8px 25px #0003;opacity:0;pointer-events:none;transition:.2s;z-index:70;max-width:calc(100vw - 30px);font-size:13px;font-weight:750;text-align:center}.toast.visible{opacity:1;transform:translateX(-50%) translateY(0)}.footnote{font-size:11px;color:#a39ba7;margin:18px 0;line-height:1.5}.empty-small{color:#8d8492;font-size:12px;margin:12px 0}.filter-box{border-radius:12px;background:#f0ece5;padding:10px 13px;font-size:12px;color:#6c6372;display:flex;flex-wrap:wrap;gap:9px}.import-sample{font-size:12px;color:#726483;text-decoration:underline;cursor:pointer;border:0;background:transparent;padding:0}.badge-link{border:0;background:none;text-decoration:underline;font-weight:800;color:#6d5695;cursor:pointer}.cook-step{font-size:21px;line-height:1.65;background:#f2eef7;border-radius:18px;padding:25px;color:#403450}.cook-dots{display:flex;gap:5px}.cook-dots span{height:5px;flex:1;background:#e4d9f1;border-radius:99px}.cook-dots span.done{background:#7760b5}.import-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:13px 0}.kbd{font-family:ui-monospace,SFMono-Regular,monospace;background:#eae6e0;padding:2px 5px;border-radius:4px;font-size:11px}@media(max-width:520px){.topbar{padding:13px 16px}.brand{font-size:21px}.top-actions .button{font-size:12px;padding:8px 10px;min-height:38px}.stage{padding:19px 16px 115px}.status{font-size:9px;padding:5px 7px}.catalog-grid{grid-template-columns:1fr}.recipe-card{min-height:138px;padding:16px}.line-card{align-items:flex-start}.line-actions{flex-wrap:wrap;justify-content:flex-end}.modal{max-height:94vh}.form-grid{grid-template-columns:1fr}.nav-button{min-width:62px;padding:8px 5px}}
 
 /* Prototype 0.2 — améliorations de parcours uniquement ; direction visuelle à revoir */
@@ -59,6 +59,323 @@
 .gate-card h1{font-size:24px;margin-bottom:12px}.gate-card p{font-size:14px;line-height:1.5;color:#554d61;margin-bottom:18px}
 .gate-card form{display:grid;gap:12px}.gate-card label{display:grid;gap:5px;font-size:13px;font-weight:700}
 .gate-card .button{min-height:44px}.auth-error{color:#ae2626!important;font-weight:700}.uid-hint code{user-select:all;overflow-wrap:anywhere}
+
+/* ================================================================
+   KeskonMange V2 0.8 — direction « Éditoriale chaleureuse ».
+   Surface crème, typographie iOS + titres serif, photos généreuses.
+   Les classes historiques restent disponibles pour les formulaires.
+   ================================================================ */
+:root {
+  --cream:#F8F6F1;
+  --paper:#FFFEFB;
+  --ink:#28302B;
+  --muted:#777D74;
+  --olive:#506850;
+  --olive-dark:#3B523F;
+  --sage:#E5EDE2;
+  --linen:#EBE8DF;
+  --terracotta:#BF8165;
+  --line:#E8E5DC;
+  --shadow:0 12px 34px rgba(42,51,39,.045);
+  font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Inter,system-ui,sans-serif;
+  color:var(--ink);background:var(--cream);
+  -webkit-font-smoothing:antialiased;
+  font-synthesis:none;
+}
+html {scroll-behavior:smooth}
+body {background:var(--cream); color:var(--ink)}
+.app {width:min(100%,1176px);background:var(--cream);box-shadow:none;min-height:100dvh}
+.ui-icon {display:inline-block;width:20px;height:20px;flex-shrink:0;vertical-align:middle}
+.topbar {position:sticky;top:0;z-index:10;padding:16px clamp(20px,4.5vw,56px);min-height:87px;border-bottom:1px solid rgba(63,75,58,.08);background:rgba(248,246,241,.91);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}
+.brand-lockup {display:flex;align-items:center;gap:12px}
+.brand-symbol {width:45px;height:45px;display:grid;place-items:center;background:var(--olive);color:#fff;border-radius:15px;transform:rotate(-4deg)}
+.brand-symbol .ui-icon{width:26px;height:26px;transform:rotate(4deg)}
+.brand {font-weight:770;font-size:22px;letter-spacing:-1.1px;color:var(--ink);line-height:1.05;white-space:nowrap}
+.brand span {color:var(--olive)}
+.brand sup {font:700 9px -apple-system,BlinkMacSystemFont,system-ui,sans-serif;letter-spacing:.025em;color:#8E9588;padding-left:5px;position:relative;top:-2px}
+.brand-caption {font-size:9px;letter-spacing:.16em;color:#8A8F82;font-weight:750;margin-top:6px}
+.top-actions {gap:13px}
+.status {background:#E8EFE6;border:0;color:var(--olive);font-weight:730;font-size:10px;letter-spacing:.02em;white-space:nowrap;padding:8px 10px}
+.status:before {content:'';display:inline-block;width:6px;height:6px;border-radius:50%;background:#7FA486;vertical-align:2px;margin-right:7px}
+.button {display:inline-flex;justify-content:center;align-items:center;gap:8px;box-shadow:none;border-radius:13px;background:var(--olive);color:#fff;font-weight:680;padding:12px 17px;transition:background .14s ease, transform .14s ease;letter-spacing:-.015em}
+.button .ui-icon {width:17px;height:17px}
+.button:hover {background:var(--olive-dark)}
+.button:active {transform:scale(.985)}
+.button.ghost {color:var(--olive);background:#EBEFE8;border:1px solid #DBE5D8}
+.button.ghost:hover {background:#DFE9DA}
+.button.mint {color:var(--olive-dark);background:var(--sage)}
+.button.danger {background:#F9EBE8;color:#A64F41}
+.top-import {background:var(--olive);padding:10px 15px;border-radius:12px;min-height:40px}
+.account-button {width:40px;height:40px;border:1px solid var(--line);border-radius:12px;display:grid;place-items:center;background:var(--paper);color:var(--olive)}
+.account-button .ui-icon{width:18px;height:18px}
+.account-button:hover {background:var(--sage)}
+.stage {padding:clamp(27px,5vw,65px) clamp(20px,4.5vw,56px) 148px}
+.eyebrow,.section-kicker {font-size:10px;letter-spacing:.20em;font-weight:800;color:#89977C;text-transform:uppercase}
+.eyebrow-dash {display:inline-block;width:20px;height:1px;background:#AEB9A4;vertical-align:middle;margin:0 8px}
+.library-intro {margin-bottom:33px}
+.hero-heading {align-items:flex-end;gap:24px;margin-top:14px}
+.page-title {font-size:clamp(35px,5.8vw,59px);font-family:Georgia,"Iowan Old Style","Palatino Linotype",serif;font-weight:500;line-height:1.06;letter-spacing:-.055em;margin:0;color:var(--ink)}
+.page-title em {font-weight:500;color:var(--olive);font-style:italic}
+.page-title .title-period {color:var(--terracotta)}
+.intro {font-size:14px;max-width:485px;line-height:1.64;color:#737970;margin:15px 0 0}
+.import-hero {white-space:nowrap;min-height:45px}
+.discovery-panel {margin:0 0 36px;padding:22px 24px 17px;background:var(--paper);border:1px solid var(--line);border-radius:23px;box-shadow:var(--shadow)}
+.searchbox {gap:12px;padding:0 17px;min-height:54px;border:1.5px solid #DCDFD6;background:#F9FAF7;box-shadow:none;border-radius:15px}
+.searchbox:focus-within {border-color:#9CAF99;box-shadow:0 0 0 3px #CAD9C34A}
+.searchbox .searchicon {color:var(--olive);width:22px;height:22px}
+.searchbox input {font-size:15px;min-height:52px;color:var(--ink);font-weight:450}
+.searchbox input::placeholder {color:#9BA097}
+.suggestions {margin:13px 0 20px;gap:8px}
+.chip {min-height:34px;border:1px solid #E8E9E2;padding:7px 12px;background:#F4F5F0;color:#6A7369;font-size:11px;font-weight:650}
+.chip:hover {background:#E7EEE3;color:var(--olive)}
+.filter-line {display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding-top:14px;border-top:1px solid #F0EFE8}
+.filter-favorites,.filter-toggle {display:inline-flex;align-items:center;gap:7px;border:1px solid #E5E6DD;background:#fff;color:#4D5B50;border-radius:12px;padding:10px 13px;font-size:12px;font-weight:725;min-height:42px;transition:background .12s}
+.filter-favorites .ui-icon,.filter-toggle .ui-icon {width:17px;height:17px}
+.filter-favorites.active {background:var(--olive);color:white;border-color:var(--olive)}
+.filter-favorites.active .ui-icon {fill:currentColor}
+.filter-toggle.active {background:#E8EEE5;color:var(--olive-dark);border-color:#D6E0D2}
+.fav-count {display:grid;place-items:center;min-width:20px;height:20px;padding:0 4px;border-radius:99px;background:#F1F2ED;color:#647361;font-size:10px}
+.filter-favorites.active .fav-count {background:#ffffff33;color:white}
+.clear-filter {border:0;background:transparent;color:#88917F;text-decoration:underline;font-size:12px;font-weight:680;padding:7px}
+.season-controls {border-top:1px solid #F0EFE8;padding-top:15px;margin:15px 0 0;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.season-controls>span {font-size:11px;display:flex;align-items:center;gap:7px;color:#8A9186;font-weight:650}
+.season-controls .ui-icon {width:16px;height:16px;color:#829976}
+.season-controls .check-label {font-size:11px;color:#889187;font-weight:600}
+.check-label input {accent-color:var(--olive)}
+.section-head {margin:0 0 18px;align-items:end}
+.section-kicker {display:block;margin-bottom:8px}
+.section-title {color:var(--ink);font-family:Georgia,"Iowan Old Style",serif;font-size:clamp(24px,3vw,30px);line-height:1.2;letter-spacing:-.04em;font-weight:500;margin:0}
+.counter {font-size:12px;color:#8B9188;font-weight:600}
+.catalog-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:21px}
+.recipe-card {position:relative;background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:0;min-height:auto;display:block;overflow:hidden;box-shadow:var(--shadow);transition:transform .18s ease,box-shadow .18s ease}
+.recipe-card:hover {transform:translateY(-3px);box-shadow:0 14px 36px #27382C16}
+.recipe-card-main {display:flex;flex-direction:column;width:100%;height:100%;text-align:left;border:0;background:none;color:inherit;padding:0;cursor:pointer;outline-offset:-2px}
+.recipe-card-main:focus-visible {outline:3px solid #8DA78A}
+.card-media {position:relative;width:100%;overflow:hidden;background:#E9E8DF}
+.recipe-photo.card-photo {width:100%;height:auto;aspect-ratio:1.48;border-radius:0}
+.recipe-photo.card-photo img {transition:transform .3s ease}
+.recipe-card:hover .recipe-photo.card-photo img {transform:scale(1.035)}
+.recipe-photo-fallback {background:radial-gradient(circle at 70% 28%,#F8EDE0,#F3EAD9 48%,#D5DBCD 100%);color:#70856C;display:flex;flex-direction:column;gap:10px;align-items:center;justify-content:center;width:100%;height:100%;padding:16px}
+.recipe-photo-fallback[hidden] {display:none}
+.recipe-photo-fallback .ui-icon {width:47px;height:47px;stroke-width:1.2;color:#839478}
+.recipe-photo-fallback small {font-family:Georgia,"Iowan Old Style",serif;font-size:16px;color:#75826F;font-style:italic;font-weight:400}
+.image-badge {position:absolute;bottom:12px;left:12px;background:#FFFAF0EA;color:#805F3B;border-radius:8px;padding:6px 10px;font-size:10px;font-weight:750}
+.favorite-button {position:absolute;right:13px;top:13px;width:40px;height:40px;display:grid;place-items:center;border:1px solid #FFFFFFBB;background:#FFFFF4EE;color:#526750;box-shadow:0 5px 15px #1D291420;border-radius:50%;z-index:2;transition:transform .15s,background .15s}
+.favorite-button:hover,.favorite-button:focus-visible {transform:scale(1.06)}
+.favorite-button .ui-icon {width:21px;height:21px}
+.favorite-button.is-favorite {color:#BA705E;background:#FFF8F4}
+.favorite-button.is-favorite .ui-icon {fill:#BA705E}
+.card-content {padding:18px 19px 20px;display:flex;flex-direction:column;gap:9px;flex:1;min-height:155px}
+.card-meta {color:#838A81;font-size:11px;display:flex;align-items:center;gap:6px;font-weight:650;white-space:nowrap}
+.card-meta .ui-icon {width:14px;height:14px}
+.meta-dot {color:#B4BBB0;margin:0 4px}
+.recipe-card h3 {font-family:Georgia,"Iowan Old Style",serif;font-size:21px;line-height:1.2;letter-spacing:-.034em;font-weight:500;color:var(--ink);margin:0}
+.recipe-card .rec-tags {margin-top:auto}
+.rec-tags {gap:6px;display:flex;flex-wrap:wrap}
+.mini-tag {background:#F2F3EE;color:#687667;font-size:10px;letter-spacing:0;padding:6px 9px;border-radius:8px;font-weight:650}
+.mini-tag.season {background:#E8F0E4;color:#62805C}
+.mini-tag.close {background:#F7ECE2;color:#966E52}
+.mini-tag.off {background:#F9EDE2;color:#996C48}
+.filter-box {background:#EDF3E9;border:1px solid #DFE7DC;color:#60775C;border-radius:12px;margin:0 0 16px;padding:11px 13px}
+.secondary-section {margin:32px 0 14px}
+.empty-state {text-align:center;background:var(--paper);border:1px dashed #D6DDD2;border-radius:23px;padding:60px 26px;box-shadow:var(--shadow)}
+.empty-state .empty-illustration {width:83px;height:83px;border-radius:27px;background:#EFF2E9;display:grid;place-items:center;margin:0 auto 20px;color:var(--olive);transform:rotate(-5deg)}
+.empty-illustration .ui-icon {width:39px;height:39px;transform:rotate(5deg);stroke-width:1.4}
+.empty-state h3 {font-family:Georgia,"Iowan Old Style",serif;font-size:25px;font-weight:500;letter-spacing:-.04em;margin:0 0 9px}
+.empty-state p {font-size:13px;line-height:1.65;color:#82897E;max-width:370px;margin:0 auto 19px}
+.empty-state.spacious {margin-top:35px;padding:75px 28px}
+.footnote {color:#9B9F95;font-size:11px;line-height:1.55;margin-top:22px}
+.page-heading {align-items:flex-end;margin:17px 0 38px;gap:18px}
+.page-heading .intro {margin-top:13px;max-width:540px}
+.page-heading .button {white-space:nowrap}
+.plan-overview {display:flex;align-items:center;justify-content:space-between;gap:20px;background:#EAF0E7;border-radius:14px;padding:14px 18px;margin-bottom:19px;color:var(--olive-dark)}
+.plan-overview span {display:flex;align-items:center;gap:8px;font-size:13px;font-weight:690}
+.plan-overview .ui-icon {width:20px;height:20px}
+.text-link {display:inline-flex;align-items:center;gap:7px;background:none;border:0;color:var(--olive);font-size:12px;font-weight:780;padding:4px}
+.text-link .ui-icon {width:16px;height:16px}
+.planning-stack {gap:13px}
+.line-card {background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:14px 16px;box-shadow:var(--shadow)}
+.line-card.meal-card {display:flex;align-items:center;flex-direction:row;gap:17px}
+.meal-card>.recipe-photo.thumb {width:105px;height:88px;border-radius:12px}
+.meal-card .recipe-photo-fallback .ui-icon {width:27px;height:27px}
+.meal-card .recipe-photo-fallback small {font-size:12px}
+.meal-info {gap:8px}
+.meal-link {gap:7px}
+.meal-link .line-title {font-family:Georgia,"Iowan Old Style",serif;color:var(--ink);font-size:20px;text-decoration:none;font-weight:500;letter-spacing:-.025em}
+.meal-link:hover .line-title {color:var(--olive)}
+.meal-link .line-sub {display:flex;align-items:center;gap:4px;color:#92998D;font-size:11px}
+.meal-link .line-sub .ui-icon {width:13px;height:13px}
+.meal-cook {border:0;background:none;color:var(--olive);font-size:12px;font-weight:750;padding:0;display:flex;align-items:center;gap:5px}
+.meal-cook .ui-icon {width:15px;height:15px}
+.line-actions {gap:8px}
+.stepper {display:flex;align-items:center;gap:9px}
+.stepper button {background:#F4F6F1;color:var(--olive);border:1px solid #E2E9DC;border-radius:10px;min-width:34px;min-height:34px}
+.stepper strong {font-size:14px;color:var(--ink)}
+.remove-small {border:0;background:#F7F6F2;color:#A5A9A0;width:32px;height:32px;display:grid;place-items:center;border-radius:9px}
+.remove-small .ui-icon{width:16px;height:16px}
+.remove-small:hover {color:#AE6254;background:#FAEDE9}
+.plan-bottom {display:flex;justify-content:flex-end;margin-top:21px}
+.add-manual {background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:10px;display:flex;gap:10px;margin:0 0 20px;box-shadow:var(--shadow)}
+.add-manual .field {border:0;background:transparent;font-size:14px}
+.add-manual .field:focus {outline:none}
+.add-manual .button {white-space:nowrap;padding:11px 14px}
+.shopping-summary {display:flex;justify-content:space-between;color:#7F897D;font-size:12px;font-weight:650;border-bottom:1px solid var(--line);padding:5px 2px 19px;margin-bottom:5px}
+.rayon-group {margin-top:28px}
+.rayon-head {font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif;font-size:12px;letter-spacing:.09em;font-weight:800;margin:0 0 12px;color:#667662}
+.rayon-emoji {display:grid;place-items:center;width:35px;height:35px;border-radius:11px;background:#E7EEE2;font-size:18px}
+.shopping-stack {gap:0;border:1px solid var(--line);border-radius:17px;background:var(--paper);overflow:hidden;box-shadow:var(--shadow)}
+.shopping-row {background:transparent;border:0;border-bottom:1px solid #F0F0EA;border-radius:0;padding:14px 16px;gap:11px;min-height:70px;flex-wrap:nowrap}
+.shopping-row:last-child {border-bottom:0}
+.shopping-check {width:30px;height:30px;border-radius:9px;border:1.5px solid #C9D4C4;color:#fff;display:grid;place-items:center}
+.shopping-check .ui-icon {width:18px;height:18px}
+.shopping-check.checked {background:var(--olive);border-color:var(--olive)}
+.shopping-content .line-title {color:var(--ink);font-size:13px;font-weight:700}
+.shopping-content .line-sub {color:#90958D;font-size:11px;margin-top:5px}
+.shopping-edit {border:1px solid #E7EAE2;background:#F9FAF7;border-radius:10px;padding:8px 10px;color:#72816E;font-size:11px;font-weight:720;min-height:34px;white-space:nowrap}
+.shopping-edit:hover {color:var(--olive-dark);background:var(--sage)}
+.shopping-row.is-bought {opacity:.63}
+.completed-heading {display:flex;align-items:center;justify-content:space-between;gap:10px;margin:42px 0 12px}
+.completed-heading .section-title {font-size:24px}
+.completed-heading span {color:#8A9188;font-size:12px}
+.tabs {padding:9px 14px max(12px,env(safe-area-inset-bottom));background:rgba(255,254,251,.96);border-top:1px solid #E9E9E2;box-shadow:0 -6px 28px #2B352806;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);width:min(100%,1176px)}
+.nav-button {min-width:100px;gap:6px;padding:10px 17px;border-radius:13px;color:#899288;font-size:11px;font-weight:680}
+.nav-button .navicon {font-size:inherit;width:22px;height:22px}
+.nav-button.active {background:#E8EFE5;color:var(--olive-dark)}
+.nav-button:focus-visible,.button:focus-visible,.account-button:focus-visible,.favorite-button:focus-visible,.shopping-check:focus-visible,.shopping-edit:focus-visible,.filter-favorites:focus-visible,.filter-toggle:focus-visible {outline:3px solid #8CAB87;outline-offset:2px}
+.modal-backdrop {background:#1F2B2585;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);align-items:center;padding:20px}
+.modal {width:min(100%,760px);max-height:min(92dvh,940px);border-radius:25px;box-shadow:0 28px 80px #202A2350;background:var(--paper);padding:27px 30px 30px}
+.modal:has(.recipe-detail) {padding:0;overflow:auto}
+.modal-head {margin-bottom:22px}
+.modal-head h2 {font-family:Georgia,"Iowan Old Style",serif;font-weight:500;letter-spacing:-.045em;font-size:29px}
+.modal .eyebrow {color:#8D9C82}
+.modal p {color:#798076}
+.close {background:#F3F4EE;color:#657460;border-radius:50%}
+.field {color:var(--ink);background:#FFFEFB;border-color:#E3E7DF}
+.field:focus {outline:2px solid #9DB49C;outline-offset:1px}
+.filters-panel {background:#F8F9F5;border:1px solid #E3E9DF;margin:16px 0;border-radius:13px}
+.facet-group {border-color:#E7EDE3}
+.facet-group h3 {color:#687B66}
+.facet-chip {border-color:#DDE5DA;color:#697B66}
+.facet-chip.selected {background:var(--olive);border-color:var(--olive)}
+.badge-link {color:var(--olive)}
+.notice {background:#F3F7EF;border-color:#E0E9DB;color:#63765F}
+.notice.green {background:#EAF2E5;color:#547251;border-color:#D6E5D1}
+.notice.amber {background:#FDF5E9;border-color:#EEE2CA;color:#9A7146}
+.detail-cover {position:relative;background:#E7E6D9}
+.recipe-detail .recipe-photo.hero {width:100%;height:265px;border-radius:0;margin:0}
+.recipe-detail .recipe-photo-fallback .ui-icon {width:67px;height:67px}
+.detail-close {position:absolute;left:19px;top:19px;width:42px;height:42px;border:0;background:#FFFFFFEA;border-radius:50%;display:grid;place-items:center;color:#405344}
+.detail-close .ui-icon {width:19px;height:19px}
+.favorite-button.favorite-detail {top:19px;right:19px;width:43px;height:43px}
+.detail-body {padding:31px 34px 33px}
+.detail-title {font-family:Georgia,"Iowan Old Style",serif;font-size:clamp(32px,4.5vw,43px);font-weight:500;line-height:1.08;letter-spacing:-.055em;margin:13px 0 14px;color:var(--ink)}
+.detail-meta {display:flex;align-items:center;gap:7px;color:#7C877A;font-size:12px;font-weight:650}
+.detail-meta .ui-icon {width:17px;height:17px}
+.detail-tags {margin:18px 0 21px}
+.detail-controls {display:flex;justify-content:space-between;align-items:center;gap:15px;background:#EFF3EA;padding:13px 17px;border-radius:13px;color:#5C7359;font-size:12px;font-weight:750;margin-bottom:24px}
+.detail-columns {display:grid;grid-template-columns:minmax(175px,.8fr) minmax(0,1.25fr);gap:35px}
+.detail-columns .section-title {font-size:25px;margin:0 0 17px}
+.ingrow {border-color:#EBEEE6;color:#4C594D;font-size:13px;gap:10px}
+.ingrow strong {font-weight:720;color:var(--olive);font-size:13px}
+.steps {padding-left:25px;color:#536153}
+.steps li {line-height:1.7;font-size:13px;margin:0 0 17px;padding-left:5px}
+.steps li::marker {color:#779073;font-weight:700}
+.step-qty {background:#EBF3E5;color:#435B40}
+.photo-controls {padding-top:5px;margin:20px 0 6px}
+.detail-footer {border-top:1px solid var(--line);padding-top:23px;gap:9px}
+.detail-footer button {min-width:auto}
+.cook-step {background:#EFF3E9;color:#3E513E;border-radius:18px;font-family:Georgia,"Iowan Old Style",serif;font-size:23px;line-height:1.7}
+.cook-dots span {background:#E4EADF}
+.cook-dots span.done {background:var(--olive)}
+.cook-portions {background:#F8FAF6;border:1px solid #E3EADD;border-radius:14px}
+.cook-ingredients {background:#F9FBF6}
+.toast {background:#304537;color:white;border-radius:13px;box-shadow:0 14px 40px #22302546;font-weight:670}
+#auth-gate {background:var(--cream)}
+.gate-card {border-color:var(--line);background:var(--paper);border-radius:22px}
+.gate-card h1 {font-family:Georgia,"Iowan Old Style",serif;font-weight:500;letter-spacing:-.04em;color:var(--ink);font-size:29px}
+@media (max-width:1000px){.catalog-grid {grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){
+ .topbar {min-height:75px;padding:13px 19px}
+ .brand-symbol {width:39px;height:39px;border-radius:12px}
+ .brand-symbol .ui-icon {width:23px;height:23px}
+ .brand-lockup {gap:10px}
+ .brand {font-size:19px;letter-spacing:-.9px}
+ .brand-caption {font-size:7px;letter-spacing:.13em;margin-top:5px}
+ .status {font-size:0;padding:7px 7px;border-radius:50%}
+ .status:before {vertical-align:0;margin:0;width:7px;height:7px}
+ .top-actions {gap:8px}
+ .top-import {min-height:36px;padding:8px;border-radius:10px}
+ .top-import .ui-icon {width:19px;height:19px}
+ .top-import span {display:none}
+ .account-button {height:36px;width:36px;border-radius:10px}
+ .stage {padding:29px 18px 130px}
+ .library-intro {margin-bottom:23px}
+ .hero-heading {align-items:flex-start;flex-direction:column;gap:16px}
+ .page-title {font-size:39px;line-height:1.08}
+ .intro {margin-top:11px;font-size:13px;line-height:1.6}
+ .import-hero {min-height:42px;font-size:12px}
+ .discovery-panel {padding:14px 14px 12px;border-radius:19px;margin-bottom:28px}
+ .searchbox {min-height:49px;padding:0 12px;border-radius:12px;gap:9px}
+ .searchbox input {min-height:48px;font-size:13px}
+ .searchbox .searchicon {width:19px;height:19px}
+ .suggestions {gap:6px;margin:11px 0 13px}
+ .chip {font-size:10px;padding:7px 10px;min-height:31px}
+ .filter-line {gap:7px;padding-top:13px}
+ .filter-favorites,.filter-toggle {padding:9px 11px;font-size:11px;min-height:39px;border-radius:10px}
+ .season-controls {align-items:center;margin-top:12px;padding-top:12px}
+ .section-head {margin-bottom:15px}
+ .section-title {font-size:25px}
+ .catalog-grid {grid-template-columns:1fr;gap:16px}
+ .recipe-photo.card-photo {aspect-ratio:1.65}
+ .card-content {min-height:135px;padding:16px 18px 18px;gap:8px}
+ .recipe-card h3 {font-size:22px}
+ .favorite-button {width:39px;height:39px}
+ .empty-state {padding:48px 18px}
+ .page-heading {flex-direction:column;align-items:flex-start;gap:17px;margin:12px 0 27px}
+ .page-heading .button {font-size:12px}
+ .plan-overview {padding:12px;gap:10px}
+ .plan-overview .text-link {font-size:11px}
+ .meal-card>.recipe-photo.thumb {width:85px;height:81px}
+ .line-card.meal-card {flex-wrap:wrap;gap:12px;padding:12px;align-items:center}
+ .meal-info {flex:1;min-width:170px}
+ .meal-link .line-title {font-size:18px}
+ .line-actions {margin-left:auto;width:auto;flex-shrink:0;justify-content:flex-end}
+ .add-manual .field {min-width:0;font-size:13px}
+ .add-manual .button {font-size:12px;padding:9px 11px}
+ .shopping-row {flex-wrap:wrap;gap:8px;padding:13px 12px}
+ .shopping-content {flex:1;min-width:150px;flex-basis:calc(100% - 51px)}
+ .shopping-row .shopping-edit {margin-left:0}
+ .shopping-row .shopping-edit:first-of-type {margin-left:40px}
+ .shopping-row .remove-small {margin-left:0}
+ .nav-button {min-width:70px;padding:8px 11px;gap:5px}
+ .tabs {padding:7px 9px max(10px,env(safe-area-inset-bottom))}
+ .modal-backdrop {padding:0;align-items:flex-end}
+ .modal {width:100%;max-height:94dvh;border-radius:24px 24px 0 0;padding:24px 20px max(25px,env(safe-area-inset-bottom))}
+ .recipe-detail .recipe-photo.hero {height:225px}
+ .detail-body {padding:25px 21px max(32px,env(safe-area-inset-bottom))}
+ .detail-title {font-size:35px}
+ .detail-columns {grid-template-columns:1fr;gap:27px}
+ .detail-columns .section-title {font-size:24px;margin-bottom:10px}
+ .detail-footer {flex-wrap:wrap}
+ .detail-footer button {min-width:0;flex:1 1 43%}
+ .detail-footer button:last-child {flex-basis:100%}
+ .modal-head h2 {font-size:26px}
+}
+@media (min-width:641px) and (max-width:820px){.card-content{min-height:145px}}
+@media (prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+#sync-status.is-offline {background:#F6E8E1;color:#946A53}
+#sync-status.is-offline:before {background:#C78A6A}
+@media (max-width:350px){
+ .topbar {padding-left:11px;padding-right:11px}
+ .brand-lockup {gap:7px}
+ .brand-symbol {width:33px;height:33px;border-radius:10px}
+ .brand-symbol .ui-icon {width:20px;height:20px}
+ .brand {font-size:17px}
+ .brand-caption {display:none}
+ .top-actions {gap:5px}
+ .top-import,.account-button {min-width:32px;width:32px;height:34px;padding:7px}
+}
 </style></head><body><div id="app"></div><div id="auth-gate" aria-live="polite"></div><script src="./firebase-config.js"></script><script>// KeskonMange V2 — moteur métier indépendant de l'interface et de Firebase.
 const RAYONS = [
   ['fruits_legumes','Fruits & légumes','🥕'],
@@ -130,7 +447,7 @@ const TAG_GROUPS = [
 ];
 const allowedTags = new Set(TAG_GROUPS.flatMap(group=>group[1].map(item=>item[0])));
 
-function baseState(recipes=[]){return {version:2,recipes:clone(recipes),plan:[],shopping:{generated:{},purchased:{},manual:[],overrides:{}},catalogCustom:[],rayonOverrides:{}};}
+function baseState(recipes=[]){return {version:2,recipes:clone(recipes),favorites:[],plan:[],shopping:{generated:{},purchased:{},manual:[],overrides:{}},catalogCustom:[],rayonOverrides:{}};}
 
 function numeric(n,where){if(typeof n!=='number'||!Number.isFinite(n)||n<=0||n>100000)throw new Error(where+' : quantité invalide (nombre positif attendu)');return n;}
 function validText(t,where,limit=200){if(typeof t!=='string'||!t.trim()||t.length>limit)throw new Error(where+' : texte manquant ou trop long');return t.trim();}
@@ -153,6 +470,15 @@ function changeRecipeImage(state,recipeId,image){
   if(!recipe)throw new Error('Recette introuvable');
   recipe.image=normalizeRecipeImage(image);
   return out;
+}
+
+// Favoris de foyer : identifiants stables, pas de copie des recettes.
+function toggleFavorite(state,recipeId){
+  const next=clone(state);
+  if(!next.recipes.some(r=>r.id===recipeId))throw new Error('Recette introuvable');
+  const favorites=Array.isArray(next.favorites)?next.favorites:[];
+  next.favorites=favorites.includes(recipeId)?favorites.filter(id=>id!==recipeId):[...favorites,recipeId];
+  return next;
 }
 
 function validateImport(raw){
@@ -429,10 +755,10 @@ const PILOT_CATALOGUE = [{"id": "ail", "nom": "ail", "alias": ["gousses d’ail"
 const DEMO_IMPORT = {"version": 2, "recettes": [{"nom": "Émincé de poulet au potimarron", "portions": 2, "tempsMinutes": 22, "difficulte": "facile", "effort": {"manipulations": "faible", "vaisselle": "faible", "coordination": "faible"}, "tags": ["one_pot", "peu_de_vaisselle", "plat", "riche_en_proteines"], "saisonnalite": {"mode": "auto", "ingredientsPrincipaux": ["potimarron"]}, "ingredients": [{"nom": "blanc de poulet", "quantite": 260, "unite": "g", "meta": {"rayon": "viandes_poissons", "familles": ["volaille"], "alias": ["filet de poulet"]}}, {"nom": "potimarron", "quantite": 350, "unite": "g", "meta": {"rayon": "fruits_legumes", "familles": ["courge"], "alias": []}}, {"nom": "crème légère", "quantite": 80, "unite": "ml", "meta": {"rayon": "frais", "familles": [], "alias": []}}, {"nom": "huile d’olive", "quantite": 1, "unite": "cas", "meta": {"rayon": "epicerie", "familles": [], "alias": []}}], "etapes": ["Émincer {{q:blanc de poulet}} de blanc de poulet et {{q:potimarron}} de potimarron en petits dés.", "Faire chauffer {{q:huile d’olive}} d’huile d’olive, saisir le poulet 5 minutes puis ajouter le potimarron.", "Ajouter un fond d’eau, couvrir 10 à 12 minutes puis incorporer {{q:crème légère}} de crème légère."]}, {"nom": "Poulet à la butternut et au curry", "portions": 2, "tempsMinutes": 25, "difficulte": "facile", "effort": {"manipulations": "faible", "vaisselle": "faible", "coordination": "faible"}, "tags": ["one_pot", "peu_de_vaisselle", "plat", "riche_en_proteines"], "saisonnalite": {"mode": "auto", "ingredientsPrincipaux": ["courge butternut"]}, "ingredients": [{"nom": "blanc de poulet", "quantite": 250, "unite": "g", "meta": {"rayon": "viandes_poissons", "familles": ["volaille"], "alias": []}}, {"nom": "courge butternut", "quantite": 320, "unite": "g", "meta": {"rayon": "fruits_legumes", "familles": ["courge"], "alias": ["butternut"]}}, {"nom": "curry", "quantite": 2, "unite": "cac", "meta": {"rayon": "epicerie", "familles": [], "alias": []}}, {"nom": "lait de coco", "quantite": 100, "unite": "ml", "meta": {"rayon": "epicerie", "familles": [], "alias": []}}], "etapes": ["Tailler {{q:courge butternut}} de courge butternut en petits cubes.", "Faire dorer {{q:blanc de poulet}} de blanc de poulet et la courge dans une grande poêle.", "Ajouter {{q:curry}} de curry, {{q:lait de coco}} de lait de coco et un peu d’eau ; couvrir jusqu’à cuisson complète."]}, {"nom": "Poulet aux champignons et poireaux", "portions": 2, "tempsMinutes": 18, "difficulte": "facile", "effort": {"manipulations": "faible", "vaisselle": "faible", "coordination": "faible"}, "tags": ["one_pot", "peu_de_vaisselle", "plat", "riche_en_proteines"], "saisonnalite": {"mode": "auto", "ingredientsPrincipaux": ["poireau"]}, "ingredients": [{"nom": "blanc de poulet", "quantite": 250, "unite": "g", "meta": {"rayon": "viandes_poissons", "familles": ["volaille"], "alias": []}}, {"nom": "poireau", "quantite": 1, "unite": "pièce", "meta": {"rayon": "fruits_legumes", "familles": [], "alias": []}}, {"nom": "champignon de Paris", "quantite": 180, "unite": "g", "meta": {"rayon": "fruits_legumes", "familles": ["champignon"], "alias": []}}, {"nom": "crème légère", "quantite": 80, "unite": "ml", "meta": {"rayon": "frais", "familles": [], "alias": []}}], "etapes": ["Émincer {{q:poireau}} de poireau, {{q:champignon de Paris}} de champignons de Paris et {{q:blanc de poulet}} de blanc de poulet.", "Faire sauter le tout à feu moyen-vif dans une grande poêle en remuant.", "Ajouter {{q:crème légère}} de crème légère et poursuivre jusqu’à cuisson complète du poulet."]}, {"nom": "Poêlée poulet et aubergines", "portions": 2, "tempsMinutes": 20, "difficulte": "facile", "effort": {"manipulations": "faible", "vaisselle": "faible", "coordination": "faible"}, "tags": ["one_pot", "peu_de_vaisselle", "plat", "riche_en_proteines"], "saisonnalite": {"mode": "auto", "ingredientsPrincipaux": ["aubergine", "tomate"]}, "ingredients": [{"nom": "blanc de poulet", "quantite": 260, "unite": "g", "meta": {"rayon": "viandes_poissons", "familles": ["volaille"], "alias": []}}, {"nom": "aubergine", "quantite": 1, "unite": "pièce", "meta": {"rayon": "fruits_legumes", "familles": [], "alias": []}}, {"nom": "tomate", "quantite": 2, "unite": "pièce", "meta": {"rayon": "fruits_legumes", "familles": ["tomate"], "alias": []}}, {"nom": "ail", "quantite": 1, "unite": "gousse", "meta": {"rayon": "fruits_legumes", "familles": [], "alias": []}}], "etapes": ["Couper {{q:aubergine}} d’aubergine en petits cubes et {{q:blanc de poulet}} de blanc de poulet en lanières.", "Cuire à feu vif, puis ajouter {{q:tomate}} de tomate et {{q:ail}} d’ail haché.", "Couvrir jusqu’à complète cuisson du poulet."]}, {"nom": "Ratatouille minute", "portions": 2, "tempsMinutes": 25, "difficulte": "facile", "effort": {"manipulations": "faible", "vaisselle": "faible", "coordination": "faible"}, "tags": ["economique", "one_pot", "plat", "sans_lactose", "vegan", "vegetarien"], "saisonnalite": {"mode": "auto", "ingredientsPrincipaux": ["aubergine", "courgette", "tomate"]}, "ingredients": [{"nom": "aubergine", "quantite": 1, "unite": "pièce", "meta": {"rayon": "fruits_legumes", "familles": [], "alias": []}}, {"nom": "courgette", "quantite": 1, "unite": "pièce", "meta": {"rayon": "fruits_legumes", "familles": [], "alias": []}}, {"nom": "tomate", "quantite": 3, "unite": "pièce", "meta": {"rayon": "fruits_legumes", "familles": [], "alias": []}}, {"nom": "oignon", "quantite": 1, "unite": "pièce", "meta": {"rayon": "fruits_legumes", "familles": [], "alias": []}}], "etapes": ["Découper {{q:aubergine}} d’aubergine, {{q:courgette}} de courgette, {{q:tomate}} de tomate et {{q:oignon}} d’oignon en petits dés.", "Tout verser dans une sauteuse avec un fond d’eau et un filet d’huile.", "Laisser mijoter à couvert jusqu’à tendreté."]}, {"nom": "Pâtes à la tomate en conserve", "portions": 2, "tempsMinutes": 20, "difficulte": "facile", "effort": {"manipulations": "faible", "vaisselle": "modere", "coordination": "faible"}, "tags": ["economique", "italien", "plat", "sans_lactose", "vegan", "vegetarien"], "saisonnalite": {"mode": "auto", "ingredientsPrincipaux": []}, "ingredients": [{"nom": "pâtes", "quantite": 180, "unite": "g", "meta": {"rayon": "epicerie", "familles": [], "alias": []}}, {"nom": "tomates pelées en boîte", "quantite": 400, "unite": "g", "meta": {"rayon": "epicerie", "familles": ["tomate_conserve"], "alias": []}}, {"nom": "ail", "quantite": 1, "unite": "gousse", "meta": {"rayon": "fruits_legumes", "familles": [], "alias": []}}, {"nom": "huile d’olive", "quantite": 1, "unite": "cas", "meta": {"rayon": "epicerie", "familles": [], "alias": []}}], "etapes": ["Cuire {{q:pâtes}} de pâtes dans une casserole d’eau bouillante.", "Chauffer {{q:tomates pelées en boîte}} de tomates pelées en boîte avec {{q:ail}} d’ail et {{q:huile d’olive}} d’huile d’olive.", "Mélanger et servir."]}, {"nom": "Gratin de poireaux au comté", "portions": 2, "tempsMinutes": 35, "difficulte": "facile", "effort": {"manipulations": "modere", "vaisselle": "eleve", "coordination": "modere"}, "tags": ["four", "plat", "vegetarien"], "saisonnalite": {"mode": "auto", "ingredientsPrincipaux": ["poireau"]}, "ingredients": [{"nom": "poireau", "quantite": 3, "unite": "pièce", "meta": {"rayon": "fruits_legumes", "familles": [], "alias": []}}, {"nom": "comté", "quantite": 90, "unite": "g", "meta": {"rayon": "frais", "familles": [], "alias": []}}, {"nom": "crème légère", "quantite": 120, "unite": "ml", "meta": {"rayon": "frais", "familles": [], "alias": []}}], "etapes": ["Émincer et laver {{q:poireau}} de poireau.", "Cuire les poireaux 12 minutes à la poêle.", "Mettre dans un plat avec {{q:crème légère}} de crème légère et {{q:comté}} de comté, puis gratiner au four."]}, {"nom": "Gözleme épinards-feta", "portions": 2, "tempsMinutes": 40, "difficulte": "moyenne", "effort": {"manipulations": "eleve", "vaisselle": "modere", "coordination": "eleve"}, "tags": ["economique", "plat", "vegetarien"], "saisonnalite": {"mode": "auto", "ingredientsPrincipaux": ["épinards frais"]}, "ingredients": [{"nom": "farine de blé", "quantite": 200, "unite": "g", "meta": {"rayon": "epicerie", "familles": [], "alias": []}}, {"nom": "épinards frais", "quantite": 150, "unite": "g", "meta": {"rayon": "fruits_legumes", "familles": [], "alias": []}}, {"nom": "feta", "quantite": 100, "unite": "g", "meta": {"rayon": "frais", "familles": [], "alias": []}}, {"nom": "huile d’olive", "quantite": 1, "unite": "cas", "meta": {"rayon": "epicerie", "familles": [], "alias": []}}], "etapes": ["Pétrir {{q:farine de blé}} de farine de blé avec de l’eau et laisser reposer.", "Faire tomber {{q:épinards frais}} d’épinards frais et mélanger avec {{q:feta}} de feta.", "Étaler les galettes, garnir, replier et cuire à la poêle avec {{q:huile d’olive}} d’huile d’olive."]}, {"nom": "Lentilles au potimarron, tout-en-un", "portions": 2, "tempsMinutes": 28, "difficulte": "facile", "effort": {"manipulations": "faible", "vaisselle": "faible", "coordination": "faible"}, "tags": ["economique", "one_pot", "peu_de_vaisselle", "plat", "vegan", "vegetarien"], "saisonnalite": {"mode": "auto", "ingredientsPrincipaux": ["potimarron"]}, "ingredients": [{"nom": "lentilles en conserve", "quantite": 400, "unite": "g", "meta": {"rayon": "epicerie", "familles": [], "alias": []}}, {"nom": "potimarron", "quantite": 280, "unite": "g", "meta": {"rayon": "fruits_legumes", "familles": ["courge"], "alias": []}}, {"nom": "oignon", "quantite": 1, "unite": "pièce", "meta": {"rayon": "fruits_legumes", "familles": [], "alias": []}}, {"nom": "bouillon de légumes", "quantite": 1, "unite": "cube", "meta": {"rayon": "epicerie", "familles": [], "alias": []}}], "etapes": ["Couper finement {{q:potimarron}} de potimarron et {{q:oignon}} d’oignon.", "Mettre {{q:lentilles en conserve}} de lentilles en conserve et {{q:bouillon de légumes}} de bouillon dans une casserole avec un fond d’eau.", "Laisser mijoter en remuant jusqu’à ce que la courge soit tendre."]}, {"nom": "Bol récupération poulet et riz", "portions": 2, "tempsMinutes": 25, "difficulte": "facile", "effort": {"manipulations": "modere", "vaisselle": "modere", "coordination": "modere"}, "tags": ["familial", "plat", "post_entrainement", "riche_en_proteines"], "saisonnalite": {"mode": "auto", "ingredientsPrincipaux": ["carotte"]}, "ingredients": [{"nom": "blanc de poulet", "quantite": 270, "unite": "g", "meta": {"rayon": "viandes_poissons", "familles": ["volaille"], "alias": []}}, {"nom": "riz", "quantite": 160, "unite": "g", "meta": {"rayon": "epicerie", "familles": [], "alias": []}}, {"nom": "carotte", "quantite": 2, "unite": "pièce", "meta": {"rayon": "fruits_legumes", "familles": [], "alias": []}}, {"nom": "sauce soja", "quantite": 1, "unite": "cas", "meta": {"rayon": "epicerie", "familles": [], "alias": []}}], "etapes": ["Mettre {{q:riz}} de riz à cuire selon l’emballage.", "Faire sauter {{q:blanc de poulet}} de blanc de poulet et {{q:carotte}} de carotte émincée dans une poêle.", "Assaisonner avec {{q:sauce soja}} de sauce soja et servir sur le riz."]}, {"nom": "Salade de tomates et mozzarella", "portions": 2, "tempsMinutes": 10, "difficulte": "facile", "effort": {"manipulations": "faible", "vaisselle": "faible", "coordination": "faible"}, "tags": ["plat", "sans_cuisson", "vegetarien"], "saisonnalite": {"mode": "auto", "ingredientsPrincipaux": ["tomate"]}, "ingredients": [{"nom": "tomate", "quantite": 4, "unite": "pièce", "meta": {"rayon": "fruits_legumes", "familles": [], "alias": []}}, {"nom": "mozzarella", "quantite": 180, "unite": "g", "meta": {"rayon": "frais", "familles": [], "alias": []}}, {"nom": "basilic frais", "quantite": 6, "unite": "feuille", "meta": {"rayon": "fruits_legumes", "familles": [], "alias": []}}, {"nom": "huile d’olive", "quantite": 1, "unite": "cas", "meta": {"rayon": "epicerie", "familles": [], "alias": []}}], "etapes": ["Laver et couper {{q:tomate}} de tomate.", "Égoutter {{q:mozzarella}} de mozzarella.", "Assembler avec {{q:basilic frais}} de basilic frais, assaisonner avec {{q:huile d’olive}} d’huile d’olive et servir."]}]};
 
 // Pilote V2 Firebase : projet de TEST uniquement, jamais de lecture/écriture sur la V1.
-const UI={view:'library',query:'',showOut:false,filtersOpen:false,selectedTags:[],modal:null,recipeId:null,detailServings:2,cookStep:0,cookMealId:null,cookShowIngredients:false,importRecipes:null,importChoices:{},importPlan:true};
+const UI={view:'library',query:'',showOut:false,filtersOpen:false,selectedTags:[],modal:null,recipeId:null,detailServings:2,cookStep:0,cookMealId:null,cookShowIngredients:false,importRecipes:null,importChoices:{},importPlan:true,onlyFavorites:false};
 let STATE=baseState();
 let SYNC=null;let SYNC_QUEUE=Promise.resolve();let BUSY=0;let SYNC_CONNECTED=false;
-function setStatus(text){const el=document.getElementById('sync-status');if(el)el.textContent=text;}
+function setStatus(text){const el=document.getElementById('sync-status');if(el){el.textContent=text;el.classList.toggle('is-offline',/déconnecté|hors connexion|erreur|refusé|invalide/i.test(text));el.title=text;}}
 function gate(title,body,showLogin=false,uid=''){
  const el=document.getElementById('auth-gate');
  el.hidden=false;
@@ -458,14 +784,35 @@ const idsel=s=>esc(s);
 const months=['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
 const labelTag=Object.fromEntries(TAG_GROUPS.flatMap(group=>group[1]));
 const effortName={faible:'Faible',modere:'Modéré',eleve:'Élevé'};
-const navItems=[['library','▤','Recettes'],['planning','◷','Planning'],['courses','▦','Courses']];
+// Iconographie SVG originale (aucune dépendance, lisible en Retina).
+const ICONS={
+ book:'<rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 3v18M12 8h5M12 12h5"/>',
+ clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+ search:'<circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/>',
+ basket:'<path d="M3 9h18l-2 11H5L3 9ZM8 9l4-6 4 6"/><path d="M9 12v5m6-5v5"/>',
+ list:'<rect x="4" y="5" width="16" height="16" rx="2"/><path d="M8 3v4M16 3v4M4 10h16M8 14h8M8 18h5"/>',
+ plus:'<path d="M12 5v14M5 12h14"/>',
+ heart:'<path d="M20.7 8.3c0 4.6-8.7 10.1-8.7 10.1S3.3 12.9 3.3 8.3a4.6 4.6 0 0 1 8.7-2 4.6 4.6 0 0 1 8.7 2Z"/>',
+ sliders:'<path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="2" fill="currentColor" stroke="none"/><circle cx="16" cy="17" r="2" fill="currentColor" stroke="none"/>',
+ arrow:'<path d="M4 12h16m-6-6 6 6-6 6"/>',
+ leaf:'<path d="M20 4C12 4 4 8 4 16a4 4 0 0 0 4 4c8 0 12-8 12-16ZM5 19c4-5 7-7 11-10"/>',
+ chef:'<path d="M6 13a4 4 0 0 1 0-8 6 6 0 0 1 12 0 4 4 0 0 1 0 8v6H6v-6ZM6 15h12"/>',
+ logout:'<path d="M10 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h5M14 16l4-4-4-4M7 12h11"/>',
+ check:'<path d="m5 12 4 4L19 6"/>',
+ spark:'<path d="m12 2 2.3 7.7L22 12l-7.7 2.3L12 22l-2.3-7.7L2 12l7.7-2.3L12 2Z"/>',
+ x:'<path d="M5 5l14 14M19 5 5 19"/>'
+};
+const icon=(name,extra='')=>`<svg class="ui-icon ${extra}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[name]||ICONS.book}</svg>`;
+const navItems=[['library','book','Recettes'],['planning','list','Planning'],['courses','basket','Courses']];
+const isFavorite=id=>Array.isArray(STATE.favorites)&&STATE.favorites.includes(id);
+const favoriteButton=(id,place='card')=>`<button type="button" class="favorite-button ${place==='detail'?'favorite-detail':''} ${isFavorite(id)?'is-favorite':''}" data-action="toggle-favorite" data-id="${idsel(id)}" aria-pressed="${isFavorite(id)}" aria-label="${isFavorite(id)?'Retirer des':'Ajouter aux'} favoris">${icon('heart')}</button>`;
 let toastTimer;
 function showToast(message){const t=document.getElementById('toast');if(!t)return;t.textContent=message;t.classList.add('visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove('visible'),3000);}
 function appShell(){
- document.getElementById('app').innerHTML=`<div class="app"><header class="topbar"><div class="brand">Keskon<span>Mange</span><span style="font-size:12px;vertical-align:top;letter-spacing:0;margin-left:3px">V2</span></div><div class="top-actions"><span class="status" id="sync-status">Connexion…</span><button class="button small ghost" data-action="sign-out">Quitter</button><button class="button small" data-action="import-open">+ Import JSON</button></div></header><main class="stage" id="stage"></main><nav class="tabs" id="tabs" aria-label="Navigation principale"></nav></div><div id="overlay"></div><div id="toast" class="toast" role="status" aria-live="polite"></div>`;
+ document.getElementById('app').innerHTML=`<div class="app"><header class="topbar"><div class="brand-lockup"><div class="brand-symbol">${icon('chef')}</div><div><div class="brand">Keskon<span>Mange</span><sup>V2</sup></div><div class="brand-caption">VOTRE CUISINE AU QUOTIDIEN</div></div></div><div class="top-actions"><span class="status" id="sync-status">Connexion…</span><button class="button small top-import" data-action="import-open">${icon('plus')} <span>Importer</span></button><button class="account-button" data-action="sign-out" aria-label="Se déconnecter" title="Se déconnecter">${icon('logout')}</button></div></header><main class="stage" id="stage"></main><nav class="tabs" id="tabs" aria-label="Navigation principale"></nav></div><div id="overlay"></div><div id="toast" class="toast" role="status" aria-live="polite"></div>`;
  renderView();
 }
-function renderNav(){document.getElementById('tabs').innerHTML=navItems.map(([id,ic,label])=>`<button data-action="nav" data-view="${id}" class="nav-button ${UI.view===id?'active':''}" aria-current="${UI.view===id?'page':'false'}"><span class="navicon">${ic}</span>${label}</button>`).join('');}
+function renderNav(){document.getElementById('tabs').innerHTML=navItems.map(([id,ic,label])=>`<button data-action="nav" data-view="${id}" class="nav-button ${UI.view===id?'active':''}" aria-current="${UI.view===id?'page':'false'}">${icon(ic,'navicon')}<span>${label}</span></button>`).join('');}
 function renderView(){renderNav();const el=document.getElementById('stage');if(!el)return;
  if(UI.view==='library')el.innerHTML=renderLibrary();
  if(UI.view==='planning')el.innerHTML=renderPlanning();
@@ -473,59 +820,59 @@ function renderView(){renderNav();const el=document.getElementById('stage');if(!
 }
 function recipePhoto(recipe,kind='thumb'){
  const image=recipe.image?.url?recipe.image:null;
- const css=kind==='hero'?'recipe-photo hero':'recipe-photo thumb';
+ const css='recipe-photo '+(kind==='hero'?'hero':kind==='card'?'card-photo':'thumb');
  const alt='Photo du plat : '+recipe.nom;
- return `<div class="${css}">${image?`<img data-recipe-image loading="lazy" decoding="async" referrerpolicy="no-referrer" src="${esc(image.url)}" alt="${esc(alt)}"><span class="recipe-photo-fallback" hidden>Photo indisponible</span>`:`<span class="recipe-photo-fallback">Pas de photo</span>`}</div>`;
+ return `<div class="${css}">${image?`<img data-recipe-image loading="lazy" decoding="async" referrerpolicy="no-referrer" src="${esc(image.url)}" alt="${esc(alt)}"><span class="recipe-photo-fallback" hidden>${icon('chef')}<small>Photo indisponible</small></span>`:`<span class="recipe-photo-fallback">${icon('chef')}<small>À savourer</small></span>`}</div>`;
 }
 function recCard(x,more=''){
  const r=x.recipe||x,s=x.season||seasonOf(r,new Date().getMonth()+1);
- return `<button class="recipe-card" data-action="recipe" data-id="${idsel(r.id)}"><div class="r-top"><div><h3>${esc(r.nom)}</h3><p style="margin-top:7px">${esc(r.tempsMinutes)} min · ${esc(r.portions)} parts · ${esc(r.difficulte||'Difficulté inconnue')}</p></div>${recipePhoto(r)}</div><div class="rec-tags">${s==='in'?'<span class="mini-tag season">De saison</span>':s==='out'?'<span class="mini-tag off">Hors saison</span>':''}${(r.effort?.manipulations==='faible'&&r.effort?.vaisselle==='faible')?'<span class="mini-tag">Peu de manip + vaisselle</span>':''}${(r.tags||[]).slice(0,2).map(t=>`<span class="mini-tag">${esc(labelTag[t]||t)}</span>`).join('')}${more?`<span class="mini-tag close">${esc(more)}</span>`:''}</div></button>`;
+ const badges=[s==='in'?'<span class="mini-tag season">De saison</span>':'',...(r.tags||[]).slice(0,2).map(t=>`<span class="mini-tag">${esc(labelTag[t]||t)}</span>`) ].filter(Boolean);
+ return `<article class="recipe-card"><button type="button" class="recipe-card-main" data-action="recipe" data-id="${idsel(r.id)}" aria-label="Ouvrir ${esc(r.nom)}"><div class="card-media">${recipePhoto(r,'card')}${s==='out'?'<span class="image-badge">Hors saison</span>':''}</div><div class="card-content"><div class="card-meta">${icon('clock')} ${esc(r.tempsMinutes)} min <span class="meta-dot">·</span> ${esc(r.portions)} personnes</div><h3>${esc(r.nom)}</h3><div class="rec-tags">${badges.slice(0,2).join('')}${more?`<span class="mini-tag close">${esc(more)}</span>`:''}</div></div></button>${favoriteButton(r.id)}</article>`;
 }
 function renderSearchResults(){
  const obj=searchRecipes(STATE.recipes,UI.query,{showOut:UI.showOut,selectedTags:UI.selectedTags});
- const filtering=!!UI.query.trim()||UI.selectedTags.length>0;
- let out=`<div class="row-between"><h2 class="section-title">${filtering?'Résultats de recherche':'Idées pour '+esc(months[new Date().getMonth()])}</h2><span class="counter">${obj.results.length} recette${obj.results.length>1?'s':''}</span></div>`;
- if(obj.parsed.maxTime!==null)out+=`<div class="filter-box"><span>⏱ Cible : ${obj.parsed.maxTime} min maximum</span><span>Propositions proches : +5 min</span>${obj.parsed.flags.simple?'<span>🍳 Effort réduit</span>':''}</div>`;
- if(obj.results.length)out+=`<div class="catalog-grid">${obj.results.map(rec=>recCard(rec)).join('')}</div>`;
- else out+=`<div class="placeholder">Aucune recette correspondant à tous les critères. Essaie un filtre moins restrictif ou affiche les recettes hors saison.</div>`;
- if(obj.near.length)out+=`<h2 class="section-title">À quelques minutes près</h2><div class="catalog-grid">${obj.near.map(rec=>recCard(rec,'+'+rec.over+' min')).join('')}</div>`;
- if(obj.outseason.length&&!UI.showOut)out+=`<p class="footnote">${obj.outseason.length} recette(s) hors saison non affichée(s). <button class="badge-link" data-action="show-out">Voir aussi hors saison</button></p>`;
+ const filterFav=rows=>UI.onlyFavorites?rows.filter(row=>isFavorite((row.recipe||row).id)):rows;
+ const results=filterFav(obj.results),near=filterFav(obj.near),outseason=filterFav(obj.outseason);
+ const filtering=!!UI.query.trim()||UI.selectedTags.length>0||UI.onlyFavorites;
+ let out=`<div class="row-between section-head"><div><span class="section-kicker">${filtering?'VOTRE SÉLECTION':'À DÉCOUVRIR'}</span><h2 class="section-title">${UI.onlyFavorites?'Mes coups de cœur':filtering?'Résultats de recherche':'À cuisiner en '+esc(months[new Date().getMonth()])}</h2></div><span class="counter">${results.length} recette${results.length>1?'s':''}</span></div>`;
+ if(obj.parsed.maxTime!==null)out+=`<div class="filter-box"><span>Objectif : ${obj.parsed.maxTime} min max.</span><span>Alternatives proches : +5 min</span>${obj.parsed.flags.simple?'<span>Préparation simplifiée</span>':''}</div>`;
+ if(results.length)out+=`<div class="catalog-grid">${results.map(rec=>recCard(rec)).join('')}</div>`;
+ else out+=`<div class="empty-state"><div class="empty-illustration">${icon(UI.onlyFavorites?'heart':'chef')}</div><h3>${UI.onlyFavorites?'Aucun favori pour le moment':STATE.recipes.length?'Aucune recette trouvée':'Votre carnet commence ici'}</h3><p>${UI.onlyFavorites?'Touchez le cœur d’une recette pour la retrouver ici.':STATE.recipes.length?'Essayez d’autres mots-clés ou assouplissez les filtres.':'Importez vos premières recettes et retrouvez-les au même endroit.'}</p>${!STATE.recipes.length?`<button class="button" data-action="import-open">${icon('plus')} Importer une recette</button>`:''}</div>`;
+ if(near.length)out+=`<h2 class="section-title secondary-section">À quelques minutes près</h2><div class="catalog-grid">${near.map(rec=>recCard(rec,'+'+rec.over+' min')).join('')}</div>`;
+ if(outseason.length&&!UI.showOut)out+=`<p class="footnote">${outseason.length} recette(s) hors saison masquée(s). <button class="badge-link" data-action="show-out">Afficher aussi ces recettes</button></p>`;
  return out;
 }
 function renderLibrary(){
  const mm=months[new Date().getMonth()];
- const presets=['poulet courge simple - de 20min','vegan','post training','one pot'];
- const filters=UI.filtersOpen?`<div class="filters-panel">${TAG_GROUPS.map(([group,choices])=>`<section class="facet-group"><h3>${esc(group)}</h3><div class="facet-choices">${choices.map(([id,label])=>`<button class="facet-chip ${UI.selectedTags.includes(id)?'selected':''}" type="button" data-action="filter-tag" data-tag="${esc(id)}" aria-pressed="${UI.selectedTags.includes(id)}">${UI.selectedTags.includes(id)?'✓ ':''}${esc(label)}</button>`).join('')}</div></section>`).join('')}<p class="footnote">* Les filtres d'exclusion sont indicatifs : pour une allergie ou une maladie cœliaque, vérifie toujours les ingrédients et les étiquettes.</p></div>`:'';
- return `<div class="eyebrow">Toutes tes idées, au même endroit</div><div class="row-between"><h1 class="page-title">Mes recettes</h1><button class="button ghost" data-action="import-open">+ Importer</button></div>
- <div class="searchbox"><span class="searchicon">⌕</span><input id="search-input" value="${esc(UI.query)}" autocomplete="off" aria-label="Rechercher une recette" placeholder="Ex. poulet simple - de 20min, veggie…"></div>
- <div class="suggestions">${presets.map(x=>`<button class="chip" data-action="suggest" data-query="${esc(x)}">${esc(x)}</button>`).join('')}</div>
- <div class="row-between facet-toolbar"><button type="button" class="button small ghost" data-action="toggle-filters" aria-expanded="${UI.filtersOpen}">${UI.filtersOpen?'− Masquer les filtres':'+ Filtres & catégories'} ${UI.selectedTags.length?'('+UI.selectedTags.length+')':''}</button>${(UI.selectedTags.length||UI.query)?'<button class="badge-link" data-action="clear-filters">Effacer les filtres</button>':''}</div>
- ${filters}<div class="row-between season-controls"><span class="counter">Saison automatique : ${esc(mm)} · France</span><label class="check-label"><input type="checkbox" id="show-out" ${UI.showOut?'checked':''}> Inclure hors saison</label></div>
- <div id="search-results" aria-live="polite">${renderSearchResults()}</div>
- <p class="footnote">${STATE.recipes.length} recette(s) partagée(s) sur Firebase de test. Les catégories alimentaires restent indicatives. Les changements sont confirmés après écriture serveur.</p>`;
+ const presets=['Rapide & facile','végétarien','post training','one pot'];
+ const queries=['simple - de 25 min','végétarien','post training','one pot'];
+ const filters=UI.filtersOpen?`<div class="filters-panel">${TAG_GROUPS.map(([group,choices])=>`<section class="facet-group"><h3>${esc(group)}</h3><div class="facet-choices">${choices.map(([id,label])=>`<button class="facet-chip ${UI.selectedTags.includes(id)?'selected':''}" type="button" data-action="filter-tag" data-tag="${esc(id)}" aria-pressed="${UI.selectedTags.includes(id)}">${UI.selectedTags.includes(id)?'✓ ':''}${esc(label)}</button>`).join('')}</div></section>`).join('')}<p class="footnote">* Les mentions alimentaires sont indicatives. En cas d'allergie, vérifiez les ingrédients et les étiquettes.</p></div>`:'';
+ const favCount=STATE.favorites?.filter(id=>STATE.recipes.some(r=>r.id===id)).length||0;
+ return `<section class="library-intro"><div class="eyebrow">LE CARNET DE LA MAISON <span class="eyebrow-dash"></span> ${esc(mm.toUpperCase())}</div><div class="row-between hero-heading"><div><h1 class="page-title">Qu’est-ce qu’on <em>mange ?</em></h1><p class="intro">De bonnes idées, de belles assiettes. Tout votre répertoire de recettes, au même endroit.</p></div><button class="button import-hero" data-action="import-open">${icon('plus')} Ajouter une recette</button></div></section>
+ <section class="discovery-panel"><label class="searchbox" for="search-input">${icon('search','searchicon')}<input id="search-input" value="${esc(UI.query)}" autocomplete="off" aria-label="Rechercher une recette" placeholder="Un plat, un ingrédient, une envie…"></label><div class="suggestions">${presets.map((x,i)=>`<button class="chip" data-action="suggest" data-query="${esc(queries[i])}">${esc(x)}</button>`).join('')}</div><div class="filter-line"><button class="filter-favorites ${UI.onlyFavorites?'active':''}" data-action="toggle-favorites" aria-pressed="${UI.onlyFavorites}">${icon('heart')} Favoris <span class="fav-count">${favCount}</span></button><button type="button" class="filter-toggle ${UI.filtersOpen?'active':''}" data-action="toggle-filters" aria-expanded="${UI.filtersOpen}">${icon('sliders')} ${UI.filtersOpen?'Masquer les filtres':'Tous les filtres'}${UI.selectedTags.length?' · '+UI.selectedTags.length:''}</button>${(UI.selectedTags.length||UI.query||UI.onlyFavorites)?'<button class="clear-filter" data-action="clear-filters">Effacer</button>':''}</div>${filters}<div class="season-controls"><span>${icon('leaf')} Sélection de saison · ${esc(mm)}</span><label class="check-label"><input type="checkbox" id="show-out" ${UI.showOut?'checked':''}> Hors saison</label></div></section>
+ <div id="search-results" aria-live="polite">${renderSearchResults()}</div><p class="footnote">${STATE.recipes.length} recette(s) partagée(s) dans votre foyer. Les modifications sont enregistrées sur Firebase.</p>`;
 }
 
 function renderPlanning(){
- let out=`<div class="eyebrow">Sans date imposée</div><div class="row-between"><h1 class="page-title">À cuisiner</h1><button class="button mint" data-action="refresh-courses">↻ Actualiser les courses</button></div><p class="intro">Touche le nom d'un plat pour ouvrir sa fiche, ou lance directement le mode cuisine.</p>`;
- if(!STATE.plan.length)out+=`<div class="placeholder">Aucun repas prévu. Ouvre une recette pour l'ajouter au planning.</div>`;
- else out+=`<div class="list-stack">${STATE.plan.map(m=>{const r=STATE.recipes.find(x=>x.id===m.recipeId);if(!r)return'';return `<div class="line-card meal-card"><div class="meal-info"><button class="meal-link" data-action="recipe" data-id="${idsel(r.id)}" data-meal-id="${idsel(m.id)}"><span class="line-title">${esc(r.nom)}</span><span class="line-sub">${r.tempsMinutes} min · ${m.portions} parts · Ouvrir la fiche →</span></button><button class="button small ghost" data-action="cook" data-id="${idsel(r.id)}" data-meal-id="${idsel(m.id)}">Mode cuisine</button></div><div class="line-actions"><div class="stepper"><button data-action="meal-portions" data-id="${idsel(m.id)}" data-delta="-1" aria-label="Retirer une portion">−</button><strong>${m.portions}</strong><button data-action="meal-portions" data-id="${idsel(m.id)}" data-delta="1" aria-label="Ajouter une portion">+</button></div><button class="button small ghost" data-action="remove-meal" data-id="${idsel(m.id)}">Retirer</button></div></div>`}).join('')}</div>`;
- out+=`<div class="notice green"><strong>Courses actualisées sans doublons :</strong> tes corrections manuelles, tes achats et tes changements de rayon restent conservés.</div><button class="button" data-action="nav" data-view="library">Parcourir les recettes</button>`;
+ let out=`<div class="eyebrow">VOTRE ORGANISATION</div><div class="row-between page-heading"><div><h1 class="page-title">À cuisiner<span class="title-period">.</span></h1><p class="intro">Une liste libre, sans calendrier imposé. Vos prochains bons petits plats.</p></div><button class="button ghost" data-action="nav" data-view="library">${icon('plus')} Ajouter un plat</button></div>`;
+ if(!STATE.plan.length)out+=`<div class="empty-state spacious"><div class="empty-illustration">${icon('list')}</div><h3>Et si on préparait quelque chose ?</h3><p>Choisissez une recette et ajoutez-la ici. Elle alimentera automatiquement votre liste de courses.</p><button class="button" data-action="nav" data-view="library">Explorer les recettes ${icon('arrow')}</button></div>`;
+ else out+=`<div class="plan-overview"><span>${icon('chef')} ${STATE.plan.length} plat${STATE.plan.length>1?'s':''} au programme</span><button class="text-link" data-action="refresh-courses">Actualiser les courses ${icon('arrow')}</button></div><div class="list-stack planning-stack">${STATE.plan.map(m=>{const r=STATE.recipes.find(x=>x.id===m.recipeId);if(!r)return'';return `<article class="line-card meal-card">${recipePhoto(r)}<div class="meal-info"><button class="meal-link" data-action="recipe" data-id="${idsel(r.id)}" data-meal-id="${idsel(m.id)}"><span class="line-title">${esc(r.nom)}</span><span class="line-sub">${icon('clock')} ${r.tempsMinutes} min <span class="meta-dot">·</span> ${m.portions} pers.</span></button><button class="meal-cook" data-action="cook" data-id="${idsel(r.id)}" data-meal-id="${idsel(m.id)}">Passer en cuisine ${icon('arrow')}</button></div><div class="line-actions"><div class="stepper"><button data-action="meal-portions" data-id="${idsel(m.id)}" data-delta="-1" aria-label="Retirer une portion">−</button><strong>${m.portions}</strong><button data-action="meal-portions" data-id="${idsel(m.id)}" data-delta="1" aria-label="Ajouter une portion">+</button></div><button class="remove-small" data-action="remove-meal" data-id="${idsel(m.id)}" aria-label="Retirer ce plat">${icon('x')}</button></div></article>`}).join('')}</div><div class="plan-bottom"><button class="button" data-action="refresh-courses">${icon('basket')} Mettre à jour les courses</button></div>`;
  return out;
 }
 
 function renderCourses(){
  const rows=courseRows(STATE,PILOT_CATALOGUE),pending=rows.filter(r=>r.type!=='purchased'&&!(r.type==='manual'&&r.checked)),done=rows.filter(r=>r.type==='purchased'||r.type==='manual'&&r.checked);
- let out=`<div class="eyebrow">Liste du foyer</div><div class="row-between"><h1 class="page-title">Courses</h1><button class="button mint" data-action="refresh-courses">↻ Actualiser</button></div><p class="intro">Touchez « Quantité » pour changer la quantité ET l'unité. Les corrections seront mémorisées lors du recalcul.</p><form id="manual-form" class="add-manual"><input class="field" name="article" placeholder="Ex. 500 g riz, 2 citrons…" required aria-label="Nouvel article"><button class="button" type="submit">Ajouter</button></form><div class="row-between"><span class="counter">${pending.length} à acheter · ${done.length} acheté(s)</span><span class="counter">Quantité, unité et rayon modifiables</span></div>`;
+ let out=`<div class="eyebrow">LA LISTE DU FOYER</div><div class="row-between page-heading"><div><h1 class="page-title">Les courses<span class="title-period">.</span></h1><p class="intro">Tout ce qu’il vous faut, rangé par rayon. Cochez au fur et à mesure.</p></div><button class="button ghost" data-action="refresh-courses">Actualiser ${icon('arrow')}</button></div><form id="manual-form" class="add-manual"><input class="field" name="article" placeholder="Ajouter un article (ex. 2 citrons)" required aria-label="Nouvel article"><button class="button" type="submit" aria-label="Ajouter un article">${icon('plus')} <span>Ajouter</span></button></form><div class="shopping-summary"><span>${pending.length} article${pending.length>1?'s':''} à acheter</span><span>${done.length} coché${done.length>1?'s':''}</span></div>`;
  const print=(items,checked)=>{
    const groups=new Map();for(const r of items){const k=r.rayon||'a_classer';if(!groups.has(k))groups.set(k,[]);groups.get(k).push(r);}
-   let str='';for(const [rid,title,emoji] of RAYONS){if(!groups.has(rid))continue;str+=`<h3 class="rayon-head"><span>${emoji}</span>${esc(title)}</h3><div class="list-stack">`;
-   str+=groups.get(rid).map(r=>`<div class="shopping-row ${checked?'is-bought':''}"><button class="shopping-check ${checked?'checked':''}" data-action="toggle-check" data-type="${esc(r.type)}" data-id="${idsel(r.id)}" aria-label="${checked?'Décocher':'Cocher'} ${esc(r.nom)}">${checked?'✓':''}</button><div class="shopping-content"><div class="line-title">${esc(r.nom)}</div><div class="line-sub">${esc(formatQuantity(r.quantite,r.unite))}${r.type==='manual'?' · Ajout manuel':r.type==='purchased'?' · Déjà acheté':r.customized?' · Quantité personnalisée':''}</div></div><button class="button small ghost" data-action="edit-course" data-type="${esc(r.type)}" data-id="${idsel(r.id)}">Quantité</button><button class="button small ghost" data-action="edit-rayon" data-ing="${idsel(r.ingredientId)}" data-name="${esc(r.nom)}">Rayon</button>${r.type==='manual'?`<button class="button small danger" data-action="delete-manual" data-id="${idsel(r.id)}" aria-label="Supprimer">×</button>`:''}</div>`).join('');
-   str+='</div>';}return str;
+   let str='';for(const [rid,title,emoji] of RAYONS){if(!groups.has(rid))continue;str+=`<div class="rayon-group"><h3 class="rayon-head"><span class="rayon-emoji">${emoji}</span>${esc(title)}</h3><div class="list-stack shopping-stack">`;
+   str+=groups.get(rid).map(r=>`<div class="shopping-row ${checked?'is-bought':''}"><button class="shopping-check ${checked?'checked':''}" data-action="toggle-check" data-type="${esc(r.type)}" data-id="${idsel(r.id)}" aria-label="${checked?'Décocher':'Cocher'} ${esc(r.nom)}">${checked?icon('check'):''}</button><div class="shopping-content"><div class="line-title">${esc(r.nom)}</div><div class="line-sub">${esc(formatQuantity(r.quantite,r.unite))}${r.customized?' · Personnalisé':''}</div></div><button class="shopping-edit" data-action="edit-course" data-type="${esc(r.type)}" data-id="${idsel(r.id)}">Quantité</button><button class="shopping-edit" data-action="edit-rayon" data-ing="${idsel(r.ingredientId)}" data-name="${esc(r.nom)}">Rayon</button>${r.type==='manual'?`<button class="remove-small" data-action="delete-manual" data-id="${idsel(r.id)}" aria-label="Supprimer">${icon('x')}</button>`:''}</div>`).join('');
+   str+='</div></div>';}return str;
  };
- if(!pending.length)out+='<div class="placeholder" style="margin:20px 0">Aucun article à acheter. Ajoute un repas au planning ou un article manuellement.</div>';
+ if(!pending.length)out+=`<div class="empty-state"><div class="empty-illustration">${icon('basket')}</div><h3>Tout est prêt !</h3><p>Ajoutez un plat au planning ou un article manuellement pour remplir la liste.</p></div>`;
  else out+=print(pending,false);
- if(done.length)out+=`<h2 class="section-title">Déjà acheté</h2>${print(done,true)}`;
- out+=`<p class="footnote">Liste commune stockée sur le Firebase de test. Si la connexion est coupée, les modifications sont refusées plutôt que de risquer une perte.</p>`;
+ if(done.length)out+=`<div class="completed-heading"><h2 class="section-title">Dans le panier</h2><span>${done.length} acheté${done.length>1?'s':''}</span></div>${print(done,true)}`;
+ out+=`<p class="footnote">La liste est partagée et synchronisée avec Firebase. Vous pouvez corriger les quantités, unités et rayons.</p>`;
  return out;
 }
 
@@ -534,7 +881,7 @@ function closeModal(){document.getElementById('overlay').innerHTML='';document.b
 function head(title,over=''){return `<div class="modal-head"><div><div class="eyebrow">${esc(over)}</div><h2>${esc(title)}</h2></div><button class="close" data-action="close-modal" aria-label="Fermer">×</button></div>`;}
 function recipeDetails(id){const r=STATE.recipes.find(x=>x.id===id);if(!r)return;UI.recipeId=id;UI.detailServings=UI.detailServings||r.portions;
  const factor=UI.detailServings/r.portions;UI.modal='recipe';
- openModal(head(r.nom,'Fiche recette')+`${recipePhoto(r,'hero')}<div class="photo-controls"><button class="button small ghost" data-action="edit-image" data-id="${idsel(r.id)}">📷 Modifier la photo</button>${r.image?.source?`<span class="footnote">Source : ${esc(r.image.source)}</span>`:''}</div><div class="detail-grid"><div class="stat"><span class="pill-label">Durée totale</span><strong>${r.tempsMinutes} min</strong></div><div class="stat"><span class="pill-label">Portions</span><div class="stepper" style="margin-top:4px"><button data-action="detail-portions" data-delta="-1">−</button><strong>${UI.detailServings}</strong><button data-action="detail-portions" data-delta="1">+</button></div></div></div><div class="rec-tags">${(r.tags||[]).map(t=>`<span class="mini-tag">${esc(labelTag[t]||t)}</span>`).join('')}</div><h3 class="section-title">Ingrédients</h3>${r.ingredients.map(g=>`<div class="ingrow"><span>${esc(g.nom)}</span><strong>${esc(formatQuantity(g.quantite*factor,g.unite))}</strong></div>`).join('')}<h3 class="section-title">Préparation</h3><ol class="steps">${r.etapes.map(s=>`<li>${htmlStep(s,r,UI.detailServings)}</li>`).join('')}</ol><div class="modal-footer"><button class="button ghost" data-action="edit-recipe" data-id="${idsel(r.id)}">✎ Modifier</button><button class="button ghost" data-action="cook" data-id="${idsel(r.id)}">Mode cuisine</button><button class="button" data-action="add-to-plan" data-id="${idsel(r.id)}">+ Ajouter ${UI.detailServings} parts au planning</button></div>`);
+ openModal(`<div class="recipe-detail"><div class="detail-cover">${recipePhoto(r,'hero')}<button class="detail-close" data-action="close-modal" aria-label="Fermer la fiche">${icon('x')}</button>${favoriteButton(r.id,'detail')}</div><div class="detail-body"><div class="eyebrow">VOTRE CARNET DE RECETTES</div><h2 class="detail-title">${esc(r.nom)}</h2><div class="detail-meta">${icon('clock')} ${r.tempsMinutes} minutes <span>·</span> ${esc(r.difficulte||'Cuisine maison')}</div><div class="rec-tags detail-tags">${(r.tags||[]).slice(0,5).map(t=>`<span class="mini-tag">${esc(labelTag[t]||t)}</span>`).join('')}</div><div class="detail-controls"><span>Personnes</span><div class="stepper"><button data-action="detail-portions" data-delta="-1" aria-label="Moins de portions" ${UI.detailServings<=1?'disabled':''}>−</button><strong>${UI.detailServings}</strong><button data-action="detail-portions" data-delta="1" aria-label="Plus de portions" ${UI.detailServings>=40?'disabled':''}>+</button></div></div><div class="detail-columns"><section><h3 class="section-title">Ingrédients</h3>${r.ingredients.map(g=>`<div class="ingrow"><span>${esc(g.nom)}</span><strong>${esc(formatQuantity(g.quantite*factor,g.unite))}</strong></div>`).join('')}</section><section><h3 class="section-title">Préparation</h3><ol class="steps">${r.etapes.map(s=>`<li>${htmlStep(s,r,UI.detailServings)}</li>`).join('')}</ol></section></div><div class="photo-controls"><button class="text-link" data-action="edit-image" data-id="${idsel(r.id)}">${icon('plus')} ${r.image?'Changer la photo':'Ajouter une photo'}</button>${r.image?.source?`<span class="footnote">Source : ${esc(r.image.source)}</span>`:''}</div><div class="modal-footer detail-footer"><button class="button ghost" data-action="edit-recipe" data-id="${idsel(r.id)}">Modifier</button><button class="button ghost" data-action="cook" data-id="${idsel(r.id)}">${icon('chef')} Cuisiner</button><button class="button" data-action="add-to-plan" data-id="${idsel(r.id)}">${icon('plus')} Au planning</button></div></div></div>`);
 }
 function openCook(rid,mealId=null){const r=STATE.recipes.find(x=>x.id===rid);if(!r)return;
  if(mealId){const meal=STATE.plan.find(m=>m.id===mealId);UI.detailServings=meal?.portions||r.portions;}
@@ -602,10 +949,12 @@ document.addEventListener('click',e=>{
  if(a==='close-modal'){closeModal();return;}
  if(a==='nav'){UI.view=button.dataset.view;closeModal();renderView();return;}
  if(a==='suggest'){UI.query=button.dataset.query;UI.view='library';renderView();return;}
+ if(a==='toggle-favorites'){UI.onlyFavorites=!UI.onlyFavorites;renderView();return;}
  if(a==='toggle-filters'){UI.filtersOpen=!UI.filtersOpen;renderView();return;}
  if(a==='filter-tag'){const tag=button.dataset.tag;UI.selectedTags=UI.selectedTags.includes(tag)?UI.selectedTags.filter(t=>t!==tag):[...UI.selectedTags,tag];renderView();return;}
- if(a==='clear-filters'){UI.query='';UI.selectedTags=[];UI.showOut=false;renderView();return;}
+ if(a==='clear-filters'){UI.query='';UI.selectedTags=[];UI.showOut=false;UI.onlyFavorites=false;renderView();return;}
  if(a==='show-out'){UI.showOut=true;renderView();return;}
+ if(a==='toggle-favorite'){const saved=!isFavorite(id);update(state=>toggleFavorite(state,id),saved?'Ajouté aux favoris':'Retiré des favoris').then(ok=>{if(ok&&UI.modal==='recipe'&&UI.recipeId===id)recipeDetails(id);});return;}
  if(a==='recipe'){const r=STATE.recipes.find(x=>x.id===id);if(!r)return;UI.detailServings=STATE.plan.find(m=>m.id===button.dataset.mealId)?.portions||r.portions;recipeDetails(id);return;}
  if(a==='detail-portions'){UI.detailServings=Math.max(1,Math.min(40,UI.detailServings+Number(button.dataset.delta)));recipeDetails(UI.recipeId);return;}
  if(a==='add-to-plan'){const portions=UI.detailServings;update(s=>addMeal(s,id,portions),'Repas ajouté au planning').then(ok=>{if(ok)closeModal();});return;}

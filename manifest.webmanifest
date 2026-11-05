@@ -1,11 +1,11 @@
 {
-  "name": "KeskonMange V2 (test Google 0.6)",
+  "name": "KeskonMange V2 \u2014 \u00c9dition \u00e9ditoriale",
   "short_name": "KeskonMange V2",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#fbfaf7",
-  "theme_color": "#49367e",
+  "background_color": "#F8F6F1",
+  "theme_color": "#506850",
   "icons": [
     {
       "src": "./icon-192.png",

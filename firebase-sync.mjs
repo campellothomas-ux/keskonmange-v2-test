@@ -30,6 +30,13 @@ export function validateSharedState(state) {
       || !state.rayonOverrides || typeof state.rayonOverrides !== 'object') {
     throw new Error('État des recettes/courses incomplet : écriture refusée.');
   }
+  // Compatibilité transparente avec les données V2 créées avant les favoris.
+  if(state.favorites === undefined) state.favorites = [];
+  if(!Array.isArray(state.favorites) || state.favorites.length>5000
+     || state.favorites.some(id=>typeof id!=='string'||id.length>120)
+     || new Set(state.favorites).size!==state.favorites.length) {
+    throw new Error('Liste de favoris Firebase invalide.');
+  }
   return state;
 }
 

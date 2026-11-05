@@ -69,7 +69,7 @@ export const TAG_GROUPS = [
 ];
 export const allowedTags = new Set(TAG_GROUPS.flatMap(group=>group[1].map(item=>item[0])));
 
-export function baseState(recipes=[]){return {version:2,recipes:clone(recipes),plan:[],shopping:{generated:{},purchased:{},manual:[],overrides:{}},catalogCustom:[],rayonOverrides:{}};}
+export function baseState(recipes=[]){return {version:2,recipes:clone(recipes),favorites:[],plan:[],shopping:{generated:{},purchased:{},manual:[],overrides:{}},catalogCustom:[],rayonOverrides:{}};}
 
 function numeric(n,where){if(typeof n!=='number'||!Number.isFinite(n)||n<=0||n>100000)throw new Error(where+' : quantité invalide (nombre positif attendu)');return n;}
 function validText(t,where,limit=200){if(typeof t!=='string'||!t.trim()||t.length>limit)throw new Error(where+' : texte manquant ou trop long');return t.trim();}
@@ -92,6 +92,15 @@ export function changeRecipeImage(state,recipeId,image){
   if(!recipe)throw new Error('Recette introuvable');
   recipe.image=normalizeRecipeImage(image);
   return out;
+}
+
+// Favoris de foyer : identifiants stables, pas de copie des recettes.
+export function toggleFavorite(state,recipeId){
+  const next=clone(state);
+  if(!next.recipes.some(r=>r.id===recipeId))throw new Error('Recette introuvable');
+  const favorites=Array.isArray(next.favorites)?next.favorites:[];
+  next.favorites=favorites.includes(recipeId)?favorites.filter(id=>id!==recipeId):[...favorites,recipeId];
+  return next;
 }
 
 export function validateImport(raw){
