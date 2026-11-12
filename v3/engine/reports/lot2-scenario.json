@@ -1,0 +1,1308 @@
+{
+  "notice": "All recipes, product contents, prices and policy coefficients are synthetic test data. No observed shop price, food conversion, expiry guarantee or household recipe validation.",
+  "fixture": "fixtures/lot2.json",
+  "steps": [
+    {
+      "step": "created_five_meals",
+      "menu": {
+        "version": 2,
+        "id": "lot2-family-menu",
+        "revision": 1,
+        "meals": [
+          {
+            "id": "meal-1",
+            "diners": 2,
+            "leftovers": "keep",
+            "recipeId": "r0"
+          },
+          {
+            "id": "meal-2",
+            "diners": 2,
+            "leftovers": "keep",
+            "recipeId": "r1"
+          },
+          {
+            "id": "meal-3",
+            "diners": 2,
+            "leftovers": "keep",
+            "recipeId": "r2"
+          },
+          {
+            "id": "meal-4",
+            "diners": 2,
+            "leftovers": "keep",
+            "recipeId": "r3"
+          },
+          {
+            "id": "meal-5",
+            "diners": 2,
+            "leftovers": "keep",
+            "recipeId": "r4"
+          }
+        ],
+        "reservationIds": {
+          "meal-1": "lot2-initial:0",
+          "meal-2": "lot2-initial:1",
+          "meal-3": "lot2-initial:2",
+          "meal-4": "lot2-initial:3",
+          "meal-5": "lot2-initial:4"
+        }
+      },
+      "preparations": [
+        {
+          "mealId": "meal-1",
+          "recipeId": "r0",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "2",
+          "minimumUnits": "2",
+          "factor": "1/2",
+          "diners": "2",
+          "producedPortions": "2",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        },
+        {
+          "mealId": "meal-2",
+          "recipeId": "r1",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "2",
+          "minimumUnits": "2",
+          "factor": "1/2",
+          "diners": "2",
+          "producedPortions": "2",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        },
+        {
+          "mealId": "meal-3",
+          "recipeId": "r2",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "2",
+          "minimumUnits": "2",
+          "factor": "1/2",
+          "diners": "2",
+          "producedPortions": "2",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        },
+        {
+          "mealId": "meal-4",
+          "recipeId": "r3",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "2",
+          "minimumUnits": "2",
+          "factor": "1/2",
+          "diners": "2",
+          "producedPortions": "2",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        },
+        {
+          "mealId": "meal-5",
+          "recipeId": "r4",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "2",
+          "minimumUnits": "2",
+          "factor": "1/2",
+          "diners": "2",
+          "producedPortions": "2",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        }
+      ],
+      "needs": {
+        "tomato": "1000"
+      },
+      "quantities": {
+        "tomato": {
+          "unit": "g",
+          "basis": "net",
+          "required": "1000",
+          "physical": "200",
+          "available": "150",
+          "fromStock": "150",
+          "toBuy": "850",
+          "bought": "1200",
+          "purchaseSurplus": "350",
+          "remainingFree": "350"
+        }
+      },
+      "totalCents": 300,
+      "certainty": "estimated",
+      "stock": {
+        "revision": 1,
+        "physical": {
+          "tomato": "200"
+        },
+        "reservations": {
+          "outside-menu": {
+            "tomato": "50"
+          },
+          "lot2-initial:0": {
+            "tomato": "150"
+          },
+          "lot2-initial:1": {},
+          "lot2-initial:2": {},
+          "lot2-initial:3": {},
+          "lot2-initial:4": {}
+        },
+        "prepared": {}
+      },
+      "search": {
+        "strategy": "diverse",
+        "evaluated": 5,
+        "feasible": 5,
+        "nodes": 0,
+        "maxNodes": 100000,
+        "limited": false,
+        "optimal": false,
+        "quality": "best_found",
+        "rejected": [],
+        "failures": {},
+        "progress": [
+          {
+            "evaluated": 1,
+            "score": "335",
+            "totalCents": 300,
+            "cause": "seed-0"
+          }
+        ],
+        "scope": "joint menu, permitted production choices and cost/surplus pack frontiers; provided price data",
+        "heuristicOrdering": "continuous lower price relaxation for ordering only; never a physical quantity or an optimality certificate"
+      }
+    },
+    {
+      "step": "three_diner_counts_changed",
+      "menu": {
+        "version": 2,
+        "id": "lot2-family-menu",
+        "revision": 2,
+        "meals": [
+          {
+            "id": "meal-1",
+            "diners": 2,
+            "leftovers": "keep",
+            "recipeId": "r0"
+          },
+          {
+            "id": "meal-2",
+            "diners": 3,
+            "leftovers": "keep",
+            "recipeId": "r1"
+          },
+          {
+            "id": "meal-3",
+            "diners": 2,
+            "leftovers": "keep",
+            "recipeId": "r2"
+          },
+          {
+            "id": "meal-4",
+            "diners": 4,
+            "leftovers": "keep",
+            "recipeId": "r3"
+          },
+          {
+            "id": "meal-5",
+            "diners": 3,
+            "leftovers": "keep",
+            "recipeId": "r4"
+          }
+        ],
+        "reservationIds": {
+          "meal-1": "lot2-edit:0",
+          "meal-2": "lot2-edit:1",
+          "meal-3": "lot2-edit:2",
+          "meal-4": "lot2-edit:3",
+          "meal-5": "lot2-edit:4"
+        }
+      },
+      "preparations": [
+        {
+          "mealId": "meal-1",
+          "recipeId": "r0",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "2",
+          "minimumUnits": "2",
+          "factor": "1/2",
+          "diners": "2",
+          "producedPortions": "2",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        },
+        {
+          "mealId": "meal-2",
+          "recipeId": "r1",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "3",
+          "minimumUnits": "3",
+          "factor": "3/4",
+          "diners": "3",
+          "producedPortions": "3",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        },
+        {
+          "mealId": "meal-3",
+          "recipeId": "r2",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "2",
+          "minimumUnits": "2",
+          "factor": "1/2",
+          "diners": "2",
+          "producedPortions": "2",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        },
+        {
+          "mealId": "meal-4",
+          "recipeId": "r3",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "4",
+          "minimumUnits": "4",
+          "factor": "1",
+          "diners": "4",
+          "producedPortions": "4",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        },
+        {
+          "mealId": "meal-5",
+          "recipeId": "r4",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "3",
+          "minimumUnits": "3",
+          "factor": "3/4",
+          "diners": "3",
+          "producedPortions": "3",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        }
+      ],
+      "needs": {
+        "tomato": "1400"
+      },
+      "quantities": {
+        "tomato": {
+          "unit": "g",
+          "basis": "net",
+          "required": "1400",
+          "physical": "200",
+          "available": "150",
+          "fromStock": "150",
+          "toBuy": "1250",
+          "bought": "1600",
+          "purchaseSurplus": "350",
+          "remainingFree": "350"
+        }
+      },
+      "totalCents": 400,
+      "certainty": "estimated",
+      "stock": {
+        "revision": 2,
+        "physical": {
+          "tomato": "200"
+        },
+        "reservations": {
+          "outside-menu": {
+            "tomato": "50"
+          },
+          "lot2-edit:0": {
+            "tomato": "150"
+          },
+          "lot2-edit:1": {},
+          "lot2-edit:2": {},
+          "lot2-edit:3": {},
+          "lot2-edit:4": {}
+        },
+        "prepared": {}
+      },
+      "changes": [
+        {
+          "mealId": "meal-2",
+          "diners": 3
+        },
+        {
+          "mealId": "meal-4",
+          "diners": 4
+        },
+        {
+          "mealId": "meal-5",
+          "diners": 3
+        }
+      ],
+      "comparison": {
+        "costDeltaCents": 100,
+        "scoreDelta": "100",
+        "extraPreparedPortions": "4",
+        "extraKeptPortions": "0",
+        "packageCountDelta": 1,
+        "purchasedCountsDelta": {
+          "tomato-pack": 1
+        },
+        "quantities": {
+          "tomato": {
+            "unit": "g",
+            "basis": "net",
+            "perishable": true,
+            "requiredDelta": "400",
+            "boughtDelta": "400",
+            "purchaseSurplusDelta": "0",
+            "fromStockDelta": "0"
+          }
+        },
+        "distinctRecipesDelta": 0
+      }
+    },
+    {
+      "step": "portion_proposed_not_applied",
+      "menu": {
+        "version": 2,
+        "id": "lot2-family-menu",
+        "revision": 2,
+        "meals": [
+          {
+            "id": "meal-1",
+            "diners": 2,
+            "leftovers": "keep",
+            "recipeId": "r0"
+          },
+          {
+            "id": "meal-2",
+            "diners": 3,
+            "leftovers": "keep",
+            "recipeId": "r1"
+          },
+          {
+            "id": "meal-3",
+            "diners": 2,
+            "leftovers": "keep",
+            "recipeId": "r2"
+          },
+          {
+            "id": "meal-4",
+            "diners": 4,
+            "leftovers": "keep",
+            "recipeId": "r3"
+          },
+          {
+            "id": "meal-5",
+            "diners": 3,
+            "leftovers": "keep",
+            "recipeId": "r4"
+          }
+        ],
+        "reservationIds": {
+          "meal-1": "lot2-edit:0",
+          "meal-2": "lot2-edit:1",
+          "meal-3": "lot2-edit:2",
+          "meal-4": "lot2-edit:3",
+          "meal-5": "lot2-edit:4"
+        }
+      },
+      "preparations": [
+        {
+          "mealId": "meal-1",
+          "recipeId": "r0",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "2",
+          "minimumUnits": "2",
+          "factor": "1/2",
+          "diners": "2",
+          "producedPortions": "2",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        },
+        {
+          "mealId": "meal-2",
+          "recipeId": "r1",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "3",
+          "minimumUnits": "3",
+          "factor": "3/4",
+          "diners": "3",
+          "producedPortions": "3",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        },
+        {
+          "mealId": "meal-3",
+          "recipeId": "r2",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "2",
+          "minimumUnits": "2",
+          "factor": "1/2",
+          "diners": "2",
+          "producedPortions": "2",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        },
+        {
+          "mealId": "meal-4",
+          "recipeId": "r3",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "4",
+          "minimumUnits": "4",
+          "factor": "1",
+          "diners": "4",
+          "producedPortions": "4",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        },
+        {
+          "mealId": "meal-5",
+          "recipeId": "r4",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "3",
+          "minimumUnits": "3",
+          "factor": "3/4",
+          "diners": "3",
+          "producedPortions": "3",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        }
+      ],
+      "needs": {
+        "tomato": "1400"
+      },
+      "quantities": {
+        "tomato": {
+          "unit": "g",
+          "basis": "net",
+          "required": "1400",
+          "physical": "200",
+          "available": "150",
+          "fromStock": "150",
+          "toBuy": "1250",
+          "bought": "1600",
+          "purchaseSurplus": "350",
+          "remainingFree": "350"
+        }
+      },
+      "totalCents": 400,
+      "certainty": "estimated",
+      "stock": {
+        "revision": 2,
+        "physical": {
+          "tomato": "200"
+        },
+        "reservations": {
+          "outside-menu": {
+            "tomato": "50"
+          },
+          "lot2-edit:0": {
+            "tomato": "150"
+          },
+          "lot2-edit:1": {},
+          "lot2-edit:2": {},
+          "lot2-edit:3": {},
+          "lot2-edit:4": {}
+        },
+        "prepared": {}
+      },
+      "comparison": {
+        "costDeltaCents": 0,
+        "scoreDelta": "-10",
+        "extraPreparedPortions": "1",
+        "extraKeptPortions": "1",
+        "packageCountDelta": 0,
+        "purchasedCountsDelta": {
+          "tomato-pack": 0
+        },
+        "quantities": {
+          "tomato": {
+            "unit": "g",
+            "basis": "net",
+            "perishable": true,
+            "requiredDelta": "100",
+            "boughtDelta": "0",
+            "purchaseSurplusDelta": "-100",
+            "fromStockDelta": "0"
+          }
+        },
+        "distinctRecipesDelta": 0
+      },
+      "benefits": {
+        "saving": false,
+        "unchangedPurchases": true,
+        "reducedPerishable": true,
+        "morePerishableStockUsed": false,
+        "label": "better_use_of_purchases"
+      },
+      "unchanged": true
+    },
+    {
+      "step": "portion_declined",
+      "menu": {
+        "version": 2,
+        "id": "lot2-family-menu",
+        "revision": 2,
+        "meals": [
+          {
+            "id": "meal-1",
+            "diners": 2,
+            "leftovers": "keep",
+            "recipeId": "r0"
+          },
+          {
+            "id": "meal-2",
+            "diners": 3,
+            "leftovers": "keep",
+            "recipeId": "r1"
+          },
+          {
+            "id": "meal-3",
+            "diners": 2,
+            "leftovers": "keep",
+            "recipeId": "r2"
+          },
+          {
+            "id": "meal-4",
+            "diners": 4,
+            "leftovers": "keep",
+            "recipeId": "r3"
+          },
+          {
+            "id": "meal-5",
+            "diners": 3,
+            "leftovers": "keep",
+            "recipeId": "r4"
+          }
+        ],
+        "reservationIds": {
+          "meal-1": "lot2-edit:0",
+          "meal-2": "lot2-edit:1",
+          "meal-3": "lot2-edit:2",
+          "meal-4": "lot2-edit:3",
+          "meal-5": "lot2-edit:4"
+        }
+      },
+      "preparations": [
+        {
+          "mealId": "meal-1",
+          "recipeId": "r0",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "2",
+          "minimumUnits": "2",
+          "factor": "1/2",
+          "diners": "2",
+          "producedPortions": "2",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        },
+        {
+          "mealId": "meal-2",
+          "recipeId": "r1",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "3",
+          "minimumUnits": "3",
+          "factor": "3/4",
+          "diners": "3",
+          "producedPortions": "3",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        },
+        {
+          "mealId": "meal-3",
+          "recipeId": "r2",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "2",
+          "minimumUnits": "2",
+          "factor": "1/2",
+          "diners": "2",
+          "producedPortions": "2",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        },
+        {
+          "mealId": "meal-4",
+          "recipeId": "r3",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "4",
+          "minimumUnits": "4",
+          "factor": "1",
+          "diners": "4",
+          "producedPortions": "4",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        },
+        {
+          "mealId": "meal-5",
+          "recipeId": "r4",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "3",
+          "minimumUnits": "3",
+          "factor": "3/4",
+          "diners": "3",
+          "producedPortions": "3",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        }
+      ],
+      "needs": {
+        "tomato": "1400"
+      },
+      "quantities": {
+        "tomato": {
+          "unit": "g",
+          "basis": "net",
+          "required": "1400",
+          "physical": "200",
+          "available": "150",
+          "fromStock": "150",
+          "toBuy": "1250",
+          "bought": "1600",
+          "purchaseSurplus": "350",
+          "remainingFree": "350"
+        }
+      },
+      "totalCents": 400,
+      "certainty": "estimated",
+      "stock": {
+        "revision": 2,
+        "physical": {
+          "tomato": "200"
+        },
+        "reservations": {
+          "outside-menu": {
+            "tomato": "50"
+          },
+          "lot2-edit:0": {
+            "tomato": "150"
+          },
+          "lot2-edit:1": {},
+          "lot2-edit:2": {},
+          "lot2-edit:3": {},
+          "lot2-edit:4": {}
+        },
+        "prepared": {}
+      },
+      "unchanged": true
+    },
+    {
+      "step": "portion_explicitly_accepted",
+      "menu": {
+        "version": 2,
+        "id": "lot2-family-menu",
+        "revision": 3,
+        "meals": [
+          {
+            "id": "meal-1",
+            "diners": 2,
+            "leftovers": "keep",
+            "recipeId": "r0"
+          },
+          {
+            "id": "meal-2",
+            "diners": 3,
+            "leftovers": "keep",
+            "recipeId": "r1",
+            "productionUnits": "4"
+          },
+          {
+            "id": "meal-3",
+            "diners": 2,
+            "leftovers": "keep",
+            "recipeId": "r2"
+          },
+          {
+            "id": "meal-4",
+            "diners": 4,
+            "leftovers": "keep",
+            "recipeId": "r3"
+          },
+          {
+            "id": "meal-5",
+            "diners": 3,
+            "leftovers": "keep",
+            "recipeId": "r4"
+          }
+        ],
+        "reservationIds": {
+          "meal-1": "lot2-extra-accepted:0",
+          "meal-2": "lot2-extra-accepted:1",
+          "meal-3": "lot2-extra-accepted:2",
+          "meal-4": "lot2-extra-accepted:3",
+          "meal-5": "lot2-extra-accepted:4"
+        }
+      },
+      "preparations": [
+        {
+          "mealId": "meal-1",
+          "recipeId": "r0",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "2",
+          "minimumUnits": "2",
+          "factor": "1/2",
+          "diners": "2",
+          "producedPortions": "2",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        },
+        {
+          "mealId": "meal-2",
+          "recipeId": "r1",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "4",
+          "minimumUnits": "3",
+          "factor": "1",
+          "diners": "3",
+          "producedPortions": "4",
+          "keptPortions": "1",
+          "discardedPortions": "0",
+          "rounding": []
+        },
+        {
+          "mealId": "meal-3",
+          "recipeId": "r2",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "2",
+          "minimumUnits": "2",
+          "factor": "1/2",
+          "diners": "2",
+          "producedPortions": "2",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        },
+        {
+          "mealId": "meal-4",
+          "recipeId": "r3",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "4",
+          "minimumUnits": "4",
+          "factor": "1",
+          "diners": "4",
+          "producedPortions": "4",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        },
+        {
+          "mealId": "meal-5",
+          "recipeId": "r4",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "3",
+          "minimumUnits": "3",
+          "factor": "3/4",
+          "diners": "3",
+          "producedPortions": "3",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        }
+      ],
+      "needs": {
+        "tomato": "1500"
+      },
+      "quantities": {
+        "tomato": {
+          "unit": "g",
+          "basis": "net",
+          "required": "1500",
+          "physical": "200",
+          "available": "150",
+          "fromStock": "150",
+          "toBuy": "1350",
+          "bought": "1600",
+          "purchaseSurplus": "250",
+          "remainingFree": "250"
+        }
+      },
+      "totalCents": 400,
+      "certainty": "estimated",
+      "stock": {
+        "revision": 3,
+        "physical": {
+          "tomato": "200"
+        },
+        "reservations": {
+          "outside-menu": {
+            "tomato": "50"
+          },
+          "lot2-extra-accepted:0": {
+            "tomato": "150"
+          },
+          "lot2-extra-accepted:1": {},
+          "lot2-extra-accepted:2": {},
+          "lot2-extra-accepted:3": {},
+          "lot2-extra-accepted:4": {}
+        },
+        "prepared": {}
+      }
+    },
+    {
+      "step": "replacement_requested_and_first_choice_rejected",
+      "menu": {
+        "version": 2,
+        "id": "lot2-family-menu",
+        "revision": 3,
+        "meals": [
+          {
+            "id": "meal-1",
+            "diners": 2,
+            "leftovers": "keep",
+            "recipeId": "r0"
+          },
+          {
+            "id": "meal-2",
+            "diners": 3,
+            "leftovers": "keep",
+            "recipeId": "r1",
+            "productionUnits": "4"
+          },
+          {
+            "id": "meal-3",
+            "diners": 2,
+            "leftovers": "keep",
+            "recipeId": "r2"
+          },
+          {
+            "id": "meal-4",
+            "diners": 4,
+            "leftovers": "keep",
+            "recipeId": "r3"
+          },
+          {
+            "id": "meal-5",
+            "diners": 3,
+            "leftovers": "keep",
+            "recipeId": "r4"
+          }
+        ],
+        "reservationIds": {
+          "meal-1": "lot2-extra-accepted:0",
+          "meal-2": "lot2-extra-accepted:1",
+          "meal-3": "lot2-extra-accepted:2",
+          "meal-4": "lot2-extra-accepted:3",
+          "meal-5": "lot2-extra-accepted:4"
+        }
+      },
+      "preparations": [
+        {
+          "mealId": "meal-1",
+          "recipeId": "r0",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "2",
+          "minimumUnits": "2",
+          "factor": "1/2",
+          "diners": "2",
+          "producedPortions": "2",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        },
+        {
+          "mealId": "meal-2",
+          "recipeId": "r1",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "4",
+          "minimumUnits": "3",
+          "factor": "1",
+          "diners": "3",
+          "producedPortions": "4",
+          "keptPortions": "1",
+          "discardedPortions": "0",
+          "rounding": []
+        },
+        {
+          "mealId": "meal-3",
+          "recipeId": "r2",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "2",
+          "minimumUnits": "2",
+          "factor": "1/2",
+          "diners": "2",
+          "producedPortions": "2",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        },
+        {
+          "mealId": "meal-4",
+          "recipeId": "r3",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "4",
+          "minimumUnits": "4",
+          "factor": "1",
+          "diners": "4",
+          "producedPortions": "4",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        },
+        {
+          "mealId": "meal-5",
+          "recipeId": "r4",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "3",
+          "minimumUnits": "3",
+          "factor": "3/4",
+          "diners": "3",
+          "producedPortions": "3",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        }
+      ],
+      "needs": {
+        "tomato": "1500"
+      },
+      "quantities": {
+        "tomato": {
+          "unit": "g",
+          "basis": "net",
+          "required": "1500",
+          "physical": "200",
+          "available": "150",
+          "fromStock": "150",
+          "toBuy": "1350",
+          "bought": "1600",
+          "purchaseSurplus": "250",
+          "remainingFree": "250"
+        }
+      },
+      "totalCents": 400,
+      "certainty": "estimated",
+      "stock": {
+        "revision": 3,
+        "physical": {
+          "tomato": "200"
+        },
+        "reservations": {
+          "outside-menu": {
+            "tomato": "50"
+          },
+          "lot2-extra-accepted:0": {
+            "tomato": "150"
+          },
+          "lot2-extra-accepted:1": {},
+          "lot2-extra-accepted:2": {},
+          "lot2-extra-accepted:3": {},
+          "lot2-extra-accepted:4": {}
+        },
+        "prepared": {}
+      },
+      "temporarilyRejected": "r6",
+      "alternatives": [
+        {
+          "recipeId": "burger",
+          "objectiveRank": 1,
+          "comparison": {
+            "costDeltaCents": 0,
+            "scoreDelta": "4",
+            "extraPreparedPortions": "0",
+            "extraKeptPortions": "0",
+            "packageCountDelta": 0,
+            "purchasedCountsDelta": {
+              "tomato-pack": 0
+            },
+            "quantities": {
+              "tomato": {
+                "unit": "g",
+                "basis": "net",
+                "perishable": true,
+                "requiredDelta": "-40",
+                "boughtDelta": "0",
+                "purchaseSurplusDelta": "40",
+                "fromStockDelta": "0"
+              }
+            },
+            "distinctRecipesDelta": 0
+          }
+        },
+        {
+          "recipeId": "r5",
+          "objectiveRank": 2,
+          "comparison": {
+            "costDeltaCents": 120,
+            "scoreDelta": "124",
+            "extraPreparedPortions": "0",
+            "extraKeptPortions": "0",
+            "packageCountDelta": 1,
+            "purchasedCountsDelta": {
+              "tomato-pack": 0,
+              "rice-pack": 1
+            },
+            "quantities": {
+              "tomato": {
+                "unit": "g",
+                "basis": "net",
+                "perishable": true,
+                "requiredDelta": "-40",
+                "boughtDelta": "0",
+                "purchaseSurplusDelta": "40",
+                "fromStockDelta": "0"
+              },
+              "rice": {
+                "unit": "g",
+                "basis": "net",
+                "perishable": false,
+                "requiredDelta": "40",
+                "boughtDelta": "500",
+                "purchaseSurplusDelta": "460",
+                "fromStockDelta": "0"
+              }
+            },
+            "distinctRecipesDelta": 0
+          }
+        },
+        {
+          "recipeId": "quiche",
+          "objectiveRank": 3,
+          "comparison": {
+            "costDeltaCents": 200,
+            "scoreDelta": "180",
+            "extraPreparedPortions": "2",
+            "extraKeptPortions": "2",
+            "packageCountDelta": 1,
+            "purchasedCountsDelta": {
+              "tomato-pack": 0,
+              "egg-pack": 1
+            },
+            "quantities": {
+              "tomato": {
+                "unit": "g",
+                "basis": "net",
+                "perishable": true,
+                "requiredDelta": "200",
+                "boughtDelta": "0",
+                "purchaseSurplusDelta": "-200",
+                "fromStockDelta": "0"
+              },
+              "egg": {
+                "unit": "unit",
+                "basis": "net",
+                "perishable": true,
+                "requiredDelta": "3",
+                "boughtDelta": "6",
+                "purchaseSurplusDelta": "3",
+                "fromStockDelta": "0"
+              }
+            },
+            "distinctRecipesDelta": 0
+          }
+        }
+      ]
+    },
+    {
+      "step": "replacement_explicitly_accepted",
+      "menu": {
+        "version": 2,
+        "id": "lot2-family-menu",
+        "revision": 4,
+        "meals": [
+          {
+            "id": "meal-1",
+            "diners": 2,
+            "leftovers": "keep",
+            "recipeId": "r0"
+          },
+          {
+            "id": "meal-2",
+            "diners": 3,
+            "leftovers": "keep",
+            "recipeId": "r1",
+            "productionUnits": "4"
+          },
+          {
+            "id": "meal-3",
+            "diners": 2,
+            "leftovers": "keep",
+            "recipeId": "burger"
+          },
+          {
+            "id": "meal-4",
+            "diners": 4,
+            "leftovers": "keep",
+            "recipeId": "r3"
+          },
+          {
+            "id": "meal-5",
+            "diners": 3,
+            "leftovers": "keep",
+            "recipeId": "r4"
+          }
+        ],
+        "reservationIds": {
+          "meal-1": "lot2-replacement:0",
+          "meal-2": "lot2-replacement:1",
+          "meal-3": "lot2-replacement:2",
+          "meal-4": "lot2-replacement:3",
+          "meal-5": "lot2-replacement:4"
+        }
+      },
+      "preparations": [
+        {
+          "mealId": "meal-1",
+          "recipeId": "r0",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "2",
+          "minimumUnits": "2",
+          "factor": "1/2",
+          "diners": "2",
+          "producedPortions": "2",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        },
+        {
+          "mealId": "meal-2",
+          "recipeId": "r1",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "4",
+          "minimumUnits": "3",
+          "factor": "1",
+          "diners": "3",
+          "producedPortions": "4",
+          "keptPortions": "1",
+          "discardedPortions": "0",
+          "rounding": []
+        },
+        {
+          "mealId": "meal-3",
+          "recipeId": "burger",
+          "mode": "unit",
+          "unitLabel": "burger",
+          "units": "2",
+          "minimumUnits": "2",
+          "factor": "2",
+          "diners": "2",
+          "producedPortions": "2",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        },
+        {
+          "mealId": "meal-4",
+          "recipeId": "r3",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "4",
+          "minimumUnits": "4",
+          "factor": "1",
+          "diners": "4",
+          "producedPortions": "4",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        },
+        {
+          "mealId": "meal-5",
+          "recipeId": "r4",
+          "mode": "adjustable",
+          "unitLabel": "portion",
+          "units": "3",
+          "minimumUnits": "3",
+          "factor": "3/4",
+          "diners": "3",
+          "producedPortions": "3",
+          "keptPortions": "0",
+          "discardedPortions": "0",
+          "rounding": []
+        }
+      ],
+      "needs": {
+        "tomato": "1460"
+      },
+      "quantities": {
+        "tomato": {
+          "unit": "g",
+          "basis": "net",
+          "required": "1460",
+          "physical": "200",
+          "available": "150",
+          "fromStock": "150",
+          "toBuy": "1310",
+          "bought": "1600",
+          "purchaseSurplus": "290",
+          "remainingFree": "290"
+        }
+      },
+      "totalCents": 400,
+      "certainty": "estimated",
+      "stock": {
+        "revision": 4,
+        "physical": {
+          "tomato": "200"
+        },
+        "reservations": {
+          "outside-menu": {
+            "tomato": "50"
+          },
+          "lot2-replacement:0": {
+            "tomato": "150"
+          },
+          "lot2-replacement:1": {},
+          "lot2-replacement:2": {},
+          "lot2-replacement:3": {},
+          "lot2-replacement:4": {}
+        },
+        "prepared": {}
+      }
+    }
+  ],
+  "checks": {
+    "fiveMeals": true,
+    "dinersPreserved": true,
+    "onlyRequestedRecipeReplaced": true,
+    "rejectedNotReoffered": true,
+    "planningNeverConsumesIngredients": true,
+    "outsideReservationPreserved": true,
+    "noDoubleReservation": true,
+    "noCookedPortionsBeforeCooking": true
+  }
+}

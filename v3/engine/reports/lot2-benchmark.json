@@ -1,0 +1,788 @@
+{
+  "notice": "All recipes, product contents, prices and policy coefficients are synthetic test data. No observed shop price, food conversion, expiry guarantee or household recipe validation.",
+  "runtime": {
+    "node": "v24.22.1",
+    "platform": "linux",
+    "arch": "x64"
+  },
+  "results": [
+    {
+      "recipeCount": 4,
+      "mealCount": 2,
+      "strategy": "exhaustive",
+      "maxEvaluations": 100,
+      "elapsedMs": 12.987151000000004,
+      "repeatElapsedMs": 10.253633999999998,
+      "memory": {
+        "rssBefore": 31268864,
+        "rssAfter": 37953536,
+        "heapUsedDelta": 1067128,
+        "sampledPeakRss": 37953536,
+        "processCumulativeMaxRssKiB": 37576
+      },
+      "status": "feasible",
+      "search": {
+        "strategy": "exhaustive",
+        "evaluated": 12,
+        "feasible": 12,
+        "nodes": 17,
+        "maxNodes": 100000,
+        "limited": false,
+        "optimal": true,
+        "quality": "proven_optimal",
+        "rejected": [],
+        "failures": {},
+        "progress": [
+          {
+            "evaluated": 1,
+            "score": "169",
+            "totalCents": 100,
+            "cause": "exhaustive"
+          },
+          {
+            "evaluated": 2,
+            "score": "335/2",
+            "totalCents": 100,
+            "cause": "exhaustive"
+          },
+          {
+            "evaluated": 3,
+            "score": "146",
+            "totalCents": 100,
+            "cause": "exhaustive"
+          },
+          {
+            "evaluated": 6,
+            "score": "145",
+            "totalCents": 100,
+            "cause": "exhaustive"
+          },
+          {
+            "evaluated": 9,
+            "score": "144",
+            "totalCents": 100,
+            "cause": "exhaustive"
+          }
+        ],
+        "scope": "joint menu, permitted production choices and cost/surplus pack frontiers; provided price data",
+        "heuristicOrdering": "continuous lower price relaxation for ordering only; never a physical quantity or an optimality certificate"
+      },
+      "totalCents": 100,
+      "score": "144",
+      "metrics": {
+        "distinctRecipes": 2,
+        "distinctFamilies": 2,
+        "stockUsed": {
+          "tomato": "450"
+        },
+        "purchaseSurplus": {
+          "tomato": "285"
+        }
+      },
+      "stable": true,
+      "quantitiesValid": true
+    },
+    {
+      "recipeCount": 4,
+      "mealCount": 2,
+      "strategy": "local",
+      "maxEvaluations": 100,
+      "elapsedMs": 4.573991999999997,
+      "repeatElapsedMs": 1.8414900000000003,
+      "memory": {
+        "rssBefore": 38477824,
+        "rssAfter": 38739968,
+        "heapUsedDelta": -360328,
+        "sampledPeakRss": 38739968,
+        "processCumulativeMaxRssKiB": 38600
+      },
+      "status": "feasible",
+      "search": {
+        "strategy": "local",
+        "evaluated": 8,
+        "feasible": 8,
+        "nodes": 0,
+        "maxNodes": 100000,
+        "limited": false,
+        "optimal": false,
+        "quality": "best_found",
+        "rejected": [],
+        "failures": {},
+        "progress": [
+          {
+            "evaluated": 1,
+            "score": "169",
+            "totalCents": 100,
+            "cause": "seed-0"
+          },
+          {
+            "evaluated": 2,
+            "score": "167",
+            "totalCents": 100,
+            "cause": "local-replacement"
+          },
+          {
+            "evaluated": 3,
+            "score": "146",
+            "totalCents": 100,
+            "cause": "local-replacement"
+          },
+          {
+            "evaluated": 7,
+            "score": "289/2",
+            "totalCents": 100,
+            "cause": "local-replacement"
+          }
+        ],
+        "scope": "joint menu, permitted production choices and cost/surplus pack frontiers; provided price data",
+        "heuristicOrdering": "continuous lower price relaxation for ordering only; never a physical quantity or an optimality certificate"
+      },
+      "totalCents": 100,
+      "score": "289/2",
+      "metrics": {
+        "distinctRecipes": 2,
+        "distinctFamilies": 2,
+        "stockUsed": {
+          "tomato": "450"
+        },
+        "purchaseSurplus": {
+          "tomato": "290"
+        }
+      },
+      "stable": true,
+      "quantitiesValid": true
+    },
+    {
+      "recipeCount": 4,
+      "mealCount": 2,
+      "strategy": "diverse",
+      "maxEvaluations": 100,
+      "elapsedMs": 2.279620999999999,
+      "repeatElapsedMs": 1.542828,
+      "memory": {
+        "rssBefore": 39526400,
+        "rssAfter": 39841792,
+        "heapUsedDelta": -865352,
+        "sampledPeakRss": 39841792,
+        "processCumulativeMaxRssKiB": 39292
+      },
+      "status": "feasible",
+      "search": {
+        "strategy": "diverse",
+        "evaluated": 7,
+        "feasible": 7,
+        "nodes": 0,
+        "maxNodes": 100000,
+        "limited": false,
+        "optimal": false,
+        "quality": "best_found",
+        "rejected": [],
+        "failures": {},
+        "progress": [
+          {
+            "evaluated": 1,
+            "score": "169",
+            "totalCents": 100,
+            "cause": "seed-0"
+          },
+          {
+            "evaluated": 2,
+            "score": "333/2",
+            "totalCents": 100,
+            "cause": "seed-1"
+          },
+          {
+            "evaluated": 4,
+            "score": "289/2",
+            "totalCents": 100,
+            "cause": "seed-3"
+          }
+        ],
+        "scope": "joint menu, permitted production choices and cost/surplus pack frontiers; provided price data",
+        "heuristicOrdering": "continuous lower price relaxation for ordering only; never a physical quantity or an optimality certificate"
+      },
+      "totalCents": 100,
+      "score": "289/2",
+      "metrics": {
+        "distinctRecipes": 2,
+        "distinctFamilies": 2,
+        "stockUsed": {
+          "tomato": "450"
+        },
+        "purchaseSurplus": {
+          "tomato": "290"
+        }
+      },
+      "stable": true,
+      "quantitiesValid": true
+    },
+    {
+      "recipeCount": 30,
+      "mealCount": 5,
+      "strategy": "exhaustive",
+      "maxEvaluations": 250,
+      "elapsedMs": 77.577406,
+      "repeatElapsedMs": 74.97770700000001,
+      "memory": {
+        "rssBefore": 40235008,
+        "rssAfter": 55996416,
+        "heapUsedDelta": 1000224,
+        "sampledPeakRss": 55996416,
+        "processCumulativeMaxRssKiB": 54940
+      },
+      "status": "feasible",
+      "search": {
+        "strategy": "exhaustive",
+        "evaluated": 250,
+        "feasible": 250,
+        "nodes": 265,
+        "maxNodes": 100000,
+        "limited": true,
+        "optimal": false,
+        "quality": "best_found",
+        "rejected": [],
+        "failures": {},
+        "progress": [
+          {
+            "evaluated": 1,
+            "score": "336",
+            "totalCents": 270,
+            "cause": "exhaustive"
+          },
+          {
+            "evaluated": 3,
+            "score": "327",
+            "totalCents": 270,
+            "cause": "exhaustive"
+          },
+          {
+            "evaluated": 29,
+            "score": "326",
+            "totalCents": 270,
+            "cause": "exhaustive"
+          }
+        ],
+        "scope": "joint menu, permitted production choices and cost/surplus pack frontiers; provided price data",
+        "heuristicOrdering": "continuous lower price relaxation for ordering only; never a physical quantity or an optimality certificate"
+      },
+      "totalCents": 270,
+      "score": "326",
+      "metrics": {
+        "distinctRecipes": 5,
+        "distinctFamilies": 5,
+        "stockUsed": {
+          "tomato": "450"
+        },
+        "purchaseSurplus": {
+          "tomato": "5"
+        }
+      },
+      "stable": true,
+      "quantitiesValid": true
+    },
+    {
+      "recipeCount": 30,
+      "mealCount": 5,
+      "strategy": "local",
+      "maxEvaluations": 250,
+      "elapsedMs": 58.58514299999999,
+      "repeatElapsedMs": 59.91329200000001,
+      "memory": {
+        "rssBefore": 56258560,
+        "rssAfter": 56389632,
+        "heapUsedDelta": -442904,
+        "sampledPeakRss": 56389632,
+        "processCumulativeMaxRssKiB": 56092
+      },
+      "status": "feasible",
+      "search": {
+        "strategy": "local",
+        "evaluated": 250,
+        "feasible": 250,
+        "nodes": 0,
+        "maxNodes": 100000,
+        "limited": true,
+        "optimal": false,
+        "quality": "best_found",
+        "rejected": [],
+        "failures": {},
+        "progress": [
+          {
+            "evaluated": 1,
+            "score": "336",
+            "totalCents": 270,
+            "cause": "seed-0"
+          },
+          {
+            "evaluated": 2,
+            "score": "315",
+            "totalCents": 270,
+            "cause": "local-replacement"
+          },
+          {
+            "evaluated": 3,
+            "score": "306",
+            "totalCents": 270,
+            "cause": "local-replacement"
+          },
+          {
+            "evaluated": 29,
+            "score": "609/2",
+            "totalCents": 270,
+            "cause": "local-replacement"
+          },
+          {
+            "evaluated": 127,
+            "score": "607/2",
+            "totalCents": 270,
+            "cause": "local-replacement"
+          },
+          {
+            "evaluated": 128,
+            "score": "567/2",
+            "totalCents": 270,
+            "cause": "local-replacement"
+          },
+          {
+            "evaluated": 131,
+            "score": "565/2",
+            "totalCents": 270,
+            "cause": "local-replacement"
+          }
+        ],
+        "scope": "joint menu, permitted production choices and cost/surplus pack frontiers; provided price data",
+        "heuristicOrdering": "continuous lower price relaxation for ordering only; never a physical quantity or an optimality certificate"
+      },
+      "totalCents": 270,
+      "score": "565/2",
+      "metrics": {
+        "distinctRecipes": 5,
+        "distinctFamilies": 5,
+        "stockUsed": {
+          "egg": "3",
+          "tomato": "450"
+        },
+        "purchaseSurplus": {
+          "egg": "0",
+          "tomato": "0"
+        }
+      },
+      "stable": true,
+      "quantitiesValid": true
+    },
+    {
+      "recipeCount": 30,
+      "mealCount": 5,
+      "strategy": "diverse",
+      "maxEvaluations": 250,
+      "elapsedMs": 58.62327499999998,
+      "repeatElapsedMs": 47.413026,
+      "memory": {
+        "rssBefore": 56627200,
+        "rssAfter": 61038592,
+        "heapUsedDelta": 2121040,
+        "sampledPeakRss": 62103552,
+        "processCumulativeMaxRssKiB": 60648
+      },
+      "status": "feasible",
+      "search": {
+        "strategy": "diverse",
+        "evaluated": 250,
+        "feasible": 250,
+        "nodes": 0,
+        "maxNodes": 100000,
+        "limited": true,
+        "optimal": false,
+        "quality": "best_found",
+        "rejected": [],
+        "failures": {},
+        "progress": [
+          {
+            "evaluated": 1,
+            "score": "336",
+            "totalCents": 270,
+            "cause": "seed-0"
+          },
+          {
+            "evaluated": 2,
+            "score": "611/2",
+            "totalCents": 270,
+            "cause": "seed-1"
+          },
+          {
+            "evaluated": 10,
+            "score": "573/2",
+            "totalCents": 270,
+            "cause": "local-replacement"
+          },
+          {
+            "evaluated": 136,
+            "score": "533/2",
+            "totalCents": 270,
+            "cause": "local-replacement"
+          }
+        ],
+        "scope": "joint menu, permitted production choices and cost/surplus pack frontiers; provided price data",
+        "heuristicOrdering": "continuous lower price relaxation for ordering only; never a physical quantity or an optimality certificate"
+      },
+      "totalCents": 270,
+      "score": "533/2",
+      "metrics": {
+        "distinctRecipes": 5,
+        "distinctFamilies": 5,
+        "stockUsed": {
+          "rice": "180",
+          "tomato": "450"
+        },
+        "purchaseSurplus": {
+          "rice": "0",
+          "tomato": "10"
+        }
+      },
+      "stable": true,
+      "quantitiesValid": true
+    },
+    {
+      "recipeCount": 60,
+      "mealCount": 10,
+      "strategy": "exhaustive",
+      "maxEvaluations": 400,
+      "elapsedMs": 137.37775299999998,
+      "repeatElapsedMs": 107.19382899999994,
+      "memory": {
+        "rssBefore": 61169664,
+        "rssAfter": 66281472,
+        "heapUsedDelta": 2012624,
+        "sampledPeakRss": 66281472,
+        "processCumulativeMaxRssKiB": 66648
+      },
+      "status": "feasible",
+      "search": {
+        "strategy": "exhaustive",
+        "evaluated": 400,
+        "feasible": 400,
+        "nodes": 418,
+        "maxNodes": 100000,
+        "limited": true,
+        "optimal": false,
+        "quality": "best_found",
+        "rejected": [],
+        "failures": {},
+        "progress": [
+          {
+            "evaluated": 1,
+            "score": "869",
+            "totalCents": 680,
+            "cause": "exhaustive"
+          },
+          {
+            "evaluated": 2,
+            "score": "868",
+            "totalCents": 680,
+            "cause": "exhaustive"
+          },
+          {
+            "evaluated": 3,
+            "score": "867",
+            "totalCents": 680,
+            "cause": "exhaustive"
+          },
+          {
+            "evaluated": 4,
+            "score": "866",
+            "totalCents": 680,
+            "cause": "exhaustive"
+          },
+          {
+            "evaluated": 5,
+            "score": "865",
+            "totalCents": 680,
+            "cause": "exhaustive"
+          },
+          {
+            "evaluated": 6,
+            "score": "765",
+            "totalCents": 610,
+            "cause": "exhaustive"
+          },
+          {
+            "evaluated": 15,
+            "score": "763",
+            "totalCents": 610,
+            "cause": "exhaustive"
+          }
+        ],
+        "scope": "joint menu, permitted production choices and cost/surplus pack frontiers; provided price data",
+        "heuristicOrdering": "continuous lower price relaxation for ordering only; never a physical quantity or an optimality certificate"
+      },
+      "totalCents": 610,
+      "score": "763",
+      "metrics": {
+        "distinctRecipes": 10,
+        "distinctFamilies": 8,
+        "stockUsed": {
+          "egg": "3",
+          "rice": "240",
+          "tomato": "450"
+        },
+        "purchaseSurplus": {
+          "egg": "0",
+          "rice": "0",
+          "tomato": "5"
+        }
+      },
+      "stable": true,
+      "quantitiesValid": true
+    },
+    {
+      "recipeCount": 60,
+      "mealCount": 10,
+      "strategy": "local",
+      "maxEvaluations": 400,
+      "elapsedMs": 125.62250099999994,
+      "repeatElapsedMs": 100.55361700000003,
+      "memory": {
+        "rssBefore": 68247552,
+        "rssAfter": 68919296,
+        "heapUsedDelta": -1771728,
+        "sampledPeakRss": 68919296,
+        "processCumulativeMaxRssKiB": 76008
+      },
+      "status": "feasible",
+      "search": {
+        "strategy": "local",
+        "evaluated": 400,
+        "feasible": 400,
+        "nodes": 0,
+        "maxNodes": 100000,
+        "limited": true,
+        "optimal": false,
+        "quality": "best_found",
+        "rejected": [],
+        "failures": {},
+        "progress": [
+          {
+            "evaluated": 1,
+            "score": "869",
+            "totalCents": 680,
+            "cause": "seed-0"
+          },
+          {
+            "evaluated": 2,
+            "score": "846",
+            "totalCents": 680,
+            "cause": "local-replacement"
+          },
+          {
+            "evaluated": 3,
+            "score": "845",
+            "totalCents": 680,
+            "cause": "local-replacement"
+          },
+          {
+            "evaluated": 4,
+            "score": "844",
+            "totalCents": 680,
+            "cause": "local-replacement"
+          },
+          {
+            "evaluated": 5,
+            "score": "843",
+            "totalCents": 680,
+            "cause": "local-replacement"
+          },
+          {
+            "evaluated": 6,
+            "score": "743",
+            "totalCents": 610,
+            "cause": "local-replacement"
+          }
+        ],
+        "scope": "joint menu, permitted production choices and cost/surplus pack frontiers; provided price data",
+        "heuristicOrdering": "continuous lower price relaxation for ordering only; never a physical quantity or an optimality certificate"
+      },
+      "totalCents": 610,
+      "score": "743",
+      "metrics": {
+        "distinctRecipes": 10,
+        "distinctFamilies": 8,
+        "stockUsed": {
+          "egg": "3",
+          "rice": "220",
+          "tomato": "450"
+        },
+        "purchaseSurplus": {
+          "egg": "0",
+          "rice": "0",
+          "tomato": "5"
+        }
+      },
+      "stable": true,
+      "quantitiesValid": true
+    },
+    {
+      "recipeCount": 60,
+      "mealCount": 10,
+      "strategy": "diverse",
+      "maxEvaluations": 400,
+      "elapsedMs": 111.55060400000002,
+      "repeatElapsedMs": 102.78434399999992,
+      "memory": {
+        "rssBefore": 77832192,
+        "rssAfter": 78749696,
+        "heapUsedDelta": -171512,
+        "sampledPeakRss": 78749696,
+        "processCumulativeMaxRssKiB": 77288
+      },
+      "status": "feasible",
+      "search": {
+        "strategy": "diverse",
+        "evaluated": 400,
+        "feasible": 400,
+        "nodes": 0,
+        "maxNodes": 100000,
+        "limited": true,
+        "optimal": false,
+        "quality": "best_found",
+        "rejected": [],
+        "failures": {},
+        "progress": [
+          {
+            "evaluated": 1,
+            "score": "869",
+            "totalCents": 680,
+            "cause": "seed-0"
+          },
+          {
+            "evaluated": 4,
+            "score": "1691/2",
+            "totalCents": 680,
+            "cause": "seed-3"
+          },
+          {
+            "evaluated": 6,
+            "score": "835",
+            "totalCents": 680,
+            "cause": "seed-5"
+          },
+          {
+            "evaluated": 8,
+            "score": "805",
+            "totalCents": 680,
+            "cause": "local-replacement"
+          },
+          {
+            "evaluated": 15,
+            "score": "784",
+            "totalCents": 680,
+            "cause": "local-replacement"
+          },
+          {
+            "evaluated": 22,
+            "score": "778",
+            "totalCents": 680,
+            "cause": "local-replacement"
+          },
+          {
+            "evaluated": 34,
+            "score": "777",
+            "totalCents": 680,
+            "cause": "local-replacement"
+          },
+          {
+            "evaluated": 238,
+            "score": "773",
+            "totalCents": 680,
+            "cause": "local-replacement"
+          }
+        ],
+        "scope": "joint menu, permitted production choices and cost/surplus pack frontiers; provided price data",
+        "heuristicOrdering": "continuous lower price relaxation for ordering only; never a physical quantity or an optimality certificate"
+      },
+      "totalCents": 680,
+      "score": "773",
+      "metrics": {
+        "distinctRecipes": 10,
+        "distinctFamilies": 8,
+        "stockUsed": {
+          "egg": "6",
+          "rice": "250",
+          "tomato": "450"
+        },
+        "purchaseSurplus": {
+          "egg": "0",
+          "rice": "0",
+          "tomato": "35"
+        }
+      },
+      "stable": true,
+      "quantitiesValid": true
+    }
+  ],
+  "comparisons": [
+    {
+      "recipeCount": 4,
+      "bestMeasuredScore": "144",
+      "provenReference": "144",
+      "gaps": [
+        {
+          "strategy": "exhaustive",
+          "scoreGapToBestMeasured": "0"
+        },
+        {
+          "strategy": "local",
+          "scoreGapToBestMeasured": "1/2"
+        },
+        {
+          "strategy": "diverse",
+          "scoreGapToBestMeasured": "1/2"
+        }
+      ]
+    },
+    {
+      "recipeCount": 30,
+      "bestMeasuredScore": "533/2",
+      "provenReference": null,
+      "gaps": [
+        {
+          "strategy": "diverse",
+          "scoreGapToBestMeasured": "0"
+        },
+        {
+          "strategy": "local",
+          "scoreGapToBestMeasured": "16"
+        },
+        {
+          "strategy": "exhaustive",
+          "scoreGapToBestMeasured": "119/2"
+        }
+      ]
+    },
+    {
+      "recipeCount": 60,
+      "bestMeasuredScore": "743",
+      "provenReference": null,
+      "gaps": [
+        {
+          "strategy": "local",
+          "scoreGapToBestMeasured": "0"
+        },
+        {
+          "strategy": "exhaustive",
+          "scoreGapToBestMeasured": "20"
+        },
+        {
+          "strategy": "diverse",
+          "scoreGapToBestMeasured": "30"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Synthetic catalogs, not household culinary validation.",
+    "RSS is sampled, not a per-call allocation or mobile peak guarantee.",
+    "Heap deltas may be negative due to garbage collection.",
+    "Only completed exhaustive searches certify optimality.",
+    "No iPhone or Safari timing guarantee; no OR-Tools timing was measured."
+  ]
+}

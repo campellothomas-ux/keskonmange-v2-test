@@ -1,0 +1,366 @@
+{
+  "notice": "All recipes, product contents, prices and policy coefficients are synthetic test data. No observed shop price, food conversion, expiry guarantee or household recipe validation.",
+  "ingredients": [
+    {
+      "id": "tomato",
+      "unit": "g",
+      "basis": "net",
+      "perishable": true,
+      "allergens": []
+    },
+    {
+      "id": "rice",
+      "unit": "g",
+      "basis": "net",
+      "perishable": false,
+      "allergens": []
+    },
+    {
+      "id": "egg",
+      "unit": "unit",
+      "basis": "net",
+      "countKind": "egg",
+      "indivisible": true,
+      "perishable": true,
+      "allergens": [
+        "egg"
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "r0",
+      "name": "Recette ajustable synthétique 0",
+      "family": "family-0",
+      "yieldPortions": 4,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "4",
+        "portionsPerUnit": "1",
+        "unitLabel": "portion",
+        "minUnits": "1",
+        "stepUnits": "1"
+      },
+      "ingredients": [
+        {
+          "ingredientId": "tomato",
+          "quantity": {
+            "amount": "400",
+            "unit": "g",
+            "basis": "net"
+          }
+        }
+      ]
+    },
+    {
+      "id": "r1",
+      "name": "Recette ajustable synthétique 1",
+      "family": "family-1",
+      "yieldPortions": 4,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "4",
+        "portionsPerUnit": "1",
+        "unitLabel": "portion",
+        "minUnits": "1",
+        "stepUnits": "1"
+      },
+      "ingredients": [
+        {
+          "ingredientId": "tomato",
+          "quantity": {
+            "amount": "400",
+            "unit": "g",
+            "basis": "net"
+          }
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "name": "Recette ajustable synthétique 2",
+      "family": "family-2",
+      "yieldPortions": 4,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "4",
+        "portionsPerUnit": "1",
+        "unitLabel": "portion",
+        "minUnits": "1",
+        "stepUnits": "1"
+      },
+      "ingredients": [
+        {
+          "ingredientId": "tomato",
+          "quantity": {
+            "amount": "400",
+            "unit": "g",
+            "basis": "net"
+          }
+        }
+      ]
+    },
+    {
+      "id": "r3",
+      "name": "Recette ajustable synthétique 3",
+      "family": "family-3",
+      "yieldPortions": 4,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "4",
+        "portionsPerUnit": "1",
+        "unitLabel": "portion",
+        "minUnits": "1",
+        "stepUnits": "1"
+      },
+      "ingredients": [
+        {
+          "ingredientId": "tomato",
+          "quantity": {
+            "amount": "400",
+            "unit": "g",
+            "basis": "net"
+          }
+        }
+      ]
+    },
+    {
+      "id": "r4",
+      "name": "Recette ajustable synthétique 4",
+      "family": "family-0",
+      "yieldPortions": 4,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "4",
+        "portionsPerUnit": "1",
+        "unitLabel": "portion",
+        "minUnits": "1",
+        "stepUnits": "1"
+      },
+      "ingredients": [
+        {
+          "ingredientId": "tomato",
+          "quantity": {
+            "amount": "400",
+            "unit": "g",
+            "basis": "net"
+          }
+        }
+      ]
+    },
+    {
+      "id": "r5",
+      "name": "Recette ajustable synthétique 5",
+      "family": "family-1",
+      "yieldPortions": 4,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "4",
+        "portionsPerUnit": "1",
+        "unitLabel": "portion",
+        "minUnits": "1",
+        "stepUnits": "1"
+      },
+      "ingredients": [
+        {
+          "ingredientId": "tomato",
+          "quantity": {
+            "amount": "320",
+            "unit": "g",
+            "basis": "net"
+          }
+        },
+        {
+          "ingredientId": "rice",
+          "quantity": {
+            "amount": "80",
+            "unit": "g",
+            "basis": "net"
+          }
+        }
+      ]
+    },
+    {
+      "id": "r6",
+      "name": "Recette ajustable synthétique 6",
+      "family": "family-2",
+      "yieldPortions": 4,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "4",
+        "portionsPerUnit": "1",
+        "unitLabel": "portion",
+        "minUnits": "1",
+        "stepUnits": "1"
+      },
+      "ingredients": [
+        {
+          "ingredientId": "tomato",
+          "quantity": {
+            "amount": "480",
+            "unit": "g",
+            "basis": "net"
+          }
+        }
+      ]
+    },
+    {
+      "id": "quiche",
+      "name": "Quiche de test : données synthétiques",
+      "family": "batch",
+      "yieldPortions": 4,
+      "production": {
+        "version": 1,
+        "mode": "batch",
+        "referenceUnits": "1",
+        "portionsPerUnit": "4",
+        "unitLabel": "quiche",
+        "minUnits": "1",
+        "stepUnits": "1"
+      },
+      "ingredients": [
+        {
+          "ingredientId": "tomato",
+          "quantity": {
+            "amount": "400",
+            "unit": "g",
+            "basis": "net"
+          }
+        },
+        {
+          "ingredientId": "egg",
+          "quantity": {
+            "amount": "3",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "egg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "burger",
+      "name": "Burger de test : données synthétiques",
+      "family": "individual",
+      "yieldPortions": 1,
+      "production": {
+        "version": 1,
+        "mode": "unit",
+        "referenceUnits": "1",
+        "portionsPerUnit": "1",
+        "unitLabel": "burger",
+        "minUnits": "1",
+        "stepUnits": "1"
+      },
+      "ingredients": [
+        {
+          "ingredientId": "tomato",
+          "quantity": {
+            "amount": "80",
+            "unit": "g",
+            "basis": "net"
+          }
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "tomato-pack",
+      "ingredientId": "tomato",
+      "storeId": "synthetic-store",
+      "mode": "fixed",
+      "saleUnit": "package",
+      "contentVerified": true,
+      "contentEvidence": "Synthetic lot 2 test fixture, not a commercial observation",
+      "content": {
+        "amount": "400",
+        "unit": "g",
+        "basis": "net"
+      },
+      "price": {
+        "kind": "estimated",
+        "storeId": "synthetic-store",
+        "currency": "EUR",
+        "cents": 100
+      }
+    },
+    {
+      "id": "rice-pack",
+      "ingredientId": "rice",
+      "storeId": "synthetic-store",
+      "mode": "fixed",
+      "saleUnit": "package",
+      "contentVerified": true,
+      "contentEvidence": "Synthetic lot 2 test fixture, not a commercial observation",
+      "content": {
+        "amount": "500",
+        "unit": "g",
+        "basis": "net"
+      },
+      "price": {
+        "kind": "estimated",
+        "storeId": "synthetic-store",
+        "currency": "EUR",
+        "cents": 120
+      }
+    },
+    {
+      "id": "egg-pack",
+      "ingredientId": "egg",
+      "storeId": "synthetic-store",
+      "mode": "fixed",
+      "saleUnit": "package",
+      "contentVerified": true,
+      "contentEvidence": "Synthetic lot 2 test fixture, not a commercial observation",
+      "content": {
+        "amount": "6",
+        "unit": "unit",
+        "basis": "net",
+        "countKind": "egg"
+      },
+      "price": {
+        "kind": "estimated",
+        "storeId": "synthetic-store",
+        "currency": "EUR",
+        "cents": 200
+      }
+    }
+  ],
+  "session": {
+    "storeId": "synthetic-store",
+    "asOf": "2026-11-12"
+  },
+  "state": {
+    "revision": 0,
+    "physical": {
+      "tomato": "200"
+    },
+    "reservations": {
+      "outside-menu": {
+        "tomato": "50"
+      }
+    },
+    "operations": {}
+  },
+  "policy": {
+    "wasteRateCents": {
+      "tomato": "1/10"
+    },
+    "repeatPenaltyCents": 100
+  },
+  "constraints": {
+    "maxRepeats": 1
+  },
+  "budget": {
+    "strict": false,
+    "cents": 2000
+  }
+}
