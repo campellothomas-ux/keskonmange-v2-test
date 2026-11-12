@@ -1,0 +1,78 @@
+{
+  "notice": "TEST ANNOTATIONS ONLY: yield, identity and net basis chosen explicitly for reproducible tests; require household review before use. No spoon/mass or piece/mass conversion.",
+  "mappings": {
+    "blanc de poulet": {
+      "ingredientId": "chicken",
+      "basis": "net",
+      "evidence": "synthetic fixture annotation of V2 exact name, not household validation"
+    },
+    "poireau": {
+      "ingredientId": "leek",
+      "basis": "net",
+      "evidence": "synthetic fixture annotation of V2 exact name, not household validation",
+      "countKind": "leek"
+    },
+    "champignon de Paris": {
+      "ingredientId": "mushroom",
+      "basis": "net",
+      "evidence": "synthetic fixture annotation of V2 exact name, not household validation"
+    },
+    "crème légère": {
+      "ingredientId": "cream",
+      "basis": "net",
+      "evidence": "synthetic fixture annotation of V2 exact name, not household validation"
+    },
+    "aubergine": {
+      "ingredientId": "aubergine",
+      "basis": "net",
+      "evidence": "synthetic fixture annotation of V2 exact name, not household validation",
+      "countKind": "aubergine"
+    },
+    "courgette": {
+      "ingredientId": "zucchini",
+      "basis": "net",
+      "evidence": "synthetic fixture annotation of V2 exact name, not household validation",
+      "countKind": "zucchini"
+    },
+    "tomate": {
+      "ingredientId": "tomato",
+      "basis": "net",
+      "evidence": "synthetic fixture annotation of V2 exact name, not household validation",
+      "countKind": "tomato"
+    },
+    "oignon": {
+      "ingredientId": "onion",
+      "basis": "net",
+      "evidence": "synthetic fixture annotation of V2 exact name, not household validation",
+      "countKind": "onion"
+    },
+    "comté": {
+      "ingredientId": "comte",
+      "basis": "net",
+      "evidence": "synthetic fixture annotation of V2 exact name, not household validation"
+    }
+  },
+  "recipes": {
+    "Poulet aux champignons et poireaux": {
+      "id": "v2-chicken",
+      "yieldPortions": 2,
+      "scalable": false,
+      "family": "poultry",
+      "evidence": "test: treat V2 portions as batch yield, no scaling authorization"
+    },
+    "Ratatouille minute": {
+      "id": "v2-ratatouille",
+      "yieldPortions": 2,
+      "scalable": false,
+      "family": "vegetables",
+      "evidence": "test: treat V2 portions as batch yield, no scaling authorization"
+    },
+    "Gratin de poireaux au comté": {
+      "id": "v2-gratin",
+      "yieldPortions": 2,
+      "scalable": false,
+      "family": "gratin",
+      "evidence": "test: treat V2 portions as batch yield, no scaling authorization"
+    }
+  }
+}

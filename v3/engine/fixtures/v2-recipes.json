@@ -1,0 +1,801 @@
+{
+  "source": {
+    "repository": "campellothomas-ux/keskonmange-v2-test",
+    "commit": "0d9efe9abdd19f44c7ed25a0617932ffcc1e2a25",
+    "path": "index.html",
+    "constant": "DEMO_IMPORT"
+  },
+  "version": 2,
+  "recettes": [
+    {
+      "nom": "Émincé de poulet au potimarron",
+      "portions": 2,
+      "tempsMinutes": 22,
+      "difficulte": "facile",
+      "effort": {
+        "manipulations": "faible",
+        "vaisselle": "faible",
+        "coordination": "faible"
+      },
+      "tags": [
+        "one_pot",
+        "peu_de_vaisselle",
+        "plat",
+        "riche_en_proteines"
+      ],
+      "saisonnalite": {
+        "mode": "auto",
+        "ingredientsPrincipaux": [
+          "potimarron"
+        ]
+      },
+      "ingredients": [
+        {
+          "nom": "blanc de poulet",
+          "quantite": 260,
+          "unite": "g",
+          "meta": {
+            "rayon": "viandes_poissons",
+            "familles": [
+              "volaille"
+            ],
+            "alias": [
+              "filet de poulet"
+            ]
+          }
+        },
+        {
+          "nom": "potimarron",
+          "quantite": 350,
+          "unite": "g",
+          "meta": {
+            "rayon": "fruits_legumes",
+            "familles": [
+              "courge"
+            ],
+            "alias": []
+          }
+        },
+        {
+          "nom": "crème légère",
+          "quantite": 80,
+          "unite": "ml",
+          "meta": {
+            "rayon": "frais",
+            "familles": [],
+            "alias": []
+          }
+        },
+        {
+          "nom": "huile d’olive",
+          "quantite": 1,
+          "unite": "cas",
+          "meta": {
+            "rayon": "epicerie",
+            "familles": [],
+            "alias": []
+          }
+        }
+      ],
+      "etapes": [
+        "Émincer {{q:blanc de poulet}} de blanc de poulet et {{q:potimarron}} de potimarron en petits dés.",
+        "Faire chauffer {{q:huile d’olive}} d’huile d’olive, saisir le poulet 5 minutes puis ajouter le potimarron.",
+        "Ajouter un fond d’eau, couvrir 10 à 12 minutes puis incorporer {{q:crème légère}} de crème légère."
+      ]
+    },
+    {
+      "nom": "Poulet à la butternut et au curry",
+      "portions": 2,
+      "tempsMinutes": 25,
+      "difficulte": "facile",
+      "effort": {
+        "manipulations": "faible",
+        "vaisselle": "faible",
+        "coordination": "faible"
+      },
+      "tags": [
+        "one_pot",
+        "peu_de_vaisselle",
+        "plat",
+        "riche_en_proteines"
+      ],
+      "saisonnalite": {
+        "mode": "auto",
+        "ingredientsPrincipaux": [
+          "courge butternut"
+        ]
+      },
+      "ingredients": [
+        {
+          "nom": "blanc de poulet",
+          "quantite": 250,
+          "unite": "g",
+          "meta": {
+            "rayon": "viandes_poissons",
+            "familles": [
+              "volaille"
+            ],
+            "alias": []
+          }
+        },
+        {
+          "nom": "courge butternut",
+          "quantite": 320,
+          "unite": "g",
+          "meta": {
+            "rayon": "fruits_legumes",
+            "familles": [
+              "courge"
+            ],
+            "alias": [
+              "butternut"
+            ]
+          }
+        },
+        {
+          "nom": "curry",
+          "quantite": 2,
+          "unite": "cac",
+          "meta": {
+            "rayon": "epicerie",
+            "familles": [],
+            "alias": []
+          }
+        },
+        {
+          "nom": "lait de coco",
+          "quantite": 100,
+          "unite": "ml",
+          "meta": {
+            "rayon": "epicerie",
+            "familles": [],
+            "alias": []
+          }
+        }
+      ],
+      "etapes": [
+        "Tailler {{q:courge butternut}} de courge butternut en petits cubes.",
+        "Faire dorer {{q:blanc de poulet}} de blanc de poulet et la courge dans une grande poêle.",
+        "Ajouter {{q:curry}} de curry, {{q:lait de coco}} de lait de coco et un peu d’eau ; couvrir jusqu’à cuisson complète."
+      ]
+    },
+    {
+      "nom": "Poulet aux champignons et poireaux",
+      "portions": 2,
+      "tempsMinutes": 18,
+      "difficulte": "facile",
+      "effort": {
+        "manipulations": "faible",
+        "vaisselle": "faible",
+        "coordination": "faible"
+      },
+      "tags": [
+        "one_pot",
+        "peu_de_vaisselle",
+        "plat",
+        "riche_en_proteines"
+      ],
+      "saisonnalite": {
+        "mode": "auto",
+        "ingredientsPrincipaux": [
+          "poireau"
+        ]
+      },
+      "ingredients": [
+        {
+          "nom": "blanc de poulet",
+          "quantite": 250,
+          "unite": "g",
+          "meta": {
+            "rayon": "viandes_poissons",
+            "familles": [
+              "volaille"
+            ],
+            "alias": []
+          }
+        },
+        {
+          "nom": "poireau",
+          "quantite": 1,
+          "unite": "pièce",
+          "meta": {
+            "rayon": "fruits_legumes",
+            "familles": [],
+            "alias": []
+          }
+        },
+        {
+          "nom": "champignon de Paris",
+          "quantite": 180,
+          "unite": "g",
+          "meta": {
+            "rayon": "fruits_legumes",
+            "familles": [
+              "champignon"
+            ],
+            "alias": []
+          }
+        },
+        {
+          "nom": "crème légère",
+          "quantite": 80,
+          "unite": "ml",
+          "meta": {
+            "rayon": "frais",
+            "familles": [],
+            "alias": []
+          }
+        }
+      ],
+      "etapes": [
+        "Émincer {{q:poireau}} de poireau, {{q:champignon de Paris}} de champignons de Paris et {{q:blanc de poulet}} de blanc de poulet.",
+        "Faire sauter le tout à feu moyen-vif dans une grande poêle en remuant.",
+        "Ajouter {{q:crème légère}} de crème légère et poursuivre jusqu’à cuisson complète du poulet."
+      ]
+    },
+    {
+      "nom": "Poêlée poulet et aubergines",
+      "portions": 2,
+      "tempsMinutes": 20,
+      "difficulte": "facile",
+      "effort": {
+        "manipulations": "faible",
+        "vaisselle": "faible",
+        "coordination": "faible"
+      },
+      "tags": [
+        "one_pot",
+        "peu_de_vaisselle",
+        "plat",
+        "riche_en_proteines"
+      ],
+      "saisonnalite": {
+        "mode": "auto",
+        "ingredientsPrincipaux": [
+          "aubergine",
+          "tomate"
+        ]
+      },
+      "ingredients": [
+        {
+          "nom": "blanc de poulet",
+          "quantite": 260,
+          "unite": "g",
+          "meta": {
+            "rayon": "viandes_poissons",
+            "familles": [
+              "volaille"
+            ],
+            "alias": []
+          }
+        },
+        {
+          "nom": "aubergine",
+          "quantite": 1,
+          "unite": "pièce",
+          "meta": {
+            "rayon": "fruits_legumes",
+            "familles": [],
+            "alias": []
+          }
+        },
+        {
+          "nom": "tomate",
+          "quantite": 2,
+          "unite": "pièce",
+          "meta": {
+            "rayon": "fruits_legumes",
+            "familles": [
+              "tomate"
+            ],
+            "alias": []
+          }
+        },
+        {
+          "nom": "ail",
+          "quantite": 1,
+          "unite": "gousse",
+          "meta": {
+            "rayon": "fruits_legumes",
+            "familles": [],
+            "alias": []
+          }
+        }
+      ],
+      "etapes": [
+        "Couper {{q:aubergine}} d’aubergine en petits cubes et {{q:blanc de poulet}} de blanc de poulet en lanières.",
+        "Cuire à feu vif, puis ajouter {{q:tomate}} de tomate et {{q:ail}} d’ail haché.",
+        "Couvrir jusqu’à complète cuisson du poulet."
+      ]
+    },
+    {
+      "nom": "Ratatouille minute",
+      "portions": 2,
+      "tempsMinutes": 25,
+      "difficulte": "facile",
+      "effort": {
+        "manipulations": "faible",
+        "vaisselle": "faible",
+        "coordination": "faible"
+      },
+      "tags": [
+        "economique",
+        "one_pot",
+        "plat",
+        "sans_lactose",
+        "vegan",
+        "vegetarien"
+      ],
+      "saisonnalite": {
+        "mode": "auto",
+        "ingredientsPrincipaux": [
+          "aubergine",
+          "courgette",
+          "tomate"
+        ]
+      },
+      "ingredients": [
+        {
+          "nom": "aubergine",
+          "quantite": 1,
+          "unite": "pièce",
+          "meta": {
+            "rayon": "fruits_legumes",
+            "familles": [],
+            "alias": []
+          }
+        },
+        {
+          "nom": "courgette",
+          "quantite": 1,
+          "unite": "pièce",
+          "meta": {
+            "rayon": "fruits_legumes",
+            "familles": [],
+            "alias": []
+          }
+        },
+        {
+          "nom": "tomate",
+          "quantite": 3,
+          "unite": "pièce",
+          "meta": {
+            "rayon": "fruits_legumes",
+            "familles": [],
+            "alias": []
+          }
+        },
+        {
+          "nom": "oignon",
+          "quantite": 1,
+          "unite": "pièce",
+          "meta": {
+            "rayon": "fruits_legumes",
+            "familles": [],
+            "alias": []
+          }
+        }
+      ],
+      "etapes": [
+        "Découper {{q:aubergine}} d’aubergine, {{q:courgette}} de courgette, {{q:tomate}} de tomate et {{q:oignon}} d’oignon en petits dés.",
+        "Tout verser dans une sauteuse avec un fond d’eau et un filet d’huile.",
+        "Laisser mijoter à couvert jusqu’à tendreté."
+      ]
+    },
+    {
+      "nom": "Pâtes à la tomate en conserve",
+      "portions": 2,
+      "tempsMinutes": 20,
+      "difficulte": "facile",
+      "effort": {
+        "manipulations": "faible",
+        "vaisselle": "modere",
+        "coordination": "faible"
+      },
+      "tags": [
+        "economique",
+        "italien",
+        "plat",
+        "sans_lactose",
+        "vegan",
+        "vegetarien"
+      ],
+      "saisonnalite": {
+        "mode": "auto",
+        "ingredientsPrincipaux": []
+      },
+      "ingredients": [
+        {
+          "nom": "pâtes",
+          "quantite": 180,
+          "unite": "g",
+          "meta": {
+            "rayon": "epicerie",
+            "familles": [],
+            "alias": []
+          }
+        },
+        {
+          "nom": "tomates pelées en boîte",
+          "quantite": 400,
+          "unite": "g",
+          "meta": {
+            "rayon": "epicerie",
+            "familles": [
+              "tomate_conserve"
+            ],
+            "alias": []
+          }
+        },
+        {
+          "nom": "ail",
+          "quantite": 1,
+          "unite": "gousse",
+          "meta": {
+            "rayon": "fruits_legumes",
+            "familles": [],
+            "alias": []
+          }
+        },
+        {
+          "nom": "huile d’olive",
+          "quantite": 1,
+          "unite": "cas",
+          "meta": {
+            "rayon": "epicerie",
+            "familles": [],
+            "alias": []
+          }
+        }
+      ],
+      "etapes": [
+        "Cuire {{q:pâtes}} de pâtes dans une casserole d’eau bouillante.",
+        "Chauffer {{q:tomates pelées en boîte}} de tomates pelées en boîte avec {{q:ail}} d’ail et {{q:huile d’olive}} d’huile d’olive.",
+        "Mélanger et servir."
+      ]
+    },
+    {
+      "nom": "Gratin de poireaux au comté",
+      "portions": 2,
+      "tempsMinutes": 35,
+      "difficulte": "facile",
+      "effort": {
+        "manipulations": "modere",
+        "vaisselle": "eleve",
+        "coordination": "modere"
+      },
+      "tags": [
+        "four",
+        "plat",
+        "vegetarien"
+      ],
+      "saisonnalite": {
+        "mode": "auto",
+        "ingredientsPrincipaux": [
+          "poireau"
+        ]
+      },
+      "ingredients": [
+        {
+          "nom": "poireau",
+          "quantite": 3,
+          "unite": "pièce",
+          "meta": {
+            "rayon": "fruits_legumes",
+            "familles": [],
+            "alias": []
+          }
+        },
+        {
+          "nom": "comté",
+          "quantite": 90,
+          "unite": "g",
+          "meta": {
+            "rayon": "frais",
+            "familles": [],
+            "alias": []
+          }
+        },
+        {
+          "nom": "crème légère",
+          "quantite": 120,
+          "unite": "ml",
+          "meta": {
+            "rayon": "frais",
+            "familles": [],
+            "alias": []
+          }
+        }
+      ],
+      "etapes": [
+        "Émincer et laver {{q:poireau}} de poireau.",
+        "Cuire les poireaux 12 minutes à la poêle.",
+        "Mettre dans un plat avec {{q:crème légère}} de crème légère et {{q:comté}} de comté, puis gratiner au four."
+      ]
+    },
+    {
+      "nom": "Gözleme épinards-feta",
+      "portions": 2,
+      "tempsMinutes": 40,
+      "difficulte": "moyenne",
+      "effort": {
+        "manipulations": "eleve",
+        "vaisselle": "modere",
+        "coordination": "eleve"
+      },
+      "tags": [
+        "economique",
+        "plat",
+        "vegetarien"
+      ],
+      "saisonnalite": {
+        "mode": "auto",
+        "ingredientsPrincipaux": [
+          "épinards frais"
+        ]
+      },
+      "ingredients": [
+        {
+          "nom": "farine de blé",
+          "quantite": 200,
+          "unite": "g",
+          "meta": {
+            "rayon": "epicerie",
+            "familles": [],
+            "alias": []
+          }
+        },
+        {
+          "nom": "épinards frais",
+          "quantite": 150,
+          "unite": "g",
+          "meta": {
+            "rayon": "fruits_legumes",
+            "familles": [],
+            "alias": []
+          }
+        },
+        {
+          "nom": "feta",
+          "quantite": 100,
+          "unite": "g",
+          "meta": {
+            "rayon": "frais",
+            "familles": [],
+            "alias": []
+          }
+        },
+        {
+          "nom": "huile d’olive",
+          "quantite": 1,
+          "unite": "cas",
+          "meta": {
+            "rayon": "epicerie",
+            "familles": [],
+            "alias": []
+          }
+        }
+      ],
+      "etapes": [
+        "Pétrir {{q:farine de blé}} de farine de blé avec de l’eau et laisser reposer.",
+        "Faire tomber {{q:épinards frais}} d’épinards frais et mélanger avec {{q:feta}} de feta.",
+        "Étaler les galettes, garnir, replier et cuire à la poêle avec {{q:huile d’olive}} d’huile d’olive."
+      ]
+    },
+    {
+      "nom": "Lentilles au potimarron, tout-en-un",
+      "portions": 2,
+      "tempsMinutes": 28,
+      "difficulte": "facile",
+      "effort": {
+        "manipulations": "faible",
+        "vaisselle": "faible",
+        "coordination": "faible"
+      },
+      "tags": [
+        "economique",
+        "one_pot",
+        "peu_de_vaisselle",
+        "plat",
+        "vegan",
+        "vegetarien"
+      ],
+      "saisonnalite": {
+        "mode": "auto",
+        "ingredientsPrincipaux": [
+          "potimarron"
+        ]
+      },
+      "ingredients": [
+        {
+          "nom": "lentilles en conserve",
+          "quantite": 400,
+          "unite": "g",
+          "meta": {
+            "rayon": "epicerie",
+            "familles": [],
+            "alias": []
+          }
+        },
+        {
+          "nom": "potimarron",
+          "quantite": 280,
+          "unite": "g",
+          "meta": {
+            "rayon": "fruits_legumes",
+            "familles": [
+              "courge"
+            ],
+            "alias": []
+          }
+        },
+        {
+          "nom": "oignon",
+          "quantite": 1,
+          "unite": "pièce",
+          "meta": {
+            "rayon": "fruits_legumes",
+            "familles": [],
+            "alias": []
+          }
+        },
+        {
+          "nom": "bouillon de légumes",
+          "quantite": 1,
+          "unite": "cube",
+          "meta": {
+            "rayon": "epicerie",
+            "familles": [],
+            "alias": []
+          }
+        }
+      ],
+      "etapes": [
+        "Couper finement {{q:potimarron}} de potimarron et {{q:oignon}} d’oignon.",
+        "Mettre {{q:lentilles en conserve}} de lentilles en conserve et {{q:bouillon de légumes}} de bouillon dans une casserole avec un fond d’eau.",
+        "Laisser mijoter en remuant jusqu’à ce que la courge soit tendre."
+      ]
+    },
+    {
+      "nom": "Bol récupération poulet et riz",
+      "portions": 2,
+      "tempsMinutes": 25,
+      "difficulte": "facile",
+      "effort": {
+        "manipulations": "modere",
+        "vaisselle": "modere",
+        "coordination": "modere"
+      },
+      "tags": [
+        "familial",
+        "plat",
+        "post_entrainement",
+        "riche_en_proteines"
+      ],
+      "saisonnalite": {
+        "mode": "auto",
+        "ingredientsPrincipaux": [
+          "carotte"
+        ]
+      },
+      "ingredients": [
+        {
+          "nom": "blanc de poulet",
+          "quantite": 270,
+          "unite": "g",
+          "meta": {
+            "rayon": "viandes_poissons",
+            "familles": [
+              "volaille"
+            ],
+            "alias": []
+          }
+        },
+        {
+          "nom": "riz",
+          "quantite": 160,
+          "unite": "g",
+          "meta": {
+            "rayon": "epicerie",
+            "familles": [],
+            "alias": []
+          }
+        },
+        {
+          "nom": "carotte",
+          "quantite": 2,
+          "unite": "pièce",
+          "meta": {
+            "rayon": "fruits_legumes",
+            "familles": [],
+            "alias": []
+          }
+        },
+        {
+          "nom": "sauce soja",
+          "quantite": 1,
+          "unite": "cas",
+          "meta": {
+            "rayon": "epicerie",
+            "familles": [],
+            "alias": []
+          }
+        }
+      ],
+      "etapes": [
+        "Mettre {{q:riz}} de riz à cuire selon l’emballage.",
+        "Faire sauter {{q:blanc de poulet}} de blanc de poulet et {{q:carotte}} de carotte émincée dans une poêle.",
+        "Assaisonner avec {{q:sauce soja}} de sauce soja et servir sur le riz."
+      ]
+    },
+    {
+      "nom": "Salade de tomates et mozzarella",
+      "portions": 2,
+      "tempsMinutes": 10,
+      "difficulte": "facile",
+      "effort": {
+        "manipulations": "faible",
+        "vaisselle": "faible",
+        "coordination": "faible"
+      },
+      "tags": [
+        "plat",
+        "sans_cuisson",
+        "vegetarien"
+      ],
+      "saisonnalite": {
+        "mode": "auto",
+        "ingredientsPrincipaux": [
+          "tomate"
+        ]
+      },
+      "ingredients": [
+        {
+          "nom": "tomate",
+          "quantite": 4,
+          "unite": "pièce",
+          "meta": {
+            "rayon": "fruits_legumes",
+            "familles": [],
+            "alias": []
+          }
+        },
+        {
+          "nom": "mozzarella",
+          "quantite": 180,
+          "unite": "g",
+          "meta": {
+            "rayon": "frais",
+            "familles": [],
+            "alias": []
+          }
+        },
+        {
+          "nom": "basilic frais",
+          "quantite": 6,
+          "unite": "feuille",
+          "meta": {
+            "rayon": "fruits_legumes",
+            "familles": [],
+            "alias": []
+          }
+        },
+        {
+          "nom": "huile d’olive",
+          "quantite": 1,
+          "unite": "cas",
+          "meta": {
+            "rayon": "epicerie",
+            "familles": [],
+            "alias": []
+          }
+        }
+      ],
+      "etapes": [
+        "Laver et couper {{q:tomate}} de tomate.",
+        "Égoutter {{q:mozzarella}} de mozzarella.",
+        "Assembler avec {{q:basilic frais}} de basilic frais, assaisonner avec {{q:huile d’olive}} d’huile d’olive et servir."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "keskonmange-v3-engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {"node": ">=22"},
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "scenario": "node scripts/scenario.mjs",
+    "evaluate": "node scripts/evaluate.mjs",
+    "audit:v2": "node scripts/audit-v2.mjs"
+  }
+}

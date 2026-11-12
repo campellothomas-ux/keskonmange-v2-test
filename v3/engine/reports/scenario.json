@@ -1,0 +1,504 @@
+{
+  "notice": "All products/prices are synthetic, not verified E.Leclerc/Lidl references. Recipe amounts come from Git; basis/yield annotations are test assumptions. No expiry schedule or allergen guarantee.",
+  "source": {
+    "repository": "campellothomas-ux/keskonmange-v2-test",
+    "commit": "0d9efe9abdd19f44c7ed25a0617932ffcc1e2a25",
+    "path": "index.html",
+    "constant": "DEMO_IMPORT"
+  },
+  "optimization": {
+    "status": "feasible",
+    "solution": {
+      "meals": [
+        {
+          "id": "meal-1",
+          "recipeId": "v2-gratin",
+          "diners": 2,
+          "leftovers": "keep"
+        },
+        {
+          "id": "meal-2",
+          "recipeId": "v2-ratatouille",
+          "diners": 2,
+          "leftovers": "keep"
+        }
+      ],
+      "basket": {
+        "requirements": {
+          "needs": {
+            "aubergine": "1",
+            "comte": "90",
+            "cream": "120",
+            "leek": "3",
+            "onion": "1",
+            "tomato": "3",
+            "zucchini": "1"
+          },
+          "preparations": [
+            {
+              "mealId": "meal-1",
+              "recipeId": "v2-gratin",
+              "diners": "2",
+              "producedPortions": "2",
+              "keptPortions": "0",
+              "discardedPortions": "0",
+              "rounding": []
+            },
+            {
+              "mealId": "meal-2",
+              "recipeId": "v2-ratatouille",
+              "diners": "2",
+              "producedPortions": "2",
+              "keptPortions": "0",
+              "discardedPortions": "0",
+              "rounding": []
+            }
+          ]
+        },
+        "quantities": {
+          "aubergine": {
+            "unit": "unit",
+            "basis": "net",
+            "required": "1",
+            "physical": "0",
+            "available": "0",
+            "fromStock": "0",
+            "toBuy": "1",
+            "bought": "1",
+            "purchaseSurplus": "0",
+            "remainingFree": "0"
+          },
+          "comte": {
+            "unit": "g",
+            "basis": "net",
+            "required": "90",
+            "physical": "0",
+            "available": "0",
+            "fromStock": "0",
+            "toBuy": "90",
+            "bought": "200",
+            "purchaseSurplus": "110",
+            "remainingFree": "110"
+          },
+          "cream": {
+            "unit": "ml",
+            "basis": "net",
+            "required": "120",
+            "physical": "20",
+            "available": "20",
+            "fromStock": "20",
+            "toBuy": "100",
+            "bought": "200",
+            "purchaseSurplus": "100",
+            "remainingFree": "100"
+          },
+          "leek": {
+            "unit": "unit",
+            "basis": "net",
+            "required": "3",
+            "physical": "2",
+            "available": "1",
+            "fromStock": "1",
+            "toBuy": "2",
+            "bought": "3",
+            "purchaseSurplus": "1",
+            "remainingFree": "1"
+          },
+          "onion": {
+            "unit": "unit",
+            "basis": "net",
+            "required": "1",
+            "physical": "0",
+            "available": "0",
+            "fromStock": "0",
+            "toBuy": "1",
+            "bought": "1",
+            "purchaseSurplus": "0",
+            "remainingFree": "0"
+          },
+          "tomato": {
+            "unit": "unit",
+            "basis": "net",
+            "required": "3",
+            "physical": "0",
+            "available": "0",
+            "fromStock": "0",
+            "toBuy": "3",
+            "bought": "3",
+            "purchaseSurplus": "0",
+            "remainingFree": "0"
+          },
+          "zucchini": {
+            "unit": "unit",
+            "basis": "net",
+            "required": "1",
+            "physical": "0",
+            "available": "0",
+            "fromStock": "0",
+            "toBuy": "1",
+            "bought": "1",
+            "purchaseSurplus": "0",
+            "remainingFree": "0"
+          }
+        },
+        "menu": {
+          "lines": [
+            {
+              "productId": "fixture-aubergine-1",
+              "ingredientId": "aubergine",
+              "storeId": "fixture-store",
+              "count": 1,
+              "acquired": "1",
+              "costCents": 100,
+              "price": {
+                "kind": "estimated",
+                "storeId": "fixture-store",
+                "currency": "EUR",
+                "cents": 100
+              }
+            },
+            {
+              "productId": "fixture-comte-200",
+              "ingredientId": "comte",
+              "storeId": "fixture-store",
+              "count": 1,
+              "acquired": "200",
+              "costCents": 270,
+              "price": {
+                "kind": "estimated",
+                "storeId": "fixture-store",
+                "currency": "EUR",
+                "cents": 270
+              }
+            },
+            {
+              "productId": "fixture-cream-200",
+              "ingredientId": "cream",
+              "storeId": "fixture-store",
+              "count": 1,
+              "acquired": "200",
+              "costCents": 150,
+              "price": {
+                "kind": "estimated",
+                "storeId": "fixture-store",
+                "currency": "EUR",
+                "cents": 150
+              }
+            },
+            {
+              "productId": "fixture-leek-3",
+              "ingredientId": "leek",
+              "storeId": "fixture-store",
+              "count": 1,
+              "acquired": "3",
+              "costCents": 180,
+              "price": {
+                "kind": "estimated",
+                "storeId": "fixture-store",
+                "currency": "EUR",
+                "cents": 180
+              }
+            },
+            {
+              "productId": "fixture-onion-1",
+              "ingredientId": "onion",
+              "storeId": "fixture-store",
+              "count": 1,
+              "acquired": "1",
+              "costCents": 40,
+              "price": {
+                "kind": "estimated",
+                "storeId": "fixture-store",
+                "currency": "EUR",
+                "cents": 40
+              }
+            },
+            {
+              "productId": "fixture-tomato-3",
+              "ingredientId": "tomato",
+              "storeId": "fixture-store",
+              "count": 1,
+              "acquired": "3",
+              "costCents": 200,
+              "price": {
+                "kind": "estimated",
+                "storeId": "fixture-store",
+                "currency": "EUR",
+                "cents": 200
+              }
+            },
+            {
+              "productId": "fixture-zucchini-1",
+              "ingredientId": "zucchini",
+              "storeId": "fixture-store",
+              "count": 1,
+              "acquired": "1",
+              "costCents": 100,
+              "price": {
+                "kind": "estimated",
+                "storeId": "fixture-store",
+                "currency": "EUR",
+                "cents": 100
+              }
+            }
+          ],
+          "knownSubtotalCents": 1040,
+          "totalCents": 1040,
+          "rangeCents": [
+            0,
+            null
+          ],
+          "certainty": "estimated",
+          "strictBudgetVerifiable": false
+        },
+        "cart": {
+          "lines": [
+            {
+              "productId": "fixture-aubergine-1",
+              "ingredientId": "aubergine",
+              "storeId": "fixture-store",
+              "count": 1,
+              "acquired": "1",
+              "costCents": 100,
+              "price": {
+                "kind": "estimated",
+                "storeId": "fixture-store",
+                "currency": "EUR",
+                "cents": 100
+              }
+            },
+            {
+              "productId": "fixture-comte-200",
+              "ingredientId": "comte",
+              "storeId": "fixture-store",
+              "count": 1,
+              "acquired": "200",
+              "costCents": 270,
+              "price": {
+                "kind": "estimated",
+                "storeId": "fixture-store",
+                "currency": "EUR",
+                "cents": 270
+              }
+            },
+            {
+              "productId": "fixture-cream-200",
+              "ingredientId": "cream",
+              "storeId": "fixture-store",
+              "count": 1,
+              "acquired": "200",
+              "costCents": 150,
+              "price": {
+                "kind": "estimated",
+                "storeId": "fixture-store",
+                "currency": "EUR",
+                "cents": 150
+              }
+            },
+            {
+              "productId": "fixture-leek-3",
+              "ingredientId": "leek",
+              "storeId": "fixture-store",
+              "count": 1,
+              "acquired": "3",
+              "costCents": 180,
+              "price": {
+                "kind": "estimated",
+                "storeId": "fixture-store",
+                "currency": "EUR",
+                "cents": 180
+              }
+            },
+            {
+              "productId": "fixture-onion-1",
+              "ingredientId": "onion",
+              "storeId": "fixture-store",
+              "count": 1,
+              "acquired": "1",
+              "costCents": 40,
+              "price": {
+                "kind": "estimated",
+                "storeId": "fixture-store",
+                "currency": "EUR",
+                "cents": 40
+              }
+            },
+            {
+              "productId": "fixture-tomato-3",
+              "ingredientId": "tomato",
+              "storeId": "fixture-store",
+              "count": 1,
+              "acquired": "3",
+              "costCents": 200,
+              "price": {
+                "kind": "estimated",
+                "storeId": "fixture-store",
+                "currency": "EUR",
+                "cents": 200
+              }
+            },
+            {
+              "productId": "fixture-zucchini-1",
+              "ingredientId": "zucchini",
+              "storeId": "fixture-store",
+              "count": 1,
+              "acquired": "1",
+              "costCents": 100,
+              "price": {
+                "kind": "estimated",
+                "storeId": "fixture-store",
+                "currency": "EUR",
+                "cents": 100
+              }
+            }
+          ],
+          "knownSubtotalCents": 1040,
+          "totalCents": 1040,
+          "rangeCents": [
+            0,
+            null
+          ],
+          "certainty": "estimated",
+          "strictBudgetVerifiable": false
+        },
+        "packageOptimal": true
+      },
+      "score": "1031",
+      "incomplete": false,
+      "metrics": {
+        "distinctRecipes": 2,
+        "distinctFamilies": 2,
+        "stockUsed": {
+          "aubergine": "0",
+          "comte": "0",
+          "cream": "20",
+          "leek": "1",
+          "onion": "0",
+          "tomato": "0",
+          "zucchini": "0"
+        },
+        "purchaseSurplus": {
+          "aubergine": "0",
+          "comte": "110",
+          "cream": "100",
+          "leek": "1",
+          "onion": "0",
+          "tomato": "0",
+          "zucchini": "0"
+        }
+      }
+    },
+    "search": {
+      "visited": 3,
+      "feasible": 3,
+      "truncated": false,
+      "rejected": [],
+      "failures": {},
+      "optimal": true,
+      "scope": "two-stage: cheapest cover per menu, then explicit menu score; unordered menus, no expiry scheduling",
+      "priceBasis": "provided catalog amounts, including estimates; not a claim about real shop prices"
+    }
+  },
+  "lifecycle": [
+    {
+      "step": "only_first_two_lines_purchased",
+      "physical": {
+        "chicken": "100",
+        "leek": "2",
+        "cream": "20",
+        "aubergine": "1",
+        "comte": "200"
+      }
+    },
+    {
+      "step": "same_purchase_replayed",
+      "idempotent": true
+    },
+    {
+      "step": "all_meals_reserved",
+      "physical": {
+        "chicken": "100",
+        "leek": "5",
+        "cream": "220",
+        "aubergine": "1",
+        "comte": "200",
+        "onion": "1",
+        "tomato": "3",
+        "zucchini": "1"
+      },
+      "reservations": {
+        "other-menu": {
+          "leek": "1"
+        },
+        "meal-1": {
+          "comte": "90",
+          "cream": "120",
+          "leek": "3"
+        },
+        "meal-2": {
+          "aubergine": "1",
+          "onion": "1",
+          "tomato": "3",
+          "zucchini": "1"
+        }
+      }
+    },
+    {
+      "step": "first_meal_cooked",
+      "physical": {
+        "chicken": "100",
+        "leek": "2",
+        "cream": "100",
+        "aubergine": "1",
+        "comte": "110",
+        "onion": "1",
+        "tomato": "3",
+        "zucchini": "1"
+      },
+      "reservations": {
+        "other-menu": {
+          "leek": "1"
+        },
+        "meal-2": {
+          "aubergine": "1",
+          "onion": "1",
+          "tomato": "3",
+          "zucchini": "1"
+        }
+      }
+    },
+    {
+      "step": "cook_replayed",
+      "idempotent": true
+    },
+    {
+      "step": "cook_cancelled",
+      "physical": {
+        "chicken": "100",
+        "leek": "5",
+        "cream": "220",
+        "aubergine": "1",
+        "comte": "200",
+        "onion": "1",
+        "tomato": "3",
+        "zucchini": "1"
+      },
+      "reservations": {
+        "other-menu": {
+          "leek": "1"
+        },
+        "meal-2": {
+          "aubergine": "1",
+          "onion": "1",
+          "tomato": "3",
+          "zucchini": "1"
+        },
+        "meal-1": {
+          "comte": "90",
+          "cream": "120",
+          "leek": "3"
+        }
+      }
+    }
+  ]
+}

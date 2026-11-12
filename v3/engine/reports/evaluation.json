@@ -1,0 +1,465 @@
+{
+  "runtime": {
+    "node": "v24.22.1",
+    "platform": "linux",
+    "arch": "x64"
+  },
+  "notice": "All products/prices are synthetic, not verified E.Leclerc/Lidl references. Recipe amounts come from Git; basis/yield annotations are test assumptions. No expiry schedule or allergen guarantee.",
+  "source": {
+    "repository": "campellothomas-ux/keskonmange-v2-test",
+    "commit": "0d9efe9abdd19f44c7ed25a0617932ffcc1e2a25",
+    "path": "index.html",
+    "constant": "DEMO_IMPORT"
+  },
+  "policy": {
+    "repeatPenaltyCents": 100,
+    "wasteRateCents": {
+      "chicken": "1/100",
+      "cream": "1/100"
+    },
+    "perishableStockRateCents": {
+      "leek": "10"
+    }
+  },
+  "reference": {
+    "method": "independent enumeration of all distinct pairs + exhaustive integer pack counts",
+    "menus": [
+      {
+        "recipes": [
+          "v2-chicken",
+          "v2-ratatouille"
+        ],
+        "costCents": 1230,
+        "score": "12229/10"
+      },
+      {
+        "recipes": [
+          "v2-chicken",
+          "v2-gratin"
+        ],
+        "costCents": 1240,
+        "score": "12317/10"
+      },
+      {
+        "recipes": [
+          "v2-ratatouille",
+          "v2-gratin"
+        ],
+        "costCents": 1040,
+        "score": "1031"
+      }
+    ],
+    "best": {
+      "recipes": [
+        "v2-ratatouille",
+        "v2-gratin"
+      ],
+      "costCents": 1040,
+      "score": "1031"
+    },
+    "matchesEngine": true
+  },
+  "naive": {
+    "method": "first two V2 recipes, same validated packaging and stock",
+    "totalCents": 1230,
+    "extraCentsOverOptimizer": 190
+  },
+  "measurements": [
+    {
+      "name": "v2-three-recipes-exhaustive",
+      "status": "feasible",
+      "elapsedMs": 5.956955000000001,
+      "search": {
+        "visited": 3,
+        "feasible": 3,
+        "truncated": false,
+        "rejected": [],
+        "failures": {},
+        "optimal": true,
+        "scope": "two-stage: cheapest cover per menu, then explicit menu score; unordered menus, no expiry scheduling",
+        "priceBasis": "provided catalog amounts, including estimates; not a claim about real shop prices"
+      },
+      "totalCents": 1040,
+      "certainty": "estimated",
+      "score": "1031",
+      "metrics": {
+        "distinctRecipes": 2,
+        "distinctFamilies": 2,
+        "stockUsed": {
+          "aubergine": "0",
+          "comte": "0",
+          "cream": "20",
+          "leek": "1",
+          "onion": "0",
+          "tomato": "0",
+          "zucchini": "0"
+        },
+        "purchaseSurplus": {
+          "aubergine": "0",
+          "comte": "110",
+          "cream": "100",
+          "leek": "1",
+          "onion": "0",
+          "tomato": "0",
+          "zucchini": "0"
+        }
+      },
+      "quantityChecks": [
+        {
+          "ingredientId": "aubergine",
+          "coverage": true,
+          "surplusExact": true,
+          "stockNotReused": true,
+          "unit": "unit",
+          "basis": "net",
+          "stockUsed": "0",
+          "purchaseSurplus": "0"
+        },
+        {
+          "ingredientId": "comte",
+          "coverage": true,
+          "surplusExact": true,
+          "stockNotReused": true,
+          "unit": "g",
+          "basis": "net",
+          "stockUsed": "0",
+          "purchaseSurplus": "110"
+        },
+        {
+          "ingredientId": "cream",
+          "coverage": true,
+          "surplusExact": true,
+          "stockNotReused": true,
+          "unit": "ml",
+          "basis": "net",
+          "stockUsed": "20",
+          "purchaseSurplus": "100"
+        },
+        {
+          "ingredientId": "leek",
+          "coverage": true,
+          "surplusExact": true,
+          "stockNotReused": true,
+          "unit": "unit",
+          "basis": "net",
+          "stockUsed": "1",
+          "purchaseSurplus": "1"
+        },
+        {
+          "ingredientId": "onion",
+          "coverage": true,
+          "surplusExact": true,
+          "stockNotReused": true,
+          "unit": "unit",
+          "basis": "net",
+          "stockUsed": "0",
+          "purchaseSurplus": "0"
+        },
+        {
+          "ingredientId": "tomato",
+          "coverage": true,
+          "surplusExact": true,
+          "stockNotReused": true,
+          "unit": "unit",
+          "basis": "net",
+          "stockUsed": "0",
+          "purchaseSurplus": "0"
+        },
+        {
+          "ingredientId": "zucchini",
+          "coverage": true,
+          "surplusExact": true,
+          "stockNotReused": true,
+          "unit": "unit",
+          "basis": "net",
+          "stockUsed": "0",
+          "purchaseSurplus": "0"
+        }
+      ],
+      "strictConstraintChecks": {
+        "mealCount": true,
+        "minDistinct": true,
+        "maxRepeats": true,
+        "maxPerFamily": true,
+        "wholePackages": true,
+        "singleStore": true,
+        "budget": true
+      },
+      "allChecksPass": true
+    },
+    {
+      "name": "synthetic-18-recipes-six-meals-cap-500",
+      "status": "feasible",
+      "elapsedMs": 108.89427599999999,
+      "search": {
+        "visited": 500,
+        "feasible": 500,
+        "truncated": true,
+        "rejected": [],
+        "failures": {},
+        "optimal": false,
+        "scope": "two-stage: cheapest cover per menu, then explicit menu score; unordered menus, no expiry scheduling",
+        "priceBasis": "provided catalog amounts, including estimates; not a claim about real shop prices"
+      },
+      "totalCents": 2890,
+      "certainty": "estimated",
+      "score": "5765/2",
+      "metrics": {
+        "distinctRecipes": 6,
+        "distinctFamilies": 3,
+        "stockUsed": {
+          "aubergine": "0",
+          "chicken": "100",
+          "comte": "0",
+          "cream": "20",
+          "leek": "1",
+          "mushroom": "0",
+          "onion": "0",
+          "tomato": "0",
+          "zucchini": "0"
+        },
+        "purchaseSurplus": {
+          "aubergine": "0",
+          "chicken": "150",
+          "comte": "20",
+          "cream": "100",
+          "leek": "0",
+          "mushroom": "70",
+          "onion": "0",
+          "tomato": "0",
+          "zucchini": "0"
+        }
+      },
+      "quantityChecks": [
+        {
+          "ingredientId": "aubergine",
+          "coverage": true,
+          "surplusExact": true,
+          "stockNotReused": true,
+          "unit": "unit",
+          "basis": "net",
+          "stockUsed": "0",
+          "purchaseSurplus": "0"
+        },
+        {
+          "ingredientId": "chicken",
+          "coverage": true,
+          "surplusExact": true,
+          "stockNotReused": true,
+          "unit": "g",
+          "basis": "net",
+          "stockUsed": "100",
+          "purchaseSurplus": "150"
+        },
+        {
+          "ingredientId": "comte",
+          "coverage": true,
+          "surplusExact": true,
+          "stockNotReused": true,
+          "unit": "g",
+          "basis": "net",
+          "stockUsed": "0",
+          "purchaseSurplus": "20"
+        },
+        {
+          "ingredientId": "cream",
+          "coverage": true,
+          "surplusExact": true,
+          "stockNotReused": true,
+          "unit": "ml",
+          "basis": "net",
+          "stockUsed": "20",
+          "purchaseSurplus": "100"
+        },
+        {
+          "ingredientId": "leek",
+          "coverage": true,
+          "surplusExact": true,
+          "stockNotReused": true,
+          "unit": "unit",
+          "basis": "net",
+          "stockUsed": "1",
+          "purchaseSurplus": "0"
+        },
+        {
+          "ingredientId": "mushroom",
+          "coverage": true,
+          "surplusExact": true,
+          "stockNotReused": true,
+          "unit": "g",
+          "basis": "net",
+          "stockUsed": "0",
+          "purchaseSurplus": "70"
+        },
+        {
+          "ingredientId": "onion",
+          "coverage": true,
+          "surplusExact": true,
+          "stockNotReused": true,
+          "unit": "unit",
+          "basis": "net",
+          "stockUsed": "0",
+          "purchaseSurplus": "0"
+        },
+        {
+          "ingredientId": "tomato",
+          "coverage": true,
+          "surplusExact": true,
+          "stockNotReused": true,
+          "unit": "unit",
+          "basis": "net",
+          "stockUsed": "0",
+          "purchaseSurplus": "0"
+        },
+        {
+          "ingredientId": "zucchini",
+          "coverage": true,
+          "surplusExact": true,
+          "stockNotReused": true,
+          "unit": "unit",
+          "basis": "net",
+          "stockUsed": "0",
+          "purchaseSurplus": "0"
+        }
+      ],
+      "strictConstraintChecks": {
+        "mealCount": true,
+        "minDistinct": true,
+        "maxRepeats": true,
+        "maxPerFamily": true,
+        "wholePackages": true,
+        "singleStore": true,
+        "budget": true
+      },
+      "allChecksPass": true
+    },
+    {
+      "name": "synthetic-same-recipes-reversed-traversal-cap-500",
+      "status": "feasible",
+      "elapsedMs": 88.973937,
+      "search": {
+        "visited": 500,
+        "feasible": 500,
+        "truncated": true,
+        "rejected": [],
+        "failures": {},
+        "optimal": false,
+        "scope": "two-stage: cheapest cover per menu, then explicit menu score; unordered menus, no expiry scheduling",
+        "priceBasis": "provided catalog amounts, including estimates; not a claim about real shop prices"
+      },
+      "totalCents": 2700,
+      "certainty": "estimated",
+      "score": "13453/5",
+      "metrics": {
+        "distinctRecipes": 6,
+        "distinctFamilies": 2,
+        "stockUsed": {
+          "aubergine": "0",
+          "comte": "0",
+          "cream": "20",
+          "leek": "1",
+          "onion": "0",
+          "tomato": "0",
+          "zucchini": "0"
+        },
+        "purchaseSurplus": {
+          "aubergine": "0",
+          "comte": "130",
+          "cream": "60",
+          "leek": "1",
+          "onion": "0",
+          "tomato": "0",
+          "zucchini": "0"
+        }
+      },
+      "quantityChecks": [
+        {
+          "ingredientId": "aubergine",
+          "coverage": true,
+          "surplusExact": true,
+          "stockNotReused": true,
+          "unit": "unit",
+          "basis": "net",
+          "stockUsed": "0",
+          "purchaseSurplus": "0"
+        },
+        {
+          "ingredientId": "comte",
+          "coverage": true,
+          "surplusExact": true,
+          "stockNotReused": true,
+          "unit": "g",
+          "basis": "net",
+          "stockUsed": "0",
+          "purchaseSurplus": "130"
+        },
+        {
+          "ingredientId": "cream",
+          "coverage": true,
+          "surplusExact": true,
+          "stockNotReused": true,
+          "unit": "ml",
+          "basis": "net",
+          "stockUsed": "20",
+          "purchaseSurplus": "60"
+        },
+        {
+          "ingredientId": "leek",
+          "coverage": true,
+          "surplusExact": true,
+          "stockNotReused": true,
+          "unit": "unit",
+          "basis": "net",
+          "stockUsed": "1",
+          "purchaseSurplus": "1"
+        },
+        {
+          "ingredientId": "onion",
+          "coverage": true,
+          "surplusExact": true,
+          "stockNotReused": true,
+          "unit": "unit",
+          "basis": "net",
+          "stockUsed": "0",
+          "purchaseSurplus": "0"
+        },
+        {
+          "ingredientId": "tomato",
+          "coverage": true,
+          "surplusExact": true,
+          "stockNotReused": true,
+          "unit": "unit",
+          "basis": "net",
+          "stockUsed": "0",
+          "purchaseSurplus": "0"
+        },
+        {
+          "ingredientId": "zucchini",
+          "coverage": true,
+          "surplusExact": true,
+          "stockNotReused": true,
+          "unit": "unit",
+          "basis": "net",
+          "stockUsed": "0",
+          "purchaseSurplus": "0"
+        }
+      ],
+      "strictConstraintChecks": {
+        "mealCount": true,
+        "minDistinct": true,
+        "maxRepeats": true,
+        "maxPerFamily": true,
+        "wholePackages": true,
+        "singleStore": true,
+        "budget": true
+      },
+      "allChecksPass": true
+    }
+  ],
+  "limits": [
+    "synthetic expanded recipes are copies, not additional real culinary diversity",
+    "timings are measured once, not device performance guarantees",
+    "no global optimality for capped searches or real unobserved prices",
+    "optimality applies to cheapest-pack-then-menu-score policy, not a joint weighted pack/menu objective"
+  ]
+}

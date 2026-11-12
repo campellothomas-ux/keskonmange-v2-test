@@ -1,0 +1,238 @@
+TAP version 13
+# Subtest: F — of five refs only two checked enter stock; none checked adds nothing
+ok 1 - F — of five refs only two checked enter stock; none checked adds nothing
+  ---
+  duration_ms: 5.040571
+  type: 'test'
+  ...
+# Subtest: G — same purchase intent is idempotent; reused ID with another payload is refused
+ok 2 - G — same purchase intent is idempotent; reused ID with another payload is refused
+  ---
+  duration_ms: 3.108885
+  type: 'test'
+  ...
+# Subtest: planning reserves physical stock without consuming it or reserving it twice
+ok 3 - planning reserves physical stock without consuming it or reserving it twice
+  ---
+  duration_ms: 0.744744
+  type: 'test'
+  ...
+# Subtest: H — cook actual quantity once, cancel restores physical stock and original reservation
+ok 4 - H — cook actual quantity once, cancel restores physical stock and original reservation
+  ---
+  duration_ms: 0.872357
+  type: 'test'
+  ...
+# Subtest: cancelling purchase or reservation refuses dependent stock conflicts atomically
+ok 5 - cancelling purchase or reservation refuses dependent stock conflicts atomically
+  ---
+  duration_ms: 0.983055
+  type: 'test'
+  ...
+# Subtest: concurrent intents re-evaluated on latest snapshot detect insufficient stock and revision conflicts
+ok 6 - concurrent intents re-evaluated on latest snapshot detect insufficient stock and revision conflicts
+  ---
+  duration_ms: 0.467556
+  type: 'test'
+  ...
+# Subtest: a released reservation ID cannot be reused and mistaken for an old cancellation target
+ok 7 - a released reservation ID cannot be reused and mistaken for an old cancellation target
+  ---
+  duration_ms: 0.66894
+  type: 'test'
+  ...
+# Subtest: physical consumption cannot take other menus reservations; invalid purchases never mutate
+ok 8 - physical consumption cannot take other menus reservations; invalid purchases never mutate
+  ---
+  duration_ms: 0.579385
+  type: 'test'
+  ...
+# Subtest: properties — 150 seeded purchase/cook/cancel histories conserve exact stock and replay safely
+ok 9 - properties — 150 seeded purchase/cook/cancel histories conserve exact stock and replay safely
+  ---
+  duration_ms: 437.310001
+  type: 'test'
+  ...
+# Subtest: J — incompatible budget or dietary constraints return explicit infeasibility
+ok 10 - J — incompatible budget or dietary constraints return explicit infeasibility
+  ---
+  duration_ms: 7.884325
+  type: 'test'
+  ...
+# Subtest: J/M — manual items count toward strict budget; no cross-store fallback
+ok 11 - J/M — manual items count toward strict budget; no cross-store fallback
+  ---
+  duration_ms: 4.400821
+  type: 'test'
+  ...
+# Subtest: K — explicit perishable stock bonus can favor stock without forcing all of it to be consumed
+ok 12 - K — explicit perishable stock bonus can favor stock without forcing all of it to be consumed
+  ---
+  duration_ms: 0.992579
+  type: 'test'
+  ...
+# Subtest: L — explicit variety priority can beat a slightly cheaper repetitive menu
+ok 13 - L — explicit variety priority can beat a slightly cheaper repetitive menu
+  ---
+  duration_ms: 3.737604
+  type: 'test'
+  ...
+# Subtest: allergy knowledge is explicit and V2 diet tags cannot certify a recipe
+ok 14 - allergy knowledge is explicit and V2 diet tags cannot certify a recipe
+  ---
+  duration_ms: 1.431541
+  type: 'test'
+  ...
+# Subtest: history, family limits, preferences and preservation priorities are caller policies
+ok 15 - history, family limits, preferences and preservation priorities are caller policies
+  ---
+  duration_ms: 1.950365
+  type: 'test'
+  ...
+# Subtest: unknown prices stay provisional; limits and rejected calculations prevent optimality claims
+ok 16 - unknown prices stay provisional; limits and rejected calculations prevent optimality claims
+  ---
+  duration_ms: 2.594368
+  type: 'test'
+  ...
+# Subtest: menu optimization shares ingredient needs and stock across recipes
+ok 17 - menu optimization shares ingredient needs and stock across recipes
+  ---
+  duration_ms: 0.9934
+  type: 'test'
+  ...
+# Subtest: properties — small menus match independent ordered enumeration of every cover and explicit score
+ok 18 - properties — small menus match independent ordered enumeration of every cover and explicit score
+  ---
+  duration_ms: 75.314906
+  type: 'test'
+  ...
+# Subtest: A — 650 g requires two 400 g cans, 800 bought, 150 surplus
+ok 19 - A — 650 g requires two 400 g cans, 800 bought, 150 surplus
+  ---
+  duration_ms: 3.422308
+  type: 'test'
+  ...
+# Subtest: B/E — shared stock is subtracted once after needs aggregation
+ok 20 - B/E — shared stock is subtracted once after needs aggregation
+  ---
+  duration_ms: 2.731395
+  type: 'test'
+  ...
+# Subtest: C — multiple sizes choose total package cost, not cheapest kg
+ok 21 - C — multiple sizes choose total package cost, not cheapest kg
+  ---
+  duration_ms: 1.340184
+  type: 'test'
+  ...
+# Subtest: M — foreign store refs fail; elsewhere price is explicitly estimated
+ok 22 - M — foreign store refs fail; elsewhere price is explicitly estimated
+  ---
+  duration_ms: 1.022373
+  type: 'test'
+  ...
+# Subtest: prices retain missingness and uncertainty; manual purchases belong to total cart
+ok 23 - prices retain missingness and uncertainty; manual purchases belong to total cart
+  ---
+  duration_ms: 0.772937
+  type: 'test'
+  ...
+# Subtest: N — weight sales have explicit increments and a rate, rounded only on merged line
+ok 24 - N — weight sales have explicit increments and a rate, rounded only on merged line
+  ---
+  duration_ms: 0.588027
+  type: 'test'
+  ...
+# Subtest: availability, verified content, missing formats, bounded work and invalid money fail explicitly
+ok 25 - availability, verified content, missing formats, bounded work and invalid money fail explicitly
+  ---
+  duration_ms: 0.982023
+  type: 'test'
+  ...
+# Subtest: same-day observation is required before a strict budget can be verified
+ok 26 - same-day observation is required before a strict budget can be verified
+  ---
+  duration_ms: 0.271781
+  type: 'test'
+  ...
+# Subtest: rational package lattice keeps all small fractions exact
+ok 27 - rational package lattice keeps all small fractions exact
+  ---
+  duration_ms: 0.285741
+  type: 'test'
+  ...
+# Subtest: properties — 250 seeded package problems match an independent exhaustive oracle
+ok 28 - properties — 250 seeded package problems match an independent exhaustive oracle
+  ---
+  duration_ms: 143.427832
+  type: 'test'
+  ...
+# Subtest: D — diners, produced portions, kept/discarded portions stay distinct
+ok 29 - D — diners, produced portions, kept/discarded portions stay distinct
+  ---
+  duration_ms: 2.271009
+  type: 'test'
+  ...
+# Subtest: N — exact fractions, tiny volumes, no binary-float or repeated-rounding drift
+ok 30 - N — exact fractions, tiny volumes, no binary-float or repeated-rounding drift
+  ---
+  duration_ms: 0.362267
+  type: 'test'
+  ...
+# Subtest: I/N — no invented piece mass, head/clove count, density, drained or edible yield
+ok 31 - I/N — no invented piece mass, head/clove count, density, drained or edible yield
+  ---
+  duration_ms: 0.437461
+  type: 'test'
+  ...
+# Subtest: D/N — indivisible eggs require explicit ceil for each preparation
+ok 32 - D/N — indivisible eggs require explicit ceil for each preparation
+  ---
+  duration_ms: 0.966149
+  type: 'test'
+  ...
+# Subtest: input validation rejects ambiguous conversion declarations and invalid metadata
+ok 33 - input validation rejects ambiguous conversion declarations and invalid metadata
+  ---
+  duration_ms: 0.227203
+  type: 'test'
+  ...
+# Subtest: V2 fixture is traceable to Git; three annotated recipes adapt, eight require review
+ok 34 - V2 fixture is traceable to Git; three annotated recipes adapt, eight require review
+  ---
+  duration_ms: 8.407125
+  type: 'test'
+  ...
+# Subtest: adapter never silently converts tablespoons, validates yield or certifies diet tags
+ok 35 - adapter never silently converts tablespoons, validates yield or certifies diet tags
+  ---
+  duration_ms: 2.266692
+  type: 'test'
+  ...
+1..35
+# tests 35
+# suites 0
+# pass 35
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1131.828897
+# start of coverage report
+# ------------------------------------------------------------------
+# file              | line % | branch % | funcs % | uncovered lines
+# ------------------------------------------------------------------
+# src               |        |          |         |
+#  basket.mjs       | 100.00 |    90.48 |  100.00 |
+#  exact.mjs        | 100.00 |    92.16 |   95.24 |
+#  index.mjs        | 100.00 |   100.00 |  100.00 |
+#  ledger.mjs       | 100.00 |    95.92 |  100.00 |
+#  model.mjs        | 100.00 |    92.54 |  100.00 |
+#  optimizer.mjs    | 100.00 |    87.93 |  100.00 |
+#  packages.mjs     | 100.00 |    94.59 |   93.33 |
+#  requirements.mjs | 100.00 |   100.00 |  100.00 |
+#  v2-adapter.mjs   | 100.00 |    87.50 |  100.00 |
+# ------------------------------------------------------------------
+# all files         | 100.00 |    92.21 |   97.53 |
+# ------------------------------------------------------------------
+# end of coverage report

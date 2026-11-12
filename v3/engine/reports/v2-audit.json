@@ -1,0 +1,208 @@
+{
+  "source": {
+    "repository": "campellothomas-ux/keskonmange-v2-test",
+    "commit": "0d9efe9abdd19f44c7ed25a0617932ffcc1e2a25",
+    "path": "index.html",
+    "constant": "DEMO_IMPORT"
+  },
+  "notice": "TEST ANNOTATIONS ONLY: yield, identity and net basis chosen explicitly for reproducible tests; require household review before use. No spoon/mass or piece/mass conversion.",
+  "sourceRecipeCount": 11,
+  "ingredientUnits": {
+    "g": 18,
+    "ml": 4,
+    "cas": 5,
+    "cac": 1,
+    "pièce": 11,
+    "gousse": 2,
+    "cube": 1,
+    "feuille": 1
+  },
+  "accepted": [
+    {
+      "id": "v2-chicken",
+      "name": "Poulet aux champignons et poireaux",
+      "yieldPortions": 2,
+      "scalable": false,
+      "family": "poultry",
+      "ingredients": [
+        {
+          "ingredientId": "chicken",
+          "quantity": {
+            "amount": "250",
+            "unit": "g",
+            "basis": "net"
+          }
+        },
+        {
+          "ingredientId": "leek",
+          "quantity": {
+            "amount": "1",
+            "unit": "pièce",
+            "basis": "net",
+            "countKind": "leek"
+          }
+        },
+        {
+          "ingredientId": "mushroom",
+          "quantity": {
+            "amount": "180",
+            "unit": "g",
+            "basis": "net"
+          }
+        },
+        {
+          "ingredientId": "cream",
+          "quantity": {
+            "amount": "80",
+            "unit": "ml",
+            "basis": "net"
+          }
+        }
+      ],
+      "provenance": {
+        "sourceRecipeIndex": 2,
+        "sourceName": "Poulet aux champignons et poireaux",
+        "reviewEvidence": "test: treat V2 portions as batch yield, no scaling authorization"
+      }
+    },
+    {
+      "id": "v2-ratatouille",
+      "name": "Ratatouille minute",
+      "yieldPortions": 2,
+      "scalable": false,
+      "family": "vegetables",
+      "ingredients": [
+        {
+          "ingredientId": "aubergine",
+          "quantity": {
+            "amount": "1",
+            "unit": "pièce",
+            "basis": "net",
+            "countKind": "aubergine"
+          }
+        },
+        {
+          "ingredientId": "zucchini",
+          "quantity": {
+            "amount": "1",
+            "unit": "pièce",
+            "basis": "net",
+            "countKind": "zucchini"
+          }
+        },
+        {
+          "ingredientId": "tomato",
+          "quantity": {
+            "amount": "3",
+            "unit": "pièce",
+            "basis": "net",
+            "countKind": "tomato"
+          }
+        },
+        {
+          "ingredientId": "onion",
+          "quantity": {
+            "amount": "1",
+            "unit": "pièce",
+            "basis": "net",
+            "countKind": "onion"
+          }
+        }
+      ],
+      "provenance": {
+        "sourceRecipeIndex": 4,
+        "sourceName": "Ratatouille minute",
+        "reviewEvidence": "test: treat V2 portions as batch yield, no scaling authorization"
+      }
+    },
+    {
+      "id": "v2-gratin",
+      "name": "Gratin de poireaux au comté",
+      "yieldPortions": 2,
+      "scalable": false,
+      "family": "gratin",
+      "ingredients": [
+        {
+          "ingredientId": "leek",
+          "quantity": {
+            "amount": "3",
+            "unit": "pièce",
+            "basis": "net",
+            "countKind": "leek"
+          }
+        },
+        {
+          "ingredientId": "comte",
+          "quantity": {
+            "amount": "90",
+            "unit": "g",
+            "basis": "net"
+          }
+        },
+        {
+          "ingredientId": "cream",
+          "quantity": {
+            "amount": "120",
+            "unit": "ml",
+            "basis": "net"
+          }
+        }
+      ],
+      "provenance": {
+        "sourceRecipeIndex": 6,
+        "sourceName": "Gratin de poireaux au comté",
+        "reviewEvidence": "test: treat V2 portions as batch yield, no scaling authorization"
+      }
+    }
+  ],
+  "blocked": [
+    {
+      "index": 0,
+      "name": "Émincé de poulet au potimarron",
+      "code": "RECIPE_REVIEW_REQUIRED",
+      "detail": "RECIPE_REVIEW_REQUIRED: Émincé de poulet au potimarron"
+    },
+    {
+      "index": 1,
+      "name": "Poulet à la butternut et au curry",
+      "code": "RECIPE_REVIEW_REQUIRED",
+      "detail": "RECIPE_REVIEW_REQUIRED: Poulet à la butternut et au curry"
+    },
+    {
+      "index": 3,
+      "name": "Poêlée poulet et aubergines",
+      "code": "RECIPE_REVIEW_REQUIRED",
+      "detail": "RECIPE_REVIEW_REQUIRED: Poêlée poulet et aubergines"
+    },
+    {
+      "index": 5,
+      "name": "Pâtes à la tomate en conserve",
+      "code": "RECIPE_REVIEW_REQUIRED",
+      "detail": "RECIPE_REVIEW_REQUIRED: Pâtes à la tomate en conserve"
+    },
+    {
+      "index": 7,
+      "name": "Gözleme épinards-feta",
+      "code": "RECIPE_REVIEW_REQUIRED",
+      "detail": "RECIPE_REVIEW_REQUIRED: Gözleme épinards-feta"
+    },
+    {
+      "index": 8,
+      "name": "Lentilles au potimarron, tout-en-un",
+      "code": "RECIPE_REVIEW_REQUIRED",
+      "detail": "RECIPE_REVIEW_REQUIRED: Lentilles au potimarron, tout-en-un"
+    },
+    {
+      "index": 9,
+      "name": "Bol récupération poulet et riz",
+      "code": "RECIPE_REVIEW_REQUIRED",
+      "detail": "RECIPE_REVIEW_REQUIRED: Bol récupération poulet et riz"
+    },
+    {
+      "index": 10,
+      "name": "Salade de tomates et mozzarella",
+      "code": "RECIPE_REVIEW_REQUIRED",
+      "detail": "RECIPE_REVIEW_REQUIRED: Salade de tomates et mozzarella"
+    }
+  ]
+}

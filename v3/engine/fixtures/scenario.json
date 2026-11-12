@@ -1,0 +1,450 @@
+{
+  "notice": "All products/prices are synthetic, not verified E.Leclerc/Lidl references. Recipe amounts come from Git; basis/yield annotations are test assumptions. No expiry schedule or allergen guarantee.",
+  "source": {
+    "repository": "campellothomas-ux/keskonmange-v2-test",
+    "commit": "0d9efe9abdd19f44c7ed25a0617932ffcc1e2a25",
+    "path": "index.html",
+    "constant": "DEMO_IMPORT"
+  },
+  "ingredients": [
+    {
+      "id": "chicken",
+      "unit": "g",
+      "basis": "net",
+      "perishable": true
+    },
+    {
+      "id": "leek",
+      "unit": "unit",
+      "basis": "net",
+      "perishable": true,
+      "countKind": "leek",
+      "indivisible": true
+    },
+    {
+      "id": "mushroom",
+      "unit": "g",
+      "basis": "net",
+      "perishable": true
+    },
+    {
+      "id": "cream",
+      "unit": "ml",
+      "basis": "net",
+      "perishable": true,
+      "allergens": [
+        "milk"
+      ]
+    },
+    {
+      "id": "aubergine",
+      "unit": "unit",
+      "basis": "net",
+      "perishable": true,
+      "countKind": "aubergine",
+      "indivisible": true
+    },
+    {
+      "id": "zucchini",
+      "unit": "unit",
+      "basis": "net",
+      "perishable": true,
+      "countKind": "zucchini",
+      "indivisible": true
+    },
+    {
+      "id": "tomato",
+      "unit": "unit",
+      "basis": "net",
+      "perishable": true,
+      "countKind": "tomato",
+      "indivisible": true
+    },
+    {
+      "id": "onion",
+      "unit": "unit",
+      "basis": "net",
+      "perishable": true,
+      "countKind": "onion",
+      "indivisible": true
+    },
+    {
+      "id": "comte",
+      "unit": "g",
+      "basis": "net",
+      "perishable": true,
+      "allergens": [
+        "milk"
+      ]
+    }
+  ],
+  "recipes": [
+    {
+      "id": "v2-chicken",
+      "name": "Poulet aux champignons et poireaux",
+      "yieldPortions": 2,
+      "scalable": false,
+      "family": "poultry",
+      "ingredients": [
+        {
+          "ingredientId": "chicken",
+          "quantity": {
+            "amount": "250",
+            "unit": "g",
+            "basis": "net"
+          }
+        },
+        {
+          "ingredientId": "leek",
+          "quantity": {
+            "amount": "1",
+            "unit": "pièce",
+            "basis": "net",
+            "countKind": "leek"
+          }
+        },
+        {
+          "ingredientId": "mushroom",
+          "quantity": {
+            "amount": "180",
+            "unit": "g",
+            "basis": "net"
+          }
+        },
+        {
+          "ingredientId": "cream",
+          "quantity": {
+            "amount": "80",
+            "unit": "ml",
+            "basis": "net"
+          }
+        }
+      ]
+    },
+    {
+      "id": "v2-ratatouille",
+      "name": "Ratatouille minute",
+      "yieldPortions": 2,
+      "scalable": false,
+      "family": "vegetables",
+      "ingredients": [
+        {
+          "ingredientId": "aubergine",
+          "quantity": {
+            "amount": "1",
+            "unit": "pièce",
+            "basis": "net",
+            "countKind": "aubergine"
+          }
+        },
+        {
+          "ingredientId": "zucchini",
+          "quantity": {
+            "amount": "1",
+            "unit": "pièce",
+            "basis": "net",
+            "countKind": "zucchini"
+          }
+        },
+        {
+          "ingredientId": "tomato",
+          "quantity": {
+            "amount": "3",
+            "unit": "pièce",
+            "basis": "net",
+            "countKind": "tomato"
+          }
+        },
+        {
+          "ingredientId": "onion",
+          "quantity": {
+            "amount": "1",
+            "unit": "pièce",
+            "basis": "net",
+            "countKind": "onion"
+          }
+        }
+      ]
+    },
+    {
+      "id": "v2-gratin",
+      "name": "Gratin de poireaux au comté",
+      "yieldPortions": 2,
+      "scalable": false,
+      "family": "gratin",
+      "ingredients": [
+        {
+          "ingredientId": "leek",
+          "quantity": {
+            "amount": "3",
+            "unit": "pièce",
+            "basis": "net",
+            "countKind": "leek"
+          }
+        },
+        {
+          "ingredientId": "comte",
+          "quantity": {
+            "amount": "90",
+            "unit": "g",
+            "basis": "net"
+          }
+        },
+        {
+          "ingredientId": "cream",
+          "quantity": {
+            "amount": "120",
+            "unit": "ml",
+            "basis": "net"
+          }
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "fixture-chicken-300",
+      "ingredientId": "chicken",
+      "storeId": "fixture-store",
+      "mode": "fixed",
+      "saleUnit": "package",
+      "contentVerified": true,
+      "contentEvidence": "synthetic fixed quantity used exclusively for engine tests",
+      "content": {
+        "amount": "300",
+        "unit": "g",
+        "basis": "net"
+      },
+      "price": {
+        "kind": "estimated",
+        "storeId": "fixture-store",
+        "currency": "EUR",
+        "cents": 420
+      }
+    },
+    {
+      "id": "fixture-chicken-500",
+      "ingredientId": "chicken",
+      "storeId": "fixture-store",
+      "mode": "fixed",
+      "saleUnit": "package",
+      "contentVerified": true,
+      "contentEvidence": "synthetic fixed quantity used exclusively for engine tests",
+      "content": {
+        "amount": "500",
+        "unit": "g",
+        "basis": "net"
+      },
+      "price": {
+        "kind": "estimated",
+        "storeId": "fixture-store",
+        "currency": "EUR",
+        "cents": 660
+      }
+    },
+    {
+      "id": "fixture-leek-3",
+      "ingredientId": "leek",
+      "storeId": "fixture-store",
+      "mode": "fixed",
+      "saleUnit": "package",
+      "contentVerified": true,
+      "contentEvidence": "synthetic fixed quantity used exclusively for engine tests",
+      "content": {
+        "amount": "3",
+        "unit": "unit",
+        "basis": "net",
+        "countKind": "leek"
+      },
+      "price": {
+        "kind": "estimated",
+        "storeId": "fixture-store",
+        "currency": "EUR",
+        "cents": 180
+      }
+    },
+    {
+      "id": "fixture-mushroom-250",
+      "ingredientId": "mushroom",
+      "storeId": "fixture-store",
+      "mode": "fixed",
+      "saleUnit": "package",
+      "contentVerified": true,
+      "contentEvidence": "synthetic fixed quantity used exclusively for engine tests",
+      "content": {
+        "amount": "250",
+        "unit": "g",
+        "basis": "net"
+      },
+      "price": {
+        "kind": "estimated",
+        "storeId": "fixture-store",
+        "currency": "EUR",
+        "cents": 220
+      }
+    },
+    {
+      "id": "fixture-cream-200",
+      "ingredientId": "cream",
+      "storeId": "fixture-store",
+      "mode": "fixed",
+      "saleUnit": "package",
+      "contentVerified": true,
+      "contentEvidence": "synthetic fixed quantity used exclusively for engine tests",
+      "content": {
+        "amount": "200",
+        "unit": "ml",
+        "basis": "net"
+      },
+      "price": {
+        "kind": "estimated",
+        "storeId": "fixture-store",
+        "currency": "EUR",
+        "cents": 150
+      }
+    },
+    {
+      "id": "fixture-aubergine-1",
+      "ingredientId": "aubergine",
+      "storeId": "fixture-store",
+      "mode": "fixed",
+      "saleUnit": "package",
+      "contentVerified": true,
+      "contentEvidence": "synthetic fixed quantity used exclusively for engine tests",
+      "content": {
+        "amount": "1",
+        "unit": "unit",
+        "basis": "net",
+        "countKind": "aubergine"
+      },
+      "price": {
+        "kind": "estimated",
+        "storeId": "fixture-store",
+        "currency": "EUR",
+        "cents": 100
+      }
+    },
+    {
+      "id": "fixture-zucchini-1",
+      "ingredientId": "zucchini",
+      "storeId": "fixture-store",
+      "mode": "fixed",
+      "saleUnit": "package",
+      "contentVerified": true,
+      "contentEvidence": "synthetic fixed quantity used exclusively for engine tests",
+      "content": {
+        "amount": "1",
+        "unit": "unit",
+        "basis": "net",
+        "countKind": "zucchini"
+      },
+      "price": {
+        "kind": "estimated",
+        "storeId": "fixture-store",
+        "currency": "EUR",
+        "cents": 100
+      }
+    },
+    {
+      "id": "fixture-tomato-3",
+      "ingredientId": "tomato",
+      "storeId": "fixture-store",
+      "mode": "fixed",
+      "saleUnit": "package",
+      "contentVerified": true,
+      "contentEvidence": "synthetic fixed quantity used exclusively for engine tests",
+      "content": {
+        "amount": "3",
+        "unit": "unit",
+        "basis": "net",
+        "countKind": "tomato"
+      },
+      "price": {
+        "kind": "estimated",
+        "storeId": "fixture-store",
+        "currency": "EUR",
+        "cents": 200
+      }
+    },
+    {
+      "id": "fixture-onion-1",
+      "ingredientId": "onion",
+      "storeId": "fixture-store",
+      "mode": "fixed",
+      "saleUnit": "package",
+      "contentVerified": true,
+      "contentEvidence": "synthetic fixed quantity used exclusively for engine tests",
+      "content": {
+        "amount": "1",
+        "unit": "unit",
+        "basis": "net",
+        "countKind": "onion"
+      },
+      "price": {
+        "kind": "estimated",
+        "storeId": "fixture-store",
+        "currency": "EUR",
+        "cents": 40
+      }
+    },
+    {
+      "id": "fixture-comte-200",
+      "ingredientId": "comte",
+      "storeId": "fixture-store",
+      "mode": "fixed",
+      "saleUnit": "package",
+      "contentVerified": true,
+      "contentEvidence": "synthetic fixed quantity used exclusively for engine tests",
+      "content": {
+        "amount": "200",
+        "unit": "g",
+        "basis": "net"
+      },
+      "price": {
+        "kind": "estimated",
+        "storeId": "fixture-store",
+        "currency": "EUR",
+        "cents": 270
+      }
+    }
+  ],
+  "session": {
+    "storeId": "fixture-store",
+    "asOf": "2026-11-12"
+  },
+  "state": {
+    "revision": 0,
+    "physical": {
+      "chicken": "100",
+      "leek": "2",
+      "cream": "20"
+    },
+    "reservations": {
+      "other-menu": {
+        "leek": "1"
+      }
+    },
+    "operations": {}
+  },
+  "mealCount": 2,
+  "diners": 2,
+  "leftovers": "keep",
+  "constraints": {
+    "minDistinct": 2,
+    "maxRepeats": 1
+  },
+  "budget": {
+    "cents": 1500,
+    "strict": false
+  },
+  "policy": {
+    "repeatPenaltyCents": 100,
+    "wasteRateCents": {
+      "chicken": "1/100",
+      "cream": "1/100"
+    },
+    "perishableStockRateCents": {
+      "leek": "10"
+    }
+  }
+}
