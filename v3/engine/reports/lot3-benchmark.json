@@ -1,0 +1,348 @@
+{
+  "notice": "All recipes, product contents, prices and policy coefficients are synthetic test data. No observed shop price, food conversion, expiry guarantee or household recipe validation.",
+  "runtime": {
+    "node": "v24.22.1",
+    "platform": "linux",
+    "arch": "x64"
+  },
+  "baseline": "reports/lot2-benchmark.json, source ebbb9c9; case builder shared without changing its data",
+  "rows": [
+    {
+      "recipeCount": 4,
+      "mealCount": 2,
+      "strategy": "local",
+      "globalBudget": 100,
+      "evaluated": 8,
+      "elapsedMs": 20.412127999999996,
+      "score": "289/2",
+      "totalCents": 100,
+      "status": "feasible",
+      "optimal": false,
+      "stable": true,
+      "noWorseThanEvaluatedPhases": true,
+      "phases": [],
+      "unchangedFromLot2AtSameBudget": true,
+      "memory": {
+        "rssBefore": 32321536,
+        "rssAfter": 35598336,
+        "heapUsedDelta": 286480
+      }
+    },
+    {
+      "recipeCount": 4,
+      "mealCount": 2,
+      "strategy": "diverse",
+      "globalBudget": 100,
+      "evaluated": 7,
+      "elapsedMs": 34.665234,
+      "score": "289/2",
+      "totalCents": 100,
+      "status": "feasible",
+      "optimal": false,
+      "stable": true,
+      "noWorseThanEvaluatedPhases": true,
+      "phases": [],
+      "unchangedFromLot2AtSameBudget": true,
+      "memory": {
+        "rssBefore": 40448000,
+        "rssAfter": 41365504,
+        "heapUsedDelta": -450480
+      }
+    },
+    {
+      "recipeCount": 4,
+      "mealCount": 2,
+      "strategy": "combined",
+      "globalBudget": 100,
+      "evaluated": 15,
+      "elapsedMs": 7.22506199999998,
+      "score": "289/2",
+      "totalCents": 100,
+      "status": "feasible",
+      "optimal": false,
+      "stable": true,
+      "noWorseThanEvaluatedPhases": true,
+      "phases": [
+        {
+          "strategy": "local",
+          "budget": 50,
+          "evaluated": 8,
+          "score": "289/2"
+        },
+        {
+          "strategy": "diverse",
+          "budget": 50,
+          "evaluated": 7,
+          "score": "289/2"
+        }
+      ],
+      "unchangedFromLot2AtSameBudget": null,
+      "memory": {
+        "rssBefore": 42414080,
+        "rssAfter": 42938368,
+        "heapUsedDelta": 1422432
+      }
+    },
+    {
+      "recipeCount": 4,
+      "mealCount": 2,
+      "strategy": "combined",
+      "globalBudget": 200,
+      "evaluated": 15,
+      "elapsedMs": 4.2250099999999975,
+      "score": "289/2",
+      "totalCents": 100,
+      "status": "feasible",
+      "optimal": false,
+      "stable": true,
+      "noWorseThanEvaluatedPhases": true,
+      "phases": [
+        {
+          "strategy": "local",
+          "budget": 100,
+          "evaluated": 8,
+          "score": "289/2"
+        },
+        {
+          "strategy": "diverse",
+          "budget": 100,
+          "evaluated": 7,
+          "score": "289/2"
+        }
+      ],
+      "unchangedFromLot2AtSameBudget": null,
+      "memory": {
+        "rssBefore": 44863488,
+        "rssAfter": 45256704,
+        "heapUsedDelta": -497552
+      }
+    },
+    {
+      "recipeCount": 30,
+      "mealCount": 5,
+      "strategy": "local",
+      "globalBudget": 250,
+      "evaluated": 250,
+      "elapsedMs": 92.77255999999997,
+      "score": "565/2",
+      "totalCents": 270,
+      "status": "feasible",
+      "optimal": false,
+      "stable": true,
+      "noWorseThanEvaluatedPhases": true,
+      "phases": [],
+      "unchangedFromLot2AtSameBudget": true,
+      "memory": {
+        "rssBefore": 48009216,
+        "rssAfter": 60583936,
+        "heapUsedDelta": 2028240
+      }
+    },
+    {
+      "recipeCount": 30,
+      "mealCount": 5,
+      "strategy": "diverse",
+      "globalBudget": 250,
+      "evaluated": 250,
+      "elapsedMs": 50.85901999999999,
+      "score": "533/2",
+      "totalCents": 270,
+      "status": "feasible",
+      "optimal": false,
+      "stable": true,
+      "noWorseThanEvaluatedPhases": true,
+      "phases": [],
+      "unchangedFromLot2AtSameBudget": true,
+      "memory": {
+        "rssBefore": 58880000,
+        "rssAfter": 59142144,
+        "heapUsedDelta": 753504
+      }
+    },
+    {
+      "recipeCount": 30,
+      "mealCount": 5,
+      "strategy": "combined",
+      "globalBudget": 250,
+      "evaluated": 250,
+      "elapsedMs": 46.09152900000004,
+      "score": "573/2",
+      "totalCents": 270,
+      "status": "feasible",
+      "optimal": false,
+      "stable": true,
+      "noWorseThanEvaluatedPhases": true,
+      "phases": [
+        {
+          "strategy": "local",
+          "budget": 125,
+          "evaluated": 125,
+          "score": "609/2"
+        },
+        {
+          "strategy": "diverse",
+          "budget": 125,
+          "evaluated": 125,
+          "score": "573/2"
+        }
+      ],
+      "unchangedFromLot2AtSameBudget": null,
+      "memory": {
+        "rssBefore": 63467520,
+        "rssAfter": 64188416,
+        "heapUsedDelta": -240784
+      }
+    },
+    {
+      "recipeCount": 30,
+      "mealCount": 5,
+      "strategy": "combined",
+      "globalBudget": 500,
+      "evaluated": 500,
+      "elapsedMs": 102.80810100000008,
+      "score": "533/2",
+      "totalCents": 270,
+      "status": "feasible",
+      "optimal": false,
+      "stable": true,
+      "noWorseThanEvaluatedPhases": true,
+      "phases": [
+        {
+          "strategy": "local",
+          "budget": 250,
+          "evaluated": 250,
+          "score": "565/2"
+        },
+        {
+          "strategy": "diverse",
+          "budget": 250,
+          "evaluated": 250,
+          "score": "533/2"
+        }
+      ],
+      "unchangedFromLot2AtSameBudget": null,
+      "memory": {
+        "rssBefore": 66678784,
+        "rssAfter": 67588096,
+        "heapUsedDelta": -748704
+      }
+    },
+    {
+      "recipeCount": 60,
+      "mealCount": 10,
+      "strategy": "local",
+      "globalBudget": 400,
+      "evaluated": 400,
+      "elapsedMs": 114.80148899999995,
+      "score": "743",
+      "totalCents": 610,
+      "status": "feasible",
+      "optimal": false,
+      "stable": true,
+      "noWorseThanEvaluatedPhases": true,
+      "phases": [],
+      "unchangedFromLot2AtSameBudget": true,
+      "memory": {
+        "rssBefore": 67981312,
+        "rssAfter": 70078464,
+        "heapUsedDelta": -1711936
+      }
+    },
+    {
+      "recipeCount": 60,
+      "mealCount": 10,
+      "strategy": "diverse",
+      "globalBudget": 400,
+      "evaluated": 400,
+      "elapsedMs": 111.06030800000008,
+      "score": "773",
+      "totalCents": 680,
+      "status": "feasible",
+      "optimal": false,
+      "stable": true,
+      "noWorseThanEvaluatedPhases": true,
+      "phases": [],
+      "unchangedFromLot2AtSameBudget": true,
+      "memory": {
+        "rssBefore": 78843904,
+        "rssAfter": 79282176,
+        "heapUsedDelta": -125712
+      }
+    },
+    {
+      "recipeCount": 60,
+      "mealCount": 10,
+      "strategy": "combined",
+      "globalBudget": 400,
+      "evaluated": 400,
+      "elapsedMs": 106.27029600000014,
+      "score": "743",
+      "totalCents": 610,
+      "status": "feasible",
+      "optimal": false,
+      "stable": true,
+      "noWorseThanEvaluatedPhases": true,
+      "phases": [
+        {
+          "strategy": "local",
+          "budget": 200,
+          "evaluated": 200,
+          "score": "743"
+        },
+        {
+          "strategy": "diverse",
+          "budget": 200,
+          "evaluated": 200,
+          "score": "777"
+        }
+      ],
+      "unchangedFromLot2AtSameBudget": null,
+      "memory": {
+        "rssBefore": 79806464,
+        "rssAfter": 80461824,
+        "heapUsedDelta": -191776
+      }
+    },
+    {
+      "recipeCount": 60,
+      "mealCount": 10,
+      "strategy": "combined",
+      "globalBudget": 800,
+      "evaluated": 800,
+      "elapsedMs": 195.994911,
+      "score": "743",
+      "totalCents": 610,
+      "status": "feasible",
+      "optimal": false,
+      "stable": true,
+      "noWorseThanEvaluatedPhases": true,
+      "phases": [
+        {
+          "strategy": "local",
+          "budget": 400,
+          "evaluated": 400,
+          "score": "743"
+        },
+        {
+          "strategy": "diverse",
+          "budget": 400,
+          "evaluated": 400,
+          "score": "773"
+        }
+      ],
+      "unchangedFromLot2AtSameBudget": null,
+      "memory": {
+        "rssBefore": 80986112,
+        "rssAfter": 81981440,
+        "heapUsedDelta": -3184360
+      }
+    }
+  ],
+  "conclusions": [
+    "A combined search is only guaranteed no worse than its own allocated phases.",
+    "Equal total budget divides each strategy budget and may underperform a standalone full-budget search.",
+    "Double total budget is explicit and selects the better full-budget phase; it does not prove a new global optimum.",
+    "Memory samples describe the process, not a measured iPhone allocation peak."
+  ],
+  "fieldValidated": false
+}

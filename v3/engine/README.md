@@ -1,9 +1,28 @@
-# KeskonMange V3 — moteur indépendant, lots 1 et 2
+# KeskonMange V3 — moteur indépendant, lots 1 à 3
 
 Module ES sans dépendance, sans interface ni accès réseau. Les fichiers V2, leur
 configuration et leur synchronisation Firebase ne sont pas modifiés.
 Node.js 22+ pour les commandes ; `src/` utilise uniquement les API JavaScript
 standards. Aucune installation npm nécessaire.
+
+**Lot 3 — version 0.3.0** : menus mixtes partiellement calculables, choix manuels
+non bloqués par l'objectif budgétaire, articles libres persistants, achats cochés
+et confirmations idempotentes, conseils uniquement à la demande. La recherche
+combinée est facultative et partage un budget explicite.
+
+```sh
+cd v3/engine
+npm test
+npm run --silent scenario:lot3
+npm run --silent benchmark:lot3
+npm run --silent audit:field
+```
+
+[Contrats du lot 3](docs/LOT3-API.md), [rapport et limites](docs/LOT3-REPORT.md),
+[scénario complet](reports/lot3-scenario.json),
+[format de revue terrain](fixtures/household-review.template.json).
+**Validation terrain en attente** : les données familiales et références magasin
+vérifiées ne sont pas disponibles dans le dépôt. Le scénario reste synthétique.
 
 **Lot 2 — version 0.2.0** : production ajustable, par préparation entière ou par
 unité ; optimisation conjointe des menus et conditionnements ; modifications,

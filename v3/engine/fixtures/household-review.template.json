@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "notice": "EMPTY REVIEW TEMPLATE. No real recipe, price or commercial content is supplied or inferred.",
+  "session": {"storeId": "leclerc-saint-orens", "asOf": "2026-11-12"},
+  "storeLabel": "E.Leclerc Saint-Orens",
+  "ingredients": [],
+  "recipeReviews": [
+    {"id":"review-1","sourceKind":null,"householdConfirmed":false,"quantitiesReviewed":false,"productionReviewed":false,"evidenceId":null,"recipe":null},
+    {"id":"review-2","sourceKind":null,"householdConfirmed":false,"quantitiesReviewed":false,"productionReviewed":false,"evidenceId":null,"recipe":null},
+    {"id":"review-3","sourceKind":null,"householdConfirmed":false,"quantitiesReviewed":false,"productionReviewed":false,"evidenceId":null,"recipe":null},
+    {"id":"review-4","sourceKind":null,"householdConfirmed":false,"quantitiesReviewed":false,"productionReviewed":false,"evidenceId":null,"recipe":null},
+    {"id":"review-5","sourceKind":null,"householdConfirmed":false,"quantitiesReviewed":false,"productionReviewed":false,"evidenceId":null,"recipe":null}
+  ],
+  "productReviews": [],
+  "evidence": []
+}

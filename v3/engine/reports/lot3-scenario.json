@@ -1,0 +1,3773 @@
+{
+  "notice": "SYNTHETIC LOT 3 SCENARIO ONLY. Partial/manual test records and fictional commercial formats/prices; not household validation or E.Leclerc data.",
+  "fixture": "fixtures/lot3.json",
+  "fieldValidated": false,
+  "steps": [
+    {
+      "step": "five_mixed_meals_created",
+      "menu": {
+        "version": 2,
+        "id": "lot3-family",
+        "revision": 1,
+        "meals": [
+          {
+            "id": "meal-1",
+            "recipeId": "r0",
+            "diners": 2,
+            "leftovers": "keep"
+          },
+          {
+            "id": "meal-2",
+            "recipeId": "r1",
+            "diners": 2,
+            "leftovers": "keep"
+          },
+          {
+            "id": "meal-3",
+            "recipeId": "r2",
+            "diners": 2,
+            "leftovers": "keep"
+          },
+          {
+            "id": "meal-4",
+            "recipeId": "partial",
+            "diners": 2,
+            "leftovers": "keep"
+          },
+          {
+            "id": "meal-5",
+            "recipeId": "manual",
+            "diners": 2,
+            "leftovers": "keep",
+            "selection": "manual"
+          }
+        ],
+        "reservationIds": {
+          "meal-1": "lot3-create:0",
+          "meal-2": "lot3-create:1",
+          "meal-3": "lot3-create:2",
+          "meal-4": "lot3-create:3",
+          "meal-5": "lot3-create:4"
+        }
+      },
+      "meals": [
+        {
+          "mealId": "meal-1",
+          "recipeId": "r0",
+          "status": "optimized",
+          "calculationStatus": "complete",
+          "knownNeeds": {
+            "tomato": "200"
+          },
+          "issues": [],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-1",
+            "recipeId": "r0",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "2",
+            "minimumUnits": "2",
+            "factor": "1/2",
+            "diners": "2",
+            "producedPortions": "2",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": true
+        },
+        {
+          "mealId": "meal-2",
+          "recipeId": "r1",
+          "status": "optimized",
+          "calculationStatus": "complete",
+          "knownNeeds": {
+            "tomato": "200"
+          },
+          "issues": [],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-2",
+            "recipeId": "r1",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "2",
+            "minimumUnits": "2",
+            "factor": "1/2",
+            "diners": "2",
+            "producedPortions": "2",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": true
+        },
+        {
+          "mealId": "meal-3",
+          "recipeId": "r2",
+          "status": "optimized",
+          "calculationStatus": "complete",
+          "knownNeeds": {
+            "tomato": "200"
+          },
+          "issues": [],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-3",
+            "recipeId": "r2",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "2",
+            "minimumUnits": "2",
+            "factor": "1/2",
+            "diners": "2",
+            "producedPortions": "2",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": true
+        },
+        {
+          "mealId": "meal-4",
+          "recipeId": "partial",
+          "status": "partial",
+          "calculationStatus": "partial",
+          "knownNeeds": {
+            "rice": "200"
+          },
+          "issues": [
+            {
+              "code": "QUANTITY_REQUIRED",
+              "status": "needs_review",
+              "ingredientId": "chicken-unknown",
+              "index": 1
+            }
+          ],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-4",
+            "recipeId": "partial",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "2",
+            "minimumUnits": "2",
+            "factor": "1/2",
+            "diners": "2",
+            "producedPortions": "2",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": false
+        },
+        {
+          "mealId": "meal-5",
+          "recipeId": "manual",
+          "status": "manual",
+          "calculationStatus": "needs_review",
+          "knownNeeds": {},
+          "issues": [
+            {
+              "code": "PRODUCTION_REVIEW_REQUIRED",
+              "detail": "PRODUCTION_REVIEW_REQUIRED: manual",
+              "status": "needs_review"
+            },
+            {
+              "code": "INGREDIENTS_REQUIRED",
+              "status": "needs_review"
+            }
+          ],
+          "risks": [],
+          "preparation": null,
+          "optimizable": false
+        }
+      ],
+      "knownNeeds": {
+        "tomato": "600",
+        "rice": "200"
+      },
+      "amount": {
+        "knownSubtotalCents": 220,
+        "totalCents": null,
+        "certainty": "partial",
+        "listedItemsTotalCents": 220,
+        "scope": "known_items_only"
+      },
+      "budget": {
+        "targetCents": 1500,
+        "mode": "indicative",
+        "blocking": false,
+        "status": "unverifiable",
+        "knownExcessCents": 0,
+        "verified": false
+      },
+      "unknownNeeds": [
+        {
+          "mealId": "meal-4",
+          "code": "QUANTITY_REQUIRED",
+          "status": "needs_review",
+          "ingredientId": "chicken-unknown",
+          "index": 1,
+          "amount": null
+        },
+        {
+          "mealId": "meal-5",
+          "code": "PRODUCTION_REVIEW_REQUIRED",
+          "detail": "PRODUCTION_REVIEW_REQUIRED: manual",
+          "status": "needs_review",
+          "amount": null
+        },
+        {
+          "mealId": "meal-5",
+          "code": "INGREDIENTS_REQUIRED",
+          "status": "needs_review",
+          "amount": null
+        }
+      ],
+      "shopping": {
+        "manual": [],
+        "calculated": [
+          {
+            "id": "calc-lot3-shopping-1",
+            "source": "calculated",
+            "label": "rice-pack",
+            "productId": "rice-pack",
+            "count": 1,
+            "checked": false,
+            "confirmed": false
+          },
+          {
+            "id": "calc-lot3-shopping-2",
+            "source": "calculated",
+            "label": "tomato-pack",
+            "productId": "tomato-pack",
+            "count": 1,
+            "checked": false,
+            "confirmed": false
+          }
+        ],
+        "displayLines": [
+          {
+            "id": "sku:rice-pack",
+            "productId": "rice-pack",
+            "label": "rice-pack",
+            "count": 1,
+            "origins": [
+              {
+                "id": "calc-lot3-shopping-1",
+                "source": "calculated",
+                "label": "rice-pack",
+                "productId": "rice-pack",
+                "count": 1,
+                "checked": false,
+                "confirmed": false
+              }
+            ],
+            "checkedState": "unchecked",
+            "quantitiesComplete": true,
+            "confirmedCount": 0
+          },
+          {
+            "id": "sku:tomato-pack",
+            "productId": "tomato-pack",
+            "label": "tomato-pack",
+            "count": 1,
+            "origins": [
+              {
+                "id": "calc-lot3-shopping-2",
+                "source": "calculated",
+                "label": "tomato-pack",
+                "productId": "tomato-pack",
+                "count": 1,
+                "checked": false,
+                "confirmed": false
+              }
+            ],
+            "checkedState": "unchecked",
+            "quantitiesComplete": true,
+            "confirmedCount": 0
+          }
+        ]
+      },
+      "stock": {
+        "revision": 1,
+        "physical": {
+          "tomato": "300"
+        },
+        "reservations": {
+          "outside-menu": {
+            "tomato": "50"
+          },
+          "lot3-create:0": {
+            "tomato": "200"
+          },
+          "lot3-create:1": {
+            "tomato": "50"
+          },
+          "lot3-create:2": {},
+          "lot3-create:3": {},
+          "lot3-create:4": {}
+        }
+      }
+    },
+    {
+      "step": "three_diner_counts_changed_without_advice",
+      "menu": {
+        "version": 2,
+        "id": "lot3-family",
+        "revision": 2,
+        "meals": [
+          {
+            "id": "meal-1",
+            "recipeId": "r0",
+            "diners": 2,
+            "leftovers": "keep"
+          },
+          {
+            "id": "meal-2",
+            "recipeId": "r1",
+            "diners": 3,
+            "leftovers": "keep"
+          },
+          {
+            "id": "meal-3",
+            "recipeId": "r2",
+            "diners": 4,
+            "leftovers": "keep"
+          },
+          {
+            "id": "meal-4",
+            "recipeId": "partial",
+            "diners": 3,
+            "leftovers": "keep"
+          },
+          {
+            "id": "meal-5",
+            "recipeId": "manual",
+            "diners": 2,
+            "leftovers": "keep",
+            "selection": "manual"
+          }
+        ],
+        "reservationIds": {
+          "meal-1": "lot3-portions:0",
+          "meal-2": "lot3-portions:1",
+          "meal-3": "lot3-portions:2",
+          "meal-4": "lot3-portions:3",
+          "meal-5": "lot3-portions:4"
+        }
+      },
+      "meals": [
+        {
+          "mealId": "meal-1",
+          "recipeId": "r0",
+          "status": "optimized",
+          "calculationStatus": "complete",
+          "knownNeeds": {
+            "tomato": "200"
+          },
+          "issues": [],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-1",
+            "recipeId": "r0",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "2",
+            "minimumUnits": "2",
+            "factor": "1/2",
+            "diners": "2",
+            "producedPortions": "2",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": true
+        },
+        {
+          "mealId": "meal-2",
+          "recipeId": "r1",
+          "status": "optimized",
+          "calculationStatus": "complete",
+          "knownNeeds": {
+            "tomato": "300"
+          },
+          "issues": [],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-2",
+            "recipeId": "r1",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "3",
+            "minimumUnits": "3",
+            "factor": "3/4",
+            "diners": "3",
+            "producedPortions": "3",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": true
+        },
+        {
+          "mealId": "meal-3",
+          "recipeId": "r2",
+          "status": "optimized",
+          "calculationStatus": "complete",
+          "knownNeeds": {
+            "tomato": "400"
+          },
+          "issues": [],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-3",
+            "recipeId": "r2",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "4",
+            "minimumUnits": "4",
+            "factor": "1",
+            "diners": "4",
+            "producedPortions": "4",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": true
+        },
+        {
+          "mealId": "meal-4",
+          "recipeId": "partial",
+          "status": "partial",
+          "calculationStatus": "partial",
+          "knownNeeds": {
+            "rice": "300"
+          },
+          "issues": [
+            {
+              "code": "QUANTITY_REQUIRED",
+              "status": "needs_review",
+              "ingredientId": "chicken-unknown",
+              "index": 1
+            }
+          ],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-4",
+            "recipeId": "partial",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "3",
+            "minimumUnits": "3",
+            "factor": "3/4",
+            "diners": "3",
+            "producedPortions": "3",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": false
+        },
+        {
+          "mealId": "meal-5",
+          "recipeId": "manual",
+          "status": "manual",
+          "calculationStatus": "needs_review",
+          "knownNeeds": {},
+          "issues": [
+            {
+              "code": "PRODUCTION_REVIEW_REQUIRED",
+              "detail": "PRODUCTION_REVIEW_REQUIRED: manual",
+              "status": "needs_review"
+            },
+            {
+              "code": "INGREDIENTS_REQUIRED",
+              "status": "needs_review"
+            }
+          ],
+          "risks": [],
+          "preparation": null,
+          "optimizable": false
+        }
+      ],
+      "knownNeeds": {
+        "tomato": "900",
+        "rice": "300"
+      },
+      "amount": {
+        "knownSubtotalCents": 320,
+        "totalCents": null,
+        "certainty": "partial",
+        "listedItemsTotalCents": 320,
+        "scope": "known_items_only"
+      },
+      "budget": {
+        "targetCents": 1500,
+        "mode": "indicative",
+        "blocking": false,
+        "status": "unverifiable",
+        "knownExcessCents": 0,
+        "verified": false
+      },
+      "unknownNeeds": [
+        {
+          "mealId": "meal-4",
+          "code": "QUANTITY_REQUIRED",
+          "status": "needs_review",
+          "ingredientId": "chicken-unknown",
+          "index": 1,
+          "amount": null
+        },
+        {
+          "mealId": "meal-5",
+          "code": "PRODUCTION_REVIEW_REQUIRED",
+          "detail": "PRODUCTION_REVIEW_REQUIRED: manual",
+          "status": "needs_review",
+          "amount": null
+        },
+        {
+          "mealId": "meal-5",
+          "code": "INGREDIENTS_REQUIRED",
+          "status": "needs_review",
+          "amount": null
+        }
+      ],
+      "shopping": {
+        "manual": [],
+        "calculated": [
+          {
+            "id": "calc-lot3-shopping-1",
+            "source": "calculated",
+            "label": "rice-pack",
+            "productId": "rice-pack",
+            "count": 1,
+            "checked": false,
+            "confirmed": false
+          },
+          {
+            "id": "calc-lot3-shopping-2",
+            "source": "calculated",
+            "label": "tomato-pack",
+            "productId": "tomato-pack",
+            "count": 2,
+            "checked": false,
+            "confirmed": false
+          }
+        ],
+        "displayLines": [
+          {
+            "id": "sku:rice-pack",
+            "productId": "rice-pack",
+            "label": "rice-pack",
+            "count": 1,
+            "origins": [
+              {
+                "id": "calc-lot3-shopping-1",
+                "source": "calculated",
+                "label": "rice-pack",
+                "productId": "rice-pack",
+                "count": 1,
+                "checked": false,
+                "confirmed": false
+              }
+            ],
+            "checkedState": "unchecked",
+            "quantitiesComplete": true,
+            "confirmedCount": 0
+          },
+          {
+            "id": "sku:tomato-pack",
+            "productId": "tomato-pack",
+            "label": "tomato-pack",
+            "count": 2,
+            "origins": [
+              {
+                "id": "calc-lot3-shopping-2",
+                "source": "calculated",
+                "label": "tomato-pack",
+                "productId": "tomato-pack",
+                "count": 2,
+                "checked": false,
+                "confirmed": false
+              }
+            ],
+            "checkedState": "unchecked",
+            "quantitiesComplete": true,
+            "confirmedCount": 0
+          }
+        ]
+      },
+      "stock": {
+        "revision": 2,
+        "physical": {
+          "tomato": "300"
+        },
+        "reservations": {
+          "outside-menu": {
+            "tomato": "50"
+          },
+          "lot3-portions:0": {
+            "tomato": "200"
+          },
+          "lot3-portions:1": {
+            "tomato": "50"
+          },
+          "lot3-portions:2": {},
+          "lot3-portions:3": {},
+          "lot3-portions:4": {}
+        }
+      }
+    },
+    {
+      "step": "freely_chosen_expensive_meal_retained",
+      "menu": {
+        "version": 2,
+        "id": "lot3-family",
+        "revision": 3,
+        "meals": [
+          {
+            "id": "meal-1",
+            "recipeId": "r0",
+            "diners": 2,
+            "leftovers": "keep"
+          },
+          {
+            "id": "meal-2",
+            "recipeId": "r1",
+            "diners": 3,
+            "leftovers": "keep"
+          },
+          {
+            "id": "meal-3",
+            "recipeId": "r2",
+            "diners": 4,
+            "leftovers": "keep"
+          },
+          {
+            "id": "meal-4",
+            "recipeId": "partial",
+            "diners": 3,
+            "leftovers": "keep"
+          },
+          {
+            "id": "meal-5",
+            "recipeId": "manual",
+            "diners": 2,
+            "leftovers": "keep",
+            "selection": "manual"
+          },
+          {
+            "id": "free-choice",
+            "recipeId": "premium-choice",
+            "diners": 2,
+            "leftovers": "keep",
+            "selection": "user",
+            "locks": {
+              "recipe": true
+            }
+          }
+        ],
+        "reservationIds": {
+          "meal-1": "lot3-free-choice:0",
+          "meal-2": "lot3-free-choice:1",
+          "meal-3": "lot3-free-choice:2",
+          "meal-4": "lot3-free-choice:3",
+          "meal-5": "lot3-free-choice:4",
+          "free-choice": "lot3-free-choice:5"
+        }
+      },
+      "meals": [
+        {
+          "mealId": "meal-1",
+          "recipeId": "r0",
+          "status": "optimized",
+          "calculationStatus": "complete",
+          "knownNeeds": {
+            "tomato": "200"
+          },
+          "issues": [],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-1",
+            "recipeId": "r0",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "2",
+            "minimumUnits": "2",
+            "factor": "1/2",
+            "diners": "2",
+            "producedPortions": "2",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": true
+        },
+        {
+          "mealId": "meal-2",
+          "recipeId": "r1",
+          "status": "optimized",
+          "calculationStatus": "complete",
+          "knownNeeds": {
+            "tomato": "300"
+          },
+          "issues": [],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-2",
+            "recipeId": "r1",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "3",
+            "minimumUnits": "3",
+            "factor": "3/4",
+            "diners": "3",
+            "producedPortions": "3",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": true
+        },
+        {
+          "mealId": "meal-3",
+          "recipeId": "r2",
+          "status": "optimized",
+          "calculationStatus": "complete",
+          "knownNeeds": {
+            "tomato": "400"
+          },
+          "issues": [],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-3",
+            "recipeId": "r2",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "4",
+            "minimumUnits": "4",
+            "factor": "1",
+            "diners": "4",
+            "producedPortions": "4",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": true
+        },
+        {
+          "mealId": "meal-4",
+          "recipeId": "partial",
+          "status": "partial",
+          "calculationStatus": "partial",
+          "knownNeeds": {
+            "rice": "300"
+          },
+          "issues": [
+            {
+              "code": "QUANTITY_REQUIRED",
+              "status": "needs_review",
+              "ingredientId": "chicken-unknown",
+              "index": 1
+            }
+          ],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-4",
+            "recipeId": "partial",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "3",
+            "minimumUnits": "3",
+            "factor": "3/4",
+            "diners": "3",
+            "producedPortions": "3",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": false
+        },
+        {
+          "mealId": "meal-5",
+          "recipeId": "manual",
+          "status": "manual",
+          "calculationStatus": "needs_review",
+          "knownNeeds": {},
+          "issues": [
+            {
+              "code": "PRODUCTION_REVIEW_REQUIRED",
+              "detail": "PRODUCTION_REVIEW_REQUIRED: manual",
+              "status": "needs_review"
+            },
+            {
+              "code": "INGREDIENTS_REQUIRED",
+              "status": "needs_review"
+            }
+          ],
+          "risks": [],
+          "preparation": null,
+          "optimizable": false
+        },
+        {
+          "mealId": "free-choice",
+          "recipeId": "premium-choice",
+          "status": "optimized",
+          "calculationStatus": "complete",
+          "knownNeeds": {
+            "premium": "200"
+          },
+          "issues": [],
+          "risks": [],
+          "preparation": {
+            "mealId": "free-choice",
+            "recipeId": "premium-choice",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "2",
+            "minimumUnits": "2",
+            "factor": "1",
+            "diners": "2",
+            "producedPortions": "2",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": true
+        }
+      ],
+      "knownNeeds": {
+        "tomato": "900",
+        "rice": "300",
+        "premium": "200"
+      },
+      "amount": {
+        "knownSubtotalCents": 2520,
+        "totalCents": null,
+        "certainty": "partial",
+        "listedItemsTotalCents": 2520,
+        "scope": "known_items_only"
+      },
+      "budget": {
+        "targetCents": 1500,
+        "mode": "indicative",
+        "blocking": false,
+        "status": "partial_over_target",
+        "knownExcessCents": 1020,
+        "verified": false
+      },
+      "unknownNeeds": [
+        {
+          "mealId": "meal-4",
+          "code": "QUANTITY_REQUIRED",
+          "status": "needs_review",
+          "ingredientId": "chicken-unknown",
+          "index": 1,
+          "amount": null
+        },
+        {
+          "mealId": "meal-5",
+          "code": "PRODUCTION_REVIEW_REQUIRED",
+          "detail": "PRODUCTION_REVIEW_REQUIRED: manual",
+          "status": "needs_review",
+          "amount": null
+        },
+        {
+          "mealId": "meal-5",
+          "code": "INGREDIENTS_REQUIRED",
+          "status": "needs_review",
+          "amount": null
+        }
+      ],
+      "shopping": {
+        "manual": [],
+        "calculated": [
+          {
+            "id": "calc-lot3-shopping-1",
+            "source": "calculated",
+            "label": "rice-pack",
+            "productId": "rice-pack",
+            "count": 1,
+            "checked": false,
+            "confirmed": false
+          },
+          {
+            "id": "calc-lot3-shopping-2",
+            "source": "calculated",
+            "label": "tomato-pack",
+            "productId": "tomato-pack",
+            "count": 2,
+            "checked": false,
+            "confirmed": false
+          },
+          {
+            "id": "calc-lot3-shopping-3",
+            "source": "calculated",
+            "label": "synthetic-premium-pack",
+            "productId": "synthetic-premium-pack",
+            "count": 1,
+            "checked": false,
+            "confirmed": false
+          }
+        ],
+        "displayLines": [
+          {
+            "id": "sku:rice-pack",
+            "productId": "rice-pack",
+            "label": "rice-pack",
+            "count": 1,
+            "origins": [
+              {
+                "id": "calc-lot3-shopping-1",
+                "source": "calculated",
+                "label": "rice-pack",
+                "productId": "rice-pack",
+                "count": 1,
+                "checked": false,
+                "confirmed": false
+              }
+            ],
+            "checkedState": "unchecked",
+            "quantitiesComplete": true,
+            "confirmedCount": 0
+          },
+          {
+            "id": "sku:tomato-pack",
+            "productId": "tomato-pack",
+            "label": "tomato-pack",
+            "count": 2,
+            "origins": [
+              {
+                "id": "calc-lot3-shopping-2",
+                "source": "calculated",
+                "label": "tomato-pack",
+                "productId": "tomato-pack",
+                "count": 2,
+                "checked": false,
+                "confirmed": false
+              }
+            ],
+            "checkedState": "unchecked",
+            "quantitiesComplete": true,
+            "confirmedCount": 0
+          },
+          {
+            "id": "sku:synthetic-premium-pack",
+            "productId": "synthetic-premium-pack",
+            "label": "synthetic-premium-pack",
+            "count": 1,
+            "origins": [
+              {
+                "id": "calc-lot3-shopping-3",
+                "source": "calculated",
+                "label": "synthetic-premium-pack",
+                "productId": "synthetic-premium-pack",
+                "count": 1,
+                "checked": false,
+                "confirmed": false
+              }
+            ],
+            "checkedState": "unchecked",
+            "quantitiesComplete": true,
+            "confirmedCount": 0
+          }
+        ]
+      },
+      "stock": {
+        "revision": 3,
+        "physical": {
+          "tomato": "300"
+        },
+        "reservations": {
+          "outside-menu": {
+            "tomato": "50"
+          },
+          "lot3-free-choice:0": {
+            "tomato": "200"
+          },
+          "lot3-free-choice:1": {
+            "tomato": "50"
+          },
+          "lot3-free-choice:2": {},
+          "lot3-free-choice:3": {},
+          "lot3-free-choice:4": {},
+          "lot3-free-choice:5": {}
+        }
+      }
+    },
+    {
+      "step": "three_manual_products_added_and_cart_recalculated",
+      "menu": {
+        "version": 2,
+        "id": "lot3-family",
+        "revision": 3,
+        "meals": [
+          {
+            "id": "meal-1",
+            "recipeId": "r0",
+            "diners": 2,
+            "leftovers": "keep"
+          },
+          {
+            "id": "meal-2",
+            "recipeId": "r1",
+            "diners": 3,
+            "leftovers": "keep"
+          },
+          {
+            "id": "meal-3",
+            "recipeId": "r2",
+            "diners": 4,
+            "leftovers": "keep"
+          },
+          {
+            "id": "meal-4",
+            "recipeId": "partial",
+            "diners": 3,
+            "leftovers": "keep"
+          },
+          {
+            "id": "meal-5",
+            "recipeId": "manual",
+            "diners": 2,
+            "leftovers": "keep",
+            "selection": "manual"
+          },
+          {
+            "id": "free-choice",
+            "recipeId": "premium-choice",
+            "diners": 2,
+            "leftovers": "keep",
+            "selection": "user",
+            "locks": {
+              "recipe": true
+            }
+          }
+        ],
+        "reservationIds": {
+          "meal-1": "lot3-free-choice:0",
+          "meal-2": "lot3-free-choice:1",
+          "meal-3": "lot3-free-choice:2",
+          "meal-4": "lot3-free-choice:3",
+          "meal-5": "lot3-free-choice:4",
+          "free-choice": "lot3-free-choice:5"
+        }
+      },
+      "meals": [
+        {
+          "mealId": "meal-1",
+          "recipeId": "r0",
+          "status": "optimized",
+          "calculationStatus": "complete",
+          "knownNeeds": {
+            "tomato": "200"
+          },
+          "issues": [],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-1",
+            "recipeId": "r0",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "2",
+            "minimumUnits": "2",
+            "factor": "1/2",
+            "diners": "2",
+            "producedPortions": "2",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": true
+        },
+        {
+          "mealId": "meal-2",
+          "recipeId": "r1",
+          "status": "optimized",
+          "calculationStatus": "complete",
+          "knownNeeds": {
+            "tomato": "300"
+          },
+          "issues": [],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-2",
+            "recipeId": "r1",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "3",
+            "minimumUnits": "3",
+            "factor": "3/4",
+            "diners": "3",
+            "producedPortions": "3",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": true
+        },
+        {
+          "mealId": "meal-3",
+          "recipeId": "r2",
+          "status": "optimized",
+          "calculationStatus": "complete",
+          "knownNeeds": {
+            "tomato": "400"
+          },
+          "issues": [],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-3",
+            "recipeId": "r2",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "4",
+            "minimumUnits": "4",
+            "factor": "1",
+            "diners": "4",
+            "producedPortions": "4",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": true
+        },
+        {
+          "mealId": "meal-4",
+          "recipeId": "partial",
+          "status": "partial",
+          "calculationStatus": "partial",
+          "knownNeeds": {
+            "rice": "300"
+          },
+          "issues": [
+            {
+              "code": "QUANTITY_REQUIRED",
+              "status": "needs_review",
+              "ingredientId": "chicken-unknown",
+              "index": 1
+            }
+          ],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-4",
+            "recipeId": "partial",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "3",
+            "minimumUnits": "3",
+            "factor": "3/4",
+            "diners": "3",
+            "producedPortions": "3",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": false
+        },
+        {
+          "mealId": "meal-5",
+          "recipeId": "manual",
+          "status": "manual",
+          "calculationStatus": "needs_review",
+          "knownNeeds": {},
+          "issues": [
+            {
+              "code": "PRODUCTION_REVIEW_REQUIRED",
+              "detail": "PRODUCTION_REVIEW_REQUIRED: manual",
+              "status": "needs_review"
+            },
+            {
+              "code": "INGREDIENTS_REQUIRED",
+              "status": "needs_review"
+            }
+          ],
+          "risks": [],
+          "preparation": null,
+          "optimizable": false
+        },
+        {
+          "mealId": "free-choice",
+          "recipeId": "premium-choice",
+          "status": "optimized",
+          "calculationStatus": "complete",
+          "knownNeeds": {
+            "premium": "200"
+          },
+          "issues": [],
+          "risks": [],
+          "preparation": {
+            "mealId": "free-choice",
+            "recipeId": "premium-choice",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "2",
+            "minimumUnits": "2",
+            "factor": "1",
+            "diners": "2",
+            "producedPortions": "2",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": true
+        }
+      ],
+      "knownNeeds": {
+        "tomato": "900",
+        "rice": "300",
+        "premium": "200"
+      },
+      "amount": {
+        "knownSubtotalCents": 2920,
+        "totalCents": null,
+        "certainty": "partial",
+        "listedItemsTotalCents": null,
+        "scope": "known_items_only"
+      },
+      "budget": {
+        "targetCents": 1500,
+        "mode": "indicative",
+        "blocking": false,
+        "status": "partial_over_target",
+        "knownExcessCents": 1420,
+        "verified": false
+      },
+      "unknownNeeds": [
+        {
+          "mealId": "meal-4",
+          "code": "QUANTITY_REQUIRED",
+          "status": "needs_review",
+          "ingredientId": "chicken-unknown",
+          "index": 1,
+          "amount": null
+        },
+        {
+          "mealId": "meal-5",
+          "code": "PRODUCTION_REVIEW_REQUIRED",
+          "detail": "PRODUCTION_REVIEW_REQUIRED: manual",
+          "status": "needs_review",
+          "amount": null
+        },
+        {
+          "mealId": "meal-5",
+          "code": "INGREDIENTS_REQUIRED",
+          "status": "needs_review",
+          "amount": null
+        }
+      ],
+      "shopping": {
+        "manual": [
+          {
+            "id": "biscuits",
+            "label": "Biscuits",
+            "presentation": "one free packet",
+            "checked": true,
+            "estimate": {
+              "kind": "estimated",
+              "currency": "EUR",
+              "totalCents": 150
+            },
+            "source": "manual",
+            "confirmed": false
+          },
+          {
+            "id": "soda",
+            "label": "Soda",
+            "quantity": {
+              "amount": "2",
+              "unit": "bottles"
+            },
+            "source": "manual",
+            "checked": false,
+            "confirmed": false
+          },
+          {
+            "id": "household",
+            "label": "Household product",
+            "presentation": "free item",
+            "checked": true,
+            "estimate": {
+              "kind": "estimated",
+              "currency": "EUR",
+              "totalCents": 250
+            },
+            "source": "manual",
+            "confirmed": false
+          }
+        ],
+        "calculated": [
+          {
+            "id": "calc-lot3-shopping-1",
+            "source": "calculated",
+            "label": "rice-pack",
+            "productId": "rice-pack",
+            "count": 1,
+            "checked": false,
+            "confirmed": false
+          },
+          {
+            "id": "calc-lot3-shopping-2",
+            "source": "calculated",
+            "label": "tomato-pack",
+            "productId": "tomato-pack",
+            "count": 2,
+            "checked": false,
+            "confirmed": false
+          },
+          {
+            "id": "calc-lot3-shopping-3",
+            "source": "calculated",
+            "label": "synthetic-premium-pack",
+            "productId": "synthetic-premium-pack",
+            "count": 1,
+            "checked": false,
+            "confirmed": false
+          }
+        ],
+        "displayLines": [
+          {
+            "id": "intent:biscuits",
+            "productId": null,
+            "label": "Biscuits",
+            "count": null,
+            "origins": [
+              {
+                "id": "biscuits",
+                "label": "Biscuits",
+                "presentation": "one free packet",
+                "checked": true,
+                "estimate": {
+                  "kind": "estimated",
+                  "currency": "EUR",
+                  "totalCents": 150
+                },
+                "source": "manual",
+                "confirmed": false
+              }
+            ],
+            "checkedState": "checked",
+            "quantitiesComplete": false,
+            "confirmedCount": 0
+          },
+          {
+            "id": "intent:soda",
+            "productId": null,
+            "label": "Soda",
+            "count": null,
+            "origins": [
+              {
+                "id": "soda",
+                "label": "Soda",
+                "quantity": {
+                  "amount": "2",
+                  "unit": "bottles"
+                },
+                "source": "manual",
+                "checked": false,
+                "confirmed": false
+              }
+            ],
+            "checkedState": "unchecked",
+            "quantitiesComplete": false,
+            "confirmedCount": 0
+          },
+          {
+            "id": "intent:household",
+            "productId": null,
+            "label": "Household product",
+            "count": null,
+            "origins": [
+              {
+                "id": "household",
+                "label": "Household product",
+                "presentation": "free item",
+                "checked": true,
+                "estimate": {
+                  "kind": "estimated",
+                  "currency": "EUR",
+                  "totalCents": 250
+                },
+                "source": "manual",
+                "confirmed": false
+              }
+            ],
+            "checkedState": "checked",
+            "quantitiesComplete": false,
+            "confirmedCount": 0
+          },
+          {
+            "id": "sku:rice-pack",
+            "productId": "rice-pack",
+            "label": "rice-pack",
+            "count": 1,
+            "origins": [
+              {
+                "id": "calc-lot3-shopping-1",
+                "source": "calculated",
+                "label": "rice-pack",
+                "productId": "rice-pack",
+                "count": 1,
+                "checked": false,
+                "confirmed": false
+              }
+            ],
+            "checkedState": "unchecked",
+            "quantitiesComplete": true,
+            "confirmedCount": 0
+          },
+          {
+            "id": "sku:tomato-pack",
+            "productId": "tomato-pack",
+            "label": "tomato-pack",
+            "count": 2,
+            "origins": [
+              {
+                "id": "calc-lot3-shopping-2",
+                "source": "calculated",
+                "label": "tomato-pack",
+                "productId": "tomato-pack",
+                "count": 2,
+                "checked": false,
+                "confirmed": false
+              }
+            ],
+            "checkedState": "unchecked",
+            "quantitiesComplete": true,
+            "confirmedCount": 0
+          },
+          {
+            "id": "sku:synthetic-premium-pack",
+            "productId": "synthetic-premium-pack",
+            "label": "synthetic-premium-pack",
+            "count": 1,
+            "origins": [
+              {
+                "id": "calc-lot3-shopping-3",
+                "source": "calculated",
+                "label": "synthetic-premium-pack",
+                "productId": "synthetic-premium-pack",
+                "count": 1,
+                "checked": false,
+                "confirmed": false
+              }
+            ],
+            "checkedState": "unchecked",
+            "quantitiesComplete": true,
+            "confirmedCount": 0
+          }
+        ]
+      },
+      "stock": {
+        "revision": 3,
+        "physical": {
+          "tomato": "300"
+        },
+        "reservations": {
+          "outside-menu": {
+            "tomato": "50"
+          },
+          "lot3-free-choice:0": {
+            "tomato": "200"
+          },
+          "lot3-free-choice:1": {
+            "tomato": "50"
+          },
+          "lot3-free-choice:2": {},
+          "lot3-free-choice:3": {},
+          "lot3-free-choice:4": {},
+          "lot3-free-choice:5": {}
+        }
+      }
+    },
+    {
+      "step": "suggestions_explicitly_requested",
+      "menu": {
+        "version": 2,
+        "id": "lot3-family",
+        "revision": 3,
+        "meals": [
+          {
+            "id": "meal-1",
+            "recipeId": "r0",
+            "diners": 2,
+            "leftovers": "keep"
+          },
+          {
+            "id": "meal-2",
+            "recipeId": "r1",
+            "diners": 3,
+            "leftovers": "keep"
+          },
+          {
+            "id": "meal-3",
+            "recipeId": "r2",
+            "diners": 4,
+            "leftovers": "keep"
+          },
+          {
+            "id": "meal-4",
+            "recipeId": "partial",
+            "diners": 3,
+            "leftovers": "keep"
+          },
+          {
+            "id": "meal-5",
+            "recipeId": "manual",
+            "diners": 2,
+            "leftovers": "keep",
+            "selection": "manual"
+          },
+          {
+            "id": "free-choice",
+            "recipeId": "premium-choice",
+            "diners": 2,
+            "leftovers": "keep",
+            "selection": "user",
+            "locks": {
+              "recipe": true
+            }
+          }
+        ],
+        "reservationIds": {
+          "meal-1": "lot3-free-choice:0",
+          "meal-2": "lot3-free-choice:1",
+          "meal-3": "lot3-free-choice:2",
+          "meal-4": "lot3-free-choice:3",
+          "meal-5": "lot3-free-choice:4",
+          "free-choice": "lot3-free-choice:5"
+        }
+      },
+      "meals": [
+        {
+          "mealId": "meal-1",
+          "recipeId": "r0",
+          "status": "optimized",
+          "calculationStatus": "complete",
+          "knownNeeds": {
+            "tomato": "200"
+          },
+          "issues": [],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-1",
+            "recipeId": "r0",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "2",
+            "minimumUnits": "2",
+            "factor": "1/2",
+            "diners": "2",
+            "producedPortions": "2",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": true
+        },
+        {
+          "mealId": "meal-2",
+          "recipeId": "r1",
+          "status": "optimized",
+          "calculationStatus": "complete",
+          "knownNeeds": {
+            "tomato": "300"
+          },
+          "issues": [],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-2",
+            "recipeId": "r1",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "3",
+            "minimumUnits": "3",
+            "factor": "3/4",
+            "diners": "3",
+            "producedPortions": "3",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": true
+        },
+        {
+          "mealId": "meal-3",
+          "recipeId": "r2",
+          "status": "optimized",
+          "calculationStatus": "complete",
+          "knownNeeds": {
+            "tomato": "400"
+          },
+          "issues": [],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-3",
+            "recipeId": "r2",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "4",
+            "minimumUnits": "4",
+            "factor": "1",
+            "diners": "4",
+            "producedPortions": "4",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": true
+        },
+        {
+          "mealId": "meal-4",
+          "recipeId": "partial",
+          "status": "partial",
+          "calculationStatus": "partial",
+          "knownNeeds": {
+            "rice": "300"
+          },
+          "issues": [
+            {
+              "code": "QUANTITY_REQUIRED",
+              "status": "needs_review",
+              "ingredientId": "chicken-unknown",
+              "index": 1
+            }
+          ],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-4",
+            "recipeId": "partial",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "3",
+            "minimumUnits": "3",
+            "factor": "3/4",
+            "diners": "3",
+            "producedPortions": "3",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": false
+        },
+        {
+          "mealId": "meal-5",
+          "recipeId": "manual",
+          "status": "manual",
+          "calculationStatus": "needs_review",
+          "knownNeeds": {},
+          "issues": [
+            {
+              "code": "PRODUCTION_REVIEW_REQUIRED",
+              "detail": "PRODUCTION_REVIEW_REQUIRED: manual",
+              "status": "needs_review"
+            },
+            {
+              "code": "INGREDIENTS_REQUIRED",
+              "status": "needs_review"
+            }
+          ],
+          "risks": [],
+          "preparation": null,
+          "optimizable": false
+        },
+        {
+          "mealId": "free-choice",
+          "recipeId": "premium-choice",
+          "status": "optimized",
+          "calculationStatus": "complete",
+          "knownNeeds": {
+            "premium": "200"
+          },
+          "issues": [],
+          "risks": [],
+          "preparation": {
+            "mealId": "free-choice",
+            "recipeId": "premium-choice",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "2",
+            "minimumUnits": "2",
+            "factor": "1",
+            "diners": "2",
+            "producedPortions": "2",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": true
+        }
+      ],
+      "knownNeeds": {
+        "tomato": "900",
+        "rice": "300",
+        "premium": "200"
+      },
+      "amount": {
+        "knownSubtotalCents": 2920,
+        "totalCents": null,
+        "certainty": "partial",
+        "listedItemsTotalCents": null,
+        "scope": "known_items_only"
+      },
+      "budget": {
+        "targetCents": 1500,
+        "mode": "indicative",
+        "blocking": false,
+        "status": "partial_over_target",
+        "knownExcessCents": 1420,
+        "verified": false
+      },
+      "unknownNeeds": [
+        {
+          "mealId": "meal-4",
+          "code": "QUANTITY_REQUIRED",
+          "status": "needs_review",
+          "ingredientId": "chicken-unknown",
+          "index": 1,
+          "amount": null
+        },
+        {
+          "mealId": "meal-5",
+          "code": "PRODUCTION_REVIEW_REQUIRED",
+          "detail": "PRODUCTION_REVIEW_REQUIRED: manual",
+          "status": "needs_review",
+          "amount": null
+        },
+        {
+          "mealId": "meal-5",
+          "code": "INGREDIENTS_REQUIRED",
+          "status": "needs_review",
+          "amount": null
+        }
+      ],
+      "shopping": {
+        "manual": [
+          {
+            "id": "biscuits",
+            "label": "Biscuits",
+            "presentation": "one free packet",
+            "checked": true,
+            "estimate": {
+              "kind": "estimated",
+              "currency": "EUR",
+              "totalCents": 150
+            },
+            "source": "manual",
+            "confirmed": false
+          },
+          {
+            "id": "soda",
+            "label": "Soda",
+            "quantity": {
+              "amount": "2",
+              "unit": "bottles"
+            },
+            "source": "manual",
+            "checked": false,
+            "confirmed": false
+          },
+          {
+            "id": "household",
+            "label": "Household product",
+            "presentation": "free item",
+            "checked": true,
+            "estimate": {
+              "kind": "estimated",
+              "currency": "EUR",
+              "totalCents": 250
+            },
+            "source": "manual",
+            "confirmed": false
+          }
+        ],
+        "calculated": [
+          {
+            "id": "calc-lot3-shopping-1",
+            "source": "calculated",
+            "label": "rice-pack",
+            "productId": "rice-pack",
+            "count": 1,
+            "checked": false,
+            "confirmed": false
+          },
+          {
+            "id": "calc-lot3-shopping-2",
+            "source": "calculated",
+            "label": "tomato-pack",
+            "productId": "tomato-pack",
+            "count": 2,
+            "checked": false,
+            "confirmed": false
+          },
+          {
+            "id": "calc-lot3-shopping-3",
+            "source": "calculated",
+            "label": "synthetic-premium-pack",
+            "productId": "synthetic-premium-pack",
+            "count": 1,
+            "checked": false,
+            "confirmed": false
+          }
+        ],
+        "displayLines": [
+          {
+            "id": "intent:biscuits",
+            "productId": null,
+            "label": "Biscuits",
+            "count": null,
+            "origins": [
+              {
+                "id": "biscuits",
+                "label": "Biscuits",
+                "presentation": "one free packet",
+                "checked": true,
+                "estimate": {
+                  "kind": "estimated",
+                  "currency": "EUR",
+                  "totalCents": 150
+                },
+                "source": "manual",
+                "confirmed": false
+              }
+            ],
+            "checkedState": "checked",
+            "quantitiesComplete": false,
+            "confirmedCount": 0
+          },
+          {
+            "id": "intent:soda",
+            "productId": null,
+            "label": "Soda",
+            "count": null,
+            "origins": [
+              {
+                "id": "soda",
+                "label": "Soda",
+                "quantity": {
+                  "amount": "2",
+                  "unit": "bottles"
+                },
+                "source": "manual",
+                "checked": false,
+                "confirmed": false
+              }
+            ],
+            "checkedState": "unchecked",
+            "quantitiesComplete": false,
+            "confirmedCount": 0
+          },
+          {
+            "id": "intent:household",
+            "productId": null,
+            "label": "Household product",
+            "count": null,
+            "origins": [
+              {
+                "id": "household",
+                "label": "Household product",
+                "presentation": "free item",
+                "checked": true,
+                "estimate": {
+                  "kind": "estimated",
+                  "currency": "EUR",
+                  "totalCents": 250
+                },
+                "source": "manual",
+                "confirmed": false
+              }
+            ],
+            "checkedState": "checked",
+            "quantitiesComplete": false,
+            "confirmedCount": 0
+          },
+          {
+            "id": "sku:rice-pack",
+            "productId": "rice-pack",
+            "label": "rice-pack",
+            "count": 1,
+            "origins": [
+              {
+                "id": "calc-lot3-shopping-1",
+                "source": "calculated",
+                "label": "rice-pack",
+                "productId": "rice-pack",
+                "count": 1,
+                "checked": false,
+                "confirmed": false
+              }
+            ],
+            "checkedState": "unchecked",
+            "quantitiesComplete": true,
+            "confirmedCount": 0
+          },
+          {
+            "id": "sku:tomato-pack",
+            "productId": "tomato-pack",
+            "label": "tomato-pack",
+            "count": 2,
+            "origins": [
+              {
+                "id": "calc-lot3-shopping-2",
+                "source": "calculated",
+                "label": "tomato-pack",
+                "productId": "tomato-pack",
+                "count": 2,
+                "checked": false,
+                "confirmed": false
+              }
+            ],
+            "checkedState": "unchecked",
+            "quantitiesComplete": true,
+            "confirmedCount": 0
+          },
+          {
+            "id": "sku:synthetic-premium-pack",
+            "productId": "synthetic-premium-pack",
+            "label": "synthetic-premium-pack",
+            "count": 1,
+            "origins": [
+              {
+                "id": "calc-lot3-shopping-3",
+                "source": "calculated",
+                "label": "synthetic-premium-pack",
+                "productId": "synthetic-premium-pack",
+                "count": 1,
+                "checked": false,
+                "confirmed": false
+              }
+            ],
+            "checkedState": "unchecked",
+            "quantitiesComplete": true,
+            "confirmedCount": 0
+          }
+        ]
+      },
+      "stock": {
+        "revision": 3,
+        "physical": {
+          "tomato": "300"
+        },
+        "reservations": {
+          "outside-menu": {
+            "tomato": "50"
+          },
+          "lot3-free-choice:0": {
+            "tomato": "200"
+          },
+          "lot3-free-choice:1": {
+            "tomato": "50"
+          },
+          "lot3-free-choice:2": {},
+          "lot3-free-choice:3": {},
+          "lot3-free-choice:4": {},
+          "lot3-free-choice:5": {}
+        }
+      },
+      "proposals": [
+        {
+          "id": "lot3-advice:0:3:1",
+          "signature": "[{\"after\":{\"diners\":2,\"id\":\"meal-1\",\"leftovers\":\"keep\",\"productionUnits\":\"3\",\"recipeId\":\"r0\"},\"before\":{\"diners\":2,\"id\":\"meal-1\",\"leftovers\":\"keep\",\"recipeId\":\"r0\"},\"mealId\":\"meal-1\"}]",
+          "adviceKind": "portions",
+          "reason": "use_existing_purchases_or_perishable_stock",
+          "changes": [
+            {
+              "mealId": "meal-1",
+              "before": {
+                "id": "meal-1",
+                "recipeId": "r0",
+                "diners": 2,
+                "leftovers": "keep"
+              },
+              "after": {
+                "id": "meal-1",
+                "recipeId": "r0",
+                "diners": 2,
+                "leftovers": "keep",
+                "productionUnits": "3"
+              }
+            }
+          ],
+          "comparison": {
+            "costDeltaCents": null,
+            "knownSubtotalDeltaCents": 0,
+            "priceScope": "known_items_only",
+            "scoreDelta": "-10",
+            "extraPreparedPortions": "1",
+            "quantities": {
+              "premium": {
+                "unit": "g",
+                "basis": "net",
+                "perishable": true,
+                "requiredDelta": "0",
+                "boughtDelta": "0",
+                "purchaseSurplusDelta": "0",
+                "fromStockDelta": "0"
+              },
+              "rice": {
+                "unit": "g",
+                "basis": "net",
+                "perishable": false,
+                "requiredDelta": "0",
+                "boughtDelta": "0",
+                "purchaseSurplusDelta": "0",
+                "fromStockDelta": "0"
+              },
+              "tomato": {
+                "unit": "g",
+                "basis": "net",
+                "perishable": true,
+                "requiredDelta": "100",
+                "boughtDelta": "0",
+                "purchaseSurplusDelta": "-100",
+                "fromStockDelta": "0"
+              }
+            },
+            "packageCountDelta": 0
+          },
+          "benefits": {
+            "saving": false,
+            "knownSaving": false,
+            "lessSurplus": true,
+            "moreStock": false,
+            "label": "better_use_without_price_saving"
+          },
+          "limits": {
+            "partialCalculation": true,
+            "priceScope": "known_items_only",
+            "preservedRisks": [],
+            "optimal": false,
+            "unknownNeeds": [
+              {
+                "mealId": "meal-4",
+                "code": "QUANTITY_REQUIRED",
+                "status": "needs_review",
+                "ingredientId": "chicken-unknown",
+                "index": 1,
+                "amount": null
+              },
+              {
+                "mealId": "meal-5",
+                "code": "PRODUCTION_REVIEW_REQUIRED",
+                "detail": "PRODUCTION_REVIEW_REQUIRED: manual",
+                "status": "needs_review",
+                "amount": null
+              },
+              {
+                "mealId": "meal-5",
+                "code": "INGREDIENTS_REQUIRED",
+                "status": "needs_review",
+                "amount": null
+              }
+            ]
+          }
+        },
+        {
+          "id": "lot3-advice:0:3:6",
+          "signature": "[{\"after\":{\"diners\":4,\"id\":\"meal-3\",\"leftovers\":\"keep\",\"recipeId\":\"r6\"},\"before\":{\"diners\":4,\"id\":\"meal-3\",\"leftovers\":\"keep\",\"recipeId\":\"r2\"},\"mealId\":\"meal-3\"}]",
+          "adviceKind": "replacement",
+          "reason": "lower_full_context_cost_or_surplus",
+          "changes": [
+            {
+              "mealId": "meal-3",
+              "before": {
+                "id": "meal-3",
+                "recipeId": "r2",
+                "diners": 4,
+                "leftovers": "keep"
+              },
+              "after": {
+                "id": "meal-3",
+                "recipeId": "r6",
+                "diners": 4,
+                "leftovers": "keep"
+              }
+            }
+          ],
+          "comparison": {
+            "costDeltaCents": null,
+            "knownSubtotalDeltaCents": 0,
+            "priceScope": "known_items_only",
+            "scoreDelta": "-8",
+            "extraPreparedPortions": "0",
+            "quantities": {
+              "premium": {
+                "unit": "g",
+                "basis": "net",
+                "perishable": true,
+                "requiredDelta": "0",
+                "boughtDelta": "0",
+                "purchaseSurplusDelta": "0",
+                "fromStockDelta": "0"
+              },
+              "rice": {
+                "unit": "g",
+                "basis": "net",
+                "perishable": false,
+                "requiredDelta": "0",
+                "boughtDelta": "0",
+                "purchaseSurplusDelta": "0",
+                "fromStockDelta": "0"
+              },
+              "tomato": {
+                "unit": "g",
+                "basis": "net",
+                "perishable": true,
+                "requiredDelta": "80",
+                "boughtDelta": "0",
+                "purchaseSurplusDelta": "-80",
+                "fromStockDelta": "0"
+              }
+            },
+            "packageCountDelta": 0
+          },
+          "benefits": {
+            "saving": false,
+            "knownSaving": false,
+            "lessSurplus": true,
+            "moreStock": false,
+            "label": "better_use_without_price_saving"
+          },
+          "limits": {
+            "partialCalculation": true,
+            "priceScope": "known_items_only",
+            "preservedRisks": [],
+            "optimal": false,
+            "unknownNeeds": [
+              {
+                "mealId": "meal-4",
+                "code": "QUANTITY_REQUIRED",
+                "status": "needs_review",
+                "ingredientId": "chicken-unknown",
+                "index": 1,
+                "amount": null
+              },
+              {
+                "mealId": "meal-5",
+                "code": "PRODUCTION_REVIEW_REQUIRED",
+                "detail": "PRODUCTION_REVIEW_REQUIRED: manual",
+                "status": "needs_review",
+                "amount": null
+              },
+              {
+                "mealId": "meal-5",
+                "code": "INGREDIENTS_REQUIRED",
+                "status": "needs_review",
+                "amount": null
+              }
+            ]
+          }
+        },
+        {
+          "id": "lot3-advice:0:3:2",
+          "signature": "[{\"after\":{\"diners\":3,\"id\":\"meal-2\",\"leftovers\":\"keep\",\"productionUnits\":\"4\",\"recipeId\":\"r1\"},\"before\":{\"diners\":3,\"id\":\"meal-2\",\"leftovers\":\"keep\",\"recipeId\":\"r1\"},\"mealId\":\"meal-2\"}]",
+          "adviceKind": "portions",
+          "reason": "use_existing_purchases_or_perishable_stock",
+          "changes": [
+            {
+              "mealId": "meal-2",
+              "before": {
+                "id": "meal-2",
+                "recipeId": "r1",
+                "diners": 3,
+                "leftovers": "keep"
+              },
+              "after": {
+                "id": "meal-2",
+                "recipeId": "r1",
+                "diners": 3,
+                "leftovers": "keep",
+                "productionUnits": "4"
+              }
+            }
+          ],
+          "comparison": {
+            "costDeltaCents": null,
+            "knownSubtotalDeltaCents": 0,
+            "priceScope": "known_items_only",
+            "scoreDelta": "-10",
+            "extraPreparedPortions": "1",
+            "quantities": {
+              "premium": {
+                "unit": "g",
+                "basis": "net",
+                "perishable": true,
+                "requiredDelta": "0",
+                "boughtDelta": "0",
+                "purchaseSurplusDelta": "0",
+                "fromStockDelta": "0"
+              },
+              "rice": {
+                "unit": "g",
+                "basis": "net",
+                "perishable": false,
+                "requiredDelta": "0",
+                "boughtDelta": "0",
+                "purchaseSurplusDelta": "0",
+                "fromStockDelta": "0"
+              },
+              "tomato": {
+                "unit": "g",
+                "basis": "net",
+                "perishable": true,
+                "requiredDelta": "100",
+                "boughtDelta": "0",
+                "purchaseSurplusDelta": "-100",
+                "fromStockDelta": "0"
+              }
+            },
+            "packageCountDelta": 0
+          },
+          "benefits": {
+            "saving": false,
+            "knownSaving": false,
+            "lessSurplus": true,
+            "moreStock": false,
+            "label": "better_use_without_price_saving"
+          },
+          "limits": {
+            "partialCalculation": true,
+            "priceScope": "known_items_only",
+            "preservedRisks": [],
+            "optimal": false,
+            "unknownNeeds": [
+              {
+                "mealId": "meal-4",
+                "code": "QUANTITY_REQUIRED",
+                "status": "needs_review",
+                "ingredientId": "chicken-unknown",
+                "index": 1,
+                "amount": null
+              },
+              {
+                "mealId": "meal-5",
+                "code": "PRODUCTION_REVIEW_REQUIRED",
+                "detail": "PRODUCTION_REVIEW_REQUIRED: manual",
+                "status": "needs_review",
+                "amount": null
+              },
+              {
+                "mealId": "meal-5",
+                "code": "INGREDIENTS_REQUIRED",
+                "status": "needs_review",
+                "amount": null
+              }
+            ]
+          }
+        }
+      ],
+      "unchanged": true
+    },
+    {
+      "step": "first_suggestion_declined",
+      "menu": {
+        "version": 2,
+        "id": "lot3-family",
+        "revision": 3,
+        "meals": [
+          {
+            "id": "meal-1",
+            "recipeId": "r0",
+            "diners": 2,
+            "leftovers": "keep"
+          },
+          {
+            "id": "meal-2",
+            "recipeId": "r1",
+            "diners": 3,
+            "leftovers": "keep"
+          },
+          {
+            "id": "meal-3",
+            "recipeId": "r2",
+            "diners": 4,
+            "leftovers": "keep"
+          },
+          {
+            "id": "meal-4",
+            "recipeId": "partial",
+            "diners": 3,
+            "leftovers": "keep"
+          },
+          {
+            "id": "meal-5",
+            "recipeId": "manual",
+            "diners": 2,
+            "leftovers": "keep",
+            "selection": "manual"
+          },
+          {
+            "id": "free-choice",
+            "recipeId": "premium-choice",
+            "diners": 2,
+            "leftovers": "keep",
+            "selection": "user",
+            "locks": {
+              "recipe": true
+            }
+          }
+        ],
+        "reservationIds": {
+          "meal-1": "lot3-free-choice:0",
+          "meal-2": "lot3-free-choice:1",
+          "meal-3": "lot3-free-choice:2",
+          "meal-4": "lot3-free-choice:3",
+          "meal-5": "lot3-free-choice:4",
+          "free-choice": "lot3-free-choice:5"
+        }
+      },
+      "meals": [
+        {
+          "mealId": "meal-1",
+          "recipeId": "r0",
+          "status": "optimized",
+          "calculationStatus": "complete",
+          "knownNeeds": {
+            "tomato": "200"
+          },
+          "issues": [],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-1",
+            "recipeId": "r0",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "2",
+            "minimumUnits": "2",
+            "factor": "1/2",
+            "diners": "2",
+            "producedPortions": "2",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": true
+        },
+        {
+          "mealId": "meal-2",
+          "recipeId": "r1",
+          "status": "optimized",
+          "calculationStatus": "complete",
+          "knownNeeds": {
+            "tomato": "300"
+          },
+          "issues": [],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-2",
+            "recipeId": "r1",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "3",
+            "minimumUnits": "3",
+            "factor": "3/4",
+            "diners": "3",
+            "producedPortions": "3",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": true
+        },
+        {
+          "mealId": "meal-3",
+          "recipeId": "r2",
+          "status": "optimized",
+          "calculationStatus": "complete",
+          "knownNeeds": {
+            "tomato": "400"
+          },
+          "issues": [],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-3",
+            "recipeId": "r2",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "4",
+            "minimumUnits": "4",
+            "factor": "1",
+            "diners": "4",
+            "producedPortions": "4",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": true
+        },
+        {
+          "mealId": "meal-4",
+          "recipeId": "partial",
+          "status": "partial",
+          "calculationStatus": "partial",
+          "knownNeeds": {
+            "rice": "300"
+          },
+          "issues": [
+            {
+              "code": "QUANTITY_REQUIRED",
+              "status": "needs_review",
+              "ingredientId": "chicken-unknown",
+              "index": 1
+            }
+          ],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-4",
+            "recipeId": "partial",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "3",
+            "minimumUnits": "3",
+            "factor": "3/4",
+            "diners": "3",
+            "producedPortions": "3",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": false
+        },
+        {
+          "mealId": "meal-5",
+          "recipeId": "manual",
+          "status": "manual",
+          "calculationStatus": "needs_review",
+          "knownNeeds": {},
+          "issues": [
+            {
+              "code": "PRODUCTION_REVIEW_REQUIRED",
+              "detail": "PRODUCTION_REVIEW_REQUIRED: manual",
+              "status": "needs_review"
+            },
+            {
+              "code": "INGREDIENTS_REQUIRED",
+              "status": "needs_review"
+            }
+          ],
+          "risks": [],
+          "preparation": null,
+          "optimizable": false
+        },
+        {
+          "mealId": "free-choice",
+          "recipeId": "premium-choice",
+          "status": "optimized",
+          "calculationStatus": "complete",
+          "knownNeeds": {
+            "premium": "200"
+          },
+          "issues": [],
+          "risks": [],
+          "preparation": {
+            "mealId": "free-choice",
+            "recipeId": "premium-choice",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "2",
+            "minimumUnits": "2",
+            "factor": "1",
+            "diners": "2",
+            "producedPortions": "2",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": true
+        }
+      ],
+      "knownNeeds": {
+        "tomato": "900",
+        "rice": "300",
+        "premium": "200"
+      },
+      "amount": {
+        "knownSubtotalCents": 2920,
+        "totalCents": null,
+        "certainty": "partial",
+        "listedItemsTotalCents": null,
+        "scope": "known_items_only"
+      },
+      "budget": {
+        "targetCents": 1500,
+        "mode": "indicative",
+        "blocking": false,
+        "status": "partial_over_target",
+        "knownExcessCents": 1420,
+        "verified": false
+      },
+      "unknownNeeds": [
+        {
+          "mealId": "meal-4",
+          "code": "QUANTITY_REQUIRED",
+          "status": "needs_review",
+          "ingredientId": "chicken-unknown",
+          "index": 1,
+          "amount": null
+        },
+        {
+          "mealId": "meal-5",
+          "code": "PRODUCTION_REVIEW_REQUIRED",
+          "detail": "PRODUCTION_REVIEW_REQUIRED: manual",
+          "status": "needs_review",
+          "amount": null
+        },
+        {
+          "mealId": "meal-5",
+          "code": "INGREDIENTS_REQUIRED",
+          "status": "needs_review",
+          "amount": null
+        }
+      ],
+      "shopping": {
+        "manual": [
+          {
+            "id": "biscuits",
+            "label": "Biscuits",
+            "presentation": "one free packet",
+            "checked": true,
+            "estimate": {
+              "kind": "estimated",
+              "currency": "EUR",
+              "totalCents": 150
+            },
+            "source": "manual",
+            "confirmed": false
+          },
+          {
+            "id": "soda",
+            "label": "Soda",
+            "quantity": {
+              "amount": "2",
+              "unit": "bottles"
+            },
+            "source": "manual",
+            "checked": false,
+            "confirmed": false
+          },
+          {
+            "id": "household",
+            "label": "Household product",
+            "presentation": "free item",
+            "checked": true,
+            "estimate": {
+              "kind": "estimated",
+              "currency": "EUR",
+              "totalCents": 250
+            },
+            "source": "manual",
+            "confirmed": false
+          }
+        ],
+        "calculated": [
+          {
+            "id": "calc-lot3-shopping-1",
+            "source": "calculated",
+            "label": "rice-pack",
+            "productId": "rice-pack",
+            "count": 1,
+            "checked": false,
+            "confirmed": false
+          },
+          {
+            "id": "calc-lot3-shopping-2",
+            "source": "calculated",
+            "label": "tomato-pack",
+            "productId": "tomato-pack",
+            "count": 2,
+            "checked": false,
+            "confirmed": false
+          },
+          {
+            "id": "calc-lot3-shopping-3",
+            "source": "calculated",
+            "label": "synthetic-premium-pack",
+            "productId": "synthetic-premium-pack",
+            "count": 1,
+            "checked": false,
+            "confirmed": false
+          }
+        ],
+        "displayLines": [
+          {
+            "id": "intent:biscuits",
+            "productId": null,
+            "label": "Biscuits",
+            "count": null,
+            "origins": [
+              {
+                "id": "biscuits",
+                "label": "Biscuits",
+                "presentation": "one free packet",
+                "checked": true,
+                "estimate": {
+                  "kind": "estimated",
+                  "currency": "EUR",
+                  "totalCents": 150
+                },
+                "source": "manual",
+                "confirmed": false
+              }
+            ],
+            "checkedState": "checked",
+            "quantitiesComplete": false,
+            "confirmedCount": 0
+          },
+          {
+            "id": "intent:soda",
+            "productId": null,
+            "label": "Soda",
+            "count": null,
+            "origins": [
+              {
+                "id": "soda",
+                "label": "Soda",
+                "quantity": {
+                  "amount": "2",
+                  "unit": "bottles"
+                },
+                "source": "manual",
+                "checked": false,
+                "confirmed": false
+              }
+            ],
+            "checkedState": "unchecked",
+            "quantitiesComplete": false,
+            "confirmedCount": 0
+          },
+          {
+            "id": "intent:household",
+            "productId": null,
+            "label": "Household product",
+            "count": null,
+            "origins": [
+              {
+                "id": "household",
+                "label": "Household product",
+                "presentation": "free item",
+                "checked": true,
+                "estimate": {
+                  "kind": "estimated",
+                  "currency": "EUR",
+                  "totalCents": 250
+                },
+                "source": "manual",
+                "confirmed": false
+              }
+            ],
+            "checkedState": "checked",
+            "quantitiesComplete": false,
+            "confirmedCount": 0
+          },
+          {
+            "id": "sku:rice-pack",
+            "productId": "rice-pack",
+            "label": "rice-pack",
+            "count": 1,
+            "origins": [
+              {
+                "id": "calc-lot3-shopping-1",
+                "source": "calculated",
+                "label": "rice-pack",
+                "productId": "rice-pack",
+                "count": 1,
+                "checked": false,
+                "confirmed": false
+              }
+            ],
+            "checkedState": "unchecked",
+            "quantitiesComplete": true,
+            "confirmedCount": 0
+          },
+          {
+            "id": "sku:tomato-pack",
+            "productId": "tomato-pack",
+            "label": "tomato-pack",
+            "count": 2,
+            "origins": [
+              {
+                "id": "calc-lot3-shopping-2",
+                "source": "calculated",
+                "label": "tomato-pack",
+                "productId": "tomato-pack",
+                "count": 2,
+                "checked": false,
+                "confirmed": false
+              }
+            ],
+            "checkedState": "unchecked",
+            "quantitiesComplete": true,
+            "confirmedCount": 0
+          },
+          {
+            "id": "sku:synthetic-premium-pack",
+            "productId": "synthetic-premium-pack",
+            "label": "synthetic-premium-pack",
+            "count": 1,
+            "origins": [
+              {
+                "id": "calc-lot3-shopping-3",
+                "source": "calculated",
+                "label": "synthetic-premium-pack",
+                "productId": "synthetic-premium-pack",
+                "count": 1,
+                "checked": false,
+                "confirmed": false
+              }
+            ],
+            "checkedState": "unchecked",
+            "quantitiesComplete": true,
+            "confirmedCount": 0
+          }
+        ]
+      },
+      "stock": {
+        "revision": 3,
+        "physical": {
+          "tomato": "300"
+        },
+        "reservations": {
+          "outside-menu": {
+            "tomato": "50"
+          },
+          "lot3-free-choice:0": {
+            "tomato": "200"
+          },
+          "lot3-free-choice:1": {
+            "tomato": "50"
+          },
+          "lot3-free-choice:2": {},
+          "lot3-free-choice:3": {},
+          "lot3-free-choice:4": {},
+          "lot3-free-choice:5": {}
+        }
+      },
+      "unchanged": true
+    },
+    {
+      "step": "different_suggestion_explicitly_accepted",
+      "menu": {
+        "version": 2,
+        "id": "lot3-family",
+        "revision": 4,
+        "meals": [
+          {
+            "id": "meal-1",
+            "recipeId": "r0",
+            "diners": 2,
+            "leftovers": "keep"
+          },
+          {
+            "id": "meal-2",
+            "recipeId": "r1",
+            "diners": 3,
+            "leftovers": "keep",
+            "productionUnits": "4"
+          },
+          {
+            "id": "meal-3",
+            "recipeId": "r2",
+            "diners": 4,
+            "leftovers": "keep"
+          },
+          {
+            "id": "meal-4",
+            "recipeId": "partial",
+            "diners": 3,
+            "leftovers": "keep"
+          },
+          {
+            "id": "meal-5",
+            "recipeId": "manual",
+            "diners": 2,
+            "leftovers": "keep",
+            "selection": "manual"
+          },
+          {
+            "id": "free-choice",
+            "recipeId": "premium-choice",
+            "diners": 2,
+            "leftovers": "keep",
+            "selection": "user",
+            "locks": {
+              "recipe": true
+            }
+          }
+        ],
+        "reservationIds": {
+          "meal-1": "lot3-accept-advice:0",
+          "meal-2": "lot3-accept-advice:1",
+          "meal-3": "lot3-accept-advice:2",
+          "meal-4": "lot3-accept-advice:3",
+          "meal-5": "lot3-accept-advice:4",
+          "free-choice": "lot3-accept-advice:5"
+        }
+      },
+      "meals": [
+        {
+          "mealId": "meal-1",
+          "recipeId": "r0",
+          "status": "optimized",
+          "calculationStatus": "complete",
+          "knownNeeds": {
+            "tomato": "200"
+          },
+          "issues": [],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-1",
+            "recipeId": "r0",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "2",
+            "minimumUnits": "2",
+            "factor": "1/2",
+            "diners": "2",
+            "producedPortions": "2",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": true
+        },
+        {
+          "mealId": "meal-2",
+          "recipeId": "r1",
+          "status": "optimized",
+          "calculationStatus": "complete",
+          "knownNeeds": {
+            "tomato": "400"
+          },
+          "issues": [],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-2",
+            "recipeId": "r1",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "4",
+            "minimumUnits": "3",
+            "factor": "1",
+            "diners": "3",
+            "producedPortions": "4",
+            "keptPortions": "1",
+            "discardedPortions": "0"
+          },
+          "optimizable": true
+        },
+        {
+          "mealId": "meal-3",
+          "recipeId": "r2",
+          "status": "optimized",
+          "calculationStatus": "complete",
+          "knownNeeds": {
+            "tomato": "400"
+          },
+          "issues": [],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-3",
+            "recipeId": "r2",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "4",
+            "minimumUnits": "4",
+            "factor": "1",
+            "diners": "4",
+            "producedPortions": "4",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": true
+        },
+        {
+          "mealId": "meal-4",
+          "recipeId": "partial",
+          "status": "partial",
+          "calculationStatus": "partial",
+          "knownNeeds": {
+            "rice": "300"
+          },
+          "issues": [
+            {
+              "code": "QUANTITY_REQUIRED",
+              "status": "needs_review",
+              "ingredientId": "chicken-unknown",
+              "index": 1
+            }
+          ],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-4",
+            "recipeId": "partial",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "3",
+            "minimumUnits": "3",
+            "factor": "3/4",
+            "diners": "3",
+            "producedPortions": "3",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": false
+        },
+        {
+          "mealId": "meal-5",
+          "recipeId": "manual",
+          "status": "manual",
+          "calculationStatus": "needs_review",
+          "knownNeeds": {},
+          "issues": [
+            {
+              "code": "PRODUCTION_REVIEW_REQUIRED",
+              "detail": "PRODUCTION_REVIEW_REQUIRED: manual",
+              "status": "needs_review"
+            },
+            {
+              "code": "INGREDIENTS_REQUIRED",
+              "status": "needs_review"
+            }
+          ],
+          "risks": [],
+          "preparation": null,
+          "optimizable": false
+        },
+        {
+          "mealId": "free-choice",
+          "recipeId": "premium-choice",
+          "status": "optimized",
+          "calculationStatus": "complete",
+          "knownNeeds": {
+            "premium": "200"
+          },
+          "issues": [],
+          "risks": [],
+          "preparation": {
+            "mealId": "free-choice",
+            "recipeId": "premium-choice",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "2",
+            "minimumUnits": "2",
+            "factor": "1",
+            "diners": "2",
+            "producedPortions": "2",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": true
+        }
+      ],
+      "knownNeeds": {
+        "tomato": "1000",
+        "rice": "300",
+        "premium": "200"
+      },
+      "amount": {
+        "knownSubtotalCents": 2920,
+        "totalCents": null,
+        "certainty": "partial",
+        "listedItemsTotalCents": null,
+        "scope": "known_items_only"
+      },
+      "budget": {
+        "targetCents": 1500,
+        "mode": "indicative",
+        "blocking": false,
+        "status": "partial_over_target",
+        "knownExcessCents": 1420,
+        "verified": false
+      },
+      "unknownNeeds": [
+        {
+          "mealId": "meal-4",
+          "code": "QUANTITY_REQUIRED",
+          "status": "needs_review",
+          "ingredientId": "chicken-unknown",
+          "index": 1,
+          "amount": null
+        },
+        {
+          "mealId": "meal-5",
+          "code": "PRODUCTION_REVIEW_REQUIRED",
+          "detail": "PRODUCTION_REVIEW_REQUIRED: manual",
+          "status": "needs_review",
+          "amount": null
+        },
+        {
+          "mealId": "meal-5",
+          "code": "INGREDIENTS_REQUIRED",
+          "status": "needs_review",
+          "amount": null
+        }
+      ],
+      "shopping": {
+        "manual": [
+          {
+            "id": "biscuits",
+            "label": "Biscuits",
+            "presentation": "one free packet",
+            "checked": true,
+            "estimate": {
+              "kind": "estimated",
+              "currency": "EUR",
+              "totalCents": 150
+            },
+            "source": "manual",
+            "confirmed": false
+          },
+          {
+            "id": "soda",
+            "label": "Soda",
+            "quantity": {
+              "amount": "2",
+              "unit": "bottles"
+            },
+            "source": "manual",
+            "checked": false,
+            "confirmed": false
+          },
+          {
+            "id": "household",
+            "label": "Household product",
+            "presentation": "free item",
+            "checked": true,
+            "estimate": {
+              "kind": "estimated",
+              "currency": "EUR",
+              "totalCents": 250
+            },
+            "source": "manual",
+            "confirmed": false
+          }
+        ],
+        "calculated": [
+          {
+            "id": "calc-lot3-shopping-1",
+            "source": "calculated",
+            "label": "rice-pack",
+            "productId": "rice-pack",
+            "count": 1,
+            "checked": false,
+            "confirmed": false
+          },
+          {
+            "id": "calc-lot3-shopping-2",
+            "source": "calculated",
+            "label": "tomato-pack",
+            "productId": "tomato-pack",
+            "count": 2,
+            "checked": false,
+            "confirmed": false
+          },
+          {
+            "id": "calc-lot3-shopping-3",
+            "source": "calculated",
+            "label": "synthetic-premium-pack",
+            "productId": "synthetic-premium-pack",
+            "count": 1,
+            "checked": false,
+            "confirmed": false
+          }
+        ],
+        "displayLines": [
+          {
+            "id": "intent:biscuits",
+            "productId": null,
+            "label": "Biscuits",
+            "count": null,
+            "origins": [
+              {
+                "id": "biscuits",
+                "label": "Biscuits",
+                "presentation": "one free packet",
+                "checked": true,
+                "estimate": {
+                  "kind": "estimated",
+                  "currency": "EUR",
+                  "totalCents": 150
+                },
+                "source": "manual",
+                "confirmed": false
+              }
+            ],
+            "checkedState": "checked",
+            "quantitiesComplete": false,
+            "confirmedCount": 0
+          },
+          {
+            "id": "intent:soda",
+            "productId": null,
+            "label": "Soda",
+            "count": null,
+            "origins": [
+              {
+                "id": "soda",
+                "label": "Soda",
+                "quantity": {
+                  "amount": "2",
+                  "unit": "bottles"
+                },
+                "source": "manual",
+                "checked": false,
+                "confirmed": false
+              }
+            ],
+            "checkedState": "unchecked",
+            "quantitiesComplete": false,
+            "confirmedCount": 0
+          },
+          {
+            "id": "intent:household",
+            "productId": null,
+            "label": "Household product",
+            "count": null,
+            "origins": [
+              {
+                "id": "household",
+                "label": "Household product",
+                "presentation": "free item",
+                "checked": true,
+                "estimate": {
+                  "kind": "estimated",
+                  "currency": "EUR",
+                  "totalCents": 250
+                },
+                "source": "manual",
+                "confirmed": false
+              }
+            ],
+            "checkedState": "checked",
+            "quantitiesComplete": false,
+            "confirmedCount": 0
+          },
+          {
+            "id": "sku:rice-pack",
+            "productId": "rice-pack",
+            "label": "rice-pack",
+            "count": 1,
+            "origins": [
+              {
+                "id": "calc-lot3-shopping-1",
+                "source": "calculated",
+                "label": "rice-pack",
+                "productId": "rice-pack",
+                "count": 1,
+                "checked": false,
+                "confirmed": false
+              }
+            ],
+            "checkedState": "unchecked",
+            "quantitiesComplete": true,
+            "confirmedCount": 0
+          },
+          {
+            "id": "sku:tomato-pack",
+            "productId": "tomato-pack",
+            "label": "tomato-pack",
+            "count": 2,
+            "origins": [
+              {
+                "id": "calc-lot3-shopping-2",
+                "source": "calculated",
+                "label": "tomato-pack",
+                "productId": "tomato-pack",
+                "count": 2,
+                "checked": false,
+                "confirmed": false
+              }
+            ],
+            "checkedState": "unchecked",
+            "quantitiesComplete": true,
+            "confirmedCount": 0
+          },
+          {
+            "id": "sku:synthetic-premium-pack",
+            "productId": "synthetic-premium-pack",
+            "label": "synthetic-premium-pack",
+            "count": 1,
+            "origins": [
+              {
+                "id": "calc-lot3-shopping-3",
+                "source": "calculated",
+                "label": "synthetic-premium-pack",
+                "productId": "synthetic-premium-pack",
+                "count": 1,
+                "checked": false,
+                "confirmed": false
+              }
+            ],
+            "checkedState": "unchecked",
+            "quantitiesComplete": true,
+            "confirmedCount": 0
+          }
+        ]
+      },
+      "stock": {
+        "revision": 4,
+        "physical": {
+          "tomato": "300"
+        },
+        "reservations": {
+          "outside-menu": {
+            "tomato": "50"
+          },
+          "lot3-accept-advice:0": {
+            "tomato": "200"
+          },
+          "lot3-accept-advice:1": {
+            "tomato": "50"
+          },
+          "lot3-accept-advice:2": {},
+          "lot3-accept-advice:3": {},
+          "lot3-accept-advice:4": {},
+          "lot3-accept-advice:5": {}
+        }
+      },
+      "changes": [
+        {
+          "mealId": "meal-2",
+          "before": {
+            "id": "meal-2",
+            "recipeId": "r1",
+            "diners": 3,
+            "leftovers": "keep"
+          },
+          "after": {
+            "id": "meal-2",
+            "recipeId": "r1",
+            "diners": 3,
+            "leftovers": "keep",
+            "productionUnits": "4"
+          }
+        }
+      ],
+      "comparison": {
+        "costDeltaCents": null,
+        "knownSubtotalDeltaCents": 0,
+        "priceScope": "known_items_only",
+        "scoreDelta": "-10",
+        "extraPreparedPortions": "1",
+        "quantities": {
+          "premium": {
+            "unit": "g",
+            "basis": "net",
+            "perishable": true,
+            "requiredDelta": "0",
+            "boughtDelta": "0",
+            "purchaseSurplusDelta": "0",
+            "fromStockDelta": "0"
+          },
+          "rice": {
+            "unit": "g",
+            "basis": "net",
+            "perishable": false,
+            "requiredDelta": "0",
+            "boughtDelta": "0",
+            "purchaseSurplusDelta": "0",
+            "fromStockDelta": "0"
+          },
+          "tomato": {
+            "unit": "g",
+            "basis": "net",
+            "perishable": true,
+            "requiredDelta": "100",
+            "boughtDelta": "0",
+            "purchaseSurplusDelta": "-100",
+            "fromStockDelta": "0"
+          }
+        },
+        "packageCountDelta": 0
+      }
+    },
+    {
+      "step": "selected_purchases_confirmed_and_replayed",
+      "menu": {
+        "version": 2,
+        "id": "lot3-family",
+        "revision": 4,
+        "meals": [
+          {
+            "id": "meal-1",
+            "recipeId": "r0",
+            "diners": 2,
+            "leftovers": "keep"
+          },
+          {
+            "id": "meal-2",
+            "recipeId": "r1",
+            "diners": 3,
+            "leftovers": "keep",
+            "productionUnits": "4"
+          },
+          {
+            "id": "meal-3",
+            "recipeId": "r2",
+            "diners": 4,
+            "leftovers": "keep"
+          },
+          {
+            "id": "meal-4",
+            "recipeId": "partial",
+            "diners": 3,
+            "leftovers": "keep"
+          },
+          {
+            "id": "meal-5",
+            "recipeId": "manual",
+            "diners": 2,
+            "leftovers": "keep",
+            "selection": "manual"
+          },
+          {
+            "id": "free-choice",
+            "recipeId": "premium-choice",
+            "diners": 2,
+            "leftovers": "keep",
+            "selection": "user",
+            "locks": {
+              "recipe": true
+            }
+          }
+        ],
+        "reservationIds": {
+          "meal-1": "lot3-accept-advice:0",
+          "meal-2": "lot3-accept-advice:1",
+          "meal-3": "lot3-accept-advice:2",
+          "meal-4": "lot3-accept-advice:3",
+          "meal-5": "lot3-accept-advice:4",
+          "free-choice": "lot3-accept-advice:5"
+        }
+      },
+      "meals": [
+        {
+          "mealId": "meal-1",
+          "recipeId": "r0",
+          "status": "optimized",
+          "calculationStatus": "complete",
+          "knownNeeds": {
+            "tomato": "200"
+          },
+          "issues": [],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-1",
+            "recipeId": "r0",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "2",
+            "minimumUnits": "2",
+            "factor": "1/2",
+            "diners": "2",
+            "producedPortions": "2",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": true
+        },
+        {
+          "mealId": "meal-2",
+          "recipeId": "r1",
+          "status": "optimized",
+          "calculationStatus": "complete",
+          "knownNeeds": {
+            "tomato": "400"
+          },
+          "issues": [],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-2",
+            "recipeId": "r1",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "4",
+            "minimumUnits": "3",
+            "factor": "1",
+            "diners": "3",
+            "producedPortions": "4",
+            "keptPortions": "1",
+            "discardedPortions": "0"
+          },
+          "optimizable": true
+        },
+        {
+          "mealId": "meal-3",
+          "recipeId": "r2",
+          "status": "optimized",
+          "calculationStatus": "complete",
+          "knownNeeds": {
+            "tomato": "400"
+          },
+          "issues": [],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-3",
+            "recipeId": "r2",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "4",
+            "minimumUnits": "4",
+            "factor": "1",
+            "diners": "4",
+            "producedPortions": "4",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": true
+        },
+        {
+          "mealId": "meal-4",
+          "recipeId": "partial",
+          "status": "partial",
+          "calculationStatus": "partial",
+          "knownNeeds": {
+            "rice": "300"
+          },
+          "issues": [
+            {
+              "code": "QUANTITY_REQUIRED",
+              "status": "needs_review",
+              "ingredientId": "chicken-unknown",
+              "index": 1
+            }
+          ],
+          "risks": [],
+          "preparation": {
+            "mealId": "meal-4",
+            "recipeId": "partial",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "3",
+            "minimumUnits": "3",
+            "factor": "3/4",
+            "diners": "3",
+            "producedPortions": "3",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": false
+        },
+        {
+          "mealId": "meal-5",
+          "recipeId": "manual",
+          "status": "manual",
+          "calculationStatus": "needs_review",
+          "knownNeeds": {},
+          "issues": [
+            {
+              "code": "PRODUCTION_REVIEW_REQUIRED",
+              "detail": "PRODUCTION_REVIEW_REQUIRED: manual",
+              "status": "needs_review"
+            },
+            {
+              "code": "INGREDIENTS_REQUIRED",
+              "status": "needs_review"
+            }
+          ],
+          "risks": [],
+          "preparation": null,
+          "optimizable": false
+        },
+        {
+          "mealId": "free-choice",
+          "recipeId": "premium-choice",
+          "status": "optimized",
+          "calculationStatus": "complete",
+          "knownNeeds": {
+            "premium": "200"
+          },
+          "issues": [],
+          "risks": [],
+          "preparation": {
+            "mealId": "free-choice",
+            "recipeId": "premium-choice",
+            "mode": "adjustable",
+            "unitLabel": "portion",
+            "units": "2",
+            "minimumUnits": "2",
+            "factor": "1",
+            "diners": "2",
+            "producedPortions": "2",
+            "keptPortions": "0",
+            "discardedPortions": "0"
+          },
+          "optimizable": true
+        }
+      ],
+      "knownNeeds": {
+        "tomato": "1000",
+        "rice": "300",
+        "premium": "200"
+      },
+      "amount": {
+        "knownSubtotalCents": 2920,
+        "totalCents": null,
+        "certainty": "partial",
+        "listedItemsTotalCents": null,
+        "scope": "known_items_only"
+      },
+      "budget": {
+        "targetCents": 1500,
+        "mode": "indicative",
+        "blocking": false,
+        "status": "partial_over_target",
+        "knownExcessCents": 1420,
+        "verified": false
+      },
+      "unknownNeeds": [
+        {
+          "mealId": "meal-4",
+          "code": "QUANTITY_REQUIRED",
+          "status": "needs_review",
+          "ingredientId": "chicken-unknown",
+          "index": 1,
+          "amount": null
+        },
+        {
+          "mealId": "meal-5",
+          "code": "PRODUCTION_REVIEW_REQUIRED",
+          "detail": "PRODUCTION_REVIEW_REQUIRED: manual",
+          "status": "needs_review",
+          "amount": null
+        },
+        {
+          "mealId": "meal-5",
+          "code": "INGREDIENTS_REQUIRED",
+          "status": "needs_review",
+          "amount": null
+        }
+      ],
+      "shopping": {
+        "manual": [
+          {
+            "id": "biscuits",
+            "label": "Biscuits",
+            "presentation": "one free packet",
+            "checked": true,
+            "estimate": {
+              "kind": "estimated",
+              "currency": "EUR",
+              "totalCents": 150
+            },
+            "source": "manual",
+            "confirmed": true,
+            "confirmedEventId": "lot3-partial-checkout"
+          },
+          {
+            "id": "soda",
+            "label": "Soda",
+            "quantity": {
+              "amount": "2",
+              "unit": "bottles"
+            },
+            "source": "manual",
+            "checked": false,
+            "confirmed": false
+          },
+          {
+            "id": "household",
+            "label": "Household product",
+            "presentation": "free item",
+            "checked": true,
+            "estimate": {
+              "kind": "estimated",
+              "currency": "EUR",
+              "totalCents": 250
+            },
+            "source": "manual",
+            "confirmed": true,
+            "confirmedEventId": "lot3-partial-checkout"
+          }
+        ],
+        "calculated": [
+          {
+            "id": "calc-lot3-shopping-1",
+            "source": "calculated",
+            "label": "rice-pack",
+            "productId": "rice-pack",
+            "count": 1,
+            "checked": false,
+            "confirmed": false
+          },
+          {
+            "id": "calc-lot3-shopping-2",
+            "source": "calculated",
+            "label": "tomato-pack",
+            "productId": "tomato-pack",
+            "count": 2,
+            "checked": true,
+            "confirmed": true,
+            "confirmedEventId": "lot3-partial-checkout"
+          },
+          {
+            "id": "calc-lot3-shopping-3",
+            "source": "calculated",
+            "label": "synthetic-premium-pack",
+            "productId": "synthetic-premium-pack",
+            "count": 1,
+            "checked": false,
+            "confirmed": false
+          }
+        ],
+        "displayLines": [
+          {
+            "id": "intent:biscuits",
+            "productId": null,
+            "label": "Biscuits",
+            "count": null,
+            "origins": [
+              {
+                "id": "biscuits",
+                "label": "Biscuits",
+                "presentation": "one free packet",
+                "checked": true,
+                "estimate": {
+                  "kind": "estimated",
+                  "currency": "EUR",
+                  "totalCents": 150
+                },
+                "source": "manual",
+                "confirmed": true,
+                "confirmedEventId": "lot3-partial-checkout"
+              }
+            ],
+            "checkedState": "checked",
+            "quantitiesComplete": false,
+            "confirmedCount": 0
+          },
+          {
+            "id": "intent:soda",
+            "productId": null,
+            "label": "Soda",
+            "count": null,
+            "origins": [
+              {
+                "id": "soda",
+                "label": "Soda",
+                "quantity": {
+                  "amount": "2",
+                  "unit": "bottles"
+                },
+                "source": "manual",
+                "checked": false,
+                "confirmed": false
+              }
+            ],
+            "checkedState": "unchecked",
+            "quantitiesComplete": false,
+            "confirmedCount": 0
+          },
+          {
+            "id": "intent:household",
+            "productId": null,
+            "label": "Household product",
+            "count": null,
+            "origins": [
+              {
+                "id": "household",
+                "label": "Household product",
+                "presentation": "free item",
+                "checked": true,
+                "estimate": {
+                  "kind": "estimated",
+                  "currency": "EUR",
+                  "totalCents": 250
+                },
+                "source": "manual",
+                "confirmed": true,
+                "confirmedEventId": "lot3-partial-checkout"
+              }
+            ],
+            "checkedState": "checked",
+            "quantitiesComplete": false,
+            "confirmedCount": 0
+          },
+          {
+            "id": "sku:rice-pack",
+            "productId": "rice-pack",
+            "label": "rice-pack",
+            "count": 1,
+            "origins": [
+              {
+                "id": "calc-lot3-shopping-1",
+                "source": "calculated",
+                "label": "rice-pack",
+                "productId": "rice-pack",
+                "count": 1,
+                "checked": false,
+                "confirmed": false
+              }
+            ],
+            "checkedState": "unchecked",
+            "quantitiesComplete": true,
+            "confirmedCount": 0
+          },
+          {
+            "id": "sku:tomato-pack",
+            "productId": "tomato-pack",
+            "label": "tomato-pack",
+            "count": 2,
+            "origins": [
+              {
+                "id": "calc-lot3-shopping-2",
+                "source": "calculated",
+                "label": "tomato-pack",
+                "productId": "tomato-pack",
+                "count": 2,
+                "checked": true,
+                "confirmed": true,
+                "confirmedEventId": "lot3-partial-checkout"
+              }
+            ],
+            "checkedState": "checked",
+            "quantitiesComplete": true,
+            "confirmedCount": 2
+          },
+          {
+            "id": "sku:synthetic-premium-pack",
+            "productId": "synthetic-premium-pack",
+            "label": "synthetic-premium-pack",
+            "count": 1,
+            "origins": [
+              {
+                "id": "calc-lot3-shopping-3",
+                "source": "calculated",
+                "label": "synthetic-premium-pack",
+                "productId": "synthetic-premium-pack",
+                "count": 1,
+                "checked": false,
+                "confirmed": false
+              }
+            ],
+            "checkedState": "unchecked",
+            "quantitiesComplete": true,
+            "confirmedCount": 0
+          }
+        ]
+      },
+      "stock": {
+        "revision": 5,
+        "physical": {
+          "tomato": "1100"
+        },
+        "reservations": {
+          "outside-menu": {
+            "tomato": "50"
+          },
+          "lot3-accept-advice:0": {
+            "tomato": "200"
+          },
+          "lot3-accept-advice:1": {
+            "tomato": "50"
+          },
+          "lot3-accept-advice:2": {},
+          "lot3-accept-advice:3": {},
+          "lot3-accept-advice:4": {},
+          "lot3-accept-advice:5": {}
+        }
+      },
+      "untrackedPurchases": [
+        {
+          "intentId": "biscuits",
+          "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+        },
+        {
+          "intentId": "household",
+          "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+        }
+      ],
+      "idempotent": true
+    }
+  ],
+  "checks": {
+    "allSixChoicesRetained": true,
+    "partialMealRetained": true,
+    "manualMealRetained": true,
+    "expensiveMealRetained": true,
+    "budgetExcessSignaled": true,
+    "unknownChickenNeverInvented": true,
+    "partialAmountNotAdvertisedAsTotal": true,
+    "threeManualProductsRetained": true,
+    "checkedManualPreserved": true,
+    "declinedNotReoffered": true,
+    "onlyAcceptedChangesApplied": true,
+    "checkoutIdempotent": true,
+    "outsideReservationPreserved": true,
+    "noDoubleReservation": true
+  }
+}

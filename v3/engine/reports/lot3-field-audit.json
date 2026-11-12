@@ -1,0 +1,359 @@
+{
+  "assessedOn": "2026-11-12",
+  "source": {
+    "repository": "campellothomas-ux/keskonmange-v2-test",
+    "branch": "KeskonMange-V3",
+    "commit": "ebbb9c9400fb4c0c99e7f5a24b7402ab05f43774"
+  },
+  "scope": "Tracked repository data at lot 3 start; no Firebase, private household database, external catalog or receipt OCR access.",
+  "trackedFiles": [
+    "apple-touch-icon.png",
+    "core.mjs",
+    "firebase-config.js",
+    "firebase-runtime.mjs",
+    "firebase-sync.mjs",
+    "icon-192.png",
+    "icon-512.png",
+    "index.html",
+    "manifest.webmanifest",
+    "service-worker.js",
+    "v3/engine/README.md",
+    "v3/engine/docs/AUDIT.md",
+    "v3/engine/docs/INTEGRATION.md",
+    "v3/engine/docs/LOT2-ANALYSIS.md",
+    "v3/engine/docs/LOT2-API.md",
+    "v3/engine/docs/LOT2-OPTIMIZATION.md",
+    "v3/engine/docs/LOT2-REPORT.md",
+    "v3/engine/docs/MODEL.md",
+    "v3/engine/docs/OPTIMIZATION.md",
+    "v3/engine/docs/TEST-REPORT.md",
+    "v3/engine/fixtures/lot2.json",
+    "v3/engine/fixtures/scenario.json",
+    "v3/engine/fixtures/v2-recipes.json",
+    "v3/engine/fixtures/v2-test-annotations.json",
+    "v3/engine/package.json",
+    "v3/engine/reports/evaluation.json",
+    "v3/engine/reports/lot2-benchmark.json",
+    "v3/engine/reports/lot2-scenario.json",
+    "v3/engine/reports/lot2-tests.tap",
+    "v3/engine/reports/scenario.json",
+    "v3/engine/reports/tests.tap",
+    "v3/engine/reports/v2-audit.json",
+    "v3/engine/scripts/audit-v2.mjs",
+    "v3/engine/scripts/benchmark-lot2.mjs",
+    "v3/engine/scripts/evaluate.mjs",
+    "v3/engine/scripts/scenario-lot2.mjs",
+    "v3/engine/scripts/scenario.mjs",
+    "v3/engine/src/basket.mjs",
+    "v3/engine/src/exact.mjs",
+    "v3/engine/src/index.mjs",
+    "v3/engine/src/joint-optimizer.mjs",
+    "v3/engine/src/joint-packages.mjs",
+    "v3/engine/src/ledger.mjs",
+    "v3/engine/src/menu-evaluation.mjs",
+    "v3/engine/src/menu-interactions.mjs",
+    "v3/engine/src/menu-proposals.mjs",
+    "v3/engine/src/model.mjs",
+    "v3/engine/src/optimizer.mjs",
+    "v3/engine/src/packages.mjs",
+    "v3/engine/src/production.mjs",
+    "v3/engine/src/requirements.mjs",
+    "v3/engine/src/v2-adapter.mjs",
+    "v3/engine/test/helpers.mjs",
+    "v3/engine/test/joint-purchases.test.mjs",
+    "v3/engine/test/joint-search.test.mjs",
+    "v3/engine/test/ledger.test.mjs",
+    "v3/engine/test/lot2-helpers.mjs",
+    "v3/engine/test/menu-interactions.test.mjs",
+    "v3/engine/test/optimizer.test.mjs",
+    "v3/engine/test/packages.test.mjs",
+    "v3/engine/test/production-v2.test.mjs",
+    "v3/engine/test/quantities.test.mjs",
+    "v3/engine/test/v2.test.mjs"
+  ],
+  "receiptOrCommercialExportCandidates": [],
+  "found": {
+    "demoRecipes": 11,
+    "verifiedHouseholdRecipes": 0,
+    "verifiedCommercialProducts": 0,
+    "verifiedShopPrices": 0,
+    "requiredHouseholdRecipes": 5
+  },
+  "candidates": [
+    {
+      "source": "index.html:DEMO_IMPORT[0]",
+      "name": "Émincé de poulet au potimarron",
+      "sourceKind": "demo",
+      "referencePortions": 2,
+      "units": [
+        "g",
+        "ml",
+        "cas"
+      ],
+      "householdValidated": false,
+      "missing": [
+        "household confirmation and source evidence",
+        "reviewed production mode/yield",
+        "canonical identities and weight bases",
+        "necessary conversion evidence and indivisibility review",
+        "verified store-specific contents and price provenance"
+      ]
+    },
+    {
+      "source": "index.html:DEMO_IMPORT[1]",
+      "name": "Poulet à la butternut et au curry",
+      "sourceKind": "demo",
+      "referencePortions": 2,
+      "units": [
+        "g",
+        "cac",
+        "ml"
+      ],
+      "householdValidated": false,
+      "missing": [
+        "household confirmation and source evidence",
+        "reviewed production mode/yield",
+        "canonical identities and weight bases",
+        "necessary conversion evidence and indivisibility review",
+        "verified store-specific contents and price provenance"
+      ]
+    },
+    {
+      "source": "index.html:DEMO_IMPORT[2]",
+      "name": "Poulet aux champignons et poireaux",
+      "sourceKind": "demo",
+      "referencePortions": 2,
+      "units": [
+        "g",
+        "pièce",
+        "ml"
+      ],
+      "householdValidated": false,
+      "missing": [
+        "household confirmation and source evidence",
+        "reviewed production mode/yield",
+        "canonical identities and weight bases",
+        "necessary conversion evidence and indivisibility review",
+        "verified store-specific contents and price provenance"
+      ]
+    },
+    {
+      "source": "index.html:DEMO_IMPORT[3]",
+      "name": "Poêlée poulet et aubergines",
+      "sourceKind": "demo",
+      "referencePortions": 2,
+      "units": [
+        "g",
+        "pièce",
+        "gousse"
+      ],
+      "householdValidated": false,
+      "missing": [
+        "household confirmation and source evidence",
+        "reviewed production mode/yield",
+        "canonical identities and weight bases",
+        "necessary conversion evidence and indivisibility review",
+        "verified store-specific contents and price provenance"
+      ]
+    },
+    {
+      "source": "index.html:DEMO_IMPORT[4]",
+      "name": "Ratatouille minute",
+      "sourceKind": "demo",
+      "referencePortions": 2,
+      "units": [
+        "pièce"
+      ],
+      "householdValidated": false,
+      "missing": [
+        "household confirmation and source evidence",
+        "reviewed production mode/yield",
+        "canonical identities and weight bases",
+        "necessary conversion evidence and indivisibility review",
+        "verified store-specific contents and price provenance"
+      ]
+    },
+    {
+      "source": "index.html:DEMO_IMPORT[5]",
+      "name": "Pâtes à la tomate en conserve",
+      "sourceKind": "demo",
+      "referencePortions": 2,
+      "units": [
+        "g",
+        "gousse",
+        "cas"
+      ],
+      "householdValidated": false,
+      "missing": [
+        "household confirmation and source evidence",
+        "reviewed production mode/yield",
+        "canonical identities and weight bases",
+        "necessary conversion evidence and indivisibility review",
+        "verified store-specific contents and price provenance"
+      ]
+    },
+    {
+      "source": "index.html:DEMO_IMPORT[6]",
+      "name": "Gratin de poireaux au comté",
+      "sourceKind": "demo",
+      "referencePortions": 2,
+      "units": [
+        "pièce",
+        "g",
+        "ml"
+      ],
+      "householdValidated": false,
+      "missing": [
+        "household confirmation and source evidence",
+        "reviewed production mode/yield",
+        "canonical identities and weight bases",
+        "necessary conversion evidence and indivisibility review",
+        "verified store-specific contents and price provenance"
+      ]
+    },
+    {
+      "source": "index.html:DEMO_IMPORT[7]",
+      "name": "Gözleme épinards-feta",
+      "sourceKind": "demo",
+      "referencePortions": 2,
+      "units": [
+        "g",
+        "cas"
+      ],
+      "householdValidated": false,
+      "missing": [
+        "household confirmation and source evidence",
+        "reviewed production mode/yield",
+        "canonical identities and weight bases",
+        "necessary conversion evidence and indivisibility review",
+        "verified store-specific contents and price provenance"
+      ]
+    },
+    {
+      "source": "index.html:DEMO_IMPORT[8]",
+      "name": "Lentilles au potimarron, tout-en-un",
+      "sourceKind": "demo",
+      "referencePortions": 2,
+      "units": [
+        "g",
+        "pièce",
+        "cube"
+      ],
+      "householdValidated": false,
+      "missing": [
+        "household confirmation and source evidence",
+        "reviewed production mode/yield",
+        "canonical identities and weight bases",
+        "necessary conversion evidence and indivisibility review",
+        "verified store-specific contents and price provenance"
+      ]
+    },
+    {
+      "source": "index.html:DEMO_IMPORT[9]",
+      "name": "Bol récupération poulet et riz",
+      "sourceKind": "demo",
+      "referencePortions": 2,
+      "units": [
+        "g",
+        "pièce",
+        "cas"
+      ],
+      "householdValidated": false,
+      "missing": [
+        "household confirmation and source evidence",
+        "reviewed production mode/yield",
+        "canonical identities and weight bases",
+        "necessary conversion evidence and indivisibility review",
+        "verified store-specific contents and price provenance"
+      ]
+    },
+    {
+      "source": "index.html:DEMO_IMPORT[10]",
+      "name": "Salade de tomates et mozzarella",
+      "sourceKind": "demo",
+      "referencePortions": 2,
+      "units": [
+        "pièce",
+        "g",
+        "feuille",
+        "cas"
+      ],
+      "householdValidated": false,
+      "missing": [
+        "household confirmation and source evidence",
+        "reviewed production mode/yield",
+        "canonical identities and weight bases",
+        "necessary conversion evidence and indivisibility review",
+        "verified store-specific contents and price provenance"
+      ]
+    }
+  ],
+  "datasetClassification": [
+    {
+      "path": "v3/engine/fixtures/v2-recipes.json",
+      "kind": "Git-traceable demo extraction, not household validation"
+    },
+    {
+      "path": "v3/engine/fixtures/scenario.json",
+      "kind": "synthetic commercial contents/prices and test annotations"
+    },
+    {
+      "path": "v3/engine/fixtures/lot2.json",
+      "kind": "synthetic recipes/products/prices"
+    }
+  ],
+  "blockers": [
+    "Five reliable household recipes are not evidenced in the accessible repository.",
+    "No accessible historical receipts or verified E.Leclerc Saint-Orens commercial catalog.",
+    "No real field validation can be claimed from the existing fixtures."
+  ],
+  "reviewTemplate": "fixtures/household-review.template.json",
+  "templateCheck": {
+    "status": "needs_review",
+    "recipeCount": 0,
+    "productCount": 0,
+    "issues": [
+      {
+        "reviewId": "review-1",
+        "code": "HOUSEHOLD_REVIEW_REQUIRED",
+        "detail": "HOUSEHOLD_REVIEW_REQUIRED: review-1",
+        "status": "needs_review"
+      },
+      {
+        "reviewId": "review-2",
+        "code": "HOUSEHOLD_REVIEW_REQUIRED",
+        "detail": "HOUSEHOLD_REVIEW_REQUIRED: review-2",
+        "status": "needs_review"
+      },
+      {
+        "reviewId": "review-3",
+        "code": "HOUSEHOLD_REVIEW_REQUIRED",
+        "detail": "HOUSEHOLD_REVIEW_REQUIRED: review-3",
+        "status": "needs_review"
+      },
+      {
+        "reviewId": "review-4",
+        "code": "HOUSEHOLD_REVIEW_REQUIRED",
+        "detail": "HOUSEHOLD_REVIEW_REQUIRED: review-4",
+        "status": "needs_review"
+      },
+      {
+        "reviewId": "review-5",
+        "code": "HOUSEHOLD_REVIEW_REQUIRED",
+        "detail": "HOUSEHOLD_REVIEW_REQUIRED: review-5",
+        "status": "needs_review"
+      },
+      {
+        "code": "FIVE_HOUSEHOLD_RECIPES_REQUIRED",
+        "found": 0,
+        "required": 5,
+        "status": "needs_review"
+      }
+    ],
+    "modeCoverage": [],
+    "priceKinds": [],
+    "fieldValidated": false,
+    "notice": "Technical checks do not verify source authenticity, household use, commercial availability or real field usage."
+  },
+  "fieldValidated": false
+}
