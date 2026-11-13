@@ -1,0 +1,84 @@
+{
+  "browser": "Chromium / Linux",
+  "realIPhoneSafariTested": false,
+  "results": [
+    {
+      "name": "Interface V2, trois onglets, exemples indépendants et aucun compte Firebase",
+      "status": "passed",
+      "durationMs": 185
+    },
+    {
+      "name": "Recherche, onze fiches avec hors saison, filtres et état sans résultat",
+      "status": "passed",
+      "durationMs": 273
+    },
+    {
+      "name": "Favoris modifiables et conservés après rechargement",
+      "status": "passed",
+      "durationMs": 357
+    },
+    {
+      "name": "Fiche, portions, étapes quantitatives et mode cuisine V2",
+      "status": "passed",
+      "durationMs": 805
+    },
+    {
+      "name": "Planning : ajout, retrait, portions, fiche et actualisation explicite des courses",
+      "status": "passed",
+      "durationMs": 941
+    },
+    {
+      "name": "Courses par rayons, regroupement manuel, quantité, rayon, coche et persistance",
+      "status": "passed",
+      "durationMs": 1296
+    },
+    {
+      "name": "Vider : confirmation, annulation, conservation des recettes et régénération",
+      "status": "passed",
+      "durationMs": 369
+    },
+    {
+      "name": "Édition locale, photo externe bloquée avec repli V2 et aperçu d’import annulable",
+      "status": "passed",
+      "durationMs": 994
+    },
+    {
+      "name": "Deux onglets locaux synchronisés et modifications possibles dans un onglet déjà chargé hors ligne",
+      "status": "passed",
+      "durationMs": 546
+    },
+    {
+      "name": "Sauvegarde illisible conservée, récupération explicite limitée aux données de test",
+      "status": "passed",
+      "durationMs": 414
+    },
+    {
+      "name": "Réinitialisation limitée au test, caches préservés et CSP bloque réseau/worker",
+      "status": "passed",
+      "durationMs": 425
+    },
+    {
+      "name": "Fermeture complète puis réouverture : planning et personnalisations conservés",
+      "status": "passed",
+      "durationMs": 1286
+    },
+    {
+      "name": "Mobile tactile 320 et 390 px : fiches, portions, planning, courses et coches",
+      "status": "passed",
+      "durationMs": 5127
+    },
+    {
+      "name": "Aucune erreur JavaScript non traitée et aucune requête externe émise",
+      "status": "passed",
+      "durationMs": 0
+    }
+  ],
+  "externalRequests": [],
+  "pageErrors": [],
+  "requestedLocalPaths": [
+    "/",
+    "/core.mjs",
+    "/firebase-sync.mjs",
+    "/v3/v2-lab/local-runtime.mjs"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "referenceCommit": "e4fbb2eae181d80fac8ec249a7fcbf3ff7b1f982",
+  "files": {
+    "index.html": "dec5d085cfe6e311e7b7a9a88e44695360330f31018c84055e1f62fbdcf8fedc",
+    "core.mjs": "e1017f2d6bdde837f403d2bb18580d1eec9215aa7050c104b35c17e321dcff37",
+    "firebase-runtime.mjs": "13e8246ef1dcbabbf9aaf5045f8eb2951d29cadfb474c3d2ad6529f11bbf70a9",
+    "firebase-sync.mjs": "d6875880af0d77ba3476cebd66cf8b7f732073f717664de0855b679216e3153b",
+    "firebase-config.js": "cdf587797a652af160e001ccafa2502ddaf26d84a8fce2e056fced3fcd806746",
+    "service-worker.js": "c816b4eaf70f808a8571abc418e8727622a4c23975f6e4996178834ba90d4c79",
+    "manifest.webmanifest": "ca0920438661836df882b8d8c09085ba06478a74face531356639493fdfb0067",
+    "icon-192.png": "d5816d0bd3d466f13ed166868a797d5b4666ac95508fcc1702e3cf14fb214d67",
+    "icon-512.png": "3632c8955f46732ac21a71b568dc4496a1db4f77b8bbdb2b1ed74ebe49f0e684",
+    "apple-touch-icon.png": "104189fb1ed35a1870dda6b285c594d76be210674643a1586c5f20761e6b429a"
+  }
+}
