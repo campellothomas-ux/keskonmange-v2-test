@@ -1,0 +1,40 @@
+{
+  "directFileOpening": {
+    "status": "blocked",
+    "reason": "Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///workspace/keskonmange-v2-test/v3/v2-lab/dist/KeskonMange-Demo-V2.html"
+  },
+  "scenarios": [
+    {
+      "name": "Fichier autonome complet : ouverture HTTP du même document, aucun module externe",
+      "status": "passed"
+    },
+    {
+      "name": "Recherche, favoris, fiche, portions, planning et courses cochées",
+      "status": "passed"
+    },
+    {
+      "name": "Persistance HTTP après fermeture complète et réinitialisation confirmée",
+      "status": "passed"
+    },
+    {
+      "name": "CSP embarquée : fetch et workers bloqués avant toute sortie réseau",
+      "status": "passed"
+    },
+    {
+      "name": "Aperçu interactif sandboxé : styles V2 identiques, vrais parcours sans stockage, ordinateur et mobile",
+      "status": "passed"
+    },
+    {
+      "name": "Stockage refusé : mode mémoire utilisable et avertissement visible",
+      "status": "passed"
+    }
+  ],
+  "externalAppRequests": [],
+  "previewHostResourcesBlockedByTest": [
+    "https://unpkg.com/@floating-ui/core@1.7.3/dist/floating-ui.core.umd.min.js",
+    "https://unpkg.com/@floating-ui/dom@1.7.4/dist/floating-ui.dom.umd.min.js",
+    "https://unpkg.com/lucide@1.17.0/dist/umd/lucide.js"
+  ],
+  "pageErrors": [],
+  "macSafariTested": false
+}

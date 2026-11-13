@@ -1,5 +1,13 @@
 # LOT 0 — La V2 dans un laboratoire local
 
+**Pour essayer sans installation ni commande :**
+[fichier HTML autonome](dist/KeskonMange-Demo-V2.html).
+Il utilise les mêmes exemples et les mêmes écrans V2. La sauvegarde fonctionne
+selon les autorisations du navigateur, avec un repli temporaire explicite.
+[Bilan de cette version et limite du test sur Mac](STANDALONE-REPORT.md).
+
+Les instructions ci-dessous concernent uniquement l’environnement de développement.
+
 Depuis la racine du dépôt, branche `KeskonMange-V3`, avec Node.js 20 ou plus récent :
 
 ```sh

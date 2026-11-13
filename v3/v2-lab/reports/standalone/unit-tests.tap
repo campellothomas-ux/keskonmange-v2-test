@@ -1,0 +1,136 @@
+TAP version 13
+# Subtest: les dix fichiers de référence V2 sont inchangés
+ok 1 - les dix fichiers de référence V2 sont inchangés
+  ---
+  duration_ms: 10.965365
+  type: 'test'
+  ...
+# Subtest: la page locale conserve exactement le CSS, le cœur et les écrans V2
+ok 2 - la page locale conserve exactement le CSS, le cœur et les écrans V2
+  ---
+  duration_ms: 30.139891
+  type: 'test'
+  ...
+# Subtest: une source inattendue bloque la génération au lieu de démarrer Firebase
+ok 3 - une source inattendue bloque la génération au lieu de démarrer Firebase
+  ---
+  duration_ms: 3.402962
+  type: 'test'
+  ...
+# Subtest: les onze exemples ont leurs quantités, étapes et métadonnées V2 ; fixture déterministe
+ok 4 - les onze exemples ont leurs quantités, étapes et métadonnées V2 ; fixture déterministe
+  ---
+  duration_ms: 15.662922
+  type: 'test'
+  ...
+# Subtest: seule la clé propre au lot 0 est lue et écrite ; seed et autres sauvegardes intacts
+ok 5 - seule la clé propre au lot 0 est lue et écrite ; seed et autres sauvegardes intacts
+  ---
+  duration_ms: 4.425094
+  type: 'test'
+  ...
+# Subtest: favoris, personnalisation, achats et planning sont conservés après réouverture
+ok 6 - favoris, personnalisation, achats et planning sont conservés après réouverture
+  ---
+  duration_ms: 3.92896
+  type: 'test'
+  ...
+# Subtest: échec du stockage : pas de faux état enregistré, ancienne sauvegarde conservée
+ok 7 - échec du stockage : pas de faux état enregistré, ancienne sauvegarde conservée
+  ---
+  duration_ms: 1.763626
+  type: 'test'
+  ...
+# Subtest: une sauvegarde corrompue ne déclenche aucune remise à zéro silencieuse
+ok 8 - une sauvegarde corrompue ne déclenche aucune remise à zéro silencieuse
+  ---
+  duration_ms: 1.58822
+  type: 'test'
+  ...
+# Subtest: deux onglets écrivent sur le dernier état sous verrou, sans perdre des ajouts
+ok 9 - deux onglets écrivent sur le dernier état sous verrou, sans perdre des ajouts
+  ---
+  duration_ms: 4.213926
+  type: 'test'
+  ...
+# Subtest: configuration Firebase, origine étrangère, worker ou verrou absent : démarrage refusé
+ok 10 - configuration Firebase, origine étrangère, worker ou verrou absent : démarrage refusé
+  ---
+  duration_ms: 0.677189
+  type: 'test'
+  ...
+# Subtest: la recherche V2 retrouve noms et ingrédients
+ok 11 - la recherche V2 retrouve noms et ingrédients
+  ---
+  duration_ms: 2.677482
+  type: 'test'
+  ...
+# Subtest: les quantités et références des étapes suivent les portions V2
+ok 12 - les quantités et références des étapes suivent les portions V2
+  ---
+  duration_ms: 16.399758
+  type: 'test'
+  ...
+# Subtest: planning : ajout, portions, retrait et actualisation explicite V2
+ok 13 - planning : ajout, portions, retrait et actualisation explicite V2
+  ---
+  duration_ms: 1.238639
+  type: 'test'
+  ...
+# Subtest: besoins communs regroupés, unités compatibles, quantités achetées conservées
+ok 14 - besoins communs regroupés, unités compatibles, quantités achetées conservées
+  ---
+  duration_ms: 1.017296
+  type: 'test'
+  ...
+# Subtest: manuel, quantité et rayon : personnalisations conservées après actualisation
+ok 15 - manuel, quantité et rayon : personnalisations conservées après actualisation
+  ---
+  duration_ms: 4.129492
+  type: 'test'
+  ...
+# Subtest: vider les courses conserve les recettes, favoris, planning et rayons V2
+ok 16 - vider les courses conserve les recettes, favoris, planning et rayons V2
+  ---
+  duration_ms: 0.505759
+  type: 'test'
+  ...
+# Subtest: serveur local : liste blanche, CSP réseau fermée, absence de cache et protection Host
+ok 17 - serveur local : liste blanche, CSP réseau fermée, absence de cache et protection Host
+  ---
+  duration_ms: 58.10536
+  type: 'test'
+  ...
+# Subtest: autonome : CSS, écrans et cœur V2 conservés
+ok 18 - autonome : CSS, écrans et cœur V2 conservés
+  ---
+  duration_ms: 1.150771
+  type: 'test'
+  ...
+# Subtest: autonome : JavaScript classique valide, aucune dépendance de module ou Firebase
+ok 19 - autonome : JavaScript classique valide, aucune dépendance de module ou Firebase
+  ---
+  duration_ms: 3.091146
+  type: 'test'
+  ...
+# Subtest: autonome : CSP embarquée ferme le réseau et correspond au script exact
+ok 20 - autonome : CSP embarquée ferme le réseau et correspond au script exact
+  ---
+  duration_ms: 0.515073
+  type: 'test'
+  ...
+# Subtest: aperçu : véritable application, fragment sans document imbriqué
+ok 21 - aperçu : véritable application, fragment sans document imbriqué
+  ---
+  duration_ms: 0.707183
+  type: 'test'
+  ...
+1..21
+# tests 21
+# suites 0
+# pass 21
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 426.222237

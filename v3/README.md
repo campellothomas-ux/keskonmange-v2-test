@@ -1,5 +1,19 @@
 # KeskonMange V3 — Développement sur le socle V2
 
+## Démonstration sans installation
+
+[Télécharger le fichier HTML autonome](v2-lab/dist/KeskonMange-Demo-V2.html)
+et l’ouvrir avec le navigateur. Il contient l’interface V2 et uniquement les
+onze recettes de test, sans Firebase ni ressource externe à charger.
+La sauvegarde dépend des autorisations du navigateur ; un message indique
+clairement lorsque les essais restent temporaires.
+
+[Vérifications et limite du test d’ouverture locale](v2-lab/STANDALONE-REPORT.md).
+L’ouverture par double-clic sur Mac n’est pas certifiée : le navigateur administré
+de cet environnement bloque `file://`. Un aperçu interactif a été testé séparément.
+
+## Environnement de développement
+
 Le point d’entrée actuel est le **[laboratoire V2 isolé — LOT 0](v2-lab/README.md)**.
 Il réutilise directement l’interface de la V2, avec des exemples indépendants,
 un stockage local séparé et aucun démarrage Firebase.
