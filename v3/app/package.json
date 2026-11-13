@@ -1,0 +1,14 @@
+{
+  "name": "keskonmange-v3-demo",
+  "version": "0.5.0",
+  "private": true,
+  "type": "module",
+  "engines": {"node": ">=22"},
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node scripts/serve.mjs",
+    "test": "node --test test/*.test.mjs",
+    "test:browser": "python3 test/browser.py"
+  },
+  "devDependencies": {"esbuild": "0.25.12"}
+}

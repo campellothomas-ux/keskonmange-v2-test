@@ -1,0 +1,1264 @@
+{
+  "version": 1,
+  "menu": {
+    "version": 2,
+    "id": "local-planning",
+    "revision": 10,
+    "meals": [
+      {
+        "id": "meal-1",
+        "recipeId": "r_quiche_jambon_fromage_et_salade_verte",
+        "diners": 4,
+        "leftovers": "keep",
+        "selection": "user"
+      },
+      {
+        "id": "meal-2",
+        "recipeId": "r_boulettes_de_porc_au_paprika__sauce_cr_m",
+        "diners": 2,
+        "leftovers": "keep",
+        "selection": "user"
+      },
+      {
+        "id": "meal-3",
+        "recipeId": "r_bowl_de_quinoa__crevettes_et_mangue",
+        "diners": 2,
+        "leftovers": "keep",
+        "selection": "user"
+      },
+      {
+        "id": "meal-4",
+        "recipeId": "r_bowl_mediterraneen_pois_chiches_rotis__f",
+        "diners": 2,
+        "leftovers": "keep",
+        "selection": "user"
+      },
+      {
+        "id": "meal-5",
+        "recipeId": "r_bowl_poulet_facon_kebab__pommes_de_terre",
+        "diners": 2,
+        "leftovers": "keep",
+        "selection": "user"
+      },
+      {
+        "id": "meal-6",
+        "recipeId": "r_cheeseburgers_maison_et_frites_de_patate",
+        "diners": 2,
+        "leftovers": "keep",
+        "selection": "user"
+      },
+      {
+        "id": "meal-7",
+        "recipeId": "r_chili_con_carne_express_et_riz_basmati",
+        "diners": 2,
+        "leftovers": "keep",
+        "selection": "user"
+      },
+      {
+        "id": "meal-8",
+        "recipeId": "r_gratin_de_gnocchis_au_potimarron___pinar",
+        "diners": 2,
+        "leftovers": "keep",
+        "selection": "user"
+      },
+      {
+        "id": "meal-9",
+        "recipeId": "r_pates_bolognaise_economique",
+        "diners": 2,
+        "leftovers": "keep",
+        "selection": "user"
+      },
+      {
+        "id": "meal-10",
+        "recipeId": "r_shakshuka_express_oeufs_poches_en_sauce_",
+        "diners": 2,
+        "leftovers": "keep",
+        "selection": "user"
+      }
+    ],
+    "reservationIds": {}
+  },
+  "ingredientQuantitiesComplete": true,
+  "preparations": [
+    {
+      "mealId": "meal-1",
+      "recipeId": "r_quiche_jambon_fromage_et_salade_verte",
+      "mode": "batch",
+      "unitLabel": "quiche entière",
+      "units": "1",
+      "minimumUnits": "1",
+      "factor": "1",
+      "diners": "4",
+      "producedPortions": "4",
+      "keptPortions": "0",
+      "discardedPortions": "0"
+    },
+    {
+      "mealId": "meal-2",
+      "recipeId": "r_boulettes_de_porc_au_paprika__sauce_cr_m",
+      "mode": "adjustable",
+      "unitLabel": "portion",
+      "units": "2",
+      "minimumUnits": "2",
+      "factor": "2/3",
+      "diners": "2",
+      "producedPortions": "2",
+      "keptPortions": "0",
+      "discardedPortions": "0"
+    },
+    {
+      "mealId": "meal-3",
+      "recipeId": "r_bowl_de_quinoa__crevettes_et_mangue",
+      "mode": "adjustable",
+      "unitLabel": "portion",
+      "units": "2",
+      "minimumUnits": "2",
+      "factor": "1",
+      "diners": "2",
+      "producedPortions": "2",
+      "keptPortions": "0",
+      "discardedPortions": "0"
+    },
+    {
+      "mealId": "meal-4",
+      "recipeId": "r_bowl_mediterraneen_pois_chiches_rotis__f",
+      "mode": "adjustable",
+      "unitLabel": "portion",
+      "units": "2",
+      "minimumUnits": "2",
+      "factor": "2/5",
+      "diners": "2",
+      "producedPortions": "2",
+      "keptPortions": "0",
+      "discardedPortions": "0"
+    },
+    {
+      "mealId": "meal-5",
+      "recipeId": "r_bowl_poulet_facon_kebab__pommes_de_terre",
+      "mode": "adjustable",
+      "unitLabel": "portion",
+      "units": "2",
+      "minimumUnits": "2",
+      "factor": "2/3",
+      "diners": "2",
+      "producedPortions": "2",
+      "keptPortions": "0",
+      "discardedPortions": "0"
+    },
+    {
+      "mealId": "meal-6",
+      "recipeId": "r_cheeseburgers_maison_et_frites_de_patate",
+      "mode": "unit",
+      "unitLabel": "burger",
+      "units": "2",
+      "minimumUnits": "2",
+      "factor": "1/2",
+      "diners": "2",
+      "producedPortions": "2",
+      "keptPortions": "0",
+      "discardedPortions": "0"
+    },
+    {
+      "mealId": "meal-7",
+      "recipeId": "r_chili_con_carne_express_et_riz_basmati",
+      "mode": "adjustable",
+      "unitLabel": "portion",
+      "units": "2",
+      "minimumUnits": "2",
+      "factor": "2/3",
+      "diners": "2",
+      "producedPortions": "2",
+      "keptPortions": "0",
+      "discardedPortions": "0"
+    },
+    {
+      "mealId": "meal-8",
+      "recipeId": "r_gratin_de_gnocchis_au_potimarron___pinar",
+      "mode": "adjustable",
+      "unitLabel": "portion",
+      "units": "2",
+      "minimumUnits": "2",
+      "factor": "1/2",
+      "diners": "2",
+      "producedPortions": "2",
+      "keptPortions": "0",
+      "discardedPortions": "0"
+    },
+    {
+      "mealId": "meal-9",
+      "recipeId": "r_pates_bolognaise_economique",
+      "mode": "adjustable",
+      "unitLabel": "portion",
+      "units": "2",
+      "minimumUnits": "2",
+      "factor": "2/3",
+      "diners": "2",
+      "producedPortions": "2",
+      "keptPortions": "0",
+      "discardedPortions": "0"
+    },
+    {
+      "mealId": "meal-10",
+      "recipeId": "r_shakshuka_express_oeufs_poches_en_sauce_",
+      "mode": "adjustable",
+      "unitLabel": "portion",
+      "units": "2",
+      "minimumUnits": "2",
+      "factor": "1",
+      "diners": "2",
+      "producedPortions": "2",
+      "keptPortions": "0",
+      "discardedPortions": "0"
+    }
+  ],
+  "priceCents": null,
+  "requirements": {
+    "i_pate_brisee": "1",
+    "i_jambon_blanc": "100",
+    "i_oeufs": "29/3",
+    "i_lait": "610/3",
+    "i_creme_legere": "150",
+    "i_emmental_rape": "80",
+    "i_salade_verte": "830/3",
+    "i_moutarde_douce": "3/2",
+    "i_sel": "8/3",
+    "i_poivre": "8/3",
+    "i_porc_hache": "300",
+    "i_patates_douces": "750",
+    "i_pommes_de_terre": "1900/3",
+    "i_carottes": "800/3",
+    "i_oignon": "7/2",
+    "i_ail": "55/6",
+    "i_chapelure": "20",
+    "i_moutarde": "2/3",
+    "i_yaourt_grec_nature": "250",
+    "i_bouillon_de_legumes": "100",
+    "i_beurre": "10",
+    "i_paprika_fume": "16/3",
+    "i_thym": "2/3",
+    "i_huile_d_olive": "13/2",
+    "i_quinoa": "120",
+    "i_crevettes_cuites_et_decortiquees": "200",
+    "i_mangue": "1",
+    "i_avocat": "1",
+    "i_feves_de_soja_edamame_ecossees": "100",
+    "i_coriandre_fraiche": "1/4",
+    "i_citron_vert": "1",
+    "i_pois_chiches_egouttes": "400",
+    "i_cumin": "2",
+    "i_piment_d_espelette": "9/10",
+    "i_feta": "150",
+    "i_concombre": "5/3",
+    "i_tomates": "6",
+    "i_oignon_rouge": "53/30",
+    "i_roquette": "60",
+    "i_yaourt_grec_0": "150",
+    "i_citron": "5/3",
+    "i_persil_frais": "47/60",
+    "i_sel_poivre": "17/5",
+    "i_filets_de_poulet": "300",
+    "i_cumin_moulu": "4/3",
+    "i_coriandre_moulue": "1/3",
+    "i_origan_seche": "4/3",
+    "i_pains_a_burger": "2",
+    "i_steaks_haches_de_boeuf_5_mg": "2",
+    "i_cheddar_en_tranches": "2",
+    "i_ketchup": "1",
+    "i_paprika_doux": "1/2",
+    "i_boeuf_hache_5_mg": "1700/3",
+    "i_riz_basmati": "140",
+    "i_haricots_rouges_egouttes": "500/3",
+    "i_mais_egoutte": "280/3",
+    "i_tomates_concassees": "2800/3",
+    "i_poivron_rouge": "5/3",
+    "i_concentre_de_tomate": "7/3",
+    "i_chili": "1/3",
+    "i_gnocchis": "375",
+    "i_potimarron": "300",
+    "i_epinards_frais": "100",
+    "i_haricots_blancs_cuits_egouttes": "125",
+    "i_mozzarella": "75",
+    "i_muscade": "1/2",
+    "i_pates": "180",
+    "i_carotte": "2/3",
+    "i_huile_d_olive_unit_net_measure_cc": "1"
+  },
+  "shopping": [
+    {
+      "ingredientId": "i_creme_legere",
+      "label": "crème légère",
+      "referenceNeed": "150",
+      "needed": "150 ml de crème légère",
+      "minimumPurchase": "150 ml de crème légère",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_emmental_rape",
+      "label": "emmental râpé",
+      "referenceNeed": "80",
+      "needed": "80 g d’emmental râpé",
+      "minimumPurchase": "80 g d’emmental râpé",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_jambon_blanc",
+      "label": "jambon blanc",
+      "referenceNeed": "100",
+      "needed": "100 g de jambon blanc",
+      "minimumPurchase": "100 g de jambon blanc",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_lait",
+      "label": "lait",
+      "referenceNeed": "610/3",
+      "needed": "environ 203,33 ml de lait",
+      "minimumPurchase": "environ 203,33 ml de lait",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_moutarde_douce",
+      "label": "moutarde douce",
+      "referenceNeed": "3/2",
+      "needed": "1 ½ c. à café de moutarde douce",
+      "minimumPurchase": "1 ½ c. à café de moutarde douce",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_oeufs",
+      "label": "œufs",
+      "referenceNeed": "29/3",
+      "needed": "9 ⅔ œufs",
+      "minimumPurchase": "10 œufs",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_pate_brisee",
+      "label": "pâte brisée",
+      "referenceNeed": "1",
+      "needed": "1 pâte brisée",
+      "minimumPurchase": "1 pâte brisée",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_poivre",
+      "label": "poivre",
+      "referenceNeed": "8/3",
+      "needed": "environ 2 ½ pincées de poivre",
+      "minimumPurchase": "environ 2 ½ pincées de poivre",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_salade_verte",
+      "label": "salade verte",
+      "referenceNeed": "830/3",
+      "needed": "environ 276,67 g de salade verte",
+      "minimumPurchase": "environ 276,67 g de salade verte",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_sel",
+      "label": "sel",
+      "referenceNeed": "8/3",
+      "needed": "environ 2 ½ pincées de sel",
+      "minimumPurchase": "environ 2 ½ pincées de sel",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_ail",
+      "label": "ail",
+      "referenceNeed": "55/6",
+      "needed": "55/6 gousses d’ail",
+      "minimumPurchase": "55/6 gousses d’ail",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_beurre",
+      "label": "beurre",
+      "referenceNeed": "10",
+      "needed": "10 g de beurre",
+      "minimumPurchase": "10 g de beurre",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_bouillon_de_legumes",
+      "label": "bouillon de légumes",
+      "referenceNeed": "100",
+      "needed": "100 ml de bouillon de légumes",
+      "minimumPurchase": "100 ml de bouillon de légumes",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_carottes",
+      "label": "carottes",
+      "referenceNeed": "800/3",
+      "needed": "environ 266,67 g de carottes",
+      "minimumPurchase": "environ 266,67 g de carottes",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_chapelure",
+      "label": "chapelure",
+      "referenceNeed": "20",
+      "needed": "20 g de chapelure",
+      "minimumPurchase": "20 g de chapelure",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_huile_d_olive",
+      "label": "huile d'olive",
+      "referenceNeed": "13/2",
+      "needed": "6 ½ c. à soupe d’huile d'olive",
+      "minimumPurchase": "6 ½ c. à soupe d’huile d'olive",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_moutarde",
+      "label": "moutarde",
+      "referenceNeed": "2/3",
+      "needed": "⅔ c. à soupe de moutarde",
+      "minimumPurchase": "⅔ c. à soupe de moutarde",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_oignon",
+      "label": "oignon",
+      "referenceNeed": "7/2",
+      "needed": "3 ½ oignons",
+      "minimumPurchase": "4 oignons",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_paprika_fume",
+      "label": "paprika fume",
+      "referenceNeed": "16/3",
+      "needed": "5 ⅓ c. à café de paprika fume",
+      "minimumPurchase": "5 ⅓ c. à café de paprika fume",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_patates_douces",
+      "label": "patates douces",
+      "referenceNeed": "750",
+      "needed": "750 g de patates douces",
+      "minimumPurchase": "750 g de patates douces",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_pommes_de_terre",
+      "label": "pommes de terre",
+      "referenceNeed": "1900/3",
+      "needed": "environ 633,33 g de pommes de terre",
+      "minimumPurchase": "environ 633,33 g de pommes de terre",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_porc_hache",
+      "label": "porc haché",
+      "referenceNeed": "300",
+      "needed": "300 g de porc haché",
+      "minimumPurchase": "300 g de porc haché",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_thym",
+      "label": "thym",
+      "referenceNeed": "2/3",
+      "needed": "⅔ c. à café de thym",
+      "minimumPurchase": "⅔ c. à café de thym",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_yaourt_grec_nature",
+      "label": "yaourt grec nature",
+      "referenceNeed": "250",
+      "needed": "250 g de yaourt grec nature",
+      "minimumPurchase": "250 g de yaourt grec nature",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_avocat",
+      "label": "avocat",
+      "referenceNeed": "1",
+      "needed": "1 avocat",
+      "minimumPurchase": "1 avocat",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_citron_vert",
+      "label": "citron vert",
+      "referenceNeed": "1",
+      "needed": "1 citron vert",
+      "minimumPurchase": "1 citron vert",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_coriandre_fraiche",
+      "label": "coriandre fraîche",
+      "referenceNeed": "1/4",
+      "needed": "¼ botte de coriandre fraîche",
+      "minimumPurchase": "1 botte de coriandre fraîche",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_crevettes_cuites_et_decortiquees",
+      "label": "crevettes cuites et décortiquées",
+      "referenceNeed": "200",
+      "needed": "200 g de crevettes cuites et décortiquées",
+      "minimumPurchase": "200 g de crevettes cuites et décortiquées",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_feves_de_soja_edamame_ecossees",
+      "label": "fèves de soja edamame écossées",
+      "referenceNeed": "100",
+      "needed": "100 g de fèves de soja edamame écossées",
+      "minimumPurchase": "100 g de fèves de soja edamame écossées",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_mangue",
+      "label": "mangue",
+      "referenceNeed": "1",
+      "needed": "1 mangue",
+      "minimumPurchase": "1 mangue",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_quinoa",
+      "label": "quinoa",
+      "referenceNeed": "120",
+      "needed": "120 g de quinoa",
+      "minimumPurchase": "120 g de quinoa",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_citron",
+      "label": "citron",
+      "referenceNeed": "5/3",
+      "needed": "1 ⅔ citrons",
+      "minimumPurchase": "2 citrons",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_concombre",
+      "label": "concombre",
+      "referenceNeed": "5/3",
+      "needed": "1 ⅔ concombres",
+      "minimumPurchase": "2 concombres",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_cumin",
+      "label": "cumin",
+      "referenceNeed": "2",
+      "needed": "2 c. à café de cumin",
+      "minimumPurchase": "2 c. à café de cumin",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_feta",
+      "label": "feta",
+      "referenceNeed": "150",
+      "needed": "150 g de feta",
+      "minimumPurchase": "150 g de feta",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_oignon_rouge",
+      "label": "oignon rouge",
+      "referenceNeed": "53/30",
+      "needed": "53/30 oignons rouges",
+      "minimumPurchase": "2 oignons rouges",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_persil_frais",
+      "label": "persil frais",
+      "referenceNeed": "47/60",
+      "needed": "47/60 botte de persil frais",
+      "minimumPurchase": "1 botte de persil frais",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_piment_d_espelette",
+      "label": "piment d'espelette",
+      "referenceNeed": "9/10",
+      "needed": "9/10 c. à café de piment d'espelette",
+      "minimumPurchase": "9/10 c. à café de piment d'espelette",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_pois_chiches_egouttes",
+      "label": "pois chiches égouttés",
+      "referenceNeed": "400",
+      "needed": "400 g de pois chiches égouttés",
+      "minimumPurchase": "400 g de pois chiches égouttés",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_roquette",
+      "label": "roquette",
+      "referenceNeed": "60",
+      "needed": "60 g de roquette",
+      "minimumPurchase": "60 g de roquette",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_sel_poivre",
+      "label": "sel poivre",
+      "referenceNeed": "17/5",
+      "needed": "environ 3 ½ pincées de sel poivre",
+      "minimumPurchase": "environ 3 ½ pincées de sel poivre",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_tomates",
+      "label": "tomates",
+      "referenceNeed": "6",
+      "needed": "6 tomates",
+      "minimumPurchase": "6 tomates",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_yaourt_grec_0",
+      "label": "yaourt grec 0%",
+      "referenceNeed": "150",
+      "needed": "150 g de yaourt grec 0%",
+      "minimumPurchase": "150 g de yaourt grec 0%",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_coriandre_moulue",
+      "label": "coriandre moulue",
+      "referenceNeed": "1/3",
+      "needed": "⅓ c. à café de coriandre moulue",
+      "minimumPurchase": "⅓ c. à café de coriandre moulue",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_cumin_moulu",
+      "label": "cumin moulu",
+      "referenceNeed": "4/3",
+      "needed": "1 ⅓ c. à café de cumin moulu",
+      "minimumPurchase": "1 ⅓ c. à café de cumin moulu",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_filets_de_poulet",
+      "label": "filets de poulet",
+      "referenceNeed": "300",
+      "needed": "300 g de filets de poulet",
+      "minimumPurchase": "300 g de filets de poulet",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_origan_seche",
+      "label": "origan seche",
+      "referenceNeed": "4/3",
+      "needed": "1 ⅓ c. à café d’origan seche",
+      "minimumPurchase": "1 ⅓ c. à café d’origan seche",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_cheddar_en_tranches",
+      "label": "cheddar en tranches",
+      "referenceNeed": "2",
+      "needed": "2 tranches de cheddar",
+      "minimumPurchase": "2 tranches de cheddar",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_ketchup",
+      "label": "ketchup",
+      "referenceNeed": "1",
+      "needed": "1 c. à soupe de ketchup",
+      "minimumPurchase": "1 c. à soupe de ketchup",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_pains_a_burger",
+      "label": "pains à burger",
+      "referenceNeed": "2",
+      "needed": "2 pains à burger",
+      "minimumPurchase": "2 pains à burger",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_paprika_doux",
+      "label": "paprika doux",
+      "referenceNeed": "1/2",
+      "needed": "½ c. à café de paprika doux",
+      "minimumPurchase": "½ c. à café de paprika doux",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_steaks_haches_de_boeuf_5_mg",
+      "label": "steaks hachés de bœuf 5 % mg",
+      "referenceNeed": "2",
+      "needed": "2 steaks hachés de bœuf 5 % MG",
+      "minimumPurchase": "2 steaks hachés de bœuf 5 % MG",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_boeuf_hache_5_mg",
+      "label": "bœuf haché 5 % mg",
+      "referenceNeed": "1700/3",
+      "needed": "environ 566,67 g de bœuf haché 5 % mg",
+      "minimumPurchase": "environ 566,67 g de bœuf haché 5 % mg",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_chili",
+      "label": "chili",
+      "referenceNeed": "1/3",
+      "needed": "⅓ c. à café de chili",
+      "minimumPurchase": "⅓ c. à café de chili",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_concentre_de_tomate",
+      "label": "concentré de tomate",
+      "referenceNeed": "7/3",
+      "needed": "2 ⅓ c. à soupe de concentré de tomate",
+      "minimumPurchase": "2 ⅓ c. à soupe de concentré de tomate",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_haricots_rouges_egouttes",
+      "label": "haricots rouges egouttes",
+      "referenceNeed": "500/3",
+      "needed": "environ 166,67 g de haricots rouges egouttes",
+      "minimumPurchase": "environ 166,67 g de haricots rouges egouttes",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_mais_egoutte",
+      "label": "mais egoutte",
+      "referenceNeed": "280/3",
+      "needed": "environ 93,33 g de mais egoutte",
+      "minimumPurchase": "environ 93,33 g de mais egoutte",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_poivron_rouge",
+      "label": "poivron rouge",
+      "referenceNeed": "5/3",
+      "needed": "1 ⅔ poivrons rouges",
+      "minimumPurchase": "2 poivrons rouges",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_riz_basmati",
+      "label": "riz basmati",
+      "referenceNeed": "140",
+      "needed": "140 g de riz basmati",
+      "minimumPurchase": "140 g de riz basmati",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_tomates_concassees",
+      "label": "tomates concassees",
+      "referenceNeed": "2800/3",
+      "needed": "environ 933,33 g de tomates concassees",
+      "minimumPurchase": "environ 933,33 g de tomates concassees",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_epinards_frais",
+      "label": "épinards frais",
+      "referenceNeed": "100",
+      "needed": "100 g d’épinards frais",
+      "minimumPurchase": "100 g d’épinards frais",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_gnocchis",
+      "label": "gnocchis",
+      "referenceNeed": "375",
+      "needed": "375 g de gnocchis",
+      "minimumPurchase": "375 g de gnocchis",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_haricots_blancs_cuits_egouttes",
+      "label": "haricots blancs cuits égouttés",
+      "referenceNeed": "125",
+      "needed": "125 g de haricots blancs cuits égouttés",
+      "minimumPurchase": "125 g de haricots blancs cuits égouttés",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_mozzarella",
+      "label": "mozzarella",
+      "referenceNeed": "75",
+      "needed": "75 g de mozzarella",
+      "minimumPurchase": "75 g de mozzarella",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_muscade",
+      "label": "muscade",
+      "referenceNeed": "1/2",
+      "needed": "½ pincée de muscade",
+      "minimumPurchase": "½ pincée de muscade",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_potimarron",
+      "label": "potimarron",
+      "referenceNeed": "300",
+      "needed": "300 g de potimarron",
+      "minimumPurchase": "300 g de potimarron",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_carotte",
+      "label": "carotte",
+      "referenceNeed": "2/3",
+      "needed": "⅔ carotte",
+      "minimumPurchase": "1 carotte",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_pates",
+      "label": "pates",
+      "referenceNeed": "180",
+      "needed": "180 g de pates",
+      "minimumPurchase": "180 g de pates",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    },
+    {
+      "ingredientId": "i_huile_d_olive_unit_net_measure_cc",
+      "label": "huile d'olive",
+      "referenceNeed": "1",
+      "needed": "1 c. à café d’huile d'olive",
+      "minimumPurchase": "1 c. à café d’huile d'olive",
+      "commercial": {
+        "determined": false,
+        "productId": null,
+        "packCount": null,
+        "priceCents": null,
+        "reason": "NO_VERIFIED_COMMERCIAL_CONTENT"
+      }
+    }
+  ],
+  "manual": [
+    {
+      "id": "manual-11",
+      "label": "Liquide vaisselle",
+      "quantity": "1 flacon",
+      "source": "manual",
+      "checked": false,
+      "confirmed": false
+    }
+  ]
+}

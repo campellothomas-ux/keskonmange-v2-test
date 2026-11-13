@@ -1,0 +1,400 @@
+TAP version 13
+# Subtest: LOT5 — the reproducible selection contains 5 pilots, 26 P3 and 19 P2, never the 98-recipe corpus or exceptional dessert
+ok 1 - LOT5 — the reproducible selection contains 5 pilots, 26 P3 and 19 P2, never the 98-recipe corpus or exceptional dessert
+  ---
+  duration_ms: 122.283962
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 4 — Boulettes de porc au paprika, sauce crémeuse et purée de patate douce
+ok 2 - LOT5 fiche 4 — Boulettes de porc au paprika, sauce crémeuse et purée de patate douce
+  ---
+  duration_ms: 13.490423
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 5 — Bowl de boulgour aux crevettes, edamame & vinaigrette citron-herbes
+ok 3 - LOT5 fiche 5 — Bowl de boulgour aux crevettes, edamame & vinaigrette citron-herbes
+  ---
+  duration_ms: 4.213889
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 6 — Bowl de quinoa, crevettes et mangue
+ok 4 - LOT5 fiche 6 — Bowl de quinoa, crevettes et mangue
+  ---
+  duration_ms: 3.351586
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 7 — Bowl mediterraneen pois chiches rotis, feta & sauce yaourt-citron
+ok 5 - LOT5 fiche 7 — Bowl mediterraneen pois chiches rotis, feta & sauce yaourt-citron
+  ---
+  duration_ms: 7.451696
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 8 — Bowl poulet facon kebab, pommes de terre roties Air Fryer et sauce blanche
+ok 6 - LOT5 fiche 8 — Bowl poulet facon kebab, pommes de terre roties Air Fryer et sauce blanche
+  ---
+  duration_ms: 5.300703
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 9 — Bowl riz, thon, oeuf, avocat et crudites
+ok 7 - LOT5 fiche 9 — Bowl riz, thon, oeuf, avocat et crudites
+  ---
+  duration_ms: 3.647232
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 11 — Brochettes de bœuf et salade de lentilles
+ok 8 - LOT5 fiche 11 — Brochettes de bœuf et salade de lentilles
+  ---
+  duration_ms: 3.282985
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 14 — Burrito bowl boeuf epice, riz, haricots rouges et salsa fraiche
+ok 9 - LOT5 fiche 14 — Burrito bowl boeuf epice, riz, haricots rouges et salsa fraiche
+  ---
+  duration_ms: 5.419007
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 15 — Cheeseburgers maison et frites de patate douce au four
+ok 10 - LOT5 fiche 15 — Cheeseburgers maison et frites de patate douce au four
+  ---
+  duration_ms: 4.980449
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 16 — Chili con carne express et riz basmati
+ok 11 - LOT5 fiche 16 — Chili con carne express et riz basmati
+  ---
+  duration_ms: 5.720973
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 17 — Colin en croute d'herbes airfryer, poelee de legumes
+ok 12 - LOT5 fiche 17 — Colin en croute d'herbes airfryer, poelee de legumes
+  ---
+  duration_ms: 3.545472
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 18 — Cordon bleu maison cheddar-jambon airfryer & ratatouille express
+ok 13 - LOT5 fiche 18 — Cordon bleu maison cheddar-jambon airfryer & ratatouille express
+  ---
+  duration_ms: 4.508132
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 20 — Couscous poulet leger, courgettes, carottes & pois chiches
+ok 14 - LOT5 fiche 20 — Couscous poulet leger, courgettes, carottes & pois chiches
+  ---
+  duration_ms: 3.559763
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 23 — Cuisses de poulet airfryer paprika, riz & legumes
+ok 15 - LOT5 fiche 23 — Cuisses de poulet airfryer paprika, riz & legumes
+  ---
+  duration_ms: 2.808334
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 24 — Curry de potimarron, pois chiches et épinards au lait de coco
+ok 16 - LOT5 fiche 24 — Curry de potimarron, pois chiches et épinards au lait de coco
+  ---
+  duration_ms: 3.973413
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 25 — Dahl de lentilles corail, pois chiches et courgette, sauce yaourt grec
+ok 17 - LOT5 fiche 25 — Dahl de lentilles corail, pois chiches et courgette, sauce yaourt grec
+  ---
+  duration_ms: 4.603343
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 28 — Fajitas de poulet aux poivrons et sauce yaourt
+ok 18 - LOT5 fiche 28 — Fajitas de poulet aux poivrons et sauce yaourt
+  ---
+  duration_ms: 4.551537
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 34 — Galettes de lentilles corail et carottes, boulgour et sauce yaourt citron
+ok 19 - LOT5 fiche 34 — Galettes de lentilles corail et carottes, boulgour et sauce yaourt citron
+  ---
+  duration_ms: 4.088914
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 35 — Gnocchis poeles au poulet, courgette, tomates sechees et sauce yaourt grec parmesan
+ok 20 - LOT5 fiche 35 — Gnocchis poeles au poulet, courgette, tomates sechees et sauce yaourt grec parmesan
+  ---
+  duration_ms: 3.702724
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 37 — Gratin de gnocchis au potimarron, épinards et mozzarella
+ok 21 - LOT5 fiche 37 — Gratin de gnocchis au potimarron, épinards et mozzarella
+  ---
+  duration_ms: 4.7977
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 40 — Keftas de boeuf, semoule aux herbes et legumes rotis
+ok 22 - LOT5 fiche 40 — Keftas de boeuf, semoule aux herbes et legumes rotis
+  ---
+  duration_ms: 4.621951
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 42 — Linguine crevettes, courgettes grillees, ail & citron
+ok 23 - LOT5 fiche 42 — Linguine crevettes, courgettes grillees, ail & citron
+  ---
+  duration_ms: 3.597609
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 45 — Omelette courgettes-feta-menthe & salade verte
+ok 24 - LOT5 fiche 45 — Omelette courgettes-feta-menthe & salade verte
+  ---
+  duration_ms: 2.411989
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 46 — Omelette jambon-fromage & salade composee
+ok 25 - LOT5 fiche 46 — Omelette jambon-fromage & salade composee
+  ---
+  duration_ms: 3.479565
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 47 — Omelette poivrons-feta & salade tomate-concombre
+ok 26 - LOT5 fiche 47 — Omelette poivrons-feta & salade tomate-concombre
+  ---
+  duration_ms: 2.949873
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 50 — Papillote de cabillaud aux légumes d'été
+ok 27 - LOT5 fiche 50 — Papillote de cabillaud aux légumes d'été
+  ---
+  duration_ms: 2.556232
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 51 — Pasta tomate, thon, mozzarella, courgette et epinards
+ok 28 - LOT5 fiche 51 — Pasta tomate, thon, mozzarella, courgette et epinards
+  ---
+  duration_ms: 4.389487
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 53 — Pates bolognaise economique
+ok 29 - LOT5 fiche 53 — Pates bolognaise economique
+  ---
+  duration_ms: 2.483445
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 55 — Pavé de saumon grillé et courgettes à la menthe
+ok 30 - LOT5 fiche 55 — Pavé de saumon grillé et courgettes à la menthe
+  ---
+  duration_ms: 4.064168
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 57 — Penne au thon, tomate et mozzarella fondante
+ok 31 - LOT5 fiche 57 — Penne au thon, tomate et mozzarella fondante
+  ---
+  duration_ms: 4.227328
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 58 — Poisson blanc croustillant Air Fryer, ecrase de pommes de terre et ratatouille express
+ok 32 - LOT5 fiche 58 — Poisson blanc croustillant Air Fryer, ecrase de pommes de terre et ratatouille express
+  ---
+  duration_ms: 3.529098
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 59 — Poisson blanc en croûte moutarde et herbes, pommes de terre rôties et brocoli
+ok 33 - LOT5 fiche 59 — Poisson blanc en croûte moutarde et herbes, pommes de terre rôties et brocoli
+  ---
+  duration_ms: 3.620032
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 61 — Poulet citron paprika, semoule et legumes rotis
+ok 34 - LOT5 fiche 61 — Poulet citron paprika, semoule et legumes rotis
+  ---
+  duration_ms: 3.95056
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 62 — Poulet crémeux à la moutarde, pâtes et haricots verts
+ok 35 - LOT5 fiche 62 — Poulet crémeux à la moutarde, pâtes et haricots verts
+  ---
+  duration_ms: 2.684592
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 67 — Quesadillas poulet grille & poivrons, guacamole & salsa
+ok 36 - LOT5 fiche 67 — Quesadillas poulet grille & poivrons, guacamole & salsa
+  ---
+  duration_ms: 3.524932
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 68 — Quiche jambon-fromage et salade verte
+ok 37 - LOT5 fiche 68 — Quiche jambon-fromage et salade verte
+  ---
+  duration_ms: 2.659885
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 69 — Risotto courgette, petits pois, dinde et parmesan
+ok 38 - LOT5 fiche 69 — Risotto courgette, petits pois, dinde et parmesan
+  ---
+  duration_ms: 2.451928
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 70 — Salade de lentilles, oeuf mollet & feta
+ok 39 - LOT5 fiche 70 — Salade de lentilles, oeuf mollet & feta
+  ---
+  duration_ms: 3.492264
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 71 — Salade de pâtes complète au poulet
+ok 40 - LOT5 fiche 71 — Salade de pâtes complète au poulet
+  ---
+  duration_ms: 2.042234
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 72 — Salade de pates froides poulet, tomates cerises, mozza & pesto
+ok 41 - LOT5 fiche 72 — Salade de pates froides poulet, tomates cerises, mozza & pesto
+  ---
+  duration_ms: 2.075723
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 73 — Salade de pois chiches au poulet
+ok 42 - LOT5 fiche 73 — Salade de pois chiches au poulet
+  ---
+  duration_ms: 3.097601
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 77 — Salade ete poulet grille, peches roties, burrata & roquette
+ok 43 - LOT5 fiche 77 — Salade ete poulet grille, peches roties, burrata & roquette
+  ---
+  duration_ms: 2.971004
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 79 — Salade pates froides poulet-pesto-tomates cerises
+ok 44 - LOT5 fiche 79 — Salade pates froides poulet-pesto-tomates cerises
+  ---
+  duration_ms: 2.837427
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 80 — Salade pois chiches-tomates-concombre-citron
+ok 45 - LOT5 fiche 80 — Salade pois chiches-tomates-concombre-citron
+  ---
+  duration_ms: 2.104385
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 82 — Salade thon-pois chiches-tomates-concombre & citron
+ok 46 - LOT5 fiche 82 — Salade thon-pois chiches-tomates-concombre & citron
+  ---
+  duration_ms: 2.866821
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 83 — Shakshuka express oeufs poches en sauce tomate-poivrons
+ok 47 - LOT5 fiche 83 — Shakshuka express oeufs poches en sauce tomate-poivrons
+  ---
+  duration_ms: 5.350025
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 88 — Steak hache, poelee de legumes d'ete
+ok 48 - LOT5 fiche 88 — Steak hache, poelee de legumes d'ete
+  ---
+  duration_ms: 3.018374
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 91 — Tagliatelles crémeuses aux épinards, haricots blancs, noix et parmesan
+ok 49 - LOT5 fiche 91 — Tagliatelles crémeuses aux épinards, haricots blancs, noix et parmesan
+  ---
+  duration_ms: 3.874999
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 92 — Tenders de poulet croustillants airfryer, riz & poelee poivrons-courgettes
+ok 50 - LOT5 fiche 92 — Tenders de poulet croustillants airfryer, riz & poelee poivrons-courgettes
+  ---
+  duration_ms: 2.478638
+  type: 'test'
+  ...
+# Subtest: LOT5 fiche 95 — Wrap fraîcheur à la dinde
+ok 51 - LOT5 fiche 95 — Wrap fraîcheur à la dinde
+  ---
+  duration_ms: 2.061142
+  type: 'test'
+  ...
+# Subtest: LOT5 — editorial adjustments are explicit pending proposals, not hidden promotions or arbitrary V1 reinstatements
+ok 52 - LOT5 — editorial adjustments are explicit pending proposals, not hidden promotions or arbitrary V1 reinstatements
+  ---
+  duration_ms: 0.658092
+  type: 'test'
+  ...
+# Subtest: LOT5 — ingredient identity merges spelling/plurals and keeps incompatible mass/count and spoon measures distinct
+ok 53 - LOT5 — ingredient identity merges spelling/plurals and keeps incompatible mass/count and spoon measures distinct
+  ---
+  duration_ms: 0.156371
+  type: 'test'
+  ...
+# Subtest: LOT5 — explicit ingredient shares synchronize cooking without duplicating a source number or changing totals
+ok 54 - LOT5 — explicit ingredient shares synchronize cooking without duplicating a source number or changing totals
+  ---
+  duration_ms: 1.807037
+  type: 'test'
+  ...
+# Subtest: LOT5 — recipe search covers fifty records, ingredients, accents, categories, rapid meals and empty results
+ok 55 - LOT5 — recipe search covers fifty records, ingredients, accents, categories, rapid meals and empty results
+  ---
+  duration_ms: 7.795694
+  type: 'test'
+  ...
+# Subtest: LOT5 — approximate culinary pinch display never changes exact needs or rounds a tiny quantity to zero
+ok 56 - LOT5 — approximate culinary pinch display never changes exact needs or rounds a tiny quantity to zero
+  ---
+  duration_ms: 0.263599
+  type: 'test'
+  ...
+# Subtest: LOT5 — catalog-free suggestions never create extra cooked portions; quiche manual previews remain possible
+ok 57 - LOT5 — catalog-free suggestions never create extra cooked portions; quiche manual previews remain possible
+  ---
+  duration_ms: 302.464453
+  type: 'test'
+  ...
+# Subtest: LOT5 — ten planned meals aggregate exact needs, cooked yields, integer components and unknown prices
+ok 58 - LOT5 — ten planned meals aggregate exact needs, cooked yields, integer components and unknown prices
+  ---
+  duration_ms: 894.338692
+  type: 'test'
+  ...
+# Subtest: LOT5 — planned portion changes update cooking, whole burger counts and shopping after explicit checked-line reconciliation
+ok 59 - LOT5 — planned portion changes update cooking, whole burger counts and shopping after explicit checked-line reconciliation
+  ---
+  duration_ms: 753.41618
+  type: 'test'
+  ...
+# Subtest: LOT5 — local persistence restores ten meals, portion preferences and checked manual/calculated articles; V2 keys stay untouched
+ok 60 - LOT5 — local persistence restores ten meals, portion preferences and checked manual/calculated articles; V2 keys stay untouched
+  ---
+  duration_ms: 798.361094
+  type: 'test'
+  ...
+# Subtest: LOT5 — corrupted or unavailable storage is explicit and never silently clears or overwrites an old save
+ok 61 - LOT5 — corrupted or unavailable storage is explicit and never silently clears or overwrites an old save
+  ---
+  duration_ms: 1087.404834
+  type: 'test'
+  ...
+# Subtest: LOT5 — deleting a meal recomputes shopping and preserves manual additions and their checks
+ok 62 - LOT5 — deleting a meal recomputes shopping and preserves manual additions and their checks
+  ---
+  duration_ms: 74.925898
+  type: 'test'
+  ...
+# Subtest: LOT5 — requesting ideas does not mutate the planning and adding one requires an explicit command
+ok 63 - LOT5 — requesting ideas does not mutate the planning and adding one requires an explicit command
+  ---
+  duration_ms: 749.238466
+  type: 'test'
+  ...
+# Subtest: LOT5 — beaten egg fractions remain exact while whole eggs are bought after aggregation
+ok 64 - LOT5 — beaten egg fractions remain exact while whole eggs are bought after aggregation
+  ---
+  duration_ms: 102.339014
+  type: 'test'
+  ...
+# Subtest: LOT5 — invalid portion changes and empty manual labels fail without changing the prior snapshot
+ok 65 - LOT5 — invalid portion changes and empty manual labels fail without changing the prior snapshot
+  ---
+  duration_ms: 580.806922
+  type: 'test'
+  ...
+1..65
+# tests 65
+# suites 0
+# pass 65
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 5952.84575

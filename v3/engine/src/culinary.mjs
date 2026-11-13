@@ -1,6 +1,6 @@
 import {Q,positive,text,requireThat} from './exact.mjs';
 
-const FRACTIONS=new Map([['1/4','¼'],['1/3','⅓'],['1/2','½'],['2/3','⅔'],['3/4','¾']]);
+const FRACTIONS=new Map([['1/8','⅛'],['1/4','¼'],['3/8','⅜'],['1/3','⅓'],['1/2','½'],['2/3','⅔'],['5/8','⅝'],['3/4','¾'],['7/8','⅞']]);
 function countText(q) {
   const whole=q.n/q.d,rest=q.sub(new Q(whole));
   if(!rest.n)return whole.toString();
@@ -39,6 +39,13 @@ export function formatCulinaryQuantity(ingredient,amount,{pieceConversions,decim
     const tolerance=positive(c.maxRelativeError??'1/10','maxRelativeError',true);
     requireThat(tolerance.cmp('1/4')<=0,'INVALID_CONVERSION','culinary tolerance exceeds 25%');
     if(q.n&&error.cmp(tolerance)<=0) {shown=best;unit='unit';labels=c;approximate=true;evidence=c.evidence;}
+  }
+  if(unit==='unit'&&natural.displayStep&&!precise) {
+    const step=positive(natural.displayStep,'culinary displayStep');
+    requireThat(step.cmp(1)<=0,'INVALID_DISPLAY_PRECISION','count display step must not exceed one');
+    const ratio=shown.div(step),nearest=(ratio.n*2n+ratio.d)/(ratio.d*2n),rounded=step.mul(new Q(nearest));
+    // Keep tiny requirements visible rather than turning them into zero.
+    if(rounded.cmp(0)>0&&rounded.cmp(shown)!==0){shown=rounded;approximate=true;evidence=natural.displayEvidence??'Arrondi de présentation uniquement.';}
   }
   const display=unit==='unit'?{amount:shown.toString(),text:countText(shown),approximate:false}:
     precise?{amount:shown.toString(),text:shown.toString(),approximate:false}:roundedDecimal(shown,decimalPlaces);

@@ -1,0 +1,701 @@
+{
+  "version": 1,
+  "sourceArchiveSha256": "3dda40f91991647262dd4e75f0ad5b96547ac6fe96a49a63867e1d0ebdfa8dca",
+  "baseCommit": "895c3d07d968761feceb9c4f3f08fb59bbad6fd4",
+  "pilotSourceIndices": [
+    68,
+    16,
+    53,
+    15,
+    37
+  ],
+  "additionalP3": [
+    4,
+    6,
+    8,
+    17,
+    23,
+    28,
+    34,
+    40,
+    42,
+    45,
+    46,
+    47,
+    50,
+    55,
+    58,
+    61,
+    69,
+    70,
+    71,
+    72,
+    77,
+    79,
+    83,
+    88,
+    92,
+    95
+  ],
+  "additionalP2": [
+    5,
+    7,
+    9,
+    11,
+    14,
+    18,
+    20,
+    24,
+    25,
+    35,
+    51,
+    57,
+    59,
+    62,
+    67,
+    73,
+    80,
+    82,
+    91
+  ],
+  "selected": [
+    {
+      "sourceIndex": 4,
+      "id": "r_boulettes_de_porc_au_paprika__sauce_cr_m",
+      "priority": "P3",
+      "originalSha256": "dadea350a85f46c2eb66e8b427ea6bc094c001387b5fdfed103637e960c70133"
+    },
+    {
+      "sourceIndex": 5,
+      "id": "r_bowl_de_boulgour_aux_crevettes__edamame_",
+      "priority": "P2",
+      "originalSha256": "142186fc3237b4f3aa5bbcf38e954e40d6fa8daa047b87a0bbddd3c2c63c0674"
+    },
+    {
+      "sourceIndex": 6,
+      "id": "r_bowl_de_quinoa__crevettes_et_mangue",
+      "priority": "P3",
+      "originalSha256": "b22186ea0d97ab63ecd3ddaf784b5da0fdfc894c19702b7582062e36f1e32133"
+    },
+    {
+      "sourceIndex": 7,
+      "id": "r_bowl_mediterraneen_pois_chiches_rotis__f",
+      "priority": "P2",
+      "originalSha256": "4a4f1f73be0eb3149209ba20ff4e481addda4109cb6c78efa1520beb426cb169"
+    },
+    {
+      "sourceIndex": 8,
+      "id": "r_bowl_poulet_facon_kebab__pommes_de_terre",
+      "priority": "P3",
+      "originalSha256": "3bab02e80beee89e09934c07dc38fb2e9121575bee657fef9a622e45a48ae0da"
+    },
+    {
+      "sourceIndex": 9,
+      "id": "r_bowl_riz__thon__oeuf__avocat_et_crudites",
+      "priority": "P2",
+      "originalSha256": "1b6c72926981f4d7f2c58389b9fd6105482d7279906793984efcc92f611630db"
+    },
+    {
+      "sourceIndex": 11,
+      "id": "r_brochettes_de_b_uf_et_salade_de_lentille",
+      "priority": "P2",
+      "originalSha256": "e9ca97e7466bfe64bbd71325b28de33d71aa3924607d9f4d04539a79d38e7040"
+    },
+    {
+      "sourceIndex": 14,
+      "id": "r_burrito_bowl_boeuf_epice__riz__haricots_",
+      "priority": "P2",
+      "originalSha256": "036f2ef140422e98ab0a0a293db8ba3574c5ed4610fca5f5f0bbad683d75fafe"
+    },
+    {
+      "sourceIndex": 15,
+      "id": "r_cheeseburgers_maison_et_frites_de_patate",
+      "priority": "P2",
+      "originalSha256": "89b0457dc582f669eedd58b4204834d435281b4bd649c63e53c826cb94e03494"
+    },
+    {
+      "sourceIndex": 16,
+      "id": "r_chili_con_carne_express_et_riz_basmati",
+      "priority": "P2",
+      "originalSha256": "2a5f9bd5ed4bec4098dc24cceeb72ace8f761144903151a1fa8016344b94a1e3"
+    },
+    {
+      "sourceIndex": 17,
+      "id": "r_colin_en_croute_d_herbes_airfryer__poele",
+      "priority": "P3",
+      "originalSha256": "e3632021fc11b1124121fe876cd77079b66347c16098ad40d0d2f20f5249a439"
+    },
+    {
+      "sourceIndex": 18,
+      "id": "r_cordon_bleu_maison_cheddar_jambon_airfry",
+      "priority": "P2",
+      "originalSha256": "f44120eb8696e5b48bb0ae48781508eadb30652306235f35e6acbc235da627f1"
+    },
+    {
+      "sourceIndex": 20,
+      "id": "r_couscous_poulet_leger__courgettes__carot",
+      "priority": "P2",
+      "originalSha256": "cde291e87648d957ec078aebcf0b310444d13fc0306f2a0636ae9d3e88b3b80c"
+    },
+    {
+      "sourceIndex": 23,
+      "id": "r_cuisses_de_poulet_airfryer_paprika__riz_",
+      "priority": "P3",
+      "originalSha256": "3d737b638f155f4f358b38e39533a94f4b2d474b09876e2c3b8c29119222b583"
+    },
+    {
+      "sourceIndex": 24,
+      "id": "r_curry_de_potimarron__pois_chiches_et__pi",
+      "priority": "P2",
+      "originalSha256": "a5ef5a42ebd69ab2cb7fac780826793294ceb9e38e8c7af295a944b391976de9"
+    },
+    {
+      "sourceIndex": 25,
+      "id": "r_dahl_de_lentilles_corail__pois_chiches_e",
+      "priority": "P2",
+      "originalSha256": "3658f9bba61224b3f5d40aa7d4ad8529cbacd8d160270fa8b80a8dc1cf329c09"
+    },
+    {
+      "sourceIndex": 28,
+      "id": "r_fajitas_de_poulet_aux_poivrons_et_sauce_",
+      "priority": "P3",
+      "originalSha256": "a03b69ead84438893741969684d4a441e7b3d65b5ce2ac29d6ebf6eddd1e6fac"
+    },
+    {
+      "sourceIndex": 34,
+      "id": "r_galettes_de_lentilles_corail_et_carottes",
+      "priority": "P3",
+      "originalSha256": "adb52dbd267ed107d307d28d78e2a1fc339e1df979b18bf5ca04f66d281b97ab"
+    },
+    {
+      "sourceIndex": 35,
+      "id": "r_gnocchis_poeles_au_poulet__courgette__to",
+      "priority": "P2",
+      "originalSha256": "69bd3ed281e1791af6d9b87ff563da6791490f224e159f79b70e2b4e1936afbc"
+    },
+    {
+      "sourceIndex": 37,
+      "id": "r_gratin_de_gnocchis_au_potimarron___pinar",
+      "priority": "P1",
+      "originalSha256": "00454e031be9e52f9bc32e208c5aea1cba7474a40b19260debd3b2bf00fe86c1"
+    },
+    {
+      "sourceIndex": 40,
+      "id": "r_keftas_de_boeuf__semoule_aux_herbes_et_l",
+      "priority": "P3",
+      "originalSha256": "555c7d5d3bb0a3731c633c6456de9cf95a79266542f773075fd68e424afaa077"
+    },
+    {
+      "sourceIndex": 42,
+      "id": "r_linguine_crevettes__courgettes_grillees_",
+      "priority": "P3",
+      "originalSha256": "67712b0be83b69cc990eea524e15c6de2dc3ee8c460a2e2d5ed865a989c77163"
+    },
+    {
+      "sourceIndex": 45,
+      "id": "r_omelette_courgettes_feta_menthe___salade",
+      "priority": "P3",
+      "originalSha256": "daaf08bb1b21d89f072e739dc8cab68795bab19c49a215c703b132c941721300"
+    },
+    {
+      "sourceIndex": 46,
+      "id": "r_omelette_jambon_fromage___salade_compose",
+      "priority": "P3",
+      "originalSha256": "5177bbd84bf3ba1692f36b948cf91a3e0550c4982f1c055081b18d0d5c4160c6"
+    },
+    {
+      "sourceIndex": 47,
+      "id": "r_omelette_poivrons_feta___salade_tomate_c",
+      "priority": "P3",
+      "originalSha256": "b90d18bd91c04e6515f39fa9aafaa33bd78037a1a2df88aa6ea40339fc41a5ec"
+    },
+    {
+      "sourceIndex": 50,
+      "id": "r_papillote_de_cabillaud_aux_l_gumes_d__t_",
+      "priority": "P3",
+      "originalSha256": "ddeb3278bde316c2c6a2bf0c9036f50b8b48e7206d3d3030c8319364147b716a"
+    },
+    {
+      "sourceIndex": 51,
+      "id": "r_pasta_tomate__thon__mozzarella__courgett",
+      "priority": "P2",
+      "originalSha256": "c9b1ff1d477f6706764fcfb5dc50c75210cd98ff528183c8dfcd8cd8c3ec5844"
+    },
+    {
+      "sourceIndex": 53,
+      "id": "r_pates_bolognaise_economique",
+      "priority": "P1",
+      "originalSha256": "705606ed436b5ad16cdd22ba3d4d013aca6c9552caef7fee941fbc3113373254"
+    },
+    {
+      "sourceIndex": 55,
+      "id": "r_pav__de_saumon_grill__et_courgettes___la",
+      "priority": "P3",
+      "originalSha256": "685ccc3282950932d858af2f90294dfa965c989514bb7bcdb25641ebbb0bf364"
+    },
+    {
+      "sourceIndex": 57,
+      "id": "r_penne_au_thon__tomate_et_mozzarella_fond",
+      "priority": "P2",
+      "originalSha256": "d6690bc2b6dd29d0638d515869da70808a9e3b6df76412a60c040b85a944ddde"
+    },
+    {
+      "sourceIndex": 58,
+      "id": "r_poisson_blanc_croustillant_air_fryer__ec",
+      "priority": "P3",
+      "originalSha256": "bea7ce5f8c791563d314d860094225a1f8de614a1a0370a3c3e3f5b20d6225f1"
+    },
+    {
+      "sourceIndex": 59,
+      "id": "r_poisson_blanc_en_cro_te_moutarde_et_herb",
+      "priority": "P2",
+      "originalSha256": "0358af5331acc382cadc78c0ac7f3a6c09cda448db3243d10a396fdbc5398688"
+    },
+    {
+      "sourceIndex": 61,
+      "id": "r_poulet_citron_paprika__semoule_et_legume",
+      "priority": "P3",
+      "originalSha256": "9c7a15fccae1fd84cb204e0793279fac1dab6aa8576094b37f13905dc2a034ad"
+    },
+    {
+      "sourceIndex": 62,
+      "id": "r_poulet_cr_meux___la_moutarde__p_tes_et_h",
+      "priority": "P2",
+      "originalSha256": "94a7434ce03a92dcced11b6efe72aff7483649e666619ed5b614329ffa71abf3"
+    },
+    {
+      "sourceIndex": 67,
+      "id": "r_quesadillas_poulet_grille___poivrons__gu",
+      "priority": "P2",
+      "originalSha256": "5e634b64b364ad1d8bfbdca1e685d4903d48ae3d57b7d603008e0568e2b99a5f"
+    },
+    {
+      "sourceIndex": 68,
+      "id": "r_quiche_jambon_fromage_et_salade_verte",
+      "priority": "P1",
+      "originalSha256": "aed691fcda3c138b1f92b69ae7c0595fd1797c2544a48024bdcc35048035613b"
+    },
+    {
+      "sourceIndex": 69,
+      "id": "r_risotto_courgette__petits_pois__dinde_et",
+      "priority": "P3",
+      "originalSha256": "28063f20ab9b088246c8cadc0d4bcbf31edb1a4b09abed7f219ed460a137aac2"
+    },
+    {
+      "sourceIndex": 70,
+      "id": "r_salade_de_lentilles__oeuf_mollet___feta",
+      "priority": "P3",
+      "originalSha256": "0086914361fbb54f8960d36a926d0b23083420dd1fa4bddc15a6a8e6ea8dd094"
+    },
+    {
+      "sourceIndex": 71,
+      "id": "r_salade_de_p_tes_compl_te_au_poulet",
+      "priority": "P3",
+      "originalSha256": "32dbdec043632fd6ca67449a7073b36ce0684d4c5357332ddfe03ccfc9a086bc"
+    },
+    {
+      "sourceIndex": 72,
+      "id": "r_salade_de_pates_froides_poulet__tomates_",
+      "priority": "P3",
+      "originalSha256": "f819daf3662f0e0ef5fac8736aaea10d75b216f34aa8b5e917c449910685012a"
+    },
+    {
+      "sourceIndex": 73,
+      "id": "r_salade_de_pois_chiches_au_poulet",
+      "priority": "P2",
+      "originalSha256": "5e7cbd0015fcf13e513e31b95ee29fc76caf20c80e44d25c95685f0345178403"
+    },
+    {
+      "sourceIndex": 77,
+      "id": "r_salade_ete_poulet_grille__peches_roties_",
+      "priority": "P3",
+      "originalSha256": "4214a9db5ac6c5d639df2b7dc3d3a26d1438bbbf7c8f7ce481d5d497c4e1abf2"
+    },
+    {
+      "sourceIndex": 79,
+      "id": "r_salade_pates_froides_poulet_pesto_tomate",
+      "priority": "P3",
+      "originalSha256": "513b6d6fff81aa974d90f054e2d940e744d063560d4888c01e6cc105ce75b694"
+    },
+    {
+      "sourceIndex": 80,
+      "id": "r_salade_pois_chiches_tomates_concombre_ci",
+      "priority": "P2",
+      "originalSha256": "677f6cf2b592bcd51eea727f10b2dfff852813b8791177e5b01f20944620b18e"
+    },
+    {
+      "sourceIndex": 82,
+      "id": "r_salade_thon_pois_chiches_tomates_concomb",
+      "priority": "P2",
+      "originalSha256": "c74b5304d2ad5c34085094b12912d340480f52cc4d2f1e9c648a6c8efc07293e"
+    },
+    {
+      "sourceIndex": 83,
+      "id": "r_shakshuka_express_oeufs_poches_en_sauce_",
+      "priority": "P3",
+      "originalSha256": "d2fb120364cfcfdd0e96504b90ceed4271089e70a159ebf54cad8f136165fc94"
+    },
+    {
+      "sourceIndex": 88,
+      "id": "r_steak_hache__poelee_de_legumes_d_ete",
+      "priority": "P3",
+      "originalSha256": "69be023e837db43444d64d944936710f4297a0eae74d0b33e7e42a5a0ba9fbf1"
+    },
+    {
+      "sourceIndex": 91,
+      "id": "r_tagliatelles_cr_meuses_aux__pinards__har",
+      "priority": "P2",
+      "originalSha256": "4b8d05cc81e80d9197f9f0209269a0872bba17f3d8f2de3e2a4de976a66d9e7c"
+    },
+    {
+      "sourceIndex": 92,
+      "id": "r_tenders_de_poulet_croustillants_airfryer",
+      "priority": "P3",
+      "originalSha256": "6fec0eebb3c2280de2e915c2283166c76108686920f4e1dc3ba6053aa2e94771"
+    },
+    {
+      "sourceIndex": 95,
+      "id": "r_wrap_fra_cheur___la_dinde",
+      "priority": "P3",
+      "originalSha256": "bdc233c55b59d363f1ebec68e42e6c12c4b01a842c82f919c8738a4220681570"
+    }
+  ],
+  "excluded": [
+    {
+      "sourceIndex": 1,
+      "id": "r_aubergines_alla_parmigiana_legere___sala",
+      "name": "Aubergines alla parmigiana legere & salade roquette-parmesan",
+      "priority": "P1",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 2,
+      "id": "r_bavette_grillee__chimichurri_maison___po",
+      "name": "Bavette grillee, chimichurri maison & poivrons grilles",
+      "priority": "P2",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 3,
+      "id": "r_boeuf_saute_facon_asiatique__nouilles_et",
+      "name": "Boeuf saute facon asiatique, nouilles et legumes croquants",
+      "priority": "P2",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 10,
+      "id": "r_bowl_turc___kebab_d_agneau__riz_pilaf___",
+      "name": "Bowl turc : kebab d'agneau, riz pilaf & salade berger",
+      "priority": "P1",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 12,
+      "id": "r_brochettes_de_crevettes_ail_persil__tabo",
+      "name": "Brochettes de crevettes ail-persil, taboule citronne",
+      "priority": "P2",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 13,
+      "id": "r_burger_poulet_frit_croustillant_airfryer",
+      "name": "Burger poulet frit croustillant airfryer & frites de patate douce",
+      "priority": "P1",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 19,
+      "id": "r_courgettes_grillees_miel_balsamique__bur",
+      "name": "Courgettes grillees miel-balsamique, burrata, crevettes & bresaola",
+      "priority": "P3",
+      "reason": "P3 écartée : ambiguïté des unités, plusieurs protéines, quantités partagées incohérentes ou garniture disproportionnée"
+    },
+    {
+      "sourceIndex": 21,
+      "id": "r_croque_monsieur_de_bistrot_au_air_fryer_",
+      "name": "Croque-monsieur de bistrot au Air Fryer, dont un à la béchamel au comté",
+      "priority": "P2",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 22,
+      "id": "r_cuisses_de_poulet_airfryer_miel_moutarde",
+      "name": "Cuisses de poulet airfryer miel-moutarde & poelee courgettes-tomates",
+      "priority": "P1",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 26,
+      "id": "r_dahl_doux_de_lentilles_corail__carottes_",
+      "name": "Dahl doux de lentilles corail, carottes et riz basmati",
+      "priority": "P1",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 27,
+      "id": "r_dos_de_cabillaud_roti__gremolata_citron_",
+      "name": "Dos de cabillaud roti, gremolata citron-persil & courgettes",
+      "priority": "P1",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 29,
+      "id": "r_fajitas_healthy_poulet__guacamole_maison",
+      "name": "Fajitas healthy poulet, guacamole maison",
+      "priority": "P3",
+      "reason": "P3 écartée : ambiguïté des unités, plusieurs protéines, quantités partagées incohérentes ou garniture disproportionnée"
+    },
+    {
+      "sourceIndex": 30,
+      "id": "r_filet_de_bar_poele__sauce_vierge_tomate_",
+      "name": "Filet de bar poele, sauce vierge tomate-olives-capres & ecrase de pommes de terre",
+      "priority": "P2",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 31,
+      "id": "r_filet_de_dorade_poele__sauce_vierge___po",
+      "name": "Filet de dorade poele, sauce vierge & poelee d'ete",
+      "priority": "P2",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 32,
+      "id": "r_g_zleme_turcs_maison_au_b_uf_et_fromage_",
+      "name": "Gözleme turcs maison au bœuf et fromage, sauce yaourt citron",
+      "priority": "P2",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 33,
+      "id": "r_galettes_bretonnes_au_sarrasin__fondue_d",
+      "name": "Galettes bretonnes au sarrasin, fondue de poireaux, jambon, œuf et comté",
+      "priority": "P1",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 36,
+      "id": "r_gratin_de_coquillettes_au_jambon_et_emme",
+      "name": "Gratin de coquillettes au jambon et emmental",
+      "priority": "P1",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 38,
+      "id": "r_gratin_de_poireaux__pommes_de_terre_et_c",
+      "name": "Gratin de poireaux, pommes de terre et comté, œufs durs et mâche",
+      "priority": "P1",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 39,
+      "id": "r_hachis_parmentier_traditionnel_au_b_uf_e",
+      "name": "Hachis parmentier traditionnel au bœuf et carottes",
+      "priority": "P1",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 41,
+      "id": "r_layer_cake_stitch_18_cm__genoise_vanille",
+      "name": "Layer cake Stitch 18 cm, genoise vanille, ganache montee chocolat au lait et creme au beurre suisse",
+      "priority": "P1",
+      "reason": "Dessert exceptionnel hors repas courants"
+    },
+    {
+      "sourceIndex": 43,
+      "id": "r_ni_oise_revisit_e_au_thon_frais_snack_",
+      "name": "Niçoise revisitée au thon frais snacké",
+      "priority": "P1",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 44,
+      "id": "r_omelette_3_oeufs_tomates_herbes___salade",
+      "name": "Omelette 3 oeufs-tomates-herbes & salade",
+      "priority": "P2",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 48,
+      "id": "r_p_tes___la_cr_me_de_courge__parmesan_et_",
+      "name": "Pâtes à la crème de courge, parmesan et pois chiches croustillants",
+      "priority": "P2",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 49,
+      "id": "r_p_tes_cr_meuses_au_saumon_ou___la_truite",
+      "name": "Pâtes crémeuses au saumon ou à la truite, citron et courgettes",
+      "priority": "P2",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 52,
+      "id": "r_pates_au_poulet_grille__tomates_carameli",
+      "name": "Pates au poulet grille, tomates caramelisees, feta & pesto-menthe",
+      "priority": "P2",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 54,
+      "id": "r_pates_bolognaise_legere__feculents_gener",
+      "name": "Pates bolognaise legere, feculents genereux",
+      "priority": "P1",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 56,
+      "id": "r_pave_de_saumon_mi_cuit__ecrase_de_petits",
+      "name": "Pave de saumon mi-cuit, ecrase de petits pois menthe & radis",
+      "priority": "P2",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 60,
+      "id": "r_poulet_bang_bang_clean__riz___chou_croqu",
+      "name": "Poulet bang bang clean, riz & chou croquant",
+      "priority": "P1",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 63,
+      "id": "r_poulet_grille_marine_citron_herbes__tzat",
+      "name": "Poulet grille marine citron-herbes, tzatziki & salade grecque",
+      "priority": "P1",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 64,
+      "id": "r_poulet_milanaise_leger__spaghetti_aglio_",
+      "name": "Poulet milanaise leger, spaghetti aglio e olio doux & courgettes fondantes",
+      "priority": "P1",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 65,
+      "id": "r_poulet_r_ti_au_paprika__pommes_de_terre_",
+      "name": "Poulet rôti au paprika, pommes de terre et carottes",
+      "priority": "P1",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 66,
+      "id": "r_poulet_tikka_masala__riz_basmati___naan_",
+      "name": "Poulet tikka masala, riz basmati & naan express",
+      "priority": "P1",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 74,
+      "id": "r_salade_de_pommes_de_terre_au_thon__oeuf_",
+      "name": "Salade de pommes de terre au thon, oeuf dur & vinaigrette citron-moutarde",
+      "priority": "P3",
+      "reason": "P3 écartée : ambiguïté des unités, plusieurs protéines, quantités partagées incohérentes ou garniture disproportionnée"
+    },
+    {
+      "sourceIndex": 75,
+      "id": "r_salade_de_poulet_facon_cesar_legere__oeu",
+      "name": "Salade de poulet facon Cesar legere, oeuf mollet & parmesan",
+      "priority": "P1",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 76,
+      "id": "r_salade_de_poulet_grill__aux_herbes___sau",
+      "name": "Salade de poulet grillé aux herbes & sauce moutarde",
+      "priority": "P2",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 78,
+      "id": "r_salade_grecque_prot_in_e_au_thon",
+      "name": "Salade grecque protéinée au thon",
+      "priority": "P1",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 81,
+      "id": "r_salade_poulet_grille__tomates__concombre",
+      "name": "Salade poulet grille, tomates, concombre, olives & vinaigrette citron",
+      "priority": "P2",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 84,
+      "id": "r_shawarma_de_poulet__pita__tzatziki___sal",
+      "name": "Shawarma de poulet, pita, tzatziki & salade grecque",
+      "priority": "P3",
+      "reason": "P3 écartée : ambiguïté des unités, plusieurs protéines, quantités partagées incohérentes ou garniture disproportionnée"
+    },
+    {
+      "sourceIndex": 85,
+      "id": "r_shish_taouk__riz_vermicelles___sauce_ail",
+      "name": "Shish taouk, riz vermicelles & sauce ail",
+      "priority": "P1",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 86,
+      "id": "r_smash_burger_boeuf_maison__salade___pick",
+      "name": "Smash burger boeuf maison, salade & pickles",
+      "priority": "P2",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 87,
+      "id": "r_spaghetti_bolognaise_express_au_bouillon",
+      "name": "Spaghetti bolognaise express au bouillon de boeuf",
+      "priority": "P1",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 89,
+      "id": "r_tacos_b_uf__pic___salsa_avocat___sauce_y",
+      "name": "Tacos bœuf épicé, salsa avocat & sauce yaourt-lime",
+      "priority": "P1",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 90,
+      "id": "r_tagliata_de_boeuf__riz___legumes_de_recu",
+      "name": "Tagliata de boeuf, riz & legumes de recuperation",
+      "priority": "P1",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 93,
+      "id": "r_tortilla_espagnole_pommes_de_terre_courg",
+      "name": "Tortilla espagnole pommes de terre courgette et salade fraiche",
+      "priority": "P1",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 94,
+      "id": "r_truite_grillee_citron_aneth__courgettes_",
+      "name": "Truite grillee citron-aneth, courgettes & tomates roties",
+      "priority": "P2",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    },
+    {
+      "sourceIndex": 96,
+      "id": "r_wrap_poulet_crudites__sauce_moutarde_yao",
+      "name": "Wrap poulet-crudites, sauce moutarde-yaourt",
+      "priority": "P3",
+      "reason": "P3 écartée : ambiguïté des unités, plusieurs protéines, quantités partagées incohérentes ou garniture disproportionnée"
+    },
+    {
+      "sourceIndex": 97,
+      "id": "r_wrap_thon_crudites_yaourt",
+      "name": "Wrap thon-crudites-yaourt",
+      "priority": "P3",
+      "reason": "P3 écartée : ambiguïté des unités, plusieurs protéines, quantités partagées incohérentes ou garniture disproportionnée"
+    },
+    {
+      "sourceIndex": 98,
+      "id": "r_wraps_poulet_grille_paprika__crudites___",
+      "name": "Wraps poulet grille paprika, crudites & sauce yaourt-citron",
+      "priority": "P2",
+      "reason": "Priorité aux P3 et P2 simples retenues ; rendement ou ajustements plus incertains, ou diversité déjà couverte"
+    }
+  ]
+}

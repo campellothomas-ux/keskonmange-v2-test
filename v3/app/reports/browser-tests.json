@@ -1,0 +1,77 @@
+{
+  "browser": "Chromium via Python Playwright",
+  "url": "http://127.0.0.1:4173",
+  "status": "passed",
+  "tests": [
+    {
+      "name": "Recherche, ingrédients, filtres et état vide parmi 50 recettes",
+      "status": "passed",
+      "durationMs": 687
+    },
+    {
+      "name": "Quiche entière, accompagnement indépendant et sélection manuelle pour cinq",
+      "status": "passed",
+      "durationMs": 911
+    },
+    {
+      "name": "Planning de dix repas, quantité ajustée visible et original conservé",
+      "status": "passed",
+      "durationMs": 3230
+    },
+    {
+      "name": "Agrégation exacte, portions, huile synchronisée et protection des courses cochées",
+      "status": "passed",
+      "durationMs": 726
+    },
+    {
+      "name": "Articles manuels, cases conservées, suppression et texte libre échappé",
+      "status": "passed",
+      "durationMs": 529
+    },
+    {
+      "name": "Suggestions sur demande uniquement et ajout après choix explicite",
+      "status": "passed",
+      "durationMs": 551
+    },
+    {
+      "name": "Navigation, calculs et cases sans connexion après chargement",
+      "status": "passed",
+      "durationMs": 155
+    },
+    {
+      "name": "Reprise après fermeture complète puis réouverture de Chromium",
+      "status": "passed",
+      "durationMs": 271
+    },
+    {
+      "name": "Un autre onglet ne peut pas être écrasé par une page devenue obsolète",
+      "status": "passed",
+      "durationMs": 3849
+    },
+    {
+      "name": "Mobile 320/375/390 px, tablette 768 px, fiche, suppression, courses et rechargement",
+      "status": "passed",
+      "durationMs": 1484
+    },
+    {
+      "name": "Échec de sauvegarde visible, sans faux statut enregistré",
+      "status": "passed",
+      "durationMs": 117
+    },
+    {
+      "name": "Aucune erreur JavaScript ni requête externe de l’application",
+      "status": "passed"
+    }
+  ],
+  "counts": {
+    "passed": 12,
+    "failed": 0
+  },
+  "javascriptErrors": [],
+  "externalRequests": [],
+  "directFileOpen": {
+    "status": "blocked_by_managed_browser_policy",
+    "error": "ERR_BLOCKED_BY_ADMINISTRATOR",
+    "note": "Politique URLBlocklist du navigateur géré : file:// non autorisé. Aucun contournement ; même HTML testé via HTTP local."
+  }
+}

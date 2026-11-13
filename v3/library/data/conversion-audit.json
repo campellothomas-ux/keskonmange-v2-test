@@ -1,0 +1,1945 @@
+{
+  "version": 1,
+  "sourceArchiveSha256": "3dda40f91991647262dd4e75f0ad5b96547ac6fe96a49a63867e1d0ebdfa8dca",
+  "baseCommit": "895c3d07d968761feceb9c4f3f08fb59bbad6fd4",
+  "recipes": 50,
+  "checks": 400,
+  "technicalStatus": "passed",
+  "culinaryStatus": "pending",
+  "individual": [
+    {
+      "id": "r_boulettes_de_porc_au_paprika__sauce_cr_m",
+      "sourceIndex": 4,
+      "name": "Boulettes de porc au paprika, sauce crémeuse et purée de patate douce",
+      "priority": "P3",
+      "category": "viande",
+      "sourceReference": 3,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "3",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles."
+      ]
+    },
+    {
+      "id": "r_bowl_de_boulgour_aux_crevettes__edamame_",
+      "sourceIndex": 5,
+      "name": "Bowl de boulgour aux crevettes, edamame & vinaigrette citron-herbes",
+      "priority": "P2",
+      "category": "poisson",
+      "sourceReference": 2,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "2",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [
+        {
+          "recipeId": "r_bowl_de_boulgour_aux_crevettes__edamame_",
+          "ingredientIndex": 8,
+          "sourceQuantity": "1",
+          "proposedQuantity": "1/4",
+          "unit": "botte",
+          "reason": "Basilic en garniture et vinaigrette pour deux bols : un quart de botte proposé, plutôt qu’une botte entière.",
+          "status": "demo_applied_not_culinary_validated"
+        },
+        {
+          "recipeId": "r_bowl_de_boulgour_aux_crevettes__edamame_",
+          "ingredientIndex": 9,
+          "sourceQuantity": "1",
+          "proposedQuantity": "1/4",
+          "unit": "botte",
+          "reason": "Menthe aromatique pour deux bols : un quart de botte proposé.",
+          "status": "demo_applied_not_culinary_validated"
+        }
+      ],
+      "reservations": [
+        "Recette non essayée en conditions réelles.",
+        "Poids de conserves exprimés égouttés ; conditionnement brut inconnu."
+      ]
+    },
+    {
+      "id": "r_bowl_de_quinoa__crevettes_et_mangue",
+      "sourceIndex": 6,
+      "name": "Bowl de quinoa, crevettes et mangue",
+      "priority": "P3",
+      "category": "poisson",
+      "sourceReference": 2,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "2",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles."
+      ]
+    },
+    {
+      "id": "r_bowl_mediterraneen_pois_chiches_rotis__f",
+      "sourceIndex": 7,
+      "name": "Bowl mediterraneen pois chiches rotis, feta & sauce yaourt-citron",
+      "priority": "P2",
+      "category": "vegetarien",
+      "sourceReference": 5,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "5",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [
+        {
+          "recipeId": "r_bowl_mediterraneen_pois_chiches_rotis__f",
+          "ingredientIndex": 13,
+          "sourceQuantity": "2.5",
+          "proposedQuantity": "1/2",
+          "unit": "botte",
+          "reason": "Persil de finition de cinq bols : une demi-botte au total proposée, contre 2,5 bottes en V1.",
+          "status": "demo_applied_not_culinary_validated"
+        }
+      ],
+      "reservations": [
+        "Recette non essayée en conditions réelles.",
+        "Poids de conserves exprimés égouttés ; conditionnement brut inconnu."
+      ]
+    },
+    {
+      "id": "r_bowl_poulet_facon_kebab__pommes_de_terre",
+      "sourceIndex": 8,
+      "name": "Bowl poulet facon kebab, pommes de terre roties Air Fryer et sauce blanche",
+      "priority": "P3",
+      "category": "viande",
+      "sourceReference": 3,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "3",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles."
+      ]
+    },
+    {
+      "id": "r_bowl_riz__thon__oeuf__avocat_et_crudites",
+      "sourceIndex": 9,
+      "name": "Bowl riz, thon, oeuf, avocat et crudites",
+      "priority": "P2",
+      "category": "poisson",
+      "sourceReference": 1,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "1",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles.",
+        "Poids de conserves exprimés égouttés ; conditionnement brut inconnu."
+      ]
+    },
+    {
+      "id": "r_brochettes_de_b_uf_et_salade_de_lentille",
+      "sourceIndex": 11,
+      "name": "Brochettes de bœuf et salade de lentilles",
+      "priority": "P2",
+      "category": "viande",
+      "sourceReference": 2,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "2",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles.",
+        "Poids de conserves exprimés égouttés ; conditionnement brut inconnu."
+      ]
+    },
+    {
+      "id": "r_burrito_bowl_boeuf_epice__riz__haricots_",
+      "sourceIndex": 14,
+      "name": "Burrito bowl boeuf epice, riz, haricots rouges et salsa fraiche",
+      "priority": "P2",
+      "category": "viande",
+      "sourceReference": 3,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "3",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles.",
+        "Poids de conserves exprimés égouttés ; conditionnement brut inconnu."
+      ]
+    },
+    {
+      "id": "r_cheeseburgers_maison_et_frites_de_patate",
+      "sourceIndex": 15,
+      "name": "Cheeseburgers maison et frites de patate douce au four",
+      "priority": "P2",
+      "category": "viande",
+      "sourceReference": 4,
+      "production": {
+        "version": 1,
+        "mode": "unit",
+        "unitLabel": "burger",
+        "referenceUnits": "4",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles.",
+        "Quantités V1 préservées ; validation culinaire et éventuelles corrections encore à confirmer.",
+        "Aucune conversion des mesures cas/cc/pincée vers g ou ml ; aucun poids par pièce présumé."
+      ]
+    },
+    {
+      "id": "r_chili_con_carne_express_et_riz_basmati",
+      "sourceIndex": 16,
+      "name": "Chili con carne express et riz basmati",
+      "priority": "P2",
+      "category": "viande",
+      "sourceReference": 3,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "unitLabel": "portion",
+        "referenceUnits": "3",
+        "portionsPerUnit": "1",
+        "minUnits": "1/4",
+        "stepUnits": "1/4"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles.",
+        "Poids de conserves exprimés égouttés ; conditionnement brut inconnu.",
+        "Quantités V1 préservées ; validation culinaire et éventuelles corrections encore à confirmer.",
+        "Aucune conversion des mesures cas/cc/pincée vers g ou ml ; aucun poids par pièce présumé."
+      ]
+    },
+    {
+      "id": "r_colin_en_croute_d_herbes_airfryer__poele",
+      "sourceIndex": 17,
+      "name": "Colin en croute d'herbes airfryer, poelee de legumes",
+      "priority": "P3",
+      "category": "poisson",
+      "sourceReference": 3,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "3",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles."
+      ]
+    },
+    {
+      "id": "r_cordon_bleu_maison_cheddar_jambon_airfry",
+      "sourceIndex": 18,
+      "name": "Cordon bleu maison cheddar-jambon airfryer & ratatouille express",
+      "priority": "P2",
+      "category": "viande",
+      "sourceReference": 2,
+      "production": {
+        "version": 1,
+        "mode": "unit",
+        "referenceUnits": "2",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "cordon bleu"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles."
+      ]
+    },
+    {
+      "id": "r_couscous_poulet_leger__courgettes__carot",
+      "sourceIndex": 20,
+      "name": "Couscous poulet leger, courgettes, carottes & pois chiches",
+      "priority": "P2",
+      "category": "viande",
+      "sourceReference": 3,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "3",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [
+        {
+          "recipeId": "r_couscous_poulet_leger__courgettes__carot",
+          "ingredientIndex": 12,
+          "sourceQuantity": "1",
+          "proposedQuantity": "1/2",
+          "unit": "botte",
+          "reason": "Persil en finition de trois assiettes de couscous : demi-botte proposée.",
+          "status": "demo_applied_not_culinary_validated"
+        }
+      ],
+      "reservations": [
+        "Recette non essayée en conditions réelles.",
+        "Poids de conserves exprimés égouttés ; conditionnement brut inconnu."
+      ]
+    },
+    {
+      "id": "r_cuisses_de_poulet_airfryer_paprika__riz_",
+      "sourceIndex": 23,
+      "name": "Cuisses de poulet airfryer paprika, riz & legumes",
+      "priority": "P3",
+      "category": "viande",
+      "sourceReference": 3,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "3",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles."
+      ]
+    },
+    {
+      "id": "r_curry_de_potimarron__pois_chiches_et__pi",
+      "sourceIndex": 24,
+      "name": "Curry de potimarron, pois chiches et épinards au lait de coco",
+      "priority": "P2",
+      "category": "vegetarien",
+      "sourceReference": 3,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "3",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles.",
+        "Poids de conserves exprimés égouttés ; conditionnement brut inconnu.",
+        "Variante choisie explicitement pour simplifier la démo."
+      ]
+    },
+    {
+      "id": "r_dahl_de_lentilles_corail__pois_chiches_e",
+      "sourceIndex": 25,
+      "name": "Dahl de lentilles corail, pois chiches et courgette, sauce yaourt grec",
+      "priority": "P2",
+      "category": "vegetarien",
+      "sourceReference": 3,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "3",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles.",
+        "Poids de conserves exprimés égouttés ; conditionnement brut inconnu."
+      ]
+    },
+    {
+      "id": "r_fajitas_de_poulet_aux_poivrons_et_sauce_",
+      "sourceIndex": 28,
+      "name": "Fajitas de poulet aux poivrons et sauce yaourt",
+      "priority": "P3",
+      "category": "viande",
+      "sourceReference": 4,
+      "production": {
+        "version": 1,
+        "mode": "unit",
+        "referenceUnits": "4",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "repas de deux fajitas"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles."
+      ]
+    },
+    {
+      "id": "r_galettes_de_lentilles_corail_et_carottes",
+      "sourceIndex": 34,
+      "name": "Galettes de lentilles corail et carottes, boulgour et sauce yaourt citron",
+      "priority": "P3",
+      "category": "vegetarien",
+      "sourceReference": 3,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "3",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles."
+      ]
+    },
+    {
+      "id": "r_gnocchis_poeles_au_poulet__courgette__to",
+      "sourceIndex": 35,
+      "name": "Gnocchis poeles au poulet, courgette, tomates sechees et sauce yaourt grec parmesan",
+      "priority": "P2",
+      "category": "viande",
+      "sourceReference": 3,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "3",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles.",
+        "Variante choisie explicitement pour simplifier la démo."
+      ]
+    },
+    {
+      "id": "r_gratin_de_gnocchis_au_potimarron___pinar",
+      "sourceIndex": 37,
+      "name": "Gratin de gnocchis au potimarron, épinards et mozzarella",
+      "priority": "P1",
+      "category": "vegetarien",
+      "sourceReference": 4,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "unitLabel": "portion",
+        "referenceUnits": "4",
+        "portionsPerUnit": "1",
+        "minUnits": "1/4",
+        "stepUnits": "1/4"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles.",
+        "Poids de conserves exprimés égouttés ; conditionnement brut inconnu.",
+        "Quantités V1 préservées ; validation culinaire et éventuelles corrections encore à confirmer.",
+        "Aucune conversion des mesures cas/cc/pincée vers g ou ml ; aucun poids par pièce présumé.",
+        "Épinards frais choisis pour la démo ; aucune équivalence de rendement avec le surgelé.",
+        "Confirmer le poids de potimarron préparé et de mozzarella égouttée ; aucun coefficient de perte supposé.",
+        "Plat plus petit : calcul proportionnel vérifié, essai culinaire encore requis."
+      ]
+    },
+    {
+      "id": "r_keftas_de_boeuf__semoule_aux_herbes_et_l",
+      "sourceIndex": 40,
+      "name": "Keftas de boeuf, semoule aux herbes et legumes rotis",
+      "priority": "P3",
+      "category": "viande",
+      "sourceReference": 3,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "3",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles."
+      ]
+    },
+    {
+      "id": "r_linguine_crevettes__courgettes_grillees_",
+      "sourceIndex": 42,
+      "name": "Linguine crevettes, courgettes grillees, ail & citron",
+      "priority": "P3",
+      "category": "poisson",
+      "sourceReference": 3,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "3",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [
+        {
+          "recipeId": "r_linguine_crevettes__courgettes_grillees_",
+          "ingredientIndex": 6,
+          "sourceQuantity": "1",
+          "proposedQuantity": "1/2",
+          "unit": "botte",
+          "reason": "Persil en finition de trois assiettes de pâtes : demi-botte proposée.",
+          "status": "demo_applied_not_culinary_validated"
+        }
+      ],
+      "reservations": [
+        "Recette non essayée en conditions réelles."
+      ]
+    },
+    {
+      "id": "r_omelette_courgettes_feta_menthe___salade",
+      "sourceIndex": 45,
+      "name": "Omelette courgettes-feta-menthe & salade verte",
+      "priority": "P3",
+      "category": "vegetarien",
+      "sourceReference": 2,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "2",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [
+        {
+          "recipeId": "r_omelette_courgettes_feta_menthe___salade",
+          "ingredientIndex": 3,
+          "sourceQuantity": "1",
+          "proposedQuantity": "1/4",
+          "unit": "botte",
+          "reason": "Menthe aromatique d’une omelette pour deux : quart de botte proposé.",
+          "status": "demo_applied_not_culinary_validated"
+        }
+      ],
+      "reservations": [
+        "Recette non essayée en conditions réelles."
+      ]
+    },
+    {
+      "id": "r_omelette_jambon_fromage___salade_compose",
+      "sourceIndex": 46,
+      "name": "Omelette jambon-fromage & salade composee",
+      "priority": "P3",
+      "category": "viande",
+      "sourceReference": 3,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "3",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles."
+      ]
+    },
+    {
+      "id": "r_omelette_poivrons_feta___salade_tomate_c",
+      "sourceIndex": 47,
+      "name": "Omelette poivrons-feta & salade tomate-concombre",
+      "priority": "P3",
+      "category": "vegetarien",
+      "sourceReference": 2,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "2",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [
+        {
+          "recipeId": "r_omelette_poivrons_feta___salade_tomate_c",
+          "ingredientIndex": 6,
+          "sourceQuantity": "1",
+          "proposedQuantity": "1/4",
+          "unit": "botte",
+          "reason": "Persil de salade pour deux : quart de botte proposé.",
+          "status": "demo_applied_not_culinary_validated"
+        }
+      ],
+      "reservations": [
+        "Recette non essayée en conditions réelles."
+      ]
+    },
+    {
+      "id": "r_papillote_de_cabillaud_aux_l_gumes_d__t_",
+      "sourceIndex": 50,
+      "name": "Papillote de cabillaud aux légumes d'été",
+      "priority": "P3",
+      "category": "poisson",
+      "sourceReference": 2,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "2",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles."
+      ]
+    },
+    {
+      "id": "r_pasta_tomate__thon__mozzarella__courgett",
+      "sourceIndex": 51,
+      "name": "Pasta tomate, thon, mozzarella, courgette et epinards",
+      "priority": "P2",
+      "category": "poisson",
+      "sourceReference": 3,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "3",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles.",
+        "Poids de conserves exprimés égouttés ; conditionnement brut inconnu."
+      ]
+    },
+    {
+      "id": "r_pates_bolognaise_economique",
+      "sourceIndex": 53,
+      "name": "Pates bolognaise economique",
+      "priority": "P1",
+      "category": "viande",
+      "sourceReference": 3,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "unitLabel": "portion",
+        "referenceUnits": "3",
+        "portionsPerUnit": "1",
+        "minUnits": "1/4",
+        "stepUnits": "1/4"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [
+        {
+          "recipeId": "r_pates_bolognaise_economique",
+          "ingredientIndex": 1,
+          "sourceQuantity": "350",
+          "proposedQuantity": "270",
+          "unit": "g",
+          "reason": "Proposition existante : 90 g de pâtes sèches par portion, avec 150 g de bœuf et la sauce. Valeur de démo à essayer ; 350 g V1 conservés et validation toujours nulle.",
+          "status": "demo_applied_not_culinary_validated"
+        }
+      ],
+      "reservations": [
+        "Recette non essayée en conditions réelles.",
+        "Quantité de démo : 270 g de pâtes pour trois ; original 350 g conservé, proposition non validée.",
+        "Aucune conversion des mesures cas/cc/pincée vers g ou ml ; aucun poids par pièce présumé."
+      ]
+    },
+    {
+      "id": "r_pav__de_saumon_grill__et_courgettes___la",
+      "sourceIndex": 55,
+      "name": "Pavé de saumon grillé et courgettes à la menthe",
+      "priority": "P3",
+      "category": "poisson",
+      "sourceReference": 2,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "2",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles."
+      ]
+    },
+    {
+      "id": "r_penne_au_thon__tomate_et_mozzarella_fond",
+      "sourceIndex": 57,
+      "name": "Penne au thon, tomate et mozzarella fondante",
+      "priority": "P2",
+      "category": "poisson",
+      "sourceReference": 2,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "2",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles.",
+        "Poids de conserves exprimés égouttés ; conditionnement brut inconnu."
+      ]
+    },
+    {
+      "id": "r_poisson_blanc_croustillant_air_fryer__ec",
+      "sourceIndex": 58,
+      "name": "Poisson blanc croustillant Air Fryer, ecrase de pommes de terre et ratatouille express",
+      "priority": "P3",
+      "category": "poisson",
+      "sourceReference": 3,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "3",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles."
+      ]
+    },
+    {
+      "id": "r_poisson_blanc_en_cro_te_moutarde_et_herb",
+      "sourceIndex": 59,
+      "name": "Poisson blanc en croûte moutarde et herbes, pommes de terre rôties et brocoli",
+      "priority": "P2",
+      "category": "poisson",
+      "sourceReference": 3,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "3",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles.",
+        "Variante choisie explicitement pour simplifier la démo."
+      ]
+    },
+    {
+      "id": "r_poulet_citron_paprika__semoule_et_legume",
+      "sourceIndex": 61,
+      "name": "Poulet citron paprika, semoule et legumes rotis",
+      "priority": "P3",
+      "category": "viande",
+      "sourceReference": 3,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "3",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles."
+      ]
+    },
+    {
+      "id": "r_poulet_cr_meux___la_moutarde__p_tes_et_h",
+      "sourceIndex": 62,
+      "name": "Poulet crémeux à la moutarde, pâtes et haricots verts",
+      "priority": "P2",
+      "category": "viande",
+      "sourceReference": 3,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "3",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles.",
+        "Variante choisie explicitement pour simplifier la démo."
+      ]
+    },
+    {
+      "id": "r_quesadillas_poulet_grille___poivrons__gu",
+      "sourceIndex": 67,
+      "name": "Quesadillas poulet grille & poivrons, guacamole & salsa",
+      "priority": "P2",
+      "category": "viande",
+      "sourceReference": 3,
+      "production": {
+        "version": 1,
+        "mode": "unit",
+        "referenceUnits": "3",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "repas de deux quesadillas"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [
+        {
+          "recipeId": "r_quesadillas_poulet_grille___poivrons__gu",
+          "ingredientIndex": 8,
+          "sourceQuantity": "1",
+          "proposedQuantity": "1/2",
+          "unit": "botte",
+          "reason": "Coriandre partagée entre guacamole et salsa de trois repas : demi-botte proposée.",
+          "status": "demo_applied_not_culinary_validated"
+        }
+      ],
+      "reservations": [
+        "Recette non essayée en conditions réelles."
+      ]
+    },
+    {
+      "id": "r_quiche_jambon_fromage_et_salade_verte",
+      "sourceIndex": 68,
+      "name": "Quiche jambon-fromage et salade verte",
+      "priority": "P1",
+      "category": "viande",
+      "sourceReference": 2.5,
+      "production": {
+        "version": 1,
+        "mode": "batch",
+        "unitLabel": "quiche entière",
+        "referenceUnits": "1",
+        "portionsPerUnit": "4",
+        "minUnits": "1",
+        "stepUnits": "1"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles.",
+        "Quantités V1 préservées ; validation culinaire et éventuelles corrections encore à confirmer.",
+        "Aucune conversion des mesures cas/cc/pincée vers g ou ml ; aucun poids par pièce présumé.",
+        "Salade : 100 g pour les 2,5 convives déclarés en V1 ; dimensionnement indépendant, à confirmer en cuisine."
+      ]
+    },
+    {
+      "id": "r_risotto_courgette__petits_pois__dinde_et",
+      "sourceIndex": 69,
+      "name": "Risotto courgette, petits pois, dinde et parmesan",
+      "priority": "P3",
+      "category": "viande",
+      "sourceReference": 3,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "3",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles."
+      ]
+    },
+    {
+      "id": "r_salade_de_lentilles__oeuf_mollet___feta",
+      "sourceIndex": 70,
+      "name": "Salade de lentilles, oeuf mollet & feta",
+      "priority": "P3",
+      "category": "vegetarien",
+      "sourceReference": 2,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "2",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [
+        {
+          "recipeId": "r_salade_de_lentilles__oeuf_mollet___feta",
+          "ingredientIndex": 10,
+          "sourceQuantity": "1",
+          "proposedQuantity": "1/4",
+          "unit": "botte",
+          "reason": "Persil aromatique dans une salade de lentilles pour deux : quart de botte proposé.",
+          "status": "demo_applied_not_culinary_validated"
+        }
+      ],
+      "reservations": [
+        "Recette non essayée en conditions réelles."
+      ]
+    },
+    {
+      "id": "r_salade_de_p_tes_compl_te_au_poulet",
+      "sourceIndex": 71,
+      "name": "Salade de pâtes complète au poulet",
+      "priority": "P3",
+      "category": "viande",
+      "sourceReference": 2,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "2",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles."
+      ]
+    },
+    {
+      "id": "r_salade_de_pates_froides_poulet__tomates_",
+      "sourceIndex": 72,
+      "name": "Salade de pates froides poulet, tomates cerises, mozza & pesto",
+      "priority": "P3",
+      "category": "viande",
+      "sourceReference": 2,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "2",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [
+        {
+          "recipeId": "r_salade_de_pates_froides_poulet__tomates_",
+          "ingredientIndex": 6,
+          "sourceQuantity": "1",
+          "proposedQuantity": "1/4",
+          "unit": "botte",
+          "reason": "Basilic en finition d’une salade au pesto pour deux : quart de botte proposé.",
+          "status": "demo_applied_not_culinary_validated"
+        }
+      ],
+      "reservations": [
+        "Recette non essayée en conditions réelles."
+      ]
+    },
+    {
+      "id": "r_salade_de_pois_chiches_au_poulet",
+      "sourceIndex": 73,
+      "name": "Salade de pois chiches au poulet",
+      "priority": "P2",
+      "category": "viande",
+      "sourceReference": 2,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "2",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles.",
+        "Poids de conserves exprimés égouttés ; conditionnement brut inconnu."
+      ]
+    },
+    {
+      "id": "r_salade_ete_poulet_grille__peches_roties_",
+      "sourceIndex": 77,
+      "name": "Salade ete poulet grille, peches roties, burrata & roquette",
+      "priority": "P3",
+      "category": "viande",
+      "sourceReference": 3,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "3",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [
+        {
+          "recipeId": "r_salade_ete_poulet_grille__peches_roties_",
+          "ingredientIndex": 8,
+          "sourceQuantity": "1",
+          "proposedQuantity": "1/4",
+          "unit": "botte",
+          "reason": "Basilic de finition pour trois assiettes : quart de botte proposé.",
+          "status": "demo_applied_not_culinary_validated"
+        }
+      ],
+      "reservations": [
+        "Recette non essayée en conditions réelles."
+      ]
+    },
+    {
+      "id": "r_salade_pates_froides_poulet_pesto_tomate",
+      "sourceIndex": 79,
+      "name": "Salade pates froides poulet-pesto-tomates cerises",
+      "priority": "P3",
+      "category": "viande",
+      "sourceReference": 1,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "1",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles."
+      ]
+    },
+    {
+      "id": "r_salade_pois_chiches_tomates_concombre_ci",
+      "sourceIndex": 80,
+      "name": "Salade pois chiches-tomates-concombre-citron",
+      "priority": "P2",
+      "category": "vegetarien",
+      "sourceReference": 1,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "1",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [
+        {
+          "recipeId": "r_salade_pois_chiches_tomates_concombre_ci",
+          "ingredientIndex": 5,
+          "sourceQuantity": "1",
+          "proposedQuantity": "1/8",
+          "unit": "botte",
+          "reason": "Persil en garniture d’une portion de salade : un huitième de botte proposé, pas une botte entière par personne.",
+          "status": "demo_applied_not_culinary_validated"
+        }
+      ],
+      "reservations": [
+        "Recette non essayée en conditions réelles.",
+        "Poids de conserves exprimés égouttés ; conditionnement brut inconnu."
+      ]
+    },
+    {
+      "id": "r_salade_thon_pois_chiches_tomates_concomb",
+      "sourceIndex": 82,
+      "name": "Salade thon-pois chiches-tomates-concombre & citron",
+      "priority": "P2",
+      "category": "poisson",
+      "sourceReference": 2,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "2",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [
+        {
+          "recipeId": "r_salade_thon_pois_chiches_tomates_concomb",
+          "ingredientIndex": 6,
+          "sourceQuantity": "1",
+          "proposedQuantity": "1/4",
+          "unit": "botte",
+          "reason": "Persil de garniture d’une salade pour deux : quart de botte proposé.",
+          "status": "demo_applied_not_culinary_validated"
+        }
+      ],
+      "reservations": [
+        "Recette non essayée en conditions réelles.",
+        "Poids de conserves exprimés égouttés ; conditionnement brut inconnu."
+      ]
+    },
+    {
+      "id": "r_shakshuka_express_oeufs_poches_en_sauce_",
+      "sourceIndex": 83,
+      "name": "Shakshuka express oeufs poches en sauce tomate-poivrons",
+      "priority": "P3",
+      "category": "vegetarien",
+      "sourceReference": 2,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "2",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [
+        {
+          "recipeId": "r_shakshuka_express_oeufs_poches_en_sauce_",
+          "ingredientIndex": 9,
+          "sourceQuantity": "1",
+          "proposedQuantity": "1/4",
+          "unit": "botte",
+          "reason": "Persil de finition pour deux portions de shakshuka : quart de botte proposé.",
+          "status": "demo_applied_not_culinary_validated"
+        }
+      ],
+      "reservations": [
+        "Recette non essayée en conditions réelles."
+      ]
+    },
+    {
+      "id": "r_steak_hache__poelee_de_legumes_d_ete",
+      "sourceIndex": 88,
+      "name": "Steak hache, poelee de legumes d'ete",
+      "priority": "P3",
+      "category": "viande",
+      "sourceReference": 3,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "3",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles."
+      ]
+    },
+    {
+      "id": "r_tagliatelles_cr_meuses_aux__pinards__har",
+      "sourceIndex": 91,
+      "name": "Tagliatelles crémeuses aux épinards, haricots blancs, noix et parmesan",
+      "priority": "P2",
+      "category": "vegetarien",
+      "sourceReference": 3,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "3",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles.",
+        "Poids de conserves exprimés égouttés ; conditionnement brut inconnu.",
+        "Variante choisie explicitement pour simplifier la démo."
+      ]
+    },
+    {
+      "id": "r_tenders_de_poulet_croustillants_airfryer",
+      "sourceIndex": 92,
+      "name": "Tenders de poulet croustillants airfryer, riz & poelee poivrons-courgettes",
+      "priority": "P3",
+      "category": "viande",
+      "sourceReference": 4,
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "referenceUnits": "4",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "portion"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles."
+      ]
+    },
+    {
+      "id": "r_wrap_fra_cheur___la_dinde",
+      "sourceIndex": 95,
+      "name": "Wrap fraîcheur à la dinde",
+      "priority": "P3",
+      "category": "viande",
+      "sourceReference": 2,
+      "production": {
+        "version": 1,
+        "mode": "unit",
+        "referenceUnits": "2",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1",
+        "unitLabel": "repas de deux wraps"
+      },
+      "technicalChecks": {
+        "status": "passed",
+        "diners": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          12
+        ]
+      },
+      "culinaryStatus": "pending",
+      "adjustments": [],
+      "reservations": [
+        "Recette non essayée en conditions réelles."
+      ]
+    }
+  ]
+}
