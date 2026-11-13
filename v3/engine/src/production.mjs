@@ -46,13 +46,28 @@ export function productionRequirements(recipes,meals,ingredients) {
   for(const meal of meals) {
     const r=byId.get(meal.recipeId); requireThat(r,'UNKNOWN_RECIPE',meal.recipeId);
     const prep=resolveProduction(r,meal), model=productionModel(r);
-    const legacy={...r,yieldPortions:model.reference.mul(model.portions).toString(),scalable:true};
+    // Side dishes may follow diners rather than the number of whole main dishes.
+    // Adjust a copy of the reference row; calculateRequirements still owns exact
+    // conversions and indivisible preparation rounding.
+    const rows=r.ingredients.map(g=>{
+      if(!g.scaling)return g;
+      requireThat(g.scaling.mode==='diners','INVALID_INGREDIENT_SCALING',g.ingredientId);
+      const reference=positive(g.scaling.referencePortions,'scaling.referencePortions');
+      const ratio=Q.of(meal.diners).div(reference).div(prep.factor);
+      return {...g,quantity:{...g.quantity,amount:Q.of(g.quantity.amount).mul(ratio).toString()}};
+    });
+    const legacy={...r,ingredients:rows,yieldPortions:model.reference.mul(model.portions).toString(),scalable:true};
     const result=calculateRequirements([legacy],[{...meal,producePortions:prep.producedPortions}],ingredients);
     preparations.push({...prep,rounding:result.preparations[0].rounding});
     individual.push({mealId:meal.id,needs:result.needs});
     for(const [id,q]of Object.entries(result.needs))needs[id]=Q.of(needs[id]??0).add(q).toString();
   }
   return {needs,preparations,individual};
+}
+// Applies to automatic choices only. Manual evaluation remains possible.
+export function automaticProductionAllowed(recipe,meal) {
+  const prep=resolveProduction(recipe,meal);
+  return recipe.automaticPolicy?.allowSurplus!==false || Q.of(prep.producedPortions).cmp(meal.diners)===0;
 }
 export function adaptProductionRecipes(recipes,reviews) {
   unique(recipes,'recipes');const accepted=[],validationRequired=[];

@@ -1,0 +1,3760 @@
+{
+  "schema": "keskonmange-v3-pilots/1",
+  "status": "TECHNICALLY_EXECUTABLE_CULINARY_REVIEW_PENDING",
+  "sourceReviewSchema": "keskonmange-v3-household-recipe-review-draft/1",
+  "sourceV1Sha256": "606b728465394408ed1f1ce88d1f23529066e28a393fadf54959693fa5948940",
+  "recipes": [
+    {
+      "id": "r_quiche_jambon_fromage_et_salade_verte",
+      "name": "Quiche jambon-fromage et salade verte",
+      "source": {
+        "archive": "KeskonMange_V3_REVISE_98_DOSSIER.zip",
+        "archiveSha256": "3dda40f91991647262dd4e75f0ad5b96547ac6fe96a49a63867e1d0ebdfa8dca",
+        "reviewFile": "pilot-source-review.json",
+        "sourceIndex": 68
+      },
+      "originalV1": {
+        "etapes": [
+          "Préchauffer le four à 180 °C en chaleur tournante.",
+          "Dérouler la pâte brisée dans un moule à tarte de 24 à 26 cm, en conservant son papier cuisson. Piquer le fond avec une fourchette.",
+          "Étaler une fine couche de moutarde douce sur le fond de tarte.",
+          "Couper le jambon en petits morceaux et le répartir sur la pâte avec l'emmental râpé.",
+          "Dans un saladier, battre les œufs avec le lait et la crème légère. Ajouter une petite pincée de sel et du poivre.",
+          "Verser délicatement l'appareil sur le jambon et le fromage.",
+          "Enfourner pendant 30 à 35 minutes, jusqu'à ce que la quiche soit bien prise au centre et dorée sur le dessus.",
+          "Laisser reposer 5 minutes avant de découper. Servir avec la salade verte.",
+          "IMPORTANT POUR LE COUREUR : cette quiche est destinée au repas familial. Pour le départ du 10 km à 14 h, prendre vers 10 h 30 un repas pré-course habituel, riche en glucides, pauvre en graisses et en fibres, par exemple du pain blanc avec de la confiture et une banane mûre si ces aliments sont bien tolérés. Boire régulièrement sans excès."
+        ],
+        "ingredients": [
+          {
+            "nom": "Pâte brisée",
+            "qte": 1,
+            "rayon": 3,
+            "unite": "piece"
+          },
+          {
+            "nom": "Jambon blanc",
+            "qte": 100,
+            "rayon": 1,
+            "unite": "g"
+          },
+          {
+            "nom": "Œufs",
+            "qte": 3,
+            "rayon": 2,
+            "unite": "piece"
+          },
+          {
+            "nom": "Lait",
+            "qte": 150,
+            "rayon": 2,
+            "unite": "ml"
+          },
+          {
+            "nom": "Crème légère",
+            "qte": 100,
+            "rayon": 2,
+            "unite": "ml"
+          },
+          {
+            "nom": "Emmental râpé",
+            "qte": 80,
+            "rayon": 2,
+            "unite": "g"
+          },
+          {
+            "nom": "Salade verte",
+            "qte": 100,
+            "rayon": 0,
+            "unite": "g"
+          },
+          {
+            "nom": "Moutarde douce",
+            "qte": 1,
+            "rayon": 3,
+            "unite": "cc"
+          },
+          {
+            "nom": "Sel",
+            "qte": 1,
+            "rayon": 3,
+            "unite": "pincee"
+          },
+          {
+            "nom": "Poivre",
+            "qte": 1,
+            "rayon": 3,
+            "unite": "pincee"
+          }
+        ],
+        "nom": "Quiche jambon-fromage et salade verte",
+        "personnes": 2.5,
+        "temps": 40
+      },
+      "review": {
+        "state": "pending_household_and_culinary_review",
+        "priority": "P1",
+        "productionModeCandidate": "whole_batch",
+        "sourceDeclaredPeople": 2.5,
+        "proposedServings": 4,
+        "yieldEvidence": "user_confirmed",
+        "yieldNote": "L’utilisateur confirme qu’une quiche standard correspond à quatre parts, avec une seule pâte et une garniture suffisante.",
+        "producedUnitCount": null,
+        "mealCompleteness": "salad_already_in_recipe",
+        "animalIngredientsGramsPerSourcePerson": null,
+        "dryStarchesGramsPerSourcePerson": null,
+        "auditFlags": [
+          "CONVIVES_V1_FRACTIONNAIRES",
+          "PLAT_A_PRODUCTION_ENTIERE",
+          "VERIFIER_CAPACITE_DU_PLAT_ET_CONVIVES"
+        ],
+        "ingredientsWithReviewFlags": [
+          {
+            "ingredientIndex": 7,
+            "name": "Moutarde douce",
+            "flags": [
+              "MESURE_CULINAIRE_NON_CONVERTIE"
+            ]
+          }
+        ],
+        "ingredientChangeProposals": [],
+        "specificReviewNote": "Une quiche entière = quatre parts confirmées ; conserver les ingrédients tels quels en attendant test de garniture. Pour cinq convives, deux quiches et trois parts excédentaires : exclure des propositions automatiques.",
+        "assumptions": "Les seuils sont des aides au contrôle, pas des recommandations médicales ni un calcul de besoins individuels.",
+        "sourceUnmodified": true,
+        "readyForStrictEngine": false
+      },
+      "production": {
+        "version": 1,
+        "mode": "batch",
+        "unitLabel": "quiche entière",
+        "referenceUnits": "1",
+        "portionsPerUnit": "4",
+        "minUnits": "1",
+        "stepUnits": "1"
+      },
+      "productionTrace": {
+        "originalPeople": "2.5",
+        "proposedServings": 4,
+        "sourceCandidate": "whole_batch",
+        "validated": {
+          "partsPerWhole": "4",
+          "evidence": "LOT 4 : une préparation entière produit quatre parts, confirmé par l’utilisateur."
+        },
+        "decision": "LOT 4 : une préparation entière produit quatre parts, confirmé par l’utilisateur.",
+        "culinaryTrialStatus": "pending"
+      },
+      "automaticPolicy": {
+        "allowExtraProduction": false,
+        "allowSurplus": false
+      },
+      "ingredients": [
+        {
+          "ingredientId": "i_pate_brisee",
+          "quantity": {
+            "amount": "1",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "piece:pate_brisee"
+          },
+          "trace": {
+            "sourceIngredientIndex": 0,
+            "original": {
+              "name": "Pâte brisée",
+              "amount": "1",
+              "unit": "piece"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "1",
+              "unit": "piece",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_jambon_blanc",
+          "quantity": {
+            "amount": "100",
+            "unit": "g",
+            "basis": "net"
+          },
+          "trace": {
+            "sourceIngredientIndex": 1,
+            "original": {
+              "name": "Jambon blanc",
+              "amount": "100",
+              "unit": "g"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "100",
+              "unit": "g",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_oeufs",
+          "quantity": {
+            "amount": "3",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "piece:oeufs"
+          },
+          "trace": {
+            "sourceIngredientIndex": 2,
+            "original": {
+              "name": "Œufs",
+              "amount": "3",
+              "unit": "piece"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "3",
+              "unit": "piece",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_lait",
+          "quantity": {
+            "amount": "150",
+            "unit": "ml",
+            "basis": "net"
+          },
+          "trace": {
+            "sourceIngredientIndex": 3,
+            "original": {
+              "name": "Lait",
+              "amount": "150",
+              "unit": "ml"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "150",
+              "unit": "ml",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_creme_legere",
+          "quantity": {
+            "amount": "100",
+            "unit": "ml",
+            "basis": "net"
+          },
+          "trace": {
+            "sourceIngredientIndex": 4,
+            "original": {
+              "name": "Crème légère",
+              "amount": "100",
+              "unit": "ml"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "100",
+              "unit": "ml",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_emmental_rape",
+          "quantity": {
+            "amount": "80",
+            "unit": "g",
+            "basis": "net"
+          },
+          "trace": {
+            "sourceIngredientIndex": 5,
+            "original": {
+              "name": "Emmental râpé",
+              "amount": "80",
+              "unit": "g"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "80",
+              "unit": "g",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_salade_verte",
+          "quantity": {
+            "amount": "100",
+            "unit": "g",
+            "basis": "net"
+          },
+          "scaling": {
+            "mode": "diners",
+            "referencePortions": "2.5"
+          },
+          "trace": {
+            "sourceIngredientIndex": 6,
+            "original": {
+              "name": "Salade verte",
+              "amount": "100",
+              "unit": "g"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "100",
+              "unit": "g",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_moutarde_douce",
+          "quantity": {
+            "amount": "1",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "measure:cc"
+          },
+          "trace": {
+            "sourceIngredientIndex": 7,
+            "original": {
+              "name": "Moutarde douce",
+              "amount": "1",
+              "unit": "cc"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "1",
+              "unit": "cc",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_sel",
+          "quantity": {
+            "amount": "1",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "measure:pincee"
+          },
+          "trace": {
+            "sourceIngredientIndex": 8,
+            "original": {
+              "name": "Sel",
+              "amount": "1",
+              "unit": "pincee"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "1",
+              "unit": "pincee",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_poivre",
+          "quantity": {
+            "amount": "1",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "measure:pincee"
+          },
+          "trace": {
+            "sourceIngredientIndex": 9,
+            "original": {
+              "name": "Poivre",
+              "amount": "1",
+              "unit": "pincee"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "1",
+              "unit": "pincee",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        }
+      ],
+      "cookingSteps": [
+        {
+          "sourceStep": 0,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Préchauffer le four à 180 °C en chaleur tournante."
+          ]
+        },
+        {
+          "sourceStep": 1,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Dérouler ",
+            {
+              "ingredientId": "i_pate_brisee"
+            },
+            " dans un moule de 24 à 26 cm par quiche ; conserver le papier et piquer le fond."
+          ]
+        },
+        {
+          "sourceStep": 2,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Étaler ",
+            {
+              "ingredientId": "i_moutarde_douce"
+            },
+            " sur le fond de chaque tarte, en répartissant la quantité totale."
+          ]
+        },
+        {
+          "sourceStep": 3,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Couper ",
+            {
+              "ingredientId": "i_jambon_blanc"
+            },
+            " et répartir sur la pâte avec ",
+            {
+              "ingredientId": "i_emmental_rape"
+            },
+            "."
+          ]
+        },
+        {
+          "sourceStep": 4,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Battre ",
+            {
+              "ingredientId": "i_oeufs"
+            },
+            " avec ",
+            {
+              "ingredientId": "i_lait"
+            },
+            " et ",
+            {
+              "ingredientId": "i_creme_legere"
+            },
+            ". Ajouter ",
+            {
+              "ingredientId": "i_sel"
+            },
+            " et ",
+            {
+              "ingredientId": "i_poivre"
+            },
+            "."
+          ]
+        },
+        {
+          "sourceStep": 5,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Verser l’appareil en le répartissant entre les quiches préparées."
+          ]
+        },
+        {
+          "sourceStep": 6,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Enfourner 30 à 35 minutes, jusqu’à ce que le centre soit pris et le dessus doré."
+          ]
+        },
+        {
+          "sourceStep": 7,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Laisser reposer 5 minutes, découper chaque quiche en quatre parts et servir avec ",
+            {
+              "ingredientId": "i_salade_verte"
+            },
+            "."
+          ]
+        }
+      ],
+      "instructionTrace": {
+        "method": "curated_ingredient_bindings",
+        "originalStepsPreserved": true,
+        "omitted": [
+          {
+            "sourceStep": 8,
+            "reason": "Conseil personnel de course conservé dans l’original ; hors du mode cuisine familial."
+          }
+        ],
+        "adaptations": "Quantités liées aux ingrédients ; détails personnels hors cuisine généralisés, temps/températures conservés."
+      },
+      "openIssues": [
+        "Quantités V1 préservées ; validation culinaire et éventuelles corrections encore à confirmer.",
+        "Aucune conversion des mesures cas/cc/pincée vers g ou ml ; aucun poids par pièce présumé.",
+        "Salade : 100 g pour les 2,5 convives déclarés en V1 ; dimensionnement indépendant, à confirmer en cuisine."
+      ]
+    },
+    {
+      "id": "r_chili_con_carne_express_et_riz_basmati",
+      "name": "Chili con carne express et riz basmati",
+      "source": {
+        "archive": "KeskonMange_V3_REVISE_98_DOSSIER.zip",
+        "archiveSha256": "3dda40f91991647262dd4e75f0ad5b96547ac6fe96a49a63867e1d0ebdfa8dca",
+        "reviewFile": "pilot-source-review.json",
+        "sourceIndex": 16
+      },
+      "originalV1": {
+        "etapes": [
+          "Faire cuire le riz selon les indications du paquet",
+          "Emincer l'oignon, hacher l'ail et couper le poivron en petits morceaux",
+          "Faire chauffer l'huile dans une sauteuse. Ajouter l'oignon et le poivron et cuire 4 a 5 minutes",
+          "Ajouter le boeuf hache et le faire bien colorer en l'emiettant",
+          "Ajouter l'ail, le concentre de tomate, le paprika, le cumin et le chili puis cuire 1 minute en melangeant",
+          "Ajouter les tomates concassees, les haricots rouges et le mais. Saler legerement, poivrer et melanger",
+          "Laisser mijoter 12 a 15 minutes a feu moyen sans couvrir jusqu'a ce que la sauce soit bien epaisse",
+          "Servir le chili avec le riz basmati"
+        ],
+        "ingredients": [
+          {
+            "nom": "Boeuf hache 5%",
+            "qte": 400,
+            "rayon": 1,
+            "unite": "g"
+          },
+          {
+            "nom": "Riz basmati",
+            "qte": 210,
+            "rayon": 3,
+            "unite": "g"
+          },
+          {
+            "nom": "Haricots rouges egouttes",
+            "qte": 250,
+            "rayon": 3,
+            "unite": "g"
+          },
+          {
+            "nom": "Mais egoutte",
+            "qte": 140,
+            "rayon": 3,
+            "unite": "g"
+          },
+          {
+            "nom": "Tomates concassees",
+            "qte": 400,
+            "rayon": 3,
+            "unite": "g"
+          },
+          {
+            "nom": "Poivron rouge",
+            "qte": 1,
+            "rayon": 0,
+            "unite": "piece"
+          },
+          {
+            "nom": "Oignon",
+            "qte": 1,
+            "rayon": 0,
+            "unite": "piece"
+          },
+          {
+            "nom": "Ail",
+            "qte": 1,
+            "rayon": 0,
+            "unite": "gousse"
+          },
+          {
+            "nom": "Concentre de tomate",
+            "qte": 1,
+            "rayon": 3,
+            "unite": "cas"
+          },
+          {
+            "nom": "Paprika fume",
+            "qte": 1,
+            "rayon": 3,
+            "unite": "cc"
+          },
+          {
+            "nom": "Cumin moulu",
+            "qte": 1,
+            "rayon": 3,
+            "unite": "cc"
+          },
+          {
+            "nom": "Chili",
+            "qte": 0.5,
+            "rayon": 3,
+            "unite": "cc"
+          },
+          {
+            "nom": "Huile d'olive",
+            "qte": 1,
+            "rayon": 3,
+            "unite": "cas"
+          },
+          {
+            "nom": "Sel poivre",
+            "qte": 1,
+            "rayon": 3,
+            "unite": "pincee"
+          }
+        ],
+        "nom": "Chili con carne express et riz basmati",
+        "personnes": 3,
+        "temps": 30
+      },
+      "review": {
+        "state": "pending_household_and_culinary_review",
+        "priority": "P2",
+        "productionModeCandidate": "adjustable",
+        "sourceDeclaredPeople": 3,
+        "proposedServings": 3,
+        "yieldEvidence": "source_declared_only",
+        "yieldNote": "Nombre de portions repris de la V1 à titre provisoire, sans validation de la satiété ni du rendement physique.",
+        "producedUnitCount": null,
+        "mealCompleteness": "already_in_recipe",
+        "animalIngredientsGramsPerSourcePerson": 133.3,
+        "dryStarchesGramsPerSourcePerson": 70,
+        "auditFlags": [
+          "BASE_EGOUTTE_A_VERIFIER"
+        ],
+        "ingredientsWithReviewFlags": [
+          {
+            "ingredientIndex": 2,
+            "name": "Haricots rouges egouttes",
+            "flags": [
+              "BASE_BRUT_OU_EGOUTTE_À_PRÉCISER"
+            ]
+          },
+          {
+            "ingredientIndex": 3,
+            "name": "Mais egoutte",
+            "flags": [
+              "BASE_BRUT_OU_EGOUTTE_À_PRÉCISER"
+            ]
+          },
+          {
+            "ingredientIndex": 8,
+            "name": "Concentre de tomate",
+            "flags": [
+              "MESURE_CULINAIRE_NON_CONVERTIE"
+            ]
+          },
+          {
+            "ingredientIndex": 9,
+            "name": "Paprika fume",
+            "flags": [
+              "MESURE_CULINAIRE_NON_CONVERTIE"
+            ]
+          },
+          {
+            "ingredientIndex": 10,
+            "name": "Cumin moulu",
+            "flags": [
+              "MESURE_CULINAIRE_NON_CONVERTIE"
+            ]
+          },
+          {
+            "ingredientIndex": 11,
+            "name": "Chili",
+            "flags": [
+              "MESURE_CULINAIRE_NON_CONVERTIE"
+            ]
+          },
+          {
+            "ingredientIndex": 12,
+            "name": "Huile d'olive",
+            "flags": [
+              "MESURE_CULINAIRE_NON_CONVERTIE"
+            ]
+          }
+        ],
+        "ingredientChangeProposals": [],
+        "specificReviewNote": "Contrôler les quantités en assiette et le rendement réel avant validation, sans extrapolation personnelle.",
+        "assumptions": "Les seuils sont des aides au contrôle, pas des recommandations médicales ni un calcul de besoins individuels.",
+        "sourceUnmodified": true,
+        "readyForStrictEngine": false
+      },
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "unitLabel": "portion",
+        "referenceUnits": "3",
+        "portionsPerUnit": "1",
+        "minUnits": "1/4",
+        "stepUnits": "1/4"
+      },
+      "productionTrace": {
+        "originalPeople": "3",
+        "proposedServings": 3,
+        "sourceCandidate": "adjustable",
+        "validated": null,
+        "decision": "Proportionnalité des quantités V1 ; aucune réduction de portion appliquée.",
+        "culinaryTrialStatus": "pending"
+      },
+      "automaticPolicy": {
+        "allowExtraProduction": false,
+        "allowSurplus": false
+      },
+      "ingredients": [
+        {
+          "ingredientId": "i_boeuf_hache_5_mg",
+          "quantity": {
+            "amount": "400",
+            "unit": "g",
+            "basis": "net"
+          },
+          "trace": {
+            "sourceIngredientIndex": 0,
+            "original": {
+              "name": "Boeuf hache 5%",
+              "amount": "400",
+              "unit": "g"
+            },
+            "identityNormalization": {
+              "kind": "spelling_and_plural_only",
+              "canonicalName": "Bœuf haché 5 % MG",
+              "reason": "Même bœuf haché à 5 % ou même concentré de tomate ; steaks en pièces distincts."
+            },
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "400",
+              "unit": "g",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_riz_basmati",
+          "quantity": {
+            "amount": "210",
+            "unit": "g",
+            "basis": "net"
+          },
+          "scaling": {
+            "mode": "diners",
+            "referencePortions": "3"
+          },
+          "trace": {
+            "sourceIngredientIndex": 1,
+            "original": {
+              "name": "Riz basmati",
+              "amount": "210",
+              "unit": "g"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "210",
+              "unit": "g",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_haricots_rouges_egouttes",
+          "quantity": {
+            "amount": "250",
+            "unit": "g",
+            "basis": "drained"
+          },
+          "trace": {
+            "sourceIngredientIndex": 2,
+            "original": {
+              "name": "Haricots rouges egouttes",
+              "amount": "250",
+              "unit": "g"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "250",
+              "unit": "g",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_mais_egoutte",
+          "quantity": {
+            "amount": "140",
+            "unit": "g",
+            "basis": "drained"
+          },
+          "trace": {
+            "sourceIngredientIndex": 3,
+            "original": {
+              "name": "Mais egoutte",
+              "amount": "140",
+              "unit": "g"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "140",
+              "unit": "g",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_tomates_concassees",
+          "quantity": {
+            "amount": "400",
+            "unit": "g",
+            "basis": "net"
+          },
+          "trace": {
+            "sourceIngredientIndex": 4,
+            "original": {
+              "name": "Tomates concassees",
+              "amount": "400",
+              "unit": "g"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "400",
+              "unit": "g",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_poivron_rouge",
+          "quantity": {
+            "amount": "1",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "piece:poivron_rouge"
+          },
+          "trace": {
+            "sourceIngredientIndex": 5,
+            "original": {
+              "name": "Poivron rouge",
+              "amount": "1",
+              "unit": "piece"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "1",
+              "unit": "piece",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_oignon",
+          "quantity": {
+            "amount": "1",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "piece:oignon"
+          },
+          "trace": {
+            "sourceIngredientIndex": 6,
+            "original": {
+              "name": "Oignon",
+              "amount": "1",
+              "unit": "piece"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "1",
+              "unit": "piece",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_ail",
+          "quantity": {
+            "amount": "1",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "piece:ail"
+          },
+          "trace": {
+            "sourceIngredientIndex": 7,
+            "original": {
+              "name": "Ail",
+              "amount": "1",
+              "unit": "gousse"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "1",
+              "unit": "gousse",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_concentre_de_tomate",
+          "quantity": {
+            "amount": "1",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "measure:cas"
+          },
+          "trace": {
+            "sourceIngredientIndex": 8,
+            "original": {
+              "name": "Concentre de tomate",
+              "amount": "1",
+              "unit": "cas"
+            },
+            "identityNormalization": {
+              "kind": "spelling_and_plural_only",
+              "canonicalName": "Concentré de tomate",
+              "reason": "Même bœuf haché à 5 % ou même concentré de tomate ; steaks en pièces distincts."
+            },
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "1",
+              "unit": "cas",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_paprika_fume",
+          "quantity": {
+            "amount": "1",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "measure:cc"
+          },
+          "trace": {
+            "sourceIngredientIndex": 9,
+            "original": {
+              "name": "Paprika fume",
+              "amount": "1",
+              "unit": "cc"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "1",
+              "unit": "cc",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_cumin_moulu",
+          "quantity": {
+            "amount": "1",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "measure:cc"
+          },
+          "trace": {
+            "sourceIngredientIndex": 10,
+            "original": {
+              "name": "Cumin moulu",
+              "amount": "1",
+              "unit": "cc"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "1",
+              "unit": "cc",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_chili",
+          "quantity": {
+            "amount": "1/2",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "measure:cc"
+          },
+          "trace": {
+            "sourceIngredientIndex": 11,
+            "original": {
+              "name": "Chili",
+              "amount": "0.5",
+              "unit": "cc"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "0.5",
+              "unit": "cc",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_huile_d_olive",
+          "quantity": {
+            "amount": "1",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "measure:cas"
+          },
+          "trace": {
+            "sourceIngredientIndex": 12,
+            "original": {
+              "name": "Huile d'olive",
+              "amount": "1",
+              "unit": "cas"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "1",
+              "unit": "cas",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_sel_poivre",
+          "quantity": {
+            "amount": "1",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "measure:pincee"
+          },
+          "trace": {
+            "sourceIngredientIndex": 13,
+            "original": {
+              "name": "Sel poivre",
+              "amount": "1",
+              "unit": "pincee"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "1",
+              "unit": "pincee",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        }
+      ],
+      "cookingSteps": [
+        {
+          "sourceStep": 0,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Cuire ",
+            {
+              "ingredientId": "i_riz_basmati"
+            },
+            " selon les indications du paquet."
+          ]
+        },
+        {
+          "sourceStep": 1,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Émincer ",
+            {
+              "ingredientId": "i_oignon"
+            },
+            ", hacher ",
+            {
+              "ingredientId": "i_ail"
+            },
+            " et couper ",
+            {
+              "ingredientId": "i_poivron_rouge"
+            },
+            " en petits morceaux."
+          ]
+        },
+        {
+          "sourceStep": 2,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Chauffer ",
+            {
+              "ingredientId": "i_huile_d_olive"
+            },
+            " puis cuire l’oignon et le poivron 4 à 5 minutes."
+          ]
+        },
+        {
+          "sourceStep": 3,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Ajouter ",
+            {
+              "ingredientId": "i_boeuf_hache_5_mg"
+            },
+            " et faire colorer en émiettant."
+          ]
+        },
+        {
+          "sourceStep": 4,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Ajouter l’ail, ",
+            {
+              "ingredientId": "i_concentre_de_tomate"
+            },
+            ", ",
+            {
+              "ingredientId": "i_paprika_fume"
+            },
+            ", ",
+            {
+              "ingredientId": "i_cumin_moulu"
+            },
+            " et ",
+            {
+              "ingredientId": "i_chili"
+            },
+            " ; cuire 1 minute en mélangeant."
+          ]
+        },
+        {
+          "sourceStep": 5,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Ajouter ",
+            {
+              "ingredientId": "i_tomates_concassees"
+            },
+            ", ",
+            {
+              "ingredientId": "i_haricots_rouges_egouttes"
+            },
+            " et ",
+            {
+              "ingredientId": "i_mais_egoutte"
+            },
+            ". Assaisonner avec ",
+            {
+              "ingredientId": "i_sel_poivre"
+            },
+            "."
+          ]
+        },
+        {
+          "sourceStep": 6,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Laisser mijoter 12 à 15 minutes à feu moyen sans couvrir, jusqu’à épaississement."
+          ]
+        },
+        {
+          "sourceStep": 7,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Servir le chili avec le riz basmati préparé."
+          ]
+        }
+      ],
+      "instructionTrace": {
+        "method": "curated_ingredient_bindings",
+        "originalStepsPreserved": true,
+        "omitted": [],
+        "adaptations": "Quantités liées aux ingrédients ; détails personnels hors cuisine généralisés, temps/températures conservés."
+      },
+      "openIssues": [
+        "Quantités V1 préservées ; validation culinaire et éventuelles corrections encore à confirmer.",
+        "Aucune conversion des mesures cas/cc/pincée vers g ou ml ; aucun poids par pièce présumé."
+      ]
+    },
+    {
+      "id": "r_pates_bolognaise_economique",
+      "name": "Pates bolognaise economique",
+      "source": {
+        "archive": "KeskonMange_V3_REVISE_98_DOSSIER.zip",
+        "archiveSha256": "3dda40f91991647262dd4e75f0ad5b96547ac6fe96a49a63867e1d0ebdfa8dca",
+        "reviewFile": "pilot-source-review.json",
+        "sourceIndex": 53
+      },
+      "originalV1": {
+        "etapes": [
+          "Emincer oignon, ail et carotte finement. Faire revenir 3 min dans l'huile d'olive",
+          "Ajouter le boeuf hache, emietter et cuire 5 min jusqu'a ce qu'il ne soit plus rose",
+          "Ajouter concentre de tomates, tomates concassees, origan, sel, poivre. Mijoter 15 min a feu doux",
+          "Cuire les pates al dente dans l'eau bouillante salee. Egoutter",
+          "Melanger pates et sauce bolognaise. Servir chaud"
+        ],
+        "ingredients": [
+          {
+            "nom": "Boeuf hache 5% MG",
+            "qte": 450,
+            "rayon": 1,
+            "unite": "g"
+          },
+          {
+            "nom": "Pates",
+            "qte": 350,
+            "rayon": 3,
+            "unite": "g"
+          },
+          {
+            "nom": "Tomates concassees",
+            "qte": 400,
+            "rayon": 3,
+            "unite": "g"
+          },
+          {
+            "nom": "Carotte",
+            "qte": 1,
+            "rayon": 0,
+            "unite": "piece"
+          },
+          {
+            "nom": "Oignon",
+            "qte": 1,
+            "rayon": 0,
+            "unite": "piece"
+          },
+          {
+            "nom": "Ail",
+            "qte": 2,
+            "rayon": 0,
+            "unite": "gousse"
+          },
+          {
+            "nom": "Concentre de tomates",
+            "qte": 1,
+            "rayon": 3,
+            "unite": "cas"
+          },
+          {
+            "nom": "Origan seche",
+            "qte": 1,
+            "rayon": 3,
+            "unite": "cc"
+          },
+          {
+            "nom": "Huile d'olive",
+            "qte": 1,
+            "rayon": 3,
+            "unite": "cas"
+          },
+          {
+            "nom": "Sel poivre",
+            "qte": 1,
+            "rayon": 3,
+            "unite": "pincee"
+          }
+        ],
+        "nom": "Pates bolognaise economique",
+        "personnes": 3,
+        "temps": 30
+      },
+      "review": {
+        "state": "pending_household_and_culinary_review",
+        "priority": "P1",
+        "productionModeCandidate": "adjustable",
+        "sourceDeclaredPeople": 3,
+        "proposedServings": 3,
+        "yieldEvidence": "source_declared_only",
+        "yieldNote": "Nombre de portions repris de la V1 à titre provisoire, sans validation de la satiété ni du rendement physique.",
+        "producedUnitCount": null,
+        "mealCompleteness": "already_in_recipe",
+        "animalIngredientsGramsPerSourcePerson": 150,
+        "dryStarchesGramsPerSourcePerson": 116.7,
+        "auditFlags": [
+          "FECULENTS_SECS_≥110G_PAR_PORTION_V1"
+        ],
+        "ingredientsWithReviewFlags": [
+          {
+            "ingredientIndex": 6,
+            "name": "Concentre de tomates",
+            "flags": [
+              "MESURE_CULINAIRE_NON_CONVERTIE"
+            ]
+          },
+          {
+            "ingredientIndex": 7,
+            "name": "Origan seche",
+            "flags": [
+              "MESURE_CULINAIRE_NON_CONVERTIE"
+            ]
+          },
+          {
+            "ingredientIndex": 8,
+            "name": "Huile d'olive",
+            "flags": [
+              "MESURE_CULINAIRE_NON_CONVERTIE"
+            ]
+          }
+        ],
+        "ingredientChangeProposals": [
+          {
+            "ingredientIndex": 1,
+            "ingredientName": "Pates",
+            "sourceQuantity": 350,
+            "proposedQuantity": 270,
+            "unit": "g",
+            "kind": "portion_calibration",
+            "confidence": "candidate_not_validated",
+            "reason": "117 g de féculents secs par personne déclarée ; essai proposé à 90 g/personne (non applicable aux gnocchis frais). À valider selon le plat."
+          }
+        ],
+        "specificReviewNote": "La quantité de pâtes sèches est élevée pour trois, contrairement aux 450 g de bœuf répartis en trois.",
+        "assumptions": "Les seuils sont des aides au contrôle, pas des recommandations médicales ni un calcul de besoins individuels.",
+        "sourceUnmodified": true,
+        "readyForStrictEngine": false
+      },
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "unitLabel": "portion",
+        "referenceUnits": "3",
+        "portionsPerUnit": "1",
+        "minUnits": "1/4",
+        "stepUnits": "1/4"
+      },
+      "productionTrace": {
+        "originalPeople": "3",
+        "proposedServings": 3,
+        "sourceCandidate": "adjustable",
+        "validated": null,
+        "decision": "Proportionnalité des quantités V1 ; aucune réduction de portion appliquée.",
+        "culinaryTrialStatus": "pending"
+      },
+      "automaticPolicy": {
+        "allowExtraProduction": false,
+        "allowSurplus": false
+      },
+      "ingredients": [
+        {
+          "ingredientId": "i_boeuf_hache_5_mg",
+          "quantity": {
+            "amount": "450",
+            "unit": "g",
+            "basis": "net"
+          },
+          "trace": {
+            "sourceIngredientIndex": 0,
+            "original": {
+              "name": "Boeuf hache 5% MG",
+              "amount": "450",
+              "unit": "g"
+            },
+            "identityNormalization": {
+              "kind": "spelling_and_plural_only",
+              "canonicalName": "Bœuf haché 5 % MG",
+              "reason": "Même bœuf haché à 5 % ou même concentré de tomate ; steaks en pièces distincts."
+            },
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "450",
+              "unit": "g",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_pates",
+          "quantity": {
+            "amount": "350",
+            "unit": "g",
+            "basis": "net"
+          },
+          "scaling": {
+            "mode": "diners",
+            "referencePortions": "3"
+          },
+          "trace": {
+            "sourceIngredientIndex": 1,
+            "original": {
+              "name": "Pates",
+              "amount": "350",
+              "unit": "g"
+            },
+            "identityNormalization": null,
+            "proposed": [
+              {
+                "ingredientIndex": 1,
+                "ingredientName": "Pates",
+                "sourceQuantity": 350,
+                "proposedQuantity": 270,
+                "unit": "g",
+                "kind": "portion_calibration",
+                "confidence": "candidate_not_validated",
+                "reason": "117 g de féculents secs par personne déclarée ; essai proposé à 90 g/personne (non applicable aux gnocchis frais). À valider selon le plat."
+              }
+            ],
+            "validated": null,
+            "effective": {
+              "amount": "350",
+              "unit": "g",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_tomates_concassees",
+          "quantity": {
+            "amount": "400",
+            "unit": "g",
+            "basis": "net"
+          },
+          "trace": {
+            "sourceIngredientIndex": 2,
+            "original": {
+              "name": "Tomates concassees",
+              "amount": "400",
+              "unit": "g"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "400",
+              "unit": "g",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_carotte",
+          "quantity": {
+            "amount": "1",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "piece:carotte"
+          },
+          "trace": {
+            "sourceIngredientIndex": 3,
+            "original": {
+              "name": "Carotte",
+              "amount": "1",
+              "unit": "piece"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "1",
+              "unit": "piece",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_oignon",
+          "quantity": {
+            "amount": "1",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "piece:oignon"
+          },
+          "trace": {
+            "sourceIngredientIndex": 4,
+            "original": {
+              "name": "Oignon",
+              "amount": "1",
+              "unit": "piece"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "1",
+              "unit": "piece",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_ail",
+          "quantity": {
+            "amount": "2",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "piece:ail"
+          },
+          "trace": {
+            "sourceIngredientIndex": 5,
+            "original": {
+              "name": "Ail",
+              "amount": "2",
+              "unit": "gousse"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "2",
+              "unit": "gousse",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_concentre_de_tomate",
+          "quantity": {
+            "amount": "1",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "measure:cas"
+          },
+          "trace": {
+            "sourceIngredientIndex": 6,
+            "original": {
+              "name": "Concentre de tomates",
+              "amount": "1",
+              "unit": "cas"
+            },
+            "identityNormalization": {
+              "kind": "spelling_and_plural_only",
+              "canonicalName": "Concentré de tomate",
+              "reason": "Même bœuf haché à 5 % ou même concentré de tomate ; steaks en pièces distincts."
+            },
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "1",
+              "unit": "cas",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_origan_seche",
+          "quantity": {
+            "amount": "1",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "measure:cc"
+          },
+          "trace": {
+            "sourceIngredientIndex": 7,
+            "original": {
+              "name": "Origan seche",
+              "amount": "1",
+              "unit": "cc"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "1",
+              "unit": "cc",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_huile_d_olive",
+          "quantity": {
+            "amount": "1",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "measure:cas"
+          },
+          "trace": {
+            "sourceIngredientIndex": 8,
+            "original": {
+              "name": "Huile d'olive",
+              "amount": "1",
+              "unit": "cas"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "1",
+              "unit": "cas",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_sel_poivre",
+          "quantity": {
+            "amount": "1",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "measure:pincee"
+          },
+          "trace": {
+            "sourceIngredientIndex": 9,
+            "original": {
+              "name": "Sel poivre",
+              "amount": "1",
+              "unit": "pincee"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "1",
+              "unit": "pincee",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        }
+      ],
+      "cookingSteps": [
+        {
+          "sourceStep": 0,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Émincer ",
+            {
+              "ingredientId": "i_oignon"
+            },
+            ", ",
+            {
+              "ingredientId": "i_ail"
+            },
+            " et ",
+            {
+              "ingredientId": "i_carotte"
+            },
+            " ; faire revenir 3 minutes dans ",
+            {
+              "ingredientId": "i_huile_d_olive"
+            },
+            "."
+          ]
+        },
+        {
+          "sourceStep": 1,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Ajouter ",
+            {
+              "ingredientId": "i_boeuf_hache_5_mg"
+            },
+            " ; émietter et cuire 5 minutes jusqu’à disparition de la couleur rose."
+          ]
+        },
+        {
+          "sourceStep": 2,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Ajouter ",
+            {
+              "ingredientId": "i_concentre_de_tomate"
+            },
+            ", ",
+            {
+              "ingredientId": "i_tomates_concassees"
+            },
+            ", ",
+            {
+              "ingredientId": "i_origan_seche"
+            },
+            " et ",
+            {
+              "ingredientId": "i_sel_poivre"
+            },
+            ". Laisser mijoter 15 minutes à feu doux."
+          ]
+        },
+        {
+          "sourceStep": 3,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Cuire ",
+            {
+              "ingredientId": "i_pates"
+            },
+            " al dente dans l’eau bouillante salée ; égoutter."
+          ]
+        },
+        {
+          "sourceStep": 4,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Mélanger les pâtes et la sauce bolognaise ; servir chaud."
+          ]
+        }
+      ],
+      "instructionTrace": {
+        "method": "curated_ingredient_bindings",
+        "originalStepsPreserved": true,
+        "omitted": [],
+        "adaptations": "Quantités liées aux ingrédients ; détails personnels hors cuisine généralisés, temps/températures conservés."
+      },
+      "openIssues": [
+        "Quantités V1 préservées ; validation culinaire et éventuelles corrections encore à confirmer.",
+        "Aucune conversion des mesures cas/cc/pincée vers g ou ml ; aucun poids par pièce présumé."
+      ]
+    },
+    {
+      "id": "r_cheeseburgers_maison_et_frites_de_patate",
+      "name": "Cheeseburgers maison et frites de patate douce au four",
+      "source": {
+        "archive": "KeskonMange_V3_REVISE_98_DOSSIER.zip",
+        "archiveSha256": "3dda40f91991647262dd4e75f0ad5b96547ac6fe96a49a63867e1d0ebdfa8dca",
+        "reviewFile": "pilot-source-review.json",
+        "sourceIndex": 15
+      },
+      "originalV1": {
+        "etapes": [
+          "Préchauffer le four à 210 °C en chaleur tournante. Recouvrir une grande plaque de papier cuisson.",
+          "Éplucher les patates douces et les couper en frites régulières, d'environ 1 cm d'épaisseur. Les sécher soigneusement avec un torchon propre pour favoriser la coloration.",
+          "Dans un saladier, mélanger les frites avec 2 cuillères à soupe d'huile d'olive et le paprika doux. Les répartir sur la plaque en une seule couche, sans trop les serrer. Utiliser deux plaques si nécessaire.",
+          "Enfourner pendant 25 à 35 minutes selon l'épaisseur des frites. Les retourner à mi-cuisson. Elles doivent être dorées sur les bords et tendres à cœur. Saler après cuisson.",
+          "Pendant ce temps, préparer la sauce burger légère en mélangeant le yaourt grec, le ketchup et la moutarde douce. Réserver au frais.",
+          "Laver les tomates et la salade. Couper les tomates en rondelles et émincer finement l'oignon rouge. Pour les enfants, l'oignon peut être supprimé.",
+          "Faire chauffer une poêle antiadhésive à feu moyen-vif. Déposer les steaks hachés et les cuire selon leur épaisseur, en les retournant à mi-cuisson. Pour les enfants, veiller à une cuisson complète à cœur.",
+          "Déposer une tranche de cheddar sur chaque steak pendant la dernière minute de cuisson. Couvrir brièvement la poêle pour faire fondre le fromage.",
+          "Couper les pains à burger en deux et les faire légèrement toaster dans une poêle sèche, face coupée vers le bas, pendant 1 à 2 minutes.",
+          "Monter les burgers : étaler un peu de sauce sur le pain inférieur, ajouter la salade, le steak au cheddar, les rondelles de tomate et éventuellement l'oignon rouge. Refermer avec le pain supérieur.",
+          "Servir immédiatement avec les frites de patate douce. Pour la petite de 3 ans, adapter la taille du burger et des portions à son appétit, et couper les aliments en morceaux faciles à manger."
+        ],
+        "ingredients": [
+          {
+            "nom": "Pains à burger",
+            "qte": 4,
+            "rayon": 3,
+            "unite": "piece"
+          },
+          {
+            "nom": "Steaks hachés de bœuf 5 % MG",
+            "qte": 4,
+            "rayon": 1,
+            "unite": "piece"
+          },
+          {
+            "nom": "Cheddar en tranches",
+            "qte": 4,
+            "rayon": 2,
+            "unite": "piece"
+          },
+          {
+            "nom": "Patates douces",
+            "qte": 900,
+            "rayon": 0,
+            "unite": "g"
+          },
+          {
+            "nom": "Tomates",
+            "qte": 2,
+            "rayon": 0,
+            "unite": "piece"
+          },
+          {
+            "nom": "Salade verte",
+            "qte": 100,
+            "rayon": 0,
+            "unite": "g"
+          },
+          {
+            "nom": "Oignon rouge",
+            "qte": 1,
+            "rayon": 0,
+            "unite": "piece"
+          },
+          {
+            "nom": "Yaourt grec nature",
+            "qte": 100,
+            "rayon": 2,
+            "unite": "g"
+          },
+          {
+            "nom": "Ketchup",
+            "qte": 2,
+            "rayon": 3,
+            "unite": "cas"
+          },
+          {
+            "nom": "Moutarde douce",
+            "qte": 1,
+            "rayon": 3,
+            "unite": "cc"
+          },
+          {
+            "nom": "Huile d'olive",
+            "qte": 2,
+            "rayon": 3,
+            "unite": "cas"
+          },
+          {
+            "nom": "Paprika doux",
+            "qte": 1,
+            "rayon": 3,
+            "unite": "cc"
+          },
+          {
+            "nom": "Sel",
+            "qte": 1,
+            "rayon": 3,
+            "unite": "pincee"
+          },
+          {
+            "nom": "Poivre",
+            "qte": 1,
+            "rayon": 3,
+            "unite": "pincee"
+          }
+        ],
+        "nom": "Cheeseburgers maison et frites de patate douce au four",
+        "personnes": 4,
+        "temps": 45
+      },
+      "review": {
+        "state": "pending_household_and_culinary_review",
+        "priority": "P2",
+        "productionModeCandidate": "individual_units",
+        "sourceDeclaredPeople": 4,
+        "proposedServings": 4,
+        "yieldEvidence": "source_declared_only",
+        "yieldNote": "Nombre de portions repris de la V1 à titre provisoire, sans validation de la satiété ni du rendement physique.",
+        "producedUnitCount": 4,
+        "mealCompleteness": "already_in_recipe",
+        "animalIngredientsGramsPerSourcePerson": null,
+        "dryStarchesGramsPerSourcePerson": null,
+        "auditFlags": [
+          "UNITES_CUISINEES_A_COMPTER"
+        ],
+        "ingredientsWithReviewFlags": [
+          {
+            "ingredientIndex": 8,
+            "name": "Ketchup",
+            "flags": [
+              "MESURE_CULINAIRE_NON_CONVERTIE"
+            ]
+          },
+          {
+            "ingredientIndex": 9,
+            "name": "Moutarde douce",
+            "flags": [
+              "MESURE_CULINAIRE_NON_CONVERTIE"
+            ]
+          },
+          {
+            "ingredientIndex": 10,
+            "name": "Huile d'olive",
+            "flags": [
+              "MESURE_CULINAIRE_NON_CONVERTIE"
+            ]
+          },
+          {
+            "ingredientIndex": 11,
+            "name": "Paprika doux",
+            "flags": [
+              "MESURE_CULINAIRE_NON_CONVERTIE"
+            ]
+          }
+        ],
+        "ingredientChangeProposals": [],
+        "specificReviewNote": "Quatre burgers = quatre pains et quatre steaks. Le grammage d’un steak doit être connu avant toute réduction.",
+        "assumptions": "Les seuils sont des aides au contrôle, pas des recommandations médicales ni un calcul de besoins individuels.",
+        "sourceUnmodified": true,
+        "readyForStrictEngine": false
+      },
+      "production": {
+        "version": 1,
+        "mode": "unit",
+        "unitLabel": "burger",
+        "referenceUnits": "4",
+        "portionsPerUnit": "1",
+        "minUnits": "1",
+        "stepUnits": "1"
+      },
+      "productionTrace": {
+        "originalPeople": "4",
+        "proposedServings": 4,
+        "sourceCandidate": "individual_units",
+        "validated": null,
+        "decision": "Proportionnalité des quantités V1 ; aucune réduction de portion appliquée.",
+        "culinaryTrialStatus": "pending"
+      },
+      "automaticPolicy": {
+        "allowExtraProduction": false,
+        "allowSurplus": false
+      },
+      "ingredients": [
+        {
+          "ingredientId": "i_pains_a_burger",
+          "quantity": {
+            "amount": "4",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "piece:pains_a_burger"
+          },
+          "trace": {
+            "sourceIngredientIndex": 0,
+            "original": {
+              "name": "Pains à burger",
+              "amount": "4",
+              "unit": "piece"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "4",
+              "unit": "piece",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_steaks_haches_de_boeuf_5_mg",
+          "quantity": {
+            "amount": "4",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "piece:steaks_haches_de_boeuf_5_mg"
+          },
+          "trace": {
+            "sourceIngredientIndex": 1,
+            "original": {
+              "name": "Steaks hachés de bœuf 5 % MG",
+              "amount": "4",
+              "unit": "piece"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "4",
+              "unit": "piece",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_cheddar_en_tranches",
+          "quantity": {
+            "amount": "4",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "piece:cheddar_en_tranches"
+          },
+          "trace": {
+            "sourceIngredientIndex": 2,
+            "original": {
+              "name": "Cheddar en tranches",
+              "amount": "4",
+              "unit": "piece"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "4",
+              "unit": "piece",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_patates_douces",
+          "quantity": {
+            "amount": "900",
+            "unit": "g",
+            "basis": "net"
+          },
+          "scaling": {
+            "mode": "diners",
+            "referencePortions": "4"
+          },
+          "trace": {
+            "sourceIngredientIndex": 3,
+            "original": {
+              "name": "Patates douces",
+              "amount": "900",
+              "unit": "g"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "900",
+              "unit": "g",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_tomates",
+          "quantity": {
+            "amount": "2",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "piece:tomates"
+          },
+          "trace": {
+            "sourceIngredientIndex": 4,
+            "original": {
+              "name": "Tomates",
+              "amount": "2",
+              "unit": "piece"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "2",
+              "unit": "piece",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_salade_verte",
+          "quantity": {
+            "amount": "100",
+            "unit": "g",
+            "basis": "net"
+          },
+          "trace": {
+            "sourceIngredientIndex": 5,
+            "original": {
+              "name": "Salade verte",
+              "amount": "100",
+              "unit": "g"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "100",
+              "unit": "g",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_oignon_rouge",
+          "quantity": {
+            "amount": "1",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "piece:oignon_rouge"
+          },
+          "trace": {
+            "sourceIngredientIndex": 6,
+            "original": {
+              "name": "Oignon rouge",
+              "amount": "1",
+              "unit": "piece"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "1",
+              "unit": "piece",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_yaourt_grec_nature",
+          "quantity": {
+            "amount": "100",
+            "unit": "g",
+            "basis": "net"
+          },
+          "trace": {
+            "sourceIngredientIndex": 7,
+            "original": {
+              "name": "Yaourt grec nature",
+              "amount": "100",
+              "unit": "g"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "100",
+              "unit": "g",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_ketchup",
+          "quantity": {
+            "amount": "2",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "measure:cas"
+          },
+          "trace": {
+            "sourceIngredientIndex": 8,
+            "original": {
+              "name": "Ketchup",
+              "amount": "2",
+              "unit": "cas"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "2",
+              "unit": "cas",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_moutarde_douce",
+          "quantity": {
+            "amount": "1",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "measure:cc"
+          },
+          "trace": {
+            "sourceIngredientIndex": 9,
+            "original": {
+              "name": "Moutarde douce",
+              "amount": "1",
+              "unit": "cc"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "1",
+              "unit": "cc",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_huile_d_olive",
+          "quantity": {
+            "amount": "2",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "measure:cas"
+          },
+          "scaling": {
+            "mode": "diners",
+            "referencePortions": "4"
+          },
+          "trace": {
+            "sourceIngredientIndex": 10,
+            "original": {
+              "name": "Huile d'olive",
+              "amount": "2",
+              "unit": "cas"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "2",
+              "unit": "cas",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_paprika_doux",
+          "quantity": {
+            "amount": "1",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "measure:cc"
+          },
+          "scaling": {
+            "mode": "diners",
+            "referencePortions": "4"
+          },
+          "trace": {
+            "sourceIngredientIndex": 11,
+            "original": {
+              "name": "Paprika doux",
+              "amount": "1",
+              "unit": "cc"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "1",
+              "unit": "cc",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_sel",
+          "quantity": {
+            "amount": "1",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "measure:pincee"
+          },
+          "trace": {
+            "sourceIngredientIndex": 12,
+            "original": {
+              "name": "Sel",
+              "amount": "1",
+              "unit": "pincee"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "1",
+              "unit": "pincee",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_poivre",
+          "quantity": {
+            "amount": "1",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "measure:pincee"
+          },
+          "trace": {
+            "sourceIngredientIndex": 13,
+            "original": {
+              "name": "Poivre",
+              "amount": "1",
+              "unit": "pincee"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "1",
+              "unit": "pincee",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        }
+      ],
+      "cookingSteps": [
+        {
+          "sourceStep": 0,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Préchauffer le four à 210 °C en chaleur tournante et préparer une plaque."
+          ]
+        },
+        {
+          "sourceStep": 1,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Éplucher ",
+            {
+              "ingredientId": "i_patates_douces"
+            },
+            " et couper en frites de 1 cm d’épaisseur ; sécher soigneusement."
+          ]
+        },
+        {
+          "sourceStep": 2,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Mélanger les frites avec ",
+            {
+              "ingredientId": "i_huile_d_olive"
+            },
+            " et ",
+            {
+              "ingredientId": "i_paprika_doux"
+            },
+            ". Étaler en une seule couche ; adapter le nombre de plaques."
+          ]
+        },
+        {
+          "sourceStep": 3,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Cuire 25 à 35 minutes, retourner à mi-cuisson, vérifier que les frites sont tendres. Ajouter ",
+            {
+              "ingredientId": "i_sel"
+            },
+            "."
+          ]
+        },
+        {
+          "sourceStep": 4,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Mélanger ",
+            {
+              "ingredientId": "i_yaourt_grec_nature"
+            },
+            ", ",
+            {
+              "ingredientId": "i_ketchup"
+            },
+            " et ",
+            {
+              "ingredientId": "i_moutarde_douce"
+            },
+            " pour la sauce ; réserver au frais."
+          ]
+        },
+        {
+          "sourceStep": 5,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Laver ",
+            {
+              "ingredientId": "i_tomates"
+            },
+            " et ",
+            {
+              "ingredientId": "i_salade_verte"
+            },
+            " ; couper les tomates et émincer ",
+            {
+              "ingredientId": "i_oignon_rouge"
+            },
+            "."
+          ]
+        },
+        {
+          "sourceStep": 6,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Cuire ",
+            {
+              "ingredientId": "i_steaks_haches_de_boeuf_5_mg"
+            },
+            " dans une poêle antiadhésive selon leur épaisseur ; assurer une cuisson complète à cœur pour les enfants. Ajouter ",
+            {
+              "ingredientId": "i_poivre"
+            },
+            "."
+          ]
+        },
+        {
+          "sourceStep": 7,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Répartir ",
+            {
+              "ingredientId": "i_cheddar_en_tranches"
+            },
+            " sur les steaks pendant la dernière minute ; couvrir pour faire fondre."
+          ]
+        },
+        {
+          "sourceStep": 8,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Ouvrir ",
+            {
+              "ingredientId": "i_pains_a_burger"
+            },
+            " en deux et toaster 1 à 2 minutes, face coupée vers le bas."
+          ]
+        },
+        {
+          "sourceStep": 9,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Assembler les burgers avec les ingrédients préparés et la sauce."
+          ]
+        },
+        {
+          "sourceStep": 10,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Servir avec les frites ; adapter la taille des morceaux aux convives."
+          ]
+        }
+      ],
+      "instructionTrace": {
+        "method": "curated_ingredient_bindings",
+        "originalStepsPreserved": true,
+        "omitted": [],
+        "adaptations": "Quantités liées aux ingrédients ; détails personnels hors cuisine généralisés, temps/températures conservés."
+      },
+      "openIssues": [
+        "Quantités V1 préservées ; validation culinaire et éventuelles corrections encore à confirmer.",
+        "Aucune conversion des mesures cas/cc/pincée vers g ou ml ; aucun poids par pièce présumé."
+      ]
+    },
+    {
+      "id": "r_gratin_de_gnocchis_au_potimarron___pinar",
+      "name": "Gratin de gnocchis au potimarron, épinards et mozzarella",
+      "source": {
+        "archive": "KeskonMange_V3_REVISE_98_DOSSIER.zip",
+        "archiveSha256": "3dda40f91991647262dd4e75f0ad5b96547ac6fe96a49a63867e1d0ebdfa8dca",
+        "reviewFile": "pilot-source-review.json",
+        "sourceIndex": 37
+      },
+      "originalV1": {
+        "etapes": [
+          "Préchauffer le four à 200 °C en chaleur tournante. Laver le potimarron, retirer les graines et le couper en petits cubes. Il n'est pas nécessaire de l'éplucher si sa peau est fine.",
+          "Émincer l'oignon et hacher l'ail. Faire chauffer l'huile d'olive dans une grande poêle ou une sauteuse. Faire revenir l'oignon pendant 3 minutes, puis ajouter l'ail pendant 30 secondes.",
+          "Ajouter les cubes de potimarron et environ 150 ml d'eau. Couvrir et laisser cuire 15 à 20 minutes à feu moyen, jusqu'à ce que le potimarron soit bien tendre.",
+          "Ajouter les haricots blancs rincés et égouttés, puis la crème légère. Mixer l'ensemble pour obtenir une sauce épaisse et onctueuse. Ajouter un peu d'eau si nécessaire. Assaisonner avec la muscade, le sel et le poivre.",
+          "Faire tomber les épinards frais dans une poêle pendant 2 à 3 minutes. Pour des épinards surgelés, les décongeler puis retirer l'excédent d'eau.",
+          "Cuire les gnocchis dans une grande casserole d'eau bouillante salée selon les indications du paquet, généralement 2 à 3 minutes. Les égoutter dès qu'ils remontent à la surface.",
+          "Mélanger les gnocchis, les épinards et la sauce au potimarron dans un grand plat à gratin.",
+          "Répartir la mozzarella égouttée et déchirée sur le dessus.",
+          "Enfourner pendant 12 à 15 minutes, jusqu'à ce que la mozzarella soit fondue et légèrement dorée. Laisser reposer 3 minutes avant de servir."
+        ],
+        "ingredients": [
+          {
+            "nom": "Gnocchis",
+            "qte": 750,
+            "rayon": 3,
+            "unite": "g"
+          },
+          {
+            "nom": "Potimarron",
+            "qte": 600,
+            "rayon": 0,
+            "unite": "g"
+          },
+          {
+            "nom": "Épinards frais ou surgelés",
+            "qte": 200,
+            "rayon": 0,
+            "unite": "g"
+          },
+          {
+            "nom": "Haricots blancs cuits égouttés",
+            "qte": 250,
+            "rayon": 3,
+            "unite": "g"
+          },
+          {
+            "nom": "Mozzarella",
+            "qte": 150,
+            "rayon": 2,
+            "unite": "g"
+          },
+          {
+            "nom": "Crème légère",
+            "qte": 100,
+            "rayon": 2,
+            "unite": "ml"
+          },
+          {
+            "nom": "Oignon",
+            "qte": 1,
+            "rayon": 0,
+            "unite": "piece"
+          },
+          {
+            "nom": "Ail",
+            "qte": 1,
+            "rayon": 0,
+            "unite": "gousse"
+          },
+          {
+            "nom": "Huile d'olive",
+            "qte": 1,
+            "rayon": 3,
+            "unite": "cas"
+          },
+          {
+            "nom": "Muscade",
+            "qte": 1,
+            "rayon": 3,
+            "unite": "pincee"
+          },
+          {
+            "nom": "Sel",
+            "qte": 1,
+            "rayon": 3,
+            "unite": "pincee"
+          },
+          {
+            "nom": "Poivre",
+            "qte": 1,
+            "rayon": 3,
+            "unite": "pincee"
+          }
+        ],
+        "nom": "Gratin de gnocchis au potimarron, épinards et mozzarella",
+        "personnes": 4,
+        "temps": 40
+      },
+      "review": {
+        "state": "pending_household_and_culinary_review",
+        "priority": "P1",
+        "productionModeCandidate": "whole_batch",
+        "sourceDeclaredPeople": 4,
+        "proposedServings": 4,
+        "yieldEvidence": "source_declared_only",
+        "yieldNote": "Nombre de portions repris de la V1 à titre provisoire, sans validation de la satiété ni du rendement physique.",
+        "producedUnitCount": null,
+        "mealCompleteness": "already_in_recipe",
+        "animalIngredientsGramsPerSourcePerson": null,
+        "dryStarchesGramsPerSourcePerson": null,
+        "auditFlags": [
+          "PLAT_A_PRODUCTION_ENTIERE",
+          "BASE_EGOUTTE_A_VERIFIER",
+          "PRODUIT_ALTERNATIF",
+          "VERIFIER_CAPACITE_DU_PLAT_ET_CONVIVES"
+        ],
+        "ingredientsWithReviewFlags": [
+          {
+            "ingredientIndex": 2,
+            "name": "Épinards frais ou surgelés",
+            "flags": [
+              "PRODUIT_ALTERNATIF_À_CHOISIR"
+            ]
+          },
+          {
+            "ingredientIndex": 3,
+            "name": "Haricots blancs cuits égouttés",
+            "flags": [
+              "BASE_BRUT_OU_EGOUTTE_À_PRÉCISER"
+            ]
+          },
+          {
+            "ingredientIndex": 8,
+            "name": "Huile d'olive",
+            "flags": [
+              "MESURE_CULINAIRE_NON_CONVERTIE"
+            ]
+          },
+          {
+            "ingredientIndex": 9,
+            "name": "Muscade",
+            "flags": [
+              "MESURE_CULINAIRE_NON_CONVERTIE"
+            ]
+          }
+        ],
+        "ingredientChangeProposals": [],
+        "specificReviewNote": "Gnocchis frais : ne pas appliquer les seuils de pâtes sèches ; 750 g pour quatre reste plausible avec légumes.",
+        "assumptions": "Les seuils sont des aides au contrôle, pas des recommandations médicales ni un calcul de besoins individuels.",
+        "sourceUnmodified": true,
+        "readyForStrictEngine": false
+      },
+      "production": {
+        "version": 1,
+        "mode": "adjustable",
+        "unitLabel": "portion",
+        "referenceUnits": "4",
+        "portionsPerUnit": "1",
+        "minUnits": "1/4",
+        "stepUnits": "1/4"
+      },
+      "productionTrace": {
+        "originalPeople": "4",
+        "proposedServings": 4,
+        "sourceCandidate": "whole_batch",
+        "validated": null,
+        "decision": "LOT 4 : redimensionnement proportionnel explicite, aucun composant imposant un lot entier. Essai dans un plat plus petit encore requis.",
+        "culinaryTrialStatus": "pending"
+      },
+      "automaticPolicy": {
+        "allowExtraProduction": false,
+        "allowSurplus": false
+      },
+      "ingredients": [
+        {
+          "ingredientId": "i_gnocchis",
+          "quantity": {
+            "amount": "750",
+            "unit": "g",
+            "basis": "net"
+          },
+          "trace": {
+            "sourceIngredientIndex": 0,
+            "original": {
+              "name": "Gnocchis",
+              "amount": "750",
+              "unit": "g"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "750",
+              "unit": "g",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_potimarron",
+          "quantity": {
+            "amount": "600",
+            "unit": "g",
+            "basis": "net"
+          },
+          "trace": {
+            "sourceIngredientIndex": 1,
+            "original": {
+              "name": "Potimarron",
+              "amount": "600",
+              "unit": "g"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "600",
+              "unit": "g",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_epinards_frais_ou_surgeles",
+          "quantity": {
+            "amount": "200",
+            "unit": "g",
+            "basis": "net"
+          },
+          "trace": {
+            "sourceIngredientIndex": 2,
+            "original": {
+              "name": "Épinards frais ou surgelés",
+              "amount": "200",
+              "unit": "g"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "200",
+              "unit": "g",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_haricots_blancs_cuits_egouttes",
+          "quantity": {
+            "amount": "250",
+            "unit": "g",
+            "basis": "drained"
+          },
+          "trace": {
+            "sourceIngredientIndex": 3,
+            "original": {
+              "name": "Haricots blancs cuits égouttés",
+              "amount": "250",
+              "unit": "g"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "250",
+              "unit": "g",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_mozzarella",
+          "quantity": {
+            "amount": "150",
+            "unit": "g",
+            "basis": "net"
+          },
+          "trace": {
+            "sourceIngredientIndex": 4,
+            "original": {
+              "name": "Mozzarella",
+              "amount": "150",
+              "unit": "g"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "150",
+              "unit": "g",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_creme_legere",
+          "quantity": {
+            "amount": "100",
+            "unit": "ml",
+            "basis": "net"
+          },
+          "trace": {
+            "sourceIngredientIndex": 5,
+            "original": {
+              "name": "Crème légère",
+              "amount": "100",
+              "unit": "ml"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "100",
+              "unit": "ml",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_oignon",
+          "quantity": {
+            "amount": "1",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "piece:oignon"
+          },
+          "trace": {
+            "sourceIngredientIndex": 6,
+            "original": {
+              "name": "Oignon",
+              "amount": "1",
+              "unit": "piece"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "1",
+              "unit": "piece",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_ail",
+          "quantity": {
+            "amount": "1",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "piece:ail"
+          },
+          "trace": {
+            "sourceIngredientIndex": 7,
+            "original": {
+              "name": "Ail",
+              "amount": "1",
+              "unit": "gousse"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "1",
+              "unit": "gousse",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_huile_d_olive",
+          "quantity": {
+            "amount": "1",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "measure:cas"
+          },
+          "trace": {
+            "sourceIngredientIndex": 8,
+            "original": {
+              "name": "Huile d'olive",
+              "amount": "1",
+              "unit": "cas"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "1",
+              "unit": "cas",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_muscade",
+          "quantity": {
+            "amount": "1",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "measure:pincee"
+          },
+          "trace": {
+            "sourceIngredientIndex": 9,
+            "original": {
+              "name": "Muscade",
+              "amount": "1",
+              "unit": "pincee"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "1",
+              "unit": "pincee",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_sel",
+          "quantity": {
+            "amount": "1",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "measure:pincee"
+          },
+          "trace": {
+            "sourceIngredientIndex": 10,
+            "original": {
+              "name": "Sel",
+              "amount": "1",
+              "unit": "pincee"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "1",
+              "unit": "pincee",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        },
+        {
+          "ingredientId": "i_poivre",
+          "quantity": {
+            "amount": "1",
+            "unit": "unit",
+            "basis": "net",
+            "countKind": "measure:pincee"
+          },
+          "trace": {
+            "sourceIngredientIndex": 11,
+            "original": {
+              "name": "Poivre",
+              "amount": "1",
+              "unit": "pincee"
+            },
+            "identityNormalization": null,
+            "proposed": [],
+            "validated": null,
+            "effective": {
+              "amount": "1",
+              "unit": "pincee",
+              "decision": "original_preserved"
+            },
+            "quantityValidationStatus": "source_preserved_not_culinary_validated"
+          }
+        }
+      ],
+      "cookingSteps": [
+        {
+          "sourceStep": 0,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Préchauffer le four à 200 °C. Préparer ",
+            {
+              "ingredientId": "i_potimarron"
+            },
+            " : laver, retirer les graines et couper en petits cubes. Peau conservable si fine."
+          ]
+        },
+        {
+          "sourceStep": 1,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Émincer ",
+            {
+              "ingredientId": "i_oignon"
+            },
+            " et hacher ",
+            {
+              "ingredientId": "i_ail"
+            },
+            ". Chauffer ",
+            {
+              "ingredientId": "i_huile_d_olive"
+            },
+            " ; faire revenir l’oignon 3 minutes puis l’ail 30 secondes."
+          ]
+        },
+        {
+          "sourceStep": 2,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Ajouter le potimarron et ",
+            {
+              "ingredientId": "i_eau_cuisine"
+            },
+            ". Couvrir et cuire 15 à 20 minutes jusqu’à tendreté."
+          ]
+        },
+        {
+          "sourceStep": 3,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Ajouter ",
+            {
+              "ingredientId": "i_haricots_blancs_cuits_egouttes"
+            },
+            " rincés et égouttés puis ",
+            {
+              "ingredientId": "i_creme_legere"
+            },
+            ". Mixer en sauce ; ajouter de l’eau si nécessaire. Assaisonner avec ",
+            {
+              "ingredientId": "i_muscade"
+            },
+            ", ",
+            {
+              "ingredientId": "i_sel"
+            },
+            " et ",
+            {
+              "ingredientId": "i_poivre"
+            },
+            "."
+          ]
+        },
+        {
+          "sourceStep": 4,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Préparer ",
+            {
+              "ingredientId": "i_epinards_frais_ou_surgeles"
+            },
+            " : frais, faire tomber 2 à 3 minutes ; surgelés, décongeler puis retirer l’excédent d’eau. Choisir une variante, sans conversion de rendement entre les deux."
+          ]
+        },
+        {
+          "sourceStep": 5,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Cuire ",
+            {
+              "ingredientId": "i_gnocchis"
+            },
+            " selon le paquet, généralement 2 à 3 minutes ; égoutter."
+          ]
+        },
+        {
+          "sourceStep": 6,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Mélanger les gnocchis, épinards et sauce dans un plat adapté à la quantité ; conserver une épaisseur comparable."
+          ]
+        },
+        {
+          "sourceStep": 7,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Répartir ",
+            {
+              "ingredientId": "i_mozzarella"
+            },
+            " égouttée et déchirée sur le dessus."
+          ]
+        },
+        {
+          "sourceStep": 8,
+          "quantityBindingsReviewed": true,
+          "parts": [
+            "Enfourner 12 à 15 minutes jusqu’à fonte et légère coloration ; laisser reposer 3 minutes. Vérifier la cuisson pour le plat choisi."
+          ]
+        }
+      ],
+      "instructionTrace": {
+        "method": "curated_ingredient_bindings",
+        "originalStepsPreserved": true,
+        "omitted": [],
+        "adaptations": "Quantités liées aux ingrédients ; détails personnels hors cuisine généralisés, temps/températures conservés."
+      },
+      "openIssues": [
+        "Quantités V1 préservées ; validation culinaire et éventuelles corrections encore à confirmer.",
+        "Aucune conversion des mesures cas/cc/pincée vers g ou ml ; aucun poids par pièce présumé.",
+        "Choisir épinards frais ou surgelés ; poids de référence avant/après égouttage non précisé.",
+        "Confirmer le poids de potimarron préparé et de mozzarella égouttée ; aucun coefficient de perte supposé.",
+        "Plat plus petit : calcul proportionnel vérifié, essai culinaire encore requis."
+      ],
+      "cookingAuxiliaries": [
+        {
+          "ingredientId": "i_eau_cuisine",
+          "quantity": {
+            "amount": "150",
+            "unit": "ml",
+            "basis": "net"
+          },
+          "trace": {
+            "sourceStep": 2,
+            "sourceApproximate": true,
+            "decision": "Quantité explicitement présente dans l’étape originale, hors achats."
+          }
+        }
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "id": "i_pate_brisee",
+      "name": "pâte brisée",
+      "unit": "unit",
+      "basis": "net",
+      "countKind": "piece:pate_brisee",
+      "indivisible": true,
+      "culinary": {
+        "singular": "pâte brisée",
+        "plural": "pâtes brisées",
+        "joiner": "de "
+      },
+      "purchasePolicy": {
+        "wholeUnits": true,
+        "evidence": "LOT 4 : achat minimal en pièces entières ; aucun conditionnement inféré."
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_jambon_blanc",
+      "name": "jambon blanc",
+      "unit": "g",
+      "basis": "net",
+      "culinary": {
+        "joiner": "de "
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_oeufs",
+      "name": "œufs",
+      "unit": "unit",
+      "basis": "net",
+      "countKind": "piece:oeufs",
+      "indivisible": true,
+      "culinary": {
+        "singular": "œuf",
+        "plural": "œufs",
+        "joiner": "d’"
+      },
+      "purchasePolicy": {
+        "wholeUnits": true,
+        "evidence": "LOT 4 : achat minimal en pièces entières ; aucun conditionnement inféré."
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_lait",
+      "name": "lait",
+      "unit": "ml",
+      "basis": "net",
+      "culinary": {
+        "joiner": "de "
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_creme_legere",
+      "name": "crème légère",
+      "unit": "ml",
+      "basis": "net",
+      "culinary": {
+        "joiner": "de "
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_emmental_rape",
+      "name": "emmental râpé",
+      "unit": "g",
+      "basis": "net",
+      "culinary": {
+        "joiner": "d’"
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_salade_verte",
+      "name": "salade verte",
+      "unit": "g",
+      "basis": "net",
+      "culinary": {
+        "joiner": "de "
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_moutarde_douce",
+      "name": "moutarde douce",
+      "unit": "unit",
+      "basis": "net",
+      "countKind": "measure:cc",
+      "culinary": {
+        "measure": "cc",
+        "joiner": "de "
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_sel",
+      "name": "sel",
+      "unit": "unit",
+      "basis": "net",
+      "countKind": "measure:pincee",
+      "culinary": {
+        "measure": "pincée",
+        "joiner": "de "
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_poivre",
+      "name": "poivre",
+      "unit": "unit",
+      "basis": "net",
+      "countKind": "measure:pincee",
+      "culinary": {
+        "measure": "pincée",
+        "joiner": "de "
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_boeuf_hache_5_mg",
+      "name": "bœuf haché 5 % mg",
+      "unit": "g",
+      "basis": "net",
+      "culinary": {
+        "joiner": "de "
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_riz_basmati",
+      "name": "riz basmati",
+      "unit": "g",
+      "basis": "net",
+      "culinary": {
+        "joiner": "de "
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_haricots_rouges_egouttes",
+      "name": "haricots rouges egouttes",
+      "unit": "g",
+      "basis": "drained",
+      "culinary": {
+        "joiner": "de "
+      },
+      "basisEvidence": {
+        "status": "explicit_source",
+        "interpretation": "Mention égoutté dans le nom original."
+      }
+    },
+    {
+      "id": "i_mais_egoutte",
+      "name": "mais egoutte",
+      "unit": "g",
+      "basis": "drained",
+      "culinary": {
+        "joiner": "de "
+      },
+      "basisEvidence": {
+        "status": "explicit_source",
+        "interpretation": "Mention égoutté dans le nom original."
+      }
+    },
+    {
+      "id": "i_tomates_concassees",
+      "name": "tomates concassees",
+      "unit": "g",
+      "basis": "net",
+      "culinary": {
+        "joiner": "de "
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_poivron_rouge",
+      "name": "poivron rouge",
+      "unit": "unit",
+      "basis": "net",
+      "countKind": "piece:poivron_rouge",
+      "culinary": {
+        "singular": "poivron rouge",
+        "plural": "poivrons rouges",
+        "joiner": "de "
+      },
+      "purchasePolicy": {
+        "wholeUnits": true,
+        "evidence": "LOT 4 : achat minimal en pièces entières ; aucun conditionnement inféré."
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_oignon",
+      "name": "oignon",
+      "unit": "unit",
+      "basis": "net",
+      "countKind": "piece:oignon",
+      "culinary": {
+        "singular": "oignon",
+        "plural": "oignons",
+        "joiner": "d’"
+      },
+      "purchasePolicy": {
+        "wholeUnits": true,
+        "evidence": "LOT 4 : achat minimal en pièces entières ; aucun conditionnement inféré."
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_ail",
+      "name": "ail",
+      "unit": "unit",
+      "basis": "net",
+      "countKind": "piece:ail",
+      "culinary": {
+        "singular": "gousse d’ail",
+        "plural": "gousses d’ail",
+        "joiner": "d’"
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_concentre_de_tomate",
+      "name": "concentré de tomate",
+      "unit": "unit",
+      "basis": "net",
+      "countKind": "measure:cas",
+      "culinary": {
+        "measure": "c. à soupe",
+        "joiner": "de "
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_paprika_fume",
+      "name": "paprika fume",
+      "unit": "unit",
+      "basis": "net",
+      "countKind": "measure:cc",
+      "culinary": {
+        "measure": "cc",
+        "joiner": "de "
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_cumin_moulu",
+      "name": "cumin moulu",
+      "unit": "unit",
+      "basis": "net",
+      "countKind": "measure:cc",
+      "culinary": {
+        "measure": "cc",
+        "joiner": "de "
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_chili",
+      "name": "chili",
+      "unit": "unit",
+      "basis": "net",
+      "countKind": "measure:cc",
+      "culinary": {
+        "measure": "cc",
+        "joiner": "de "
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_huile_d_olive",
+      "name": "huile d'olive",
+      "unit": "unit",
+      "basis": "net",
+      "countKind": "measure:cas",
+      "culinary": {
+        "measure": "c. à soupe",
+        "joiner": "d’"
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_sel_poivre",
+      "name": "sel poivre",
+      "unit": "unit",
+      "basis": "net",
+      "countKind": "measure:pincee",
+      "culinary": {
+        "measure": "pincée",
+        "joiner": "de "
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_pates",
+      "name": "pates",
+      "unit": "g",
+      "basis": "net",
+      "culinary": {
+        "joiner": "de "
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_carotte",
+      "name": "carotte",
+      "unit": "unit",
+      "basis": "net",
+      "countKind": "piece:carotte",
+      "culinary": {
+        "singular": "carotte",
+        "plural": "carottes",
+        "joiner": "de "
+      },
+      "purchasePolicy": {
+        "wholeUnits": true,
+        "evidence": "LOT 4 : achat minimal en pièces entières ; aucun conditionnement inféré."
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_origan_seche",
+      "name": "origan seche",
+      "unit": "unit",
+      "basis": "net",
+      "countKind": "measure:cc",
+      "culinary": {
+        "measure": "cc",
+        "joiner": "d’"
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_pains_a_burger",
+      "name": "pains à burger",
+      "unit": "unit",
+      "basis": "net",
+      "countKind": "piece:pains_a_burger",
+      "indivisible": true,
+      "culinary": {
+        "singular": "pain à burger",
+        "plural": "pains à burger",
+        "joiner": "de "
+      },
+      "purchasePolicy": {
+        "wholeUnits": true,
+        "evidence": "LOT 4 : achat minimal en pièces entières ; aucun conditionnement inféré."
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_steaks_haches_de_boeuf_5_mg",
+      "name": "steaks hachés de bœuf 5 % mg",
+      "unit": "unit",
+      "basis": "net",
+      "countKind": "piece:steaks_haches_de_boeuf_5_mg",
+      "indivisible": true,
+      "culinary": {
+        "singular": "steak haché de bœuf 5 % MG",
+        "plural": "steaks hachés de bœuf 5 % MG",
+        "joiner": "de "
+      },
+      "purchasePolicy": {
+        "wholeUnits": true,
+        "evidence": "LOT 4 : achat minimal en pièces entières ; aucun conditionnement inféré."
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_cheddar_en_tranches",
+      "name": "cheddar en tranches",
+      "unit": "unit",
+      "basis": "net",
+      "countKind": "piece:cheddar_en_tranches",
+      "indivisible": true,
+      "culinary": {
+        "singular": "tranche de cheddar",
+        "plural": "tranches de cheddar",
+        "joiner": "de "
+      },
+      "purchasePolicy": {
+        "wholeUnits": true,
+        "evidence": "LOT 4 : achat minimal en pièces entières ; aucun conditionnement inféré."
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_patates_douces",
+      "name": "patates douces",
+      "unit": "g",
+      "basis": "net",
+      "culinary": {
+        "joiner": "de "
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_tomates",
+      "name": "tomates",
+      "unit": "unit",
+      "basis": "net",
+      "countKind": "piece:tomates",
+      "culinary": {
+        "singular": "tomate",
+        "plural": "tomates",
+        "joiner": "de "
+      },
+      "purchasePolicy": {
+        "wholeUnits": true,
+        "evidence": "LOT 4 : achat minimal en pièces entières ; aucun conditionnement inféré."
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_oignon_rouge",
+      "name": "oignon rouge",
+      "unit": "unit",
+      "basis": "net",
+      "countKind": "piece:oignon_rouge",
+      "culinary": {
+        "singular": "oignon rouge",
+        "plural": "oignons rouges",
+        "joiner": "d’"
+      },
+      "purchasePolicy": {
+        "wholeUnits": true,
+        "evidence": "LOT 4 : achat minimal en pièces entières ; aucun conditionnement inféré."
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_yaourt_grec_nature",
+      "name": "yaourt grec nature",
+      "unit": "g",
+      "basis": "net",
+      "culinary": {
+        "joiner": "de "
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_ketchup",
+      "name": "ketchup",
+      "unit": "unit",
+      "basis": "net",
+      "countKind": "measure:cas",
+      "culinary": {
+        "measure": "c. à soupe",
+        "joiner": "de "
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_paprika_doux",
+      "name": "paprika doux",
+      "unit": "unit",
+      "basis": "net",
+      "countKind": "measure:cc",
+      "culinary": {
+        "measure": "cc",
+        "joiner": "de "
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_gnocchis",
+      "name": "gnocchis",
+      "unit": "g",
+      "basis": "net",
+      "culinary": {
+        "joiner": "de "
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_potimarron",
+      "name": "potimarron",
+      "unit": "g",
+      "basis": "net",
+      "culinary": {
+        "joiner": "de "
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_epinards_frais_ou_surgeles",
+      "name": "épinards frais ou surgelés",
+      "unit": "g",
+      "basis": "net",
+      "culinary": {
+        "joiner": "d’"
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_haricots_blancs_cuits_egouttes",
+      "name": "haricots blancs cuits égouttés",
+      "unit": "g",
+      "basis": "drained",
+      "culinary": {
+        "joiner": "de "
+      },
+      "basisEvidence": {
+        "status": "explicit_source",
+        "interpretation": "Mention égoutté dans le nom original."
+      }
+    },
+    {
+      "id": "i_mozzarella",
+      "name": "mozzarella",
+      "unit": "g",
+      "basis": "net",
+      "culinary": {
+        "joiner": "de "
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_muscade",
+      "name": "muscade",
+      "unit": "unit",
+      "basis": "net",
+      "countKind": "measure:pincee",
+      "culinary": {
+        "measure": "pincée",
+        "joiner": "de "
+      },
+      "basisEvidence": {
+        "status": "source_basis_unspecified",
+        "interpretation": "Quantité recette telle qu’écrite, sans coefficient brut/net."
+      }
+    },
+    {
+      "id": "i_eau_cuisine",
+      "name": "eau de cuisson",
+      "unit": "ml",
+      "basis": "net",
+      "shoppingRequired": false,
+      "culinary": {
+        "joiner": "d’"
+      }
+    }
+  ],
+  "pieceConversions": [],
+  "products": [],
+  "notes": [
+    "Aucun catalogue commercial.",
+    "Aucune correction quantitative proposée promue en validation.",
+    "Normalisation de graphie documentée : bœuf haché 5 % et concentré de tomate. Aucune équivalence poids/pièce."
+  ]
+}

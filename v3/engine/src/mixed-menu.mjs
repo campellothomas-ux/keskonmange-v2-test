@@ -6,6 +6,7 @@ import {ingredientMap,validateCatalog} from './model.mjs';
 import {priceLines} from './packages.mjs';
 import {safeMixedContext,analyzeMixedMeal} from './mixed-core.mjs';
 import {createShopping,reconcileShopping,estimateShopping} from './shopping.mjs';
+import {ingredientPurchaseNeed} from './culinary.mjs';
 
 export function evaluateMixedMenu(context,menu,shopping=createShopping(`${menu.id}-shopping`),{stockMenu=menu,acknowledgeChecked=false}={}) {
   validateMenu(menu);const {context:c,catalogIssues}=safeMixedContext(context);
@@ -45,7 +46,11 @@ export function evaluateMixedMenu(context,menu,shopping=createShopping(`${menu.i
       const used=minQ(free[id]??0,q);if(used.cmp(0)>0)allocation[m.mealId][id]=used.toString();free[id]=Q.of(free[id]??0).sub(used).toString();
     }
   }
-  const reconciled=reconcileShopping(shopping,basket.menu.lines,{acknowledgeChecked}),cart=estimateShopping(c,reconciled.shopping);
+  const ingredientNeeds=Object.entries(basket.quantities).map(([id,q])=>ingredientPurchaseNeed(c.ingredients.find(i=>i.id===id),q));
+  const covered=new Set(basket.menu.lines.map(l=>c.products.find(p=>p.id===l.productId)?.ingredientId));
+  const fallback=ingredientNeeds.filter(row=>!covered.has(row.ingredientId)&&Q.of(row.quantity.amount).cmp(0)>0&&
+    c.ingredients.find(i=>i.id===row.ingredientId)?.shoppingRequired!==false).map(row=>({...row,kind:'ingredient_need'}));
+  const reconciled=reconcileShopping(shopping,[...basket.menu.lines,...fallback],{acknowledgeChecked}),cart=estimateShopping(c,reconciled.shopping);
   const quantitiesComplete=!unknownNeeds.length&&!purchaseIssues.length&&!catalogIssues.length;
   const coverageComplete=quantitiesComplete&&!reconciled.conflicts.length;
   const amount={...cart.total,listedItemsTotalCents:cart.total.totalCents,totalCents:coverageComplete?cart.total.totalCents:null,
@@ -69,8 +74,8 @@ export function evaluateMixedMenu(context,menu,shopping=createShopping(`${menu.i
     status:amount.totalCents===null?amount.knownSubtotalCents>c.budget.cents?'partial_over_target':'unverifiable':amount.totalCents>c.budget.cents?'over_target':'within_estimate',
     knownExcessCents:Math.max(0,amount.knownSubtotalCents-c.budget.cents),verified:amount.totalCents!==null&&amount.certainty==='observed_session'&&amount.totalCents<=c.budget.cents}:null;
   return {version:1,status:invalid?'invalid':coverageComplete&&amount.totalCents!==null?'complete':Object.keys(needs).length?'partial':'needs_review',
-    meals,requirements:{needs,preparations,individual},basket:{...basket,amount,shopping:cart},shopping:reconciled.shopping,
-    allocation,coverage:{quantitiesComplete,complete:coverageComplete,unknownNeeds,purchaseIssues,catalogIssues,checkedConflicts:reconciled.conflicts},
+    meals,requirements:{needs,preparations,individual},ingredientNeeds,basket:{...basket,amount,shopping:cart},shopping:reconciled.shopping,
+    allocation,coverage:{ingredientQuantitiesComplete:!unknownNeeds.length,quantitiesComplete,complete:coverageComplete,unknownNeeds,purchaseIssues,catalogIssues,checkedConflicts:reconciled.conflicts},
     budget,risks,warnings,score:score.toString(),scoreScope:coverageComplete&&amount.totalCents!==null?'provided_prices':'known_components_only',
     advice:{requested:false,applied:false},metrics:{distinctRecipes:counts.size,distinctKnownFamilies:families.size}};
 }

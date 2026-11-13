@@ -1,0 +1,712 @@
+TAP version 13
+# Subtest: Lot3 H — combined search selects the best actually evaluated phase under one global budget
+ok 1 - Lot3 H — combined search selects the best actually evaluated phase under one global budget
+  ---
+  duration_ms: 193.847848
+  type: 'test'
+  ...
+# Subtest: Lot3 H — a one-evaluation budget runs one phase only and never claims a global proof
+ok 2 - Lot3 H — a one-evaluation budget runs one phase only and never claims a global proof
+  ---
+  duration_ms: 0.953643
+  type: 'test'
+  ...
+# Subtest: LOT4 — natural fractions use source pieces/cloves without inventing a mass conversion
+ok 3 - LOT4 — natural fractions use source pieces/cloves without inventing a mass conversion
+  ---
+  duration_ms: 2.297194
+  type: 'test'
+  ...
+# Subtest: LOT4 — only evidenced ingredient-specific configuration enables approximate gram/piece display
+ok 4 - LOT4 — only evidenced ingredient-specific configuration enables approximate gram/piece display
+  ---
+  duration_ms: 1.104322
+  type: 'test'
+  ...
+# Subtest: LOT4 — displayed decimal rounding and precise measures never overwrite reference quantities
+ok 5 - LOT4 — displayed decimal rounding and precise measures never overwrite reference quantities
+  ---
+  duration_ms: 0.24007
+  type: 'test'
+  ...
+# Subtest: LOT4 — embedded culinary configuration is reused by cooking and shopping without changing calculations
+ok 6 - LOT4 — embedded culinary configuration is reused by cooking and shopping without changing calculations
+  ---
+  duration_ms: 6.337451
+  type: 'test'
+  ...
+# Subtest: LOT4 — three half-onions aggregate to 1.5 then buy 2; stock is deducted before whole-piece rounding
+ok 7 - LOT4 — three half-onions aggregate to 1.5 then buy 2; stock is deducted before whole-piece rounding
+  ---
+  duration_ms: 34.089541
+  type: 'test'
+  ...
+# Subtest: LOT4 — exact compatible kg/g and evidenced piece/g needs aggregate before display, with no density guesses
+ok 8 - LOT4 — exact compatible kg/g and evidenced piece/g needs aggregate before display, with no density guesses
+  ---
+  duration_ms: 1.812676
+  type: 'test'
+  ...
+# Subtest: LOT4 — repeated display and commercial rounding leave every exact menu need unchanged
+ok 9 - LOT4 — repeated display and commercial rounding leave every exact menu need unchanged
+  ---
+  duration_ms: 19.337182
+  type: 'test'
+  ...
+# Subtest: Lot3 field template reports five missing household reviews and never pretends to be field validated
+ok 10 - Lot3 field template reports five missing household reviews and never pretends to be field validated
+  ---
+  duration_ms: 3.96609
+  type: 'test'
+  ...
+# Subtest: Lot3 technical review checks can pass on mock attestations but cannot certify real household/commercial authenticity
+ok 11 - Lot3 technical review checks can pass on mock attestations but cannot certify real household/commercial authenticity
+  ---
+  duration_ms: 2.173813
+  type: 'test'
+  ...
+# Subtest: Lot3 demo origin, missing evidence and unknown production remain explicitly unvalidated
+ok 12 - Lot3 demo origin, missing evidence and unknown production remain explicitly unvalidated
+  ---
+  duration_ms: 0.60277
+  type: 'test'
+  ...
+# Subtest: Lot3 observed historical prices require receipt evidence, not a product-label assertion
+ok 13 - Lot3 observed historical prices require receipt evidence, not a product-label assertion
+  ---
+  duration_ms: 0.765327
+  type: 'test'
+  ...
+# Subtest: Lot2 I — more expensive format wins on explicit perishable surplus penalty
+ok 14 - Lot2 I — more expensive format wins on explicit perishable surplus penalty
+  ---
+  duration_ms: 4.134655
+  type: 'test'
+  ...
+# Subtest: Lot2 joint strict budget couples ingredient frontiers instead of picking independent winners
+ok 15 - Lot2 joint strict budget couples ingredient frontiers instead of picking independent winners
+  ---
+  duration_ms: 0.764526
+  type: 'test'
+  ...
+# Subtest: Lot2 unknown prices remain uncertain and limit proof; no valid format or mixed stores fails
+ok 16 - Lot2 unknown prices remain uncertain and limit proof; no valid format or mixed stores fails
+  ---
+  duration_ms: 1.087427
+  type: 'test'
+  ...
+# Subtest: Lot2 generated joint purchases match independent exhaustive integer pack oracle
+ok 17 - Lot2 generated joint purchases match independent exhaustive integer pack oracle
+  ---
+  duration_ms: 19.686256
+  type: 'test'
+  ...
+# Subtest: Lot2 exact rational contents and real weight increments retain merged-line cent rounding
+ok 18 - Lot2 exact rational contents and real weight increments retain merged-line cent rounding
+  ---
+  duration_ms: 0.746459
+  type: 'test'
+  ...
+# Subtest: Lot2 joint frontier bounds and invalid commercial quantities fail instead of silently truncating
+ok 19 - Lot2 joint frontier bounds and invalid commercial quantities fail instead of silently truncating
+  ---
+  duration_ms: 0.344222
+  type: 'test'
+  ...
+# Subtest: Lot2 J — exhaustive joint search compares menus and pack alternatives against independent generated oracle
+ok 20 - Lot2 J — exhaustive joint search compares menus and pack alternatives against independent generated oracle
+  ---
+  duration_ms: 125.069576
+  type: 'test'
+  ...
+# Subtest: Lot2 J — limits expose feasible/best-found, never optimal; progress reports improving incumbents
+ok 21 - Lot2 J — limits expose feasible/best-found, never optimal; progress reports improving incumbents
+  ---
+  duration_ms: 22.396222
+  type: 'test'
+  ...
+# Subtest: Lot2 K — invalid locked recipe, budget, allergens and production data have explicit diagnostics
+ok 22 - Lot2 K — invalid locked recipe, budget, allergens and production data have explicit diagnostics
+  ---
+  duration_ms: 2.173973
+  type: 'test'
+  ...
+# Subtest: Lot2 global proposals preserve per-meal diners and optionally explore legal extra production only as candidates
+ok 23 - Lot2 global proposals preserve per-meal diners and optionally explore legal extra production only as candidates
+  ---
+  duration_ms: 1.535392
+  type: 'test'
+  ...
+# Subtest: F — of five refs only two checked enter stock; none checked adds nothing
+ok 24 - F — of five refs only two checked enter stock; none checked adds nothing
+  ---
+  duration_ms: 3.34985
+  type: 'test'
+  ...
+# Subtest: G — same purchase intent is idempotent; reused ID with another payload is refused
+ok 25 - G — same purchase intent is idempotent; reused ID with another payload is refused
+  ---
+  duration_ms: 0.689967
+  type: 'test'
+  ...
+# Subtest: planning reserves physical stock without consuming it or reserving it twice
+ok 26 - planning reserves physical stock without consuming it or reserving it twice
+  ---
+  duration_ms: 0.710377
+  type: 'test'
+  ...
+# Subtest: H — cook actual quantity once, cancel restores physical stock and original reservation
+ok 27 - H — cook actual quantity once, cancel restores physical stock and original reservation
+  ---
+  duration_ms: 0.884501
+  type: 'test'
+  ...
+# Subtest: cancelling purchase or reservation refuses dependent stock conflicts atomically
+ok 28 - cancelling purchase or reservation refuses dependent stock conflicts atomically
+  ---
+  duration_ms: 0.613896
+  type: 'test'
+  ...
+# Subtest: concurrent intents re-evaluated on latest snapshot detect insufficient stock and revision conflicts
+ok 29 - concurrent intents re-evaluated on latest snapshot detect insufficient stock and revision conflicts
+  ---
+  duration_ms: 0.491978
+  type: 'test'
+  ...
+# Subtest: a released reservation ID cannot be reused and mistaken for an old cancellation target
+ok 30 - a released reservation ID cannot be reused and mistaken for an old cancellation target
+  ---
+  duration_ms: 0.461604
+  type: 'test'
+  ...
+# Subtest: physical consumption cannot take other menus reservations; invalid purchases never mutate
+ok 31 - physical consumption cannot take other menus reservations; invalid purchases never mutate
+  ---
+  duration_ms: 0.615729
+  type: 'test'
+  ...
+# Subtest: properties — 150 seeded purchase/cook/cancel histories conserve exact stock and replay safely
+ok 32 - properties — 150 seeded purchase/cook/cancel histories conserve exact stock and replay safely
+  ---
+  duration_ms: 346.903698
+  type: 'test'
+  ...
+# Subtest: LOT4 — complete five-recipe planning exposes all ingredient needs without any SKU or fabricated price
+ok 33 - LOT4 — complete five-recipe planning exposes all ingredient needs without any SKU or fabricated price
+  ---
+  duration_ms: 42.085173
+  type: 'test'
+  ...
+# Subtest: LOT4 — portion change recalculates cooking and shopping together while preserving manual additions and checks
+ok 34 - LOT4 — portion change recalculates cooking and shopping together while preserving manual additions and checks
+  ---
+  duration_ms: 62.607279
+  type: 'test'
+  ...
+# Subtest: LOT4 — checked ingredient line is protected on changed need; explicit reconciliation updates exact quantities
+ok 35 - LOT4 — checked ingredient line is protected on changed need; explicit reconciliation updates exact quantities
+  ---
+  duration_ms: 62.40191
+  type: 'test'
+  ...
+# Subtest: LOT4 — physical stock and outside reservations are applied once after aggregation; stock-only ingredients are not bought
+ok 36 - LOT4 — physical stock and outside reservations are applied once after aggregation; stock-only ingredients are not bought
+  ---
+  duration_ms: 8.748021
+  type: 'test'
+  ...
+# Subtest: Lot2 C — five meals: change only 2/3/2/4/3 diners, recompute individual and global quantities
+ok 37 - Lot2 C — five meals: change only 2/3/2/4/3 diners, recompute individual and global quantities
+  ---
+  duration_ms: 11.075246
+  type: 'test'
+  ...
+# Subtest: Lot2 D — measurable extra portion suggestion is not applied until acceptance
+ok 38 - Lot2 D — measurable extra portion suggestion is not applied until acceptance
+  ---
+  duration_ms: 9.135371
+  type: 'test'
+  ...
+# Subtest: Lot2 D — additional package is not mislabeled as an economy; unchanged shelf-stable surplus has no artificial benefit
+ok 39 - Lot2 D — additional package is not mislabeled as an economy; unchanged shelf-stable surplus has no artificial benefit
+  ---
+  duration_ms: 1.507901
+  type: 'test'
+  ...
+# Subtest: Lot2 E — alternatives price the whole five-meal basket, preserve others, require acceptance and remember temporary rejects
+ok 40 - Lot2 E — alternatives price the whole five-meal basket, preserve others, require acceptance and remember temporary rejects
+  ---
+  duration_ms: 10.852401
+  type: 'test'
+  ...
+# Subtest: Lot2 F — voluntary reoptimization preserves locked meals and only returns a candidate
+ok 41 - Lot2 F — voluntary reoptimization preserves locked meals and only returns a candidate
+  ---
+  duration_ms: 9.431348
+  type: 'test'
+  ...
+# Subtest: Lot2 G — reservations survive portion changes, replacement and reverse-order cancellation without double allocation
+ok 42 - Lot2 G — reservations survive portion changes, replacement and reverse-order cancellation without double allocation
+  ---
+  duration_ms: 8.085772
+  type: 'test'
+  ...
+# Subtest: Lot2 H — cook two whole quiches, keep three portions, no ingredient recreation, replay and cancellation
+ok 43 - Lot2 H — cook two whole quiches, keep three portions, no ingredient recreation, replay and cancellation
+  ---
+  duration_ms: 2.039086
+  type: 'test'
+  ...
+# Subtest: Lot2 acceptance is idempotent, stale proposals and altered evaluation are rejected
+ok 44 - Lot2 acceptance is idempotent, stale proposals and altered evaluation are rejected
+  ---
+  duration_ms: 5.027148
+  type: 'test'
+  ...
+# Subtest: Lot2 K — locks, missing data, unknown allergens, impossible budgets and insufficient actual stock are explicit
+ok 45 - Lot2 K — locks, missing data, unknown allergens, impossible budgets and insufficient actual stock are explicit
+  ---
+  duration_ms: 1.537835
+  type: 'test'
+  ...
+# Subtest: Lot2 suggestions respect significance thresholds, stock usage and leftover destination
+ok 46 - Lot2 suggestions respect significance thresholds, stock usage and leftover destination
+  ---
+  duration_ms: 4.322439
+  type: 'test'
+  ...
+# Subtest: Lot2 replacement can repair a newly incompatible target without inventing a baseline comparison
+ok 47 - Lot2 replacement can repair a newly incompatible target without inventing a baseline comparison
+  ---
+  duration_ms: 3.202465
+  type: 'test'
+  ...
+# Subtest: Lot2 full and partial locks survive global proposals; unlocked proposal can improve while original stays intact
+ok 48 - Lot2 full and partial locks survive global proposals; unlocked proposal can improve while original stays intact
+  ---
+  duration_ms: 15.075151
+  type: 'test'
+  ...
+# Subtest: Lot2 prepared portion consumption and its cancellation are idempotent and separate from ingredients
+ok 49 - Lot2 prepared portion consumption and its cancellation are idempotent and separate from ingredients
+  ---
+  duration_ms: 1.540669
+  type: 'test'
+  ...
+# Subtest: Lot2 explicit production grows only to the legal minimum when diners increase; production locks block it
+ok 50 - Lot2 explicit production grows only to the legal minimum when diners increase; production locks block it
+  ---
+  duration_ms: 1.788751
+  type: 'test'
+  ...
+# Subtest: Lot2 replacement honors a production lock across modes and rejects incompatible batch sizes
+ok 51 - Lot2 replacement honors a production lock across modes and rejects incompatible batch sizes
+  ---
+  duration_ms: 13.350122
+  type: 'test'
+  ...
+# Subtest: Lot2 menu proposals cannot mark a meal cooked to bypass ingredient consumption
+ok 52 - Lot2 menu proposals cannot mark a meal cooked to bypass ingredient consumption
+  ---
+  duration_ms: 0.467042
+  type: 'test'
+  ...
+# Subtest: Lot3 A/G — three complete, one partial and one manual meal preserve independent exact quantities
+ok 53 - Lot3 A/G — three complete, one partial and one manual meal preserve independent exact quantities
+  ---
+  duration_ms: 10.320936
+  type: 'test'
+  ...
+# Subtest: Lot3 A — an unreviewed number or missing conversion is never silently used from a partial recipe
+ok 54 - Lot3 A — an unreviewed number or missing conversion is never silently used from a partial recipe
+  ---
+  duration_ms: 3.978678
+  type: 'test'
+  ...
+# Subtest: Lot3 invalid quantities are isolated and never converted into zero or stock
+ok 55 - Lot3 invalid quantities are isolated and never converted into zero or stock
+  ---
+  duration_ms: 2.43207
+  type: 'test'
+  ...
+# Subtest: Lot3 B — a manually chosen expensive meal and indicative or search-only strict budgets remain nonblocking
+ok 56 - Lot3 B — a manually chosen expensive meal and indicative or search-only strict budgets remain nonblocking
+  ---
+  duration_ms: 2.317002
+  type: 'test'
+  ...
+# Subtest: Lot3 unknown price or absent packaging retains priced needs and never produces a false full basket
+ok 57 - Lot3 unknown price or absent packaging retains priced needs and never produces a false full basket
+  ---
+  duration_ms: 2.490966
+  type: 'test'
+  ...
+# Subtest: Lot3 known manual dietary risk is visible and is not disguised as a mathematical failure
+ok 58 - Lot3 known manual dietary risk is visible and is not disguised as a mathematical failure
+  ---
+  duration_ms: 1.835169
+  type: 'test'
+  ...
+# Subtest: Lot3 B/D — manual edits and an expensive free choice preserve opaque meals and never request advice
+ok 59 - Lot3 B/D — manual edits and an expensive free choice preserve opaque meals and never request advice
+  ---
+  duration_ms: 17.239055
+  type: 'test'
+  ...
+# Subtest: Lot3 partial planning acceptance is idempotent, reserves only known stock and protects snapshots
+ok 60 - Lot3 partial planning acceptance is idempotent, reserves only known stock and protects snapshots
+  ---
+  duration_ms: 6.280518
+  type: 'test'
+  ...
+# Subtest: Lot3 C — manual products survive explicit partial reoptimization with quantities and checks intact
+ok 61 - Lot3 C — manual products survive explicit partial reoptimization with quantities and checks intact
+  ---
+  duration_ms: 51.273976
+  type: 'test'
+  ...
+# Subtest: Lot3 D/E — advice only on demand, multiple useful proposals, decline has no effect and explicit acceptance changes only proposed meals
+ok 62 - Lot3 D/E — advice only on demand, multiple useful proposals, decline has no effect and explicit acceptance changes only proposed meals
+  ---
+  duration_ms: 76.664148
+  type: 'test'
+  ...
+# Subtest: Lot3 advice never recommends a known allergen or silently accepts an unverifiable strict budget
+ok 63 - Lot3 advice never recommends a known allergen or silently accepts an unverifiable strict budget
+  ---
+  duration_ms: 42.317672
+  type: 'test'
+  ...
+# Subtest: Lot3 mathematical locks and mandatory production remain enforced even when other meals are opaque
+ok 64 - Lot3 mathematical locks and mandatory production remain enforced even when other meals are opaque
+  ---
+  duration_ms: 5.126724
+  type: 'test'
+  ...
+# Subtest: Lot3 no useful gain means no advice, rather than an artificial saving from preparing more
+ok 65 - Lot3 no useful gain means no advice, rather than an artificial saving from preparing more
+  ---
+  duration_ms: 9.726498
+  type: 'test'
+  ...
+# Subtest: Lot3 low-level automatic proposals cannot bypass diet safety or modify an opaque manual meal
+ok 66 - Lot3 low-level automatic proposals cannot bypass diet safety or modify an opaque manual meal
+  ---
+  duration_ms: 3.401795
+  type: 'test'
+  ...
+# Subtest: J — incompatible budget or dietary constraints return explicit infeasibility
+ok 67 - J — incompatible budget or dietary constraints return explicit infeasibility
+  ---
+  duration_ms: 9.479332
+  type: 'test'
+  ...
+# Subtest: J/M — manual items count toward strict budget; no cross-store fallback
+ok 68 - J/M — manual items count toward strict budget; no cross-store fallback
+  ---
+  duration_ms: 1.229969
+  type: 'test'
+  ...
+# Subtest: K — explicit perishable stock bonus can favor stock without forcing all of it to be consumed
+ok 69 - K — explicit perishable stock bonus can favor stock without forcing all of it to be consumed
+  ---
+  duration_ms: 1.504872
+  type: 'test'
+  ...
+# Subtest: L — explicit variety priority can beat a slightly cheaper repetitive menu
+ok 70 - L — explicit variety priority can beat a slightly cheaper repetitive menu
+  ---
+  duration_ms: 2.192566
+  type: 'test'
+  ...
+# Subtest: allergy knowledge is explicit and V2 diet tags cannot certify a recipe
+ok 71 - allergy knowledge is explicit and V2 diet tags cannot certify a recipe
+  ---
+  duration_ms: 0.628395
+  type: 'test'
+  ...
+# Subtest: history, family limits, preferences and preservation priorities are caller policies
+ok 72 - history, family limits, preferences and preservation priorities are caller policies
+  ---
+  duration_ms: 0.574804
+  type: 'test'
+  ...
+# Subtest: unknown prices stay provisional; limits and rejected calculations prevent optimality claims
+ok 73 - unknown prices stay provisional; limits and rejected calculations prevent optimality claims
+  ---
+  duration_ms: 1.571221
+  type: 'test'
+  ...
+# Subtest: menu optimization shares ingredient needs and stock across recipes
+ok 74 - menu optimization shares ingredient needs and stock across recipes
+  ---
+  duration_ms: 0.324127
+  type: 'test'
+  ...
+# Subtest: properties — small menus match independent ordered enumeration of every cover and explicit score
+ok 75 - properties — small menus match independent ordered enumeration of every cover and explicit score
+  ---
+  duration_ms: 56.551582
+  type: 'test'
+  ...
+# Subtest: A — 650 g requires two 400 g cans, 800 bought, 150 surplus
+ok 76 - A — 650 g requires two 400 g cans, 800 bought, 150 surplus
+  ---
+  duration_ms: 2.917815
+  type: 'test'
+  ...
+# Subtest: B/E — shared stock is subtracted once after needs aggregation
+ok 77 - B/E — shared stock is subtracted once after needs aggregation
+  ---
+  duration_ms: 1.414125
+  type: 'test'
+  ...
+# Subtest: C — multiple sizes choose total package cost, not cheapest kg
+ok 78 - C — multiple sizes choose total package cost, not cheapest kg
+  ---
+  duration_ms: 0.925981
+  type: 'test'
+  ...
+# Subtest: M — foreign store refs fail; elsewhere price is explicitly estimated
+ok 79 - M — foreign store refs fail; elsewhere price is explicitly estimated
+  ---
+  duration_ms: 0.860123
+  type: 'test'
+  ...
+# Subtest: prices retain missingness and uncertainty; manual purchases belong to total cart
+ok 80 - prices retain missingness and uncertainty; manual purchases belong to total cart
+  ---
+  duration_ms: 0.939322
+  type: 'test'
+  ...
+# Subtest: N — weight sales have explicit increments and a rate, rounded only on merged line
+ok 81 - N — weight sales have explicit increments and a rate, rounded only on merged line
+  ---
+  duration_ms: 1.125021
+  type: 'test'
+  ...
+# Subtest: availability, verified content, missing formats, bounded work and invalid money fail explicitly
+ok 82 - availability, verified content, missing formats, bounded work and invalid money fail explicitly
+  ---
+  duration_ms: 0.799241
+  type: 'test'
+  ...
+# Subtest: same-day observation is required before a strict budget can be verified
+ok 83 - same-day observation is required before a strict budget can be verified
+  ---
+  duration_ms: 0.324518
+  type: 'test'
+  ...
+# Subtest: rational package lattice keeps all small fractions exact
+ok 84 - rational package lattice keeps all small fractions exact
+  ---
+  duration_ms: 0.246901
+  type: 'test'
+  ...
+# Subtest: properties — 250 seeded package problems match an independent exhaustive oracle
+ok 85 - properties — 250 seeded package problems match an independent exhaustive oracle
+  ---
+  duration_ms: 26.043043
+  type: 'test'
+  ...
+# Subtest: LOT4 — exactly five native recipes retain all 60 originals and every unvalidated proposal
+ok 86 - LOT4 — exactly five native recipes retain all 60 originals and every unvalidated proposal
+  ---
+  duration_ms: 8.273133
+  type: 'test'
+  ...
+# Subtest: LOT4 — changed source cannot silently reuse curated instruction bindings
+ok 87 - LOT4 — changed source cannot silently reuse curated instruction bindings
+  ---
+  duration_ms: 1.368376
+  type: 'test'
+  ...
+# Subtest: LOT4 — whole quiches never split pastry; salad follows diners, not cooked batches
+ok 88 - LOT4 — whole quiches never split pastry; salad follows diners, not cooked batches
+  ---
+  duration_ms: 8.09803
+  type: 'test'
+  ...
+# Subtest: LOT4 — gratin is adjustable in a smaller dish, with exact sauce and auxiliary water
+ok 89 - LOT4 — gratin is adjustable in a smaller dish, with exact sauce and auxiliary water
+  ---
+  duration_ms: 4.129726
+  type: 'test'
+  ...
+# Subtest: LOT4 — burger components remain whole for 1..9 diners; side potatoes/oil follow diners independently
+ok 90 - LOT4 — burger components remain whole for 1..9 diners; side potatoes/oil follow diners independently
+  ---
+  duration_ms: 3.389323
+  type: 'test'
+  ...
+# Subtest: LOT4 — all five cooking modes use final quantities and preserve literal temperatures/durations
+ok 91 - LOT4 — all five cooking modes use final quantities and preserve literal temperatures/durations
+  ---
+  duration_ms: 5.747507
+  type: 'test'
+  ...
+# Subtest: LOT4 — missing or unreviewed cooking binding is flagged, never guessed by replacing text numbers
+ok 92 - LOT4 — missing or unreviewed cooking binding is flagged, never guessed by replacing text numbers
+  ---
+  duration_ms: 1.748998
+  type: 'test'
+  ...
+# Subtest: LOT4 — catalog-free suggestions exclude disproportionate quiche leftovers and keep manual choice possible
+ok 93 - LOT4 — catalog-free suggestions exclude disproportionate quiche leftovers and keep manual choice possible
+  ---
+  duration_ms: 25.588406
+  type: 'test'
+  ...
+# Subtest: LOT4 — automatic joint search and legacy alternatives cannot bypass the surplus restriction
+ok 94 - LOT4 — automatic joint search and legacy alternatives cannot bypass the surplus restriction
+  ---
+  duration_ms: 4.279331
+  type: 'test'
+  ...
+# Subtest: LOT4 — automatic extra portions are disabled on every pilot, including abundant free stock
+ok 95 - LOT4 — automatic extra portions are disabled on every pilot, including abundant free stock
+  ---
+  duration_ms: 16.043661
+  type: 'test'
+  ...
+# Subtest: LOT4 — manual meal change can keep whole quiches while low-level advice cannot introduce them for five
+ok 96 - LOT4 — manual meal change can keep whole quiches while low-level advice cannot introduce them for five
+  ---
+  duration_ms: 36.638231
+  type: 'test'
+  ...
+# Subtest: Lot2 A — whole quiches: 2/4/5/8/9 diners produce 4/4/8/8/12 portions
+ok 97 - Lot2 A — whole quiches: 2/4/5/8/9 diners produce 4/4/8/8/12 portions
+  ---
+  duration_ms: 5.348147
+  type: 'test'
+  ...
+# Subtest: Lot2 B — adjustable exact factors, eggs rounded by explicit policy, complete cart
+ok 98 - Lot2 B — adjustable exact factors, eggs rounded by explicit policy, complete cart
+  ---
+  duration_ms: 3.323365
+  type: 'test'
+  ...
+# Subtest: Lot2 production by individual unit and explicit limits
+ok 99 - Lot2 production by individual unit and explicit limits
+  ---
+  duration_ms: 0.452701
+  type: 'test'
+  ...
+# Subtest: Lot2 K — no inferred mode/yield, no invalid production grid
+ok 100 - Lot2 K — no inferred mode/yield, no invalid production grid
+  ---
+  duration_ms: 0.36639
+  type: 'test'
+  ...
+# Subtest: Lot2 adaptation requires an explicit review and evidence, never infers batch mode from title
+ok 101 - Lot2 adaptation requires an explicit review and evidence, never infers batch mode from title
+  ---
+  duration_ms: 0.515384
+  type: 'test'
+  ...
+# Subtest: D — diners, produced portions, kept/discarded portions stay distinct
+ok 102 - D — diners, produced portions, kept/discarded portions stay distinct
+  ---
+  duration_ms: 2.141127
+  type: 'test'
+  ...
+# Subtest: N — exact fractions, tiny volumes, no binary-float or repeated-rounding drift
+ok 103 - N — exact fractions, tiny volumes, no binary-float or repeated-rounding drift
+  ---
+  duration_ms: 0.383867
+  type: 'test'
+  ...
+# Subtest: I/N — no invented piece mass, head/clove count, density, drained or edible yield
+ok 104 - I/N — no invented piece mass, head/clove count, density, drained or edible yield
+  ---
+  duration_ms: 0.413701
+  type: 'test'
+  ...
+# Subtest: D/N — indivisible eggs require explicit ceil for each preparation
+ok 105 - D/N — indivisible eggs require explicit ceil for each preparation
+  ---
+  duration_ms: 0.304337
+  type: 'test'
+  ...
+# Subtest: input validation rejects ambiguous conversion declarations and invalid metadata
+ok 106 - input validation rejects ambiguous conversion declarations and invalid metadata
+  ---
+  duration_ms: 0.262594
+  type: 'test'
+  ...
+# Subtest: Lot3 C — free products retain exact quantities/states and contribute only known prices
+ok 107 - Lot3 C — free products retain exact quantities/states and contribute only known prices
+  ---
+  duration_ms: 11.132039
+  type: 'test'
+  ...
+# Subtest: Lot3 matching SKU merges origins and adds quantities; similar names alone never merge
+ok 108 - Lot3 matching SKU merges origins and adds quantities; similar names alone never merge
+  ---
+  duration_ms: 1.186032
+  type: 'test'
+  ...
+# Subtest: Lot3 F — adding/editing pending products preserves checks; checked changes require explicit acknowledgement
+ok 109 - Lot3 F — adding/editing pending products preserves checks; checked changes require explicit acknowledgement
+  ---
+  duration_ms: 0.635595
+  type: 'test'
+  ...
+# Subtest: Lot3 F — changed checked computed intent is frozen until explicit reconciliation
+ok 110 - Lot3 F — changed checked computed intent is frozen until explicit reconciliation
+  ---
+  duration_ms: 0.317086
+  type: 'test'
+  ...
+# Subtest: Lot3 F — prepared immutable checkout is idempotent; a late addition is a new intent, not a duplicate purchase
+ok 111 - Lot3 F — prepared immutable checkout is idempotent; a late addition is a new intent, not a duplicate purchase
+  ---
+  duration_ms: 4.084689
+  type: 'test'
+  ...
+# Subtest: Lot3 checkout rejects stale content, changed selection and modified command IDs before any persistence
+ok 112 - Lot3 checkout rejects stale content, changed selection and modified command IDs before any persistence
+  ---
+  duration_ms: 2.540838
+  type: 'test'
+  ...
+# Subtest: Lot3 confirmed computed purchases remain checked after recalculation; no new purchase is requested for acquired stock
+ok 113 - Lot3 confirmed computed purchases remain checked after recalculation; no new purchase is requested for acquired stock
+  ---
+  duration_ms: 4.462206
+  type: 'test'
+  ...
+# Subtest: Lot3 actual partial package count is confirmed exactly and the still-missing package receives a new intent
+ok 114 - Lot3 actual partial package count is confirmed exactly and the still-missing package receives a new intent
+  ---
+  duration_ms: 2.86805
+  type: 'test'
+  ...
+# Subtest: Lot3 checkout cancellation reverses stock and confirmation coherently, protects dependencies and replays safely
+ok 115 - Lot3 checkout cancellation reverses stock and confirmation coherently, protects dependencies and replays safely
+  ---
+  duration_ms: 3.555613
+  type: 'test'
+  ...
+# Subtest: V2 fixture is traceable to Git; three annotated recipes adapt, eight require review
+ok 116 - V2 fixture is traceable to Git; three annotated recipes adapt, eight require review
+  ---
+  duration_ms: 7.022874
+  type: 'test'
+  ...
+# Subtest: adapter never silently converts tablespoons, validates yield or certifies diet tags
+ok 117 - adapter never silently converts tablespoons, validates yield or certifies diet tags
+  ---
+  duration_ms: 2.013926
+  type: 'test'
+  ...
+1..117
+# tests 117
+# suites 0
+# pass 117
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2726.002005

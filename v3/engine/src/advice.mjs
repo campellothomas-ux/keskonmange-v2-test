@@ -3,11 +3,27 @@ import {stableJSON} from './ledger.mjs';
 import {stepProduction} from './production.mjs';
 import {checkRecipeConstraints} from './menu-evaluation.mjs';
 import {mealForReplacement} from './menu-proposals.mjs';
-import {analyzeMixedMeal} from './mixed-core.mjs';
+import {analyzeMixedMeal,safeMixedContext} from './mixed-core.mjs';
 import {evaluateMixedMenu} from './mixed-menu.mjs';
 import {proposeMixedMenu,acceptMixedProposal} from './mixed-proposals.mjs';
 
 export const createAdviceSession=id=>({version:1,id:text(id,'advice.id'),revision:0,rejectedSignatures:[],acceptedSignatures:[]});
+/** Feasibility suggestions also work without prices or commercial references. */
+export function suggestRecipes(context,{diners,limit=5,leftovers='discard'}={}) {
+  integer(limit,'recipe suggestion limit');
+  const {context:c}=safeMixedContext(context),suggestions=[],excluded=[];
+  for(const recipe of c.recipes) {
+    const meal={id:`suggest-${recipe.id}`,recipeId:recipe.id,diners,leftovers};
+    try {
+      checkRecipeConstraints(c,recipe);
+      const analysis=analyzeMixedMeal(c,meal);
+      if(!analysis.optimizable) {excluded.push({recipeId:recipe.id,reason:analysis.automaticExclusion?.code??'RECIPE_REVIEW_REQUIRED',issues:analysis.issues});continue;}
+      suggestions.push({recipeId:recipe.id,name:recipe.name,meal,preparation:analysis.preparation,needs:analysis.knownNeeds,
+        priceCents:null,priceStatus:'not_evaluated',applied:false});
+    }catch(e){if(!(e instanceof EngineError))throw e;excluded.push({recipeId:recipe.id,reason:e.code});}
+  }
+  return {suggestions:suggestions.slice(0,limit),excluded,applied:false,scope:'feasible_recipe_quantities_only',optimal:false};
+}
 function validateSession(s) {
   requireThat(s?.version===1&&Array.isArray(s.rejectedSignatures)&&Array.isArray(s.acceptedSignatures),'INVALID_ADVICE_SESSION','session');
   text(s.id,'advice.id');integer(s.revision,'advice.revision',true);
@@ -61,7 +77,7 @@ export function requestSuggestions(context,menu,shopping,{session=createAdviceSe
   }
   const eligible=menu.meals.filter(m=>before.meals.find(a=>a.mealId===m.id)?.optimizable&&m.status!=='cooked');
   if(kinds.includes('portions'))for(const m of eligible) {
-    if(m.locks?.production||m.leftovers!=='keep')continue;
+    if(m.locks?.production||m.leftovers!=='keep'||context.recipes.find(r=>r.id===m.recipeId)?.automaticPolicy?.allowExtraProduction===false)continue;
     try {const r=context.recipes.find(r=>r.id===m.recipeId),next=stepProduction(r,m,1);
       consider(menu.meals.map(old=>old.id===m.id?next:structuredClone(old)),'portions','use_existing_purchases_or_perishable_stock');
     }catch(e){if(!(e instanceof EngineError))throw e;failures.push({kind:'portions',code:e.code});}

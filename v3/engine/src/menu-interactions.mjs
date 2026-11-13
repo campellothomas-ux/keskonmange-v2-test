@@ -1,5 +1,5 @@
 import {Q,integer,requireThat,EngineError} from './exact.mjs';
-import {stepProduction} from './production.mjs';
+import {stepProduction,automaticProductionAllowed} from './production.mjs';
 import {evaluateMenu,validateContext,validateMenu} from './menu-evaluation.mjs';
 import {proposeMenu,recalculateMenu,mealForReplacement} from './menu-proposals.mjs';
 import {optimizeMenuJoint} from './joint-optimizer.mjs';
@@ -12,9 +12,10 @@ export function suggestPortions(context,menu,{mealId,maxSteps=3,limit=3,maxExtra
   const original=menu.meals.find(m=>m.id===mealId);requireThat(original,'UNKNOWN_MEAL',mealId);
   requireThat(!original.locks?.production,'LOCKED_PRODUCTION',mealId);
   requireThat(original.status!=='cooked','MEAL_ALREADY_COOKED',mealId);
+  const recipe=context.recipes.find(r=>r.id===original.recipeId);requireThat(recipe,'UNKNOWN_RECIPE',original.recipeId);
+  if(recipe.automaticPolicy?.allowExtraProduction===false)return {status:'proposals',suggestions:[],rejected:[{code:'EXTRA_PRODUCTION_DISABLED'}],applied:false};
   evaluateMenu(context,menu);
   if(original.leftovers!=='keep')return {status:'proposals',suggestions:[],rejected:[{code:'LEFTOVER_KEEP_REQUIRED'}],applied:false};
-  const recipe=context.recipes.find(r=>r.id===original.recipeId);requireThat(recipe,'UNKNOWN_RECIPE',original.recipeId);
   const suggestions=[],rejected=[];let next=original;
   for(let k=0;k<maxSteps;k++) {
     try {
@@ -46,6 +47,7 @@ export function replacementAlternatives(context,menu,{mealId,rejectedRecipeIds=[
     if(evaluated>=maxEvaluations){limited=true;break;}evaluated++;
     try {
       const meal=mealForReplacement(context,target,recipe),meals=menu.meals.map(m=>m.id===mealId?meal:structuredClone(m));
+      requireThat(automaticProductionAllowed(recipe,meal),'AUTOMATIC_SURPLUS_NOT_ALLOWED',recipe.id);
       const proposal=proposeMenu(context,menu,meals,{reason:'single_meal_replacement'});
       rows.push({...proposal,family:recipe.family??null,recipeId:recipe.id});
     }catch(e){if(!(e instanceof EngineError))throw e;failures.push({recipeId:recipe.id,code:e.code});}

@@ -1,6 +1,6 @@
 {
   "name": "keskonmange-v3-engine",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": true,
   "type": "module",
   "engines": {"node": ">=22"},
@@ -13,6 +13,8 @@
     "benchmark:lot2": "node scripts/benchmark-lot2.mjs",
     "scenario:lot3": "node scripts/scenario-lot3.mjs",
     "benchmark:lot3": "node scripts/benchmark-lot3.mjs",
-    "audit:field": "node scripts/audit-field.mjs"
+    "audit:field": "node scripts/audit-field.mjs",
+    "convert:pilots": "node scripts/convert-pilots.mjs",
+    "scenario:lot4": "node scripts/scenario-lot4.mjs"
   }
 }

@@ -1,9 +1,25 @@
-# KeskonMange V3 — moteur indépendant, lots 1 à 3
+# KeskonMange V3 — moteur indépendant, lots 1 à 4
 
 Module ES sans dépendance, sans interface ni accès réseau. Les fichiers V2, leur
 configuration et leur synchronisation Firebase ne sont pas modifiés.
 Node.js 22+ pour les commandes ; `src/` utilise uniquement les API JavaScript
 standards. Aucune installation npm nécessaire.
+
+**Lot 4 — version 0.4.0** : cinq recettes pilotes réelles converties, originaux et
+propositions conservés, accompagnements indépendants, étapes liées aux quantités,
+unités naturelles et courses sans catalogue. Les quantités de référence restent
+exactes ; les arrondis d’affichage et d’achat sont séparés.
+
+```sh
+npm run convert:pilots
+npm run scenario:lot4
+npm test
+```
+
+[Les cinq recettes V3](fixtures/pilot-v3.json), [rapport et problèmes ouverts](docs/LOT4-REPORT.md),
+[contrats et exemple d’appel](docs/LOT4-API.md), [planning et liste complète](docs/LOT4-EXAMPLE.md).
+117 tests, dont 22 nouveaux ; aucune conversion grammes/pièces réelle activée
+faute de référence documentée. Les essais culinaires restent à réaliser.
 
 **Lot 3 — version 0.3.0** : menus mixtes partiellement calculables, choix manuels
 non bloqués par l'objectif budgétaire, articles libres persistants, achats cochés
@@ -80,10 +96,12 @@ avec des annotations de test explicites ; huit attendent une revue. Il ne s'agit
 pas d'une validation du catalogue privé du foyer. Les unités de cuillère, gousse,
 feuille ou cube ne sont jamais converties par défaut.
 
-**Tous les produits et prix des scénarios sont synthétiques.** Ils ne constituent
+**Les produits et prix des scénarios des lots 1 à 3 sont synthétiques.** Ils ne constituent
 pas un relevé E.Leclerc ou Lidl. Le magasin `fixture-store` évite cette confusion.
 Les prix observés dans les tests sont des valeurs de test, pas des observations
 commerciales. Les hypothèses de base nette et de rendement sont aussi identifiées.
+Le scénario du lot 4 utilise cinq recettes issues du dossier fourni et aucun
+produit commercial ; son prix total demeure inconnu.
 
 Ce lot ne gère pas les lots de stock/datations de péremption, les promotions,
 substitutions, stocks de magasin limités, contraintes nutritionnelles, ni la

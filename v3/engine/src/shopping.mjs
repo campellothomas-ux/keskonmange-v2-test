@@ -51,19 +51,28 @@ export function setShoppingPurchaseCount(s,id,count,{acknowledgeChecked=false}={
 }
 export function reconcileShopping(s,purchaseLines,{acknowledgeChecked=false}={}) {
   validateShopping(s);const next=structuredClone(s),conflicts=[],desired=new Map();
-  for(const l of purchaseLines){integer(l.count,'computed count');requireThat(!desired.has(l.productId),'DUPLICATE_REFERENCE',l.productId);desired.set(l.productId,l);}
+  const key=l=>l.productId?`sku:${l.productId}`:`ingredient:${text(l.ingredientId,'computed ingredient')}`;
+  const payload=l=>l.productId?{productId:l.productId,count:l.count}:structuredClone(l);
+  for(const l of purchaseLines){
+    if(l.productId)integer(l.count,'computed count');else positive(l.quantity?.amount,'computed ingredient quantity');
+    const id=key(l);requireThat(!desired.has(id),'DUPLICATE_REFERENCE',id);desired.set(id,l);
+  }
   const calculated=[];
   for(const old of next.calculated) {
     if(old.confirmed){calculated.push(old);continue;}
-    const target=desired.get(old.productId);desired.delete(old.productId);
-    if(old.checked&&(!target||target.count!==old.count)&&!acknowledgeChecked) {
-      calculated.push(old);conflicts.push({code:'CHECKED_LINE_CHANGED',intentId:old.id,productId:old.productId,
-        previousCount:old.count,requestedCount:target?.count??0});continue;
+    const id=key(old),target=desired.get(id);desired.delete(id);
+    const changed=!target||(old.productId?target.count!==old.count:stableJSON(payload(target))!==stableJSON(Object.fromEntries(
+      Object.keys(target).map(k=>[k,old[k]??null]))));
+    if(old.checked&&changed&&!acknowledgeChecked) {
+      calculated.push(old);conflicts.push({code:'CHECKED_LINE_CHANGED',intentId:old.id,
+        ...(old.productId?{productId:old.productId,previousCount:old.count,requestedCount:target?.count??0}:
+          {ingredientId:old.ingredientId,previousQuantity:old.quantity,requestedQuantity:target?.quantity??null,
+            previousPurchaseQuantity:old.purchaseQuantity??null,requestedPurchaseQuantity:target?.purchaseQuantity??null})});continue;
     }
-    if(target)calculated.push({...old,count:target.count});else if(old.checked)next.archived.push(old);
+    if(target)calculated.push({...old,...payload(target)});else if(old.checked)next.archived.push(old);
   }
-  for(const [id,line]of [...desired].sort(([a],[b])=>a<b?-1:1))calculated.push({id:`calc-${next.id}-${next.nextIntent++}`,
-    source:'calculated',label:id,productId:id,count:line.count,checked:false,confirmed:false});
+  for(const [,line]of [...desired].sort(([a],[b])=>a<b?-1:1))calculated.push({id:`calc-${next.id}-${next.nextIntent++}`,
+    source:'calculated',label:line.label??line.productId,...payload(line),checked:false,confirmed:false});
   next.calculated=calculated;
   if(stableJSON({...next,revision:0})!==stableJSON({...s,revision:0}))next.revision++;
   validateShopping(next);return {shopping:next,conflicts,reconciliationRequired:conflicts.length>0};
@@ -103,7 +112,7 @@ export function estimateShopping(context,s) {
     if(!missing(count)){g.count=(g.count??0)+count;integer(g.count,'merged shopping count');}
   }
   const lines=[...groups.values()].map(g=>({...g,checkedState:g.origins.every(r=>r.checked&&(r.confirmed||r.checkoutCount===undefined||r.checkoutCount>=r.count))?'checked':g.origins.some(r=>r.checked)?'partial':'unchecked',
-    quantitiesComplete:g.origins.every(r=>!missing(r.confirmed?(r.checkoutCount??r.count):r.count)),
+    quantitiesComplete:g.origins.every(r=>!missing(r.confirmed?(r.checkoutCount??r.count):r.count)||!missing(r.quantity?.amount)),
     confirmedCount:g.origins.filter(r=>r.confirmed).reduce((n,r)=>n+(r.checkoutCount??r.count??0),0)}));
   const pending=pendingPrice(context,active.filter(r=>!r.confirmed)),confirmed=sumAmounts(Object.values(s.receipts).filter(r=>!r.cancelledBy).map(r=>r.amount));
   return {lines,pending:pending.amount,confirmed,total:sumAmounts([pending.amount,confirmed]),untracked:pending.untracked};

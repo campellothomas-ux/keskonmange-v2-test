@@ -1,7 +1,7 @@
 import {Q,EngineError,requireThat,unique} from './exact.mjs';
 import {ingredientMap,validateCatalog,canonicalQuantity} from './model.mjs';
 import {validateContext} from './menu-evaluation.mjs';
-import {resolveProduction,productionRequirements} from './production.mjs';
+import {resolveProduction,productionRequirements,automaticProductionAllowed} from './production.mjs';
 
 export const jsonCopy=value=>JSON.parse(JSON.stringify(value));
 export const missing=value=>value===null||value===undefined||value==='';
@@ -59,5 +59,10 @@ export function analyzeMixedMeal(context,meal) {
   result.calculationStatus=result.issues.some(i=>i.status==='invalid')?'invalid':result.issues.length?known?'partial':'needs_review':'complete';
   result.status=manual?'manual':result.calculationStatus==='complete'?'optimized':result.calculationStatus;
   result.optimizable=!manual&&result.calculationStatus==='complete'&&!result.risks.length;
+  if(result.optimizable&&!automaticProductionAllowed(recipe,meal)) {
+    result.optimizable=false;
+    result.status='manual';
+    result.automaticExclusion={code:'AUTOMATIC_SURPLUS_NOT_ALLOWED',producedPortions:result.preparation.producedPortions,diners:String(meal.diners)};
+  }
   return result;
 }

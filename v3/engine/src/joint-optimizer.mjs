@@ -1,12 +1,12 @@
 import {Q,integer,requireThat,EngineError,unique} from './exact.mjs';
 import {validateCatalog} from './model.mjs';
 import {stockAvailable} from './basket.mjs';
-import {productionRequirements,stepProduction} from './production.mjs';
+import {productionRequirements,stepProduction,automaticProductionAllowed} from './production.mjs';
 import {initialMenu,evaluateMenu,validateContext,projectedStock,checkRecipeConstraints,assertLocks} from './menu-evaluation.mjs';
 import {mealForReplacement} from './menu-proposals.mjs';
 
 const hardFailures=new Set(['DIET_EXCLUSION','ALLERGY_EXCLUSION','REPEAT_CONSTRAINT','VARIETY_CONSTRAINT','FAMILY_CONSTRAINT',
-  'BUDGET_EXCEEDED','INSUFFICIENT_PORTIONS','PRODUCTION_LIMIT','PRODUCTION_STEP_INVALID','LOCKED_PRODUCTION']);
+  'BUDGET_EXCEEDED','INSUFFICIENT_PORTIONS','PRODUCTION_LIMIT','PRODUCTION_STEP_INVALID','LOCKED_PRODUCTION','AUTOMATIC_SURPLUS_NOT_ALLOWED']);
 export function optimizeMenuJoint(context,{slots,baseMenu=initialMenu('candidate'),strategy='diverse',maxEvaluations=500,
   seedCount=6,allowProductionAdjustments=false,productionExtraSteps=1,maxNodes=maxEvaluations*1000,onProgress}={}) {
   validateContext(context);unique(slots,'slots');requireThat(slots.length>0&&slots.length<=30,'INVALID_MEAL_COUNT','1..30');
@@ -26,10 +26,11 @@ export function optimizeMenuJoint(context,{slots,baseMenu=initialMenu('candidate
         checkRecipeConstraints(context,r);
         const m=slot.recipeId===r.id?structuredClone(slot):slot.recipeId?mealForReplacement(context,slot,r):{...structuredClone(slot),recipeId:r.id};
         const variants=[m];
-        if(allowProductionAdjustments&&!m.locks?.production&&m.status!=='cooked')for(let k=0;k<productionExtraSteps;k++) {
+        if(allowProductionAdjustments&&r.automaticPolicy?.allowExtraProduction!==false&&!m.locks?.production&&m.status!=='cooked')for(let k=0;k<productionExtraSteps;k++) {
           try {variants.push(stepProduction(r,variants.at(-1),1));}catch(e){if(!(e instanceof EngineError))throw e;break;}
         }
         for(const meal of variants) {
+          requireThat(automaticProductionAllowed(r,meal),'AUTOMATIC_SURPLUS_NOT_ALLOWED',r.id);
           const requirements=productionRequirements([r],[meal],context.ingredients);
           let bound=Q.of(0);
           for(const [id,q]of Object.entries(requirements.needs)) {
