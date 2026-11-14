@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "syntheticPricesInjected": false,
+  "publicPriceCount": 0,
+  "freshState": true,
+  "unpricedRequirementEditable": true,
+  "pageErrors": [],
+  "externalRequests": [],
+  "transport": "HTTP loopback, same standalone HTML"
+}

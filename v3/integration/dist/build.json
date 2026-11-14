@@ -1,0 +1,12 @@
+{
+  "sha256": "7d18177b6aecb29735934007b386c5d0809d08c24f98d621a970c6a39be4b940",
+  "bytes": 5064372,
+  "ocrModel": {
+    "url": "https://raw.githubusercontent.com/tesseract-ocr/tessdata_fast/87416418657359cb625c412a48b6e1d6d41c29bd/fra.traineddata",
+    "sha256": "ced037562e8c80c13122dece28dd477d399af80911a28791a66a63ac1e3445ca"
+  },
+  "externalServices": [
+    "world.openfoodfacts.org",
+    "prices.openfoodfacts.org"
+  ]
+}

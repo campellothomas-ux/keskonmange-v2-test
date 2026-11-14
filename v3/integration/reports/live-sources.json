@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-11-14T10:27:10.612Z",
+  "mode": "LIVE_HTTP_NOT_MOCKED",
+  "results": [
+    {
+      "service": "Open Food Facts",
+      "url": "https://world.openfoodfacts.org/api/v2/product/3017620422003.json?fields=code,product_name,quantity",
+      "domain": "world.openfoodfacts.org",
+      "exitCode": 56,
+      "httpStatus": "000",
+      "error": "curl: (56) CONNECT tunnel failed, response 403",
+      "durationMs": 27,
+      "apiResponseReceived": false
+    },
+    {
+      "service": "Open Prices",
+      "url": "https://prices.openfoodfacts.org/api/v1/prices/?product_code=3017620422003&currency=EUR&page_size=5&order_by=-date",
+      "domain": "prices.openfoodfacts.org",
+      "exitCode": 56,
+      "httpStatus": "000",
+      "error": "curl: (56) CONNECT tunnel failed, response 403",
+      "durationMs": 21,
+      "apiResponseReceived": false
+    },
+    {
+      "service": "Documentation OFF",
+      "url": "https://openfoodfacts.github.io/openfoodfacts-server/api/",
+      "domain": "openfoodfacts.github.io",
+      "exitCode": 56,
+      "httpStatus": "000",
+      "error": "curl: (56) CONNECT tunnel failed, response 403",
+      "durationMs": 18,
+      "apiResponseReceived": false
+    }
+  ],
+  "realPriceIntegrationVerified": false,
+  "priceCoverage": "Non mesurable : API inaccessible depuis cette instance.",
+  "publicSeedModified": false,
+  "privateDataSent": false
+}

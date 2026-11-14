@@ -1,0 +1,325 @@
+{
+  "notice": "DONNÉES SYNTHÉTIQUES DE TEST, AUCUN PRIX COMMERCIAL VÉRIFIÉ",
+  "budgetCents": 10000,
+  "menu": [
+    {
+      "recipe": "Papillote de cabillaud aux légumes d'été",
+      "portions": 2
+    },
+    {
+      "recipe": "Omelette courgettes-feta-menthe & salade verte",
+      "portions": 2
+    },
+    {
+      "recipe": "Omelette jambon-fromage & salade composee",
+      "portions": 2
+    },
+    {
+      "recipe": "Pavé de saumon grillé et courgettes à la menthe",
+      "portions": 2
+    },
+    {
+      "recipe": "Omelette poivrons-feta & salade tomate-concombre",
+      "portions": 2
+    },
+    {
+      "recipe": "Linguine crevettes, courgettes grillees, ail & citron",
+      "portions": 2
+    },
+    {
+      "recipe": "Bowl de quinoa, crevettes et mangue",
+      "portions": 2
+    }
+  ],
+  "evaluatedBaskets": 180,
+  "beforeExtra": {
+    "cents": 5808,
+    "manualCents": 2000,
+    "coverage": {
+      "priced": 31,
+      "total": 31,
+      "ratio": 1
+    }
+  },
+  "shopping": [
+    {
+      "name": "riz basmati — DONNÉES SYNTHÉTIQUES",
+      "needed": "120",
+      "bought": "500",
+      "packages": 1,
+      "format": "FORMAT FICTIF 500 g",
+      "totalCents": 122
+    },
+    {
+      "name": "parmesan rape — DONNÉES SYNTHÉTIQUES",
+      "needed": "20",
+      "bought": "500",
+      "packages": 1,
+      "format": "FORMAT FICTIF 500 g",
+      "totalCents": 132
+    },
+    {
+      "name": "crevettes crues decortiquees — DONNÉES SYNTHÉTIQUES",
+      "needed": "1000/3",
+      "bought": "500",
+      "packages": 1,
+      "format": "FORMAT FICTIF 500 g",
+      "totalCents": 70
+    },
+    {
+      "name": "linguine — DONNÉES SYNTHÉTIQUES",
+      "needed": "500/3",
+      "bought": "500",
+      "packages": 1,
+      "format": "FORMAT FICTIF 500 g",
+      "totalCents": 87
+    },
+    {
+      "name": "piment d'espelette — DONNÉES SYNTHÉTIQUES",
+      "needed": "2/3",
+      "bought": "12",
+      "packages": 1,
+      "format": "FORMAT FICTIF 12 unit",
+      "totalCents": 104
+    },
+    {
+      "name": "salade verte — DONNÉES SYNTHÉTIQUES",
+      "needed": "5/3",
+      "bought": "12",
+      "packages": 1,
+      "format": "FORMAT FICTIF 12 unit",
+      "totalCents": 121
+    },
+    {
+      "name": "dos de cabillaud — DONNÉES SYNTHÉTIQUES",
+      "needed": "2",
+      "bought": "12",
+      "packages": 1,
+      "format": "FORMAT FICTIF 12 unit",
+      "totalCents": 138
+    },
+    {
+      "name": "pavé de saumon — DONNÉES SYNTHÉTIQUES",
+      "needed": "2",
+      "bought": "12",
+      "packages": 1,
+      "format": "FORMAT FICTIF 12 unit",
+      "totalCents": 172
+    },
+    {
+      "name": "poivron rouge — DONNÉES SYNTHÉTIQUES",
+      "needed": "1",
+      "bought": "12",
+      "packages": 1,
+      "format": "FORMAT FICTIF 12 unit",
+      "totalCents": 190
+    },
+    {
+      "name": "ail — DONNÉES SYNTHÉTIQUES",
+      "needed": "14/3",
+      "bought": "12",
+      "packages": 1,
+      "format": "FORMAT FICTIF 12 unit",
+      "totalCents": 94
+    },
+    {
+      "name": "œufs — DONNÉES SYNTHÉTIQUES",
+      "needed": "47/3",
+      "bought": "24",
+      "packages": 2,
+      "format": "FORMAT FICTIF 12 unit",
+      "totalCents": 198
+    },
+    {
+      "name": "huile d'olive — DONNÉES SYNTHÉTIQUES",
+      "needed": "32/3",
+      "bought": "12",
+      "packages": 1,
+      "format": "FORMAT FICTIF 12 unit",
+      "totalCents": 179
+    },
+    {
+      "name": "sel poivre — DONNÉES SYNTHÉTIQUES",
+      "needed": "10/3",
+      "bought": "12",
+      "packages": 1,
+      "format": "FORMAT FICTIF 12 unit",
+      "totalCents": 66
+    },
+    {
+      "name": "tomates — DONNÉES SYNTHÉTIQUES",
+      "needed": "19/3",
+      "bought": "12",
+      "packages": 1,
+      "format": "FORMAT FICTIF 12 unit",
+      "totalCents": 72
+    },
+    {
+      "name": "emmental râpé — DONNÉES SYNTHÉTIQUES",
+      "needed": "160/3",
+      "bought": "500",
+      "packages": 1,
+      "format": "FORMAT FICTIF 500 g",
+      "totalCents": 150
+    },
+    {
+      "name": "citron — DONNÉES SYNTHÉTIQUES",
+      "needed": "4",
+      "bought": "12",
+      "packages": 1,
+      "format": "FORMAT FICTIF 12 unit",
+      "totalCents": 107
+    },
+    {
+      "name": "menthe fraîche — DONNÉES SYNTHÉTIQUES",
+      "needed": "3/4",
+      "bought": "12",
+      "packages": 1,
+      "format": "FORMAT FICTIF 12 unit",
+      "totalCents": 141
+    },
+    {
+      "name": "quinoa — DONNÉES SYNTHÉTIQUES",
+      "needed": "240",
+      "bought": "500",
+      "packages": 1,
+      "format": "FORMAT FICTIF 500 g",
+      "totalCents": 158
+    },
+    {
+      "name": "crevettes cuites et décortiquées — DONNÉES SYNTHÉTIQUES",
+      "needed": "200",
+      "bought": "500",
+      "packages": 1,
+      "format": "FORMAT FICTIF 500 g",
+      "totalCents": 175
+    },
+    {
+      "name": "mangue — DONNÉES SYNTHÉTIQUES",
+      "needed": "1",
+      "bought": "12",
+      "packages": 1,
+      "format": "FORMAT FICTIF 12 unit",
+      "totalCents": 192
+    },
+    {
+      "name": "avocat — DONNÉES SYNTHÉTIQUES",
+      "needed": "1",
+      "bought": "12",
+      "packages": 1,
+      "format": "FORMAT FICTIF 12 unit",
+      "totalCents": 79
+    },
+    {
+      "name": "fèves de soja edamame écossées — DONNÉES SYNTHÉTIQUES",
+      "needed": "100",
+      "bought": "500",
+      "packages": 1,
+      "format": "FORMAT FICTIF 500 g",
+      "totalCents": 96
+    },
+    {
+      "name": "coriandre fraîche — DONNÉES SYNTHÉTIQUES",
+      "needed": "1/4",
+      "bought": "12",
+      "packages": 1,
+      "format": "FORMAT FICTIF 12 unit",
+      "totalCents": 113
+    },
+    {
+      "name": "citron vert — DONNÉES SYNTHÉTIQUES",
+      "needed": "1",
+      "bought": "12",
+      "packages": 1,
+      "format": "FORMAT FICTIF 12 unit",
+      "totalCents": 130
+    },
+    {
+      "name": "feta — DONNÉES SYNTHÉTIQUES",
+      "needed": "140",
+      "bought": "500",
+      "packages": 1,
+      "format": "FORMAT FICTIF 500 g",
+      "totalCents": 68
+    },
+    {
+      "name": "concombre — DONNÉES SYNTHÉTIQUES",
+      "needed": "5/3",
+      "bought": "12",
+      "packages": 1,
+      "format": "FORMAT FICTIF 12 unit",
+      "totalCents": 85
+    },
+    {
+      "name": "persil frais — DONNÉES SYNTHÉTIQUES",
+      "needed": "7/12",
+      "bought": "12",
+      "packages": 1,
+      "format": "FORMAT FICTIF 12 unit",
+      "totalCents": 136
+    },
+    {
+      "name": "courgettes — DONNÉES SYNTHÉTIQUES",
+      "needed": "16/3",
+      "bought": "12",
+      "packages": 1,
+      "format": "FORMAT FICTIF 12 unit",
+      "totalCents": 131
+    },
+    {
+      "name": "jambon blanc — DONNÉES SYNTHÉTIQUES",
+      "needed": "8/3",
+      "bought": "12",
+      "packages": 1,
+      "format": "FORMAT FICTIF 12 unit",
+      "totalCents": 182
+    },
+    {
+      "name": "herbes de provence — DONNÉES SYNTHÉTIQUES",
+      "needed": "1",
+      "bought": "12",
+      "packages": 1,
+      "format": "FORMAT FICTIF 12 unit",
+      "totalCents": 120
+    },
+    {
+      "name": "Dépense supplémentaire SYNTHÉTIQUE",
+      "needed": null,
+      "packages": 1,
+      "totalCents": 2000
+    }
+  ],
+  "afterExtra": {
+    "addedCents": 4692,
+    "cents": 10500,
+    "remainingCents": -500
+  },
+  "reoptimization": {
+    "proposalCents": 10500,
+    "previousPlanUnchanged": true,
+    "applied": false
+  },
+  "receiptLearning": [
+    {
+      "ingredientId": "i_riz_basmati",
+      "beforeCents": 122,
+      "afterCents": 180,
+      "source": "receipt",
+      "reason": "Observation compatible · magasin choisi · 0 jour(s). Ce prix reste estimatif."
+    },
+    {
+      "ingredientId": "i_lait",
+      "beforeCents": 116,
+      "afterCents": 120,
+      "source": "receipt",
+      "reason": "Observation compatible · magasin choisi · 0 jour(s). Ce prix reste estimatif."
+    },
+    {
+      "ingredientId": "i_yaourt_grec_nature",
+      "beforeCents": 106,
+      "afterCents": 250,
+      "source": "receipt",
+      "reason": "Observation compatible · magasin choisi · 0 jour(s). Ce prix reste estimatif."
+    }
+  ]
+}

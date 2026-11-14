@@ -1,0 +1,118 @@
+TAP version 13
+# Subtest: 98 originaux préservés, 50 conversions qualifiées techniquement, aucun prix réel inventé
+ok 1 - 98 originaux préservés, 50 conversions qualifiées techniquement, aucun prix réel inventé
+  ---
+  duration_ms: 13.96061
+  type: 'test'
+  ...
+# Subtest: addition exacte de trois demi-oignons avant choix des unités entières
+ok 2 - addition exacte de trois demi-oignons avant choix des unités entières
+  ---
+  duration_ms: 28.092731
+  type: 'test'
+  ...
+# Subtest: achat couvrant et achat supplémentaire distincts, aucun double compte
+ok 3 - achat couvrant et achat supplémentaire distincts, aucun double compte
+  ---
+  duration_ms: 37.002598
+  type: 'test'
+  ...
+# Subtest: les achats manuels sans correspondance culinaire restent chiffrables
+ok 4 - les achats manuels sans correspondance culinaire restent chiffrables
+  ---
+  duration_ms: 17.818411
+  type: 'test'
+  ...
+# Subtest: prix inconnu conservé, total partiel jamais présenté comme budget respecté
+ok 5 - prix inconnu conservé, total partiel jamais présenté comme budget respecté
+  ---
+  duration_ms: 11.892598
+  type: 'test'
+  ...
+# Subtest: achat sans catalogue : quantité modifiable sans écraser le besoin culinaire exact
+ok 6 - achat sans catalogue : quantité modifiable sans écraser le besoin culinaire exact
+  ---
+  duration_ms: 5.227823
+  type: 'test'
+  ...
+# Subtest: stock exact déduit une seule fois et changement de format sans toucher à la cuisine
+ok 7 - stock exact déduit une seule fois et changement de format sans toucher à la cuisine
+  ---
+  duration_ms: 17.569323
+  type: 'test'
+  ...
+# Subtest: un achat personnalisé insuffisant ne devient pas un menu déclaré complet
+ok 8 - un achat personnalisé insuffisant ne devient pas un menu déclaré complet
+  ---
+  duration_ms: 9.552906
+  type: 'test'
+  ...
+# Subtest: vente au poids : estimation au kg, masse prévue sans conditionnement fictif
+ok 9 - vente au poids : estimation au kg, masse prévue sans conditionnement fictif
+  ---
+  duration_ms: 7.858425
+  type: 'test'
+  ...
+# Subtest: générateur global : sept repas, paniers comparés, achats supplémentaires inclus et acceptation séparée
+ok 10 - générateur global : sept repas, paniers comparés, achats supplémentaires inclus et acceptation séparée
+  ---
+  duration_ms: 1263.765192
+  type: 'test'
+  ...
+# Subtest: quiche exclue automatiquement pour cinq convives, sélection manuelle conservée
+ok 11 - quiche exclue automatiquement pour cinq convives, sélection manuelle conservée
+  ---
+  duration_ms: 1227.309105
+  type: 'test'
+  ...
+# Subtest: dix repas et remplacement ciblé : les autres choix proposés restent conservés
+ok 12 - dix repas et remplacement ciblé : les autres choix proposés restent conservés
+  ---
+  duration_ms: 1482.067475
+  type: 'test'
+  ...
+# Subtest: les équipements explicitement demandés dans les étapes filtrent le générateur
+ok 13 - les équipements explicitement demandés dans les étapes filtrent le générateur
+  ---
+  duration_ms: 1293.300724
+  type: 'test'
+  ...
+# Subtest: vider conserve planning, recettes et favoris ; régénération explicite
+ok 14 - vider conserve planning, recettes et favoris ; régénération explicite
+  ---
+  duration_ms: 29.556463
+  type: 'test'
+  ...
+# Subtest: tickets : brouillon, remise affectée, confirmation, trois références améliorées et suppression
+ok 15 - tickets : brouillon, remise affectée, confirmation, trois références améliorées et suppression
+  ---
+  duration_ms: 29.902735
+  type: 'test'
+  ...
+# Subtest: promotions exceptionnelles et prix trop anciens ne remplacent pas une référence admissible
+ok 16 - promotions exceptionnelles et prix trop anciens ne remplacent pas une référence admissible
+  ---
+  duration_ms: 6.221362
+  type: 'test'
+  ...
+# Subtest: sources publiques : opt-in, cache et hôtes limités, sans aucun envoi de ticket
+ok 17 - sources publiques : opt-in, cache et hôtes limités, sans aucun envoi de ticket
+  ---
+  duration_ms: 1.979502
+  type: 'test'
+  ...
+# Subtest: persistance isolée, conservation des personnalisations et quota sans faux succès
+ok 18 - persistance isolée, conservation des personnalisations et quota sans faux succès
+  ---
+  duration_ms: 37.015243
+  type: 'test'
+  ...
+1..18
+# tests 18
+# suites 0
+# pass 18
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 5786.855468

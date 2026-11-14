@@ -8,7 +8,7 @@ import {mealForReplacement} from './menu-proposals.mjs';
 const hardFailures=new Set(['DIET_EXCLUSION','ALLERGY_EXCLUSION','REPEAT_CONSTRAINT','VARIETY_CONSTRAINT','FAMILY_CONSTRAINT',
   'BUDGET_EXCEEDED','INSUFFICIENT_PORTIONS','PRODUCTION_LIMIT','PRODUCTION_STEP_INVALID','LOCKED_PRODUCTION','AUTOMATIC_SURPLUS_NOT_ALLOWED']);
 export function optimizeMenuJoint(context,{slots,baseMenu=initialMenu('candidate'),strategy='diverse',maxEvaluations=500,
-  seedCount=6,allowProductionAdjustments=false,productionExtraSteps=1,maxNodes=maxEvaluations*1000,onProgress}={}) {
+  seedCount=6,allowProductionAdjustments=false,productionExtraSteps=1,maxNodes=maxEvaluations*1000,onProgress,evaluateCandidate}={}) {
   validateContext(context);unique(slots,'slots');requireThat(slots.length>0&&slots.length<=30,'INVALID_MEAL_COUNT','1..30');
   requireThat(['exhaustive','local','diverse'].includes(strategy),'INVALID_STRATEGY',strategy);
   integer(maxEvaluations,'maxEvaluations');integer(seedCount,'seedCount');integer(productionExtraSteps,'productionExtraSteps',true);
@@ -53,7 +53,9 @@ export function optimizeMenuJoint(context,{slots,baseMenu=initialMenu('candidate
     if(evaluated>=maxEvaluations){limited=true;return null;}seen.add(key);evaluated++;
     try {
       const menu={...structuredClone(baseMenu),meals:structuredClone(meals)};assertLocks(baseMenu,menu,context.recipes);
-      const evaluation=evaluateMenu(context,menu,{stockMenu:baseMenu});feasible++;
+      // Optional integration boundary: price a complete household basket (including
+      // unreferenced/manual lines) while retaining this global search algorithm.
+      const evaluation=evaluateCandidate?evaluateCandidate(context,menu,{stockMenu:baseMenu}):evaluateMenu(context,menu,{stockMenu:baseMenu});feasible++;
       const candidate={menu,evaluation},incomplete=evaluation.basket.cart.totalCents===null;
       if(!best||Number(incomplete)<Number(best.evaluation.basket.cart.totalCents===null)||
         incomplete===(best.evaluation.basket.cart.totalCents===null)&&Q.of(evaluation.score).cmp(best.evaluation.score)<0) {
@@ -100,7 +102,7 @@ export function optimizeMenuJoint(context,{slots,baseMenu=initialMenu('candidate
     }
   }
   const missing=rejected.some(r=>!hardFailures.has(r.code))||Object.keys(failures).some(c=>!hardFailures.has(c));
-  const optimal=strategy==='exhaustive'&&!limited&&!missing&&!!best?.evaluation.basket.packageOptimal;
+  const optimal=!evaluateCandidate&&strategy==='exhaustive'&&!limited&&!missing&&!!best?.evaluation.basket.packageOptimal;
   return {status:best?best.evaluation.basket.cart.totalCents===null?'needs_prices':'feasible':
     missing?'needs_data':options.some(o=>!o.length)?'infeasible':strategy!=='exhaustive'||limited?'search_limit':'infeasible',solution:best,
     search:{strategy,evaluated,feasible,nodes,maxNodes,limited,optimal,quality:optimal?'proven_optimal':best?evaluated>1?'best_found':'feasible':'no_solution',

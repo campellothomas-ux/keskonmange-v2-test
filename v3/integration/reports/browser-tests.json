@@ -1,0 +1,76 @@
+{
+  "results": [
+    {
+      "name": "V2 reconnaissable, quatre onglets ordonnés, accueil Planning et 98 recettes",
+      "status": "passed",
+      "durationMs": 847
+    },
+    {
+      "name": "Menu de sept repas : comparaison réelle du moteur, confirmation, portions et réorganisation",
+      "status": "passed",
+      "durationMs": 3560
+    },
+    {
+      "name": "Panier global : bananes, fromage blanc, biscuits, prix manuel, coche et réoptimisation sans remplacement automatique",
+      "status": "passed",
+      "durationMs": 5717
+    },
+    {
+      "name": "PDF textuel lu localement, remise affectée, trois prix historiques enregistrés seulement après confirmation",
+      "status": "passed",
+      "durationMs": 1908
+    },
+    {
+      "name": "OCR réel de l’image : correction possible, annulation sans enregistrement ni envoi extérieur",
+      "status": "passed",
+      "durationMs": 1758
+    },
+    {
+      "name": "PDF scanné : rendu PDF local, OCR effectif et vérification sans enregistrement automatique",
+      "status": "passed",
+      "durationMs": 2455
+    },
+    {
+      "name": "Parcours des connecteurs avec réponses SIMULÉES de contrat, distinct du test réseau réel bloqué",
+      "status": "passed",
+      "durationMs": 3891
+    },
+    {
+      "name": "Fermeture et reprise : budget, achats, coches, prix, historique, préférences ; mobile sans débordement",
+      "status": "passed",
+      "durationMs": 2841
+    },
+    {
+      "name": "Historique : correction confirmée sans doublon puis suppression effective des observations du ticket",
+      "status": "passed",
+      "durationMs": 2069
+    },
+    {
+      "name": "Aucune initialisation Firebase, aucune erreur non traitée, aucun transfert de ticket",
+      "status": "passed",
+      "durationMs": 0
+    }
+  ],
+  "externalRequestsBlockedUnexpectedly": [],
+  "pageErrors": [],
+  "mockRequests": [
+    {
+      "url": "https://prices.openfoodfacts.org/api/v1/products/?product_name__like=riz&price_count__gte=1&page_size=12",
+      "method": "GET",
+      "synthetic": true
+    },
+    {
+      "url": "https://world.openfoodfacts.org/api/v2/product/3017620422003.json?fields=code,product_name,product_name_fr,brands,quantity,allergens_tags,ingredients_text,ingredients_text_fr,categories_tags&app_name=KeskonMange&app_version=3",
+      "method": "GET",
+      "synthetic": true
+    },
+    {
+      "url": "https://prices.openfoodfacts.org/api/v1/prices/?currency=EUR&order_by=-date&page_size=40&product_code=3017620422003",
+      "method": "GET",
+      "synthetic": true
+    }
+  ],
+  "economicData": "SYNTHETIC_TESTS_ONLY",
+  "realPricesVerifiedByThisSuite": false,
+  "macSafariTested": false
+}

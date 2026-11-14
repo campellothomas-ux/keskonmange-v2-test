@@ -1,0 +1,1 @@
+{"name":"keskonmange-v3-integration","private":true,"type":"module","scripts":{"build":"node scripts/build.mjs","test":"node --test test/*.test.mjs"},"dependencies":{"pdfjs-dist":"5.6.205","tesseract.js":"7.0.0"},"devDependencies":{"esbuild":"0.27.0"}}
